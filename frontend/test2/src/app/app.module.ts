@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'; // Added HttpClientModule import
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http'; // Added HttpClientModule import
 
 @NgModule({
   declarations: [
@@ -14,9 +14,7 @@ import { HttpClientModule } from '@angular/common/http'; // Added HttpClientModu
     AppRoutingModule,
     HttpClientModule // Added HttpClientModule to imports
   ],
-  providers: [
-    provideClientHydration()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

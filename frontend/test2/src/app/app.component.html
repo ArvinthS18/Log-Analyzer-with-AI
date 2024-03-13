@@ -1,36 +1,101 @@
-<div class="container mt-3">
+<!-- <div class="container mt-3">
   <h1>File Upload and Analysis</h1>
-  <div class="row">
-    <div class="col-md-6 mb-3">
+
+  <div class="row mb-3">
+    <div class="col-md-6">
       <input type="file" class="form-control" (change)="onFileSelected($event)">
     </div>
-    <div class="col-md-6 mb-3">
-      <button (click)="analyzeFile()" class="btn btn-primary">Analyze</button>
+    <div class="col-md-6 d-flex align-items-center">
+      <button *ngIf="selectedFile" (click)="analyzeFile()" class="btn btn-primary me-2" [disabled]="isLoading">Analyze</button>
+      <div class="spinner-border spinner-border-sm me-2" role="status" *ngIf="isLoading">
+        <span class="visually-hidden">Loading...</span>
+      </div>
     </div>
   </div>
-  <div *ngIf="error">{{ error }}</div>
-  <table class="table table-striped" *ngIf="header.length > 0 && tableData.length > 0">
-    <thead>
-      <tr>
-        <th *ngFor="let col of header">{{ col }}</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let row of tableData">
-        <td *ngFor="let col of header">{{ row[col] }}</td>
-      </tr>
-    </tbody>
-  </table>
-  <div *ngIf="header.length === 0 && tableData.length > 0">
+
+  <div class="alert alert-danger" role="alert" *ngIf="error">{{ error }}</div>
+
+  <div *ngIf="tableData.length > 0">
     <table class="table table-striped">
       <thead>
         <tr>
-          <th *ngFor="let key of getObjectKeys(tableData[0])">{{ key }}</th>
+          <th *ngFor="let col of header">{{ col }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of tableData">
+          <td *ngFor="let col of header">{{ row[col] }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="tableData.length === 0 && !isLoading">
+    <p>No data found in the uploaded file.</p>
+  </div>
+</div> -->
+<div class="container mt-3">
+  <h1>File Upload and Analysis</h1>
+
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <input type="file" class="form-control" (change)="onFileSelected($event)">
+    </div>
+    <div class="col-md-6 d-flex align-items-center">
+      <button *ngIf="selectedFile" (click)="analyzeFile()" class="btn btn-primary me-2" [disabled]="isLoading">Analyze</button>
+      <div class="spinner-border spinner-border-sm me-2" role="status" *ngIf="isLoading">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert alert-danger" role="alert" *ngIf="error">{{ error }}</div>
+
+  <div *ngIf="header.length > 0 && tableData.length > 0">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th *ngFor="let col of header">{{ col }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of displayedTableData">
+          <td *ngFor="let col of header">{{ row[col] }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <nav aria-label="Page navigation">
+      <ul class="pagination">
+        <li class="page-item" [class.disabled]="currentPage === 1" (click)="onPageChange(currentPage - 1)">
+          <a class="page-link" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item" *ngFor="let page of pages" [class.active]="currentPage === page" (click)="onPageChange(page)">
+          <a class="page-link">{{ page }}</a>
+        </li>
+        <li class="page-item" [class.disabled]="currentPage === totalPages" (click)="onPageChange(currentPage + 1)">
+          <a class="page-link" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div *ngIf="(header.length === 0 && tableData.length > 0) || (header.length > 0 && tableData.length === 0)">
+    <table class="table table-striped">
+      <thead *ngIf="header.length > 0">
+        <tr>
+          <th *ngFor="let col of header">{{ col }}</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let row of tableData">
           <td *ngFor="let key of getObjectKeys(row)">{{ row[key] }}</td>
+        </tr>
+        <tr *ngIf="header.length === 0 && tableData.length === 0">
+          <td>No data found in the uploaded file.</td>
         </tr>
       </tbody>
     </table>

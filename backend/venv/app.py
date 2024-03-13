@@ -1,3 +1,5 @@
+# .\venv\Scripts\Activate
+# Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 # from flask import Flask, jsonify
 
 # app = Flask(__name__)
@@ -11,53 +13,95 @@
 #   except Exception as e:  # Catch potential exceptions for robust error handling
 #     return jsonify({'error': str(e)}), 500  # Return error message and status code 500 (Internal Server Error)
 from flask import Flask, request, jsonify
-import pandas as pd
 from flask_cors import CORS
 import csv
+import json
+import re
 
 app = Flask(__name__)
 CORS(app)
 
-def find_header(csv_file):
-    # Read the first line of the CSV file to identify the header
-    header = csv_file.readline().decode().strip().split(',')
-    return header
+ALLOWED_EXTENSIONS = {'csv', 'json', 'xml', 'txt', 'log'}
 
-def is_valid_csv(file_path):
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+def is_valid_csv(file_content):
     try:
-        pd.read_csv(file_path)
+        csv.reader(file_content.decode().splitlines())
         return True
     except Exception as e:
         return False
 
+def is_valid_json(file_content):
+    try:
+        json.loads(file_content.decode())
+        return True
+    except Exception as e:
+        return False
+
+def is_valid_xml(file_content):
+    # Check if it looks like XML (simplified check)
+    return '<' in file_content.decode() and '>' in file_content.decode()
+
+def extract_logs_from_text(file_content):
+    logs = []
+    lines = file_content.decode().splitlines()
+
+    # Assume the first line contains headers
+    headers = lines[0].split()
+
+    for line in lines[1:]:
+        # Split the line based on whitespace or any other delimiter
+        values = re.split(r'\s+', line.strip())
+
+        # Create a dictionary to store the log entry
+        log_entry = {}
+        
+        # Check if the number of values matches the number of headers
+        if len(values) == len(headers):
+            for i in range(len(headers)):
+                log_entry[headers[i]] = values[i]
+        else:
+            # If the number of values doesn't match, create a single 'Message' field
+            log_entry['Message'] = ' '.join(values)
+
+        logs.append(log_entry)
+
+    return logs
+
+def analyze_file(file_content, filename):
+    logs = []
+
+    # Check if it's a valid CSV, JSON, or XML based on file extension
+    file_extension = filename.rsplit('.', 1)[1].lower()
+    if file_extension == 'csv' and is_valid_csv(file_content):
+        csv_data = csv.DictReader(file_content.decode().splitlines())
+        logs = [row for row in csv_data]
+    elif file_extension == 'json' and is_valid_json(file_content):
+        logs = json.loads(file_content.decode())
+    elif file_extension == 'xml' and is_valid_xml(file_content):
+        # Placeholder for XML parsing logic (not implemented here)
+        pass
+    else:
+        # Assume it's plain text and try to extract logs
+        logs = extract_logs_from_text(file_content)
+
+    return logs
+
 @app.route('/api/analyze', methods=['POST'])
-def analyze_file():
+def analyze_file_endpoint():
     if request.method == 'POST':
         try:
-            # Get uploaded file
             uploaded_file = request.files.get('file')
-            if uploaded_file:
-                # Check if it's a valid CSV file
-                if not is_valid_csv(uploaded_file):
-                    return jsonify({'error': 'Invalid CSV file format'}), 400
-                
-                # Read the uploaded file using pandas
-                uploaded_file.seek(0)  # Reset file pointer to read again from the beginning
-                header = find_header(uploaded_file)
-                uploaded_file.seek(0)  # Reset file pointer again
-                df = pd.read_csv(uploaded_file)
-
-                # Convert DataFrame to a list of dictionaries (suitable for JSON)
-                data = df.to_dict(orient='records')
-                
-                # Construct JSON response dynamically based on header and data
-                response_data = {'header': header, 'data': data}
-                print(response_data)
-                return jsonify(response_data)
+            if uploaded_file and allowed_file(uploaded_file.filename):
+                file_content = uploaded_file.read()
+                logs = analyze_file(file_content, uploaded_file.filename)
+                return jsonify({'logs': logs})
             else:
-                return jsonify({'error': 'No file uploaded'}), 400
+                return jsonify({'error': 'Invalid file type or no file uploaded'}), 400
         except Exception as e:
-            return jsonify({'error': str(e)}), 500  # Return specific error message
+            return jsonify({'error': str(e)}), 500
     else:
         return jsonify({'error': 'Method not allowed'}), 405
 
