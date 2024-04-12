@@ -1,0 +1,14 @@
+2024-04-12 11:02:53 2024-04-12 05:32:53,642 DEBG 'stream-engine' stdout output:
+2024-04-12 11:02:53 05:32:53,642 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Stopped Akka RPC service.
+2024-04-12 11:02:53 
+2024-04-12 11:02:53 2024-04-12 05:32:53,661 DEBG 'stream-engine' stdout output:
+2024-04-12 11:02:53 05:32:53,661 INFO  org.apache.flink.runtime.blob.PermanentBlobCache             [] - Shutting down BLOB cache
+2024-04-12 11:02:53 
+2024-04-12 11:02:53 2024-04-12 05:32:53,662 DEBG 'stream-engine' stdout output:
+2024-04-12 11:02:53 05:32:53,662 INFO  org.apache.flink.runtime.blob.TransientBlobCache             [] - Shutting down BLOB cache
+2024-04-12 11:02:53 
+2024-04-12 11:02:53 2024-04-12 05:32:53,663 DEBG 'stream-engine' stdout output:
+2024-04-12 11:02:53 05:32:53,663 INFO  org.apache.flink.runtime.blob.BlobServer                     [] - Stopped BLOB server at 0.0.0.0:38851
+2024-04-12 11:02:53 
+2024-04-12 11:02:53 2024-04-12 05:32:53,672 DEBG 'stream-engine' stdout output:
+2024-04-12 11:02:53 05:32:53,672 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Stopped Akka RPC service.
