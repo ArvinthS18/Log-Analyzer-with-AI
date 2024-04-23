@@ -1305,7 +1305,7 @@ def send_query_to_api(timestamp, message, prompt):
     print(prompt)
     response_text = ''
     try:
-        response = requests.post('https://fumes-api.onrender.com/llama3',
+        response = requests.post('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
                                  json={
                                      'prompt': f"""{{
                                          'systemPrompt': 'You are an error monitor in a log file. You will receive a set of lines from a log file for some software application, find the errors and other interesting aspects of the logs, and explain them so a new user can understand what they mean. If there are any steps they can do to resolve them, list the steps in your answer.',
