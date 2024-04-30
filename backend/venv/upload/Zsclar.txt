@@ -1,0 +1,123 @@
+2021-03-26 15:45:06.617823(-0700)[344444:344445] INF [LogMon] Previous log zstunnel_2021-03-26-12-41-05.560137.log
+2021-03-26 15:45:10.278193(-0700)[344444:344709] DBG check proxyReactivate called.
+2021-03-26 15:45:10.278289(-0700)[344444:344709] DBG checkZtunnelHealth called.
+2021-03-26 15:45:10.278314(-0700)[344444:344709] DBG startServicesIfRequired called!!
+2021-03-26 15:45:10.278340(-0700)[344444:344709] ERR evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 15:45:10.278363(-0700)[344444:344709] INF Skip refresh bypasses
+2021-03-26 15:45:10.278385(-0700)[344444:344709] ERR evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 15:45:10.278406(-0700)[344444:344709] ERR evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 15:45:10.278427(-0700)[344444:344709] DBG checkAndRestartTunIfRequired called!!
+2021-03-26 15:45:10.278470(-0700)[344444:344709] DBG getSmeProxyState: (4 -> TUNNEL_FORWARDING) getZpnProxyState: (4 -> TUNNEL_FORWARDING)
+2021-03-26 15:45:10.278496(-0700)[344444:344709] DBG isTunDnsEchoServerUp called!!
+2021-03-26 15:45:10.278519(-0700)[344444:344709] INF isTunDnsEchoServerUp: Checking Dns server.
+2021-03-26 15:45:10.278593(-0700)[344444:344709] DBG try connecting to : 100.64.0.2
+2021-03-26 15:45:10.278691(-0700)[344444:344709] DBG Echo dns written bytes: 41
+2021-03-26 15:45:10.278796(-0700)[344444:344573] DBG DNS: MSG=Request from=100.64.0.2:58153 Family=IPv4 Size=41, Qcount=1
+2021-03-26 15:45:10.278833(-0700)[344444:344573] INF DNS: QRY=A(1), Name=dnsechotest.zscaler.com
+2021-03-26 15:45:10.278857(-0700)[344444:344573] DBG DNS: Got dns echo request.
+2021-03-26 15:45:10.278880(-0700)[344444:344573] INF DNS: Send local A response for ZPN domain: dnsechotest.zscaler.com -> 100.64.0.1
+2021-03-26 15:45:10.278970(-0700)[344444:344709] DBG Echo dns response read bytes: 57
+2021-03-26 15:45:10.279016(-0700)[344444:344709] DBG isTunUdpEchoServerUp called!!
+2021-03-26 15:45:10.279041(-0700)[344444:344709] INF isTunUdpEchoServerUp: Checking Udp proxy server.
+2021-03-26 15:45:10.279094(-0700)[344444:344709] DBG Echo udp connect to 100.64.0.8,134234212
+2021-03-26 15:45:10.279151(-0700)[344444:344709] DBG Echo udp written bytes: 41
+2021-03-26 15:45:10.279246(-0700)[344444:344574] DBG UDP Proxy: ID: 8448 Ztunnel udp echo request received.
+2021-03-26 15:45:10.279345(-0700)[344444:344574] DBG UDP Proxy: ID: 8416 Connection closed. Local Port: 58514 Dst Addr: 10.66.98.1:53 Tx Bytes: 164 TX packets: 2 Rx Bytes: 294 Rx packets: 2
+2021-03-26 15:45:10.279407(-0700)[344444:344574] DBG UDP Proxy: ID: 8415 Connection closed. Local Port: 38398 Dst Addr: 10.66.98.1:53 Tx Bytes: 80 TX packets: 2 Rx Bytes: 258 Rx packets: 2
+2021-03-26 15:45:10.279463(-0700)[344444:344574] DBG UDP Proxy: ID: 8414 Connection closed. Local Port: 52438 Dst Addr: 10.66.98.1:53 Tx Bytes: 78 TX packets: 2 Rx Bytes: 240 Rx packets: 2
+2021-03-26 15:45:10.279517(-0700)[344444:344574] DBG UDP Proxy: ID: 8413 Connection closed. Local Port: 51453 Dst Addr: 10.66.98.1:53 Tx Bytes: 164 TX packets: 2 Rx Bytes: 294 Rx packets: 2
+2021-03-26 15:45:10.279571(-0700)[344444:344574] DBG UDP Proxy: ID: 8412 Connection closed. Local Port: 47740 Dst Addr: 10.66.98.1:53 Tx Bytes: 60 TX packets: 2 Rx Bytes: 286 Rx packets: 2
+2021-03-26 15:45:10.279605(-0700)[344444:344574] DBG UDP Proxy: clearIdleUdpProxyConnections: Old size: 37 Remaining size: 31
+2021-03-26 15:45:10.279694(-0700)[344444:344709] DBG Echo udp response read bytes: 41
+2021-03-26 15:45:10.279743(-0700)[344444:344709] DBG Starting checkLoopbackTcpServerUp request
+2021-03-26 15:45:10.280038(-0700)[344444:344575] INF ===> ID=630545273, LCL-Proxy: connection from 127.0.0.1:52582 sock-fd=3
+2021-03-26 15:45:10.280096(-0700)[344444:344575] DBG ID=630545273, Client socket SO_SNDBUF: 2626560 SO_RCVBUF: 131072
+2021-03-26 15:45:10.280135(-0700)[344444:344575] DBG ID=630545273, Use Sme: 1 Sme IP: 165.225.72.38
+2021-03-26 15:45:10.280184(-0700)[344444:344575] DBG ID=630545273, readFromClient: read bytes 104 request size: 104
+2021-03-26 15:45:10.280231(-0700)[344444:344575] INF ID=630545273, HTTP Request Version: HTTP/1.1 Host=127.0.0.1:9000 Method=GET Uri=/conntest
+2021-03-26 15:45:10.280287(-0700)[344444:344575] DBG ID=630545273, readFromClient: Port for http request: 9000
+2021-03-26 15:45:10.280322(-0700)[344444:344575] DBG ID=630545273, parseHttpRequest Url=http://127.0.0.1:9000/conntest
+2021-03-26 15:45:10.280352(-0700)[344444:344575] DBG ID=630545273, readFromClient: Host Address: 127.0.0.1:9000
+2021-03-26 15:45:10.280439(-0700)[344444:344575] DBG ID=630545273, Server socket SO_SNDBUF: 16384 SO_RCVBUF: 131072
+2021-03-26 15:45:10.280486(-0700)[344444:344575] DBG ID=630545273, Dest Address in local proxy mode 127.0.0.1:9000
+2021-03-26 15:45:10.280532(-0700)[344444:344575] DBG ID=630545273, Sending conn test response data back!
+2021-03-26 15:45:10.280563(-0700)[344444:344575] DBG ID=630545273, startServerConnection done!!
+2021-03-26 15:45:10.280651(-0700)[344444:344575] ERR ID=630545273, TcpServer: poll server revent code: 16
+2021-03-26 15:45:10.280660(-0700)[344444:344709] INF Loopback Connection check response code: 200 data: Success;Loopback:Curr_conn:1,Curr_threads: 2,Max_concurrent_conn: 1,Queued_conn: 0,Refused_conn: 0,Total_conn: 742;Wildcard:Curr_conn:0,Curr_threads: 1,Max_concurrent_conn: 29,Queued_conn: 0,Refused_conn: 0,Total_conn: 2349
+2021-03-26 15:45:10.280711(-0700)[344444:344575] DBG ID=630545273, Disconnecting 127.0.0.1:52582
+2021-03-26 15:45:10.280754(-0700)[344444:344709] DBG checkZpaTunTcpEchoServerUp called!!
+2021-03-26 15:45:10.280786(-0700)[344444:344709] ERR evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 15:45:10.280795(-0700)[344444:344575] INF ===> ID=630545273, ~ZTCPServerConnection state=closed ServerConnections=1 clt_bytes=104, srv_bytes=0!
+2021-03-26 15:45:10.280810(-0700)[344444:344709] DBG Using Zpa Tcp Echo server IP : 100.64.0.6
+2021-03-26 15:45:10.281002(-0700)[344444:344709] INF checkZpaTunTcpEchoServerUp connect success. Tcp Server is up.
+2021-03-26 15:45:10.281060(-0700)[344444:344709] INF Time elapsed since Zpn socket last read: 29 sec
+2021-03-26 15:45:10.281089(-0700)[344444:344580] DBG ID=1085456347, ZPAtunnel echo request received.
+2021-03-26 15:45:10.281092(-0700)[344444:344709] DBG Skipping connectZpnSocket as zpn socket state is: 2
+2021-03-26 15:45:10.281146(-0700)[344444:344580] DBG ID=1085456347, Zpn endConnection called for tag id: 0 ShutdownMode: SHUTDOWN_BOTH
+2021-03-26 15:45:10.281159(-0700)[344444:344709] DBG startServicesIfRequired end!!
+2021-03-26 15:45:10.281175(-0700)[344444:344580] ERR Deleting handler!
+2021-03-26 15:45:10.281197(-0700)[344444:344709] DBG ZTunnelMonitoringTask Resetting tunnel2 retry counters
+2021-03-26 15:45:10.281205(-0700)[344444:344580] DBG ID=1085456347, Disconnecting from 100.64.0.6:42238 for app_name: 
+2021-03-26 15:45:13.679481(-0700)[344444:344708] DBG checkTunTcpEchoServerUp called!!
+2021-03-26 15:45:13.679589(-0700)[344444:344708] ERR evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 15:45:13.679618(-0700)[344444:344708] DBG Using Tcp Echo server IP : 100.64.0.6
+2021-03-26 15:45:13.679907(-0700)[344444:344708] INF checkTunTcpEchoServerUp connect success. Tcp Server is up.
+2021-03-26 15:45:13.679972(-0700)[344444:344708] INF ZFHM Good health
+2021-03-26 15:45:13.680004(-0700)[344444:344708] INF Changing ZFHM health from : 5 to 5
+2021-03-26 15:45:13.680078(-0700)[344444:347370] INF ===> ID=468193326, TUN-Proxy: connection to 100.64.0.6 sock-fd=3, src_port=52928, dst_port=80
+2021-03-26 15:45:13.680126(-0700)[344444:347370] DBG ID=468193326, Ztunnel echo request received.
+2021-03-26 15:45:13.680164(-0700)[344444:347370] DBG ID=468193326, Disconnecting 100.64.0.6:52928
+2021-03-26 15:45:13.680229(-0700)[344444:347370] INF ===> ID=468193326, ~ZTCPServerConnection state=closed ServerConnections=0 clt_bytes=0, srv_bytes=0!
+2021-03-26 15:45:14.481337(-0700)[344444:344451] DBG SendZSATunnelStatusToZSATray Called!!!
+2021-03-26 15:45:14.485837(-0700)[344444:344451] DBG TunnelStatus {"clientIP":"10.66.19.90","isLWFDriverRunning":0,"networkState":2,"startTimeZIA":"1616757828834473","startTimeZPA":"1616751282399988","tcpProxyListeningPort":9000,"tunnelVersion":"20:1","ziaRxBytes":"165.29 MB","ziaServerIP":"165.225.72.38","ziaServerPort":443,"ziaTunnelState":4,"ziaTxBytes":"51.55 MB","zpaAuthState":0,"zpaRxBytes":"0 bytes","zpaServerIP":"34.209.109.199","zpaTunnelState":4,"zpaTxBytes":"0 bytes"}
+2021-03-26 15:45:14.490215(-0700)[344444:344451] DBG The server answered: '1'
+2021-03-26 15:45:15.314467(-0700)[344444:344588] INF TUN: Skipping sending dns packet to dns proxy it is not destined to tun dns!
+2021-03-26 15:45:15.314623(-0700)[344444:344588] INF TUN: Skipping sending dns packet to dns proxy it is not destined to tun dns!
+2021-03-26 15:45:15.314808(-0700)[344444:344574] DBG UDP Proxy: ID: 8450 Got Udp connection from: 10.66.98.1:8450 Datagram Length: 39 Forwarding packet to: 10.66.98.1:53
+2021-03-26 15:45:16.492365(-0700)[344444:344588] INF TUN: Skipping sending dns packet to dns proxy it is not destined to tun dns!
+2021-03-26 15:45:16.492569(-0700)[344444:344574] DBG UDP Proxy: ID: 8451 Got Udp connection from: 10.66.98.1:8451 Datagram Length: 82 Forwarding packet to: 10.66.98.1:53
+2021-03-26 15:45:16.492698(-0700)[344444:344588] INF TUN: Skipping sending dns packet to dns proxy it is not destined to tun dns!
+2021-03-26 15:45:16.492960(-0700)[344444:344588] INF TUN: Skipping sending dns packet to dns proxy it is not destined to tun dns!
+2021-03-26 15:45:16.493041(-0700)[344444:344588] INF TUN: Skipping sending dns packet to dns proxy it is not destined to tun dns!
+2021-03-26 15:45:16.493159(-0700)[344444:344574] DBG UDP Proxy: ID: 8452 Got Udp connection from: 10.66.98.1:8452 Datagram Length: 42 Forwarding packet to: 10.66.98.1:53
+2021-03-26 15:45:20.636629(-0700)[344444:345363] DBG SME Ip: 165.225.72.38 for sslvpn node: 165.225.72.38
+2021-03-26 15:45:20.636722(-0700)[344444:345363] ERR ZPHM: Cleanup list size: 6
+2021-03-26 15:45:20.636752(-0700)[344444:345363] DBG ZPHM: Cleanup 165.225.72.38:443
+2021-03-26 15:45:20.636778(-0700)[344444:345363] DBG ZPHM: Cleanup 165.225.72.38:80
+2021-03-26 15:45:20.636802(-0700)[344444:345363] DBG ZPHM: Cleanup 165.225.72.38:8080
+2021-03-26 15:45:20.636830(-0700)[344444:345363] DBG ZPHM: Cleanup 104.129.194.45:443
+2021-03-26 15:45:20.636856(-0700)[344444:345363] DBG ZPHM: Cleanup 104.129.194.45:80
+2021-03-26 15:45:20.636880(-0700)[344444:345363] DBG ZPHM: Cleanup 104.129.194.45:8080
+2021-03-26 15:45:20.636905(-0700)[344444:345363] INF ZPHM: Start 6 proxies check
+2021-03-26 15:45:20.637065(-0700)[344444:361036] INF ZPHM: Trying Connecting to 165.225.72.38: 443
+2021-03-26 15:45:20.637125(-0700)[344444:361036] ERR cloud: zscalerbeta.net len: 15
+2021-03-26 15:45:20.637153(-0700)[344444:361036] DBG encryptAES256CBC: Salt: 12917987248991682858 cloud: zscalerbeta.net
+2021-03-26 15:45:20.637177(-0700)[344444:361036] DBG hexdump: printing log, len: 8 Loglen: 36 split length: 4080
+2021-03-26 15:45:20.637200(-0700)[344444:361036] DBG 
+Salt Bytes: 2a c1 2c e5 f5 e8 45 b3
+2021-03-26 15:45:20.637264(-0700)[344444:361036] DBG Adding ZAppInfo header value: 51a2defbe1cef0279a508da3cc4217f7cdf2f3045ca374762b425aada06e39e6
+2021-03-26 15:45:20.737266(-0700)[344444:361037] INF ZPHM: Trying Connecting to 165.225.72.38: 80
+2021-03-26 15:45:20.737363(-0700)[344444:361037] ERR cloud: zscalerbeta.net len: 15
+2021-03-26 15:45:20.737391(-0700)[344444:361037] DBG encryptAES256CBC: Salt: 12917987248991682858 cloud: zscalerbeta.net
+2021-03-26 15:45:20.737415(-0700)[344444:361037] DBG hexdump: printing log, len: 8 Loglen: 36 split length: 4080
+2021-03-26 15:45:20.737437(-0700)[344444:361037] DBG 
+Salt Bytes: 2a c1 2c e5 f5 e8 45 b3
+2021-03-26 15:45:20.737483(-0700)[344444:361037] DBG Adding ZAppInfo header value: 51a2defbe1cef0279a508da3cc4217f7cdf2f3045ca374762b425aada06e39e6
+2021-03-26 15:45:20.797552(-0700)[344444:361036] INF ZPHM: Connected to Proxy: 165.225.72.38:443 (165.225.72.38). Will check for auth now.
+2021-03-26 15:45:20.837461(-0700)[344444:361038] INF ZPHM: Trying Connecting to 165.225.72.38: 8080
+2021-03-26 15:45:20.837576(-0700)[344444:361038] ERR cloud: zscalerbeta.net len: 15
+2021-03-26 15:45:20.837621(-0700)[344444:361038] DBG encryptAES256CBC: Salt: 12917987248991682858 cloud: zscalerbeta.net
+2021-03-26 15:45:20.837683(-0700)[344444:361038] DBG hexdump: printing log, len: 8 Loglen: 36 split length: 4080
+2021-03-26 15:45:20.837724(-0700)[344444:361038] DBG 
+Salt Bytes: 2a c1 2c e5 f5 e8 45 b3
+2021-03-26 15:45:20.837793(-0700)[344444:361038] DBG Adding ZAppInfo header value: 51a2defbe1cef0279a508da3cc4217f7cdf2f3045ca374762b425aada06e39e6
+2021-03-26 15:45:20.901025(-0700)[344444:361037] INF ZPHM: Connected to Proxy: 165.225.72.38:80 (165.225.72.38). Will check for auth now.
+2021-03-26 15:45:20.937605(-0700)[344444:361039] INF ZPHM: Trying Connecting to 104.129.194.45: 443
+2021-03-26 15:45:20.937687(-0700)[344444:361039] ERR cloud: zscalerbeta.net len: 15
+2021-03-26 15:45:20.937714(-0700)[344444:361039] DBG encryptAES256CBC: Salt: 12917987248991682858 cloud: zscalerbeta.net
+2021-03-26 15:45:20.937737(-0700)[344444:361039] DBG hexdump: printing log, len: 8 Loglen: 36 split length: 4080
+2021-03-26 15:45:20.937759(-0700)[344444:361039] DBG 
+Salt Bytes: 2a c1 2c e5 f5 e8 45 b3
+2021-03-26 15:45:20.937803(-0700)[344444:361039] DBG Adding ZAppInfo header value: 51a2defbe1cef0279a508da3cc4217f7cdf2f3045ca374762b425aada06e39e6
+2021-03-26 15:45:20.956966(-0700)[344444:361036] INF ZPHM: Received response size: 65
+2021-03-26 15:45:20.957054(-0700)[344444:361036] INF ZPHM: Response data: HTTP/1.1 200 Connection Established

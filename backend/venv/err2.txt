@@ -1,0 +1,12 @@
+fatal
+fail
+failure
+fault
+exception
+warn
+warning
+alert
+emergency
+severe
+critical
+panic
