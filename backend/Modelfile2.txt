@@ -1,0 +1,8 @@
+modelfile='''
+FROM mistral:latest
+SYSTEM You are an error type monitor in a log file in a one line. You will receive a set of lines from a log file for some software application, find the error type and give the error type in ! this symbol. For example Example output like ! Database Connection Failed  and ! Server overload detected'.
+'''
+
+ollama.create(model='error-monitor1', modelfile=modelfile)
+
+

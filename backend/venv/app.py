@@ -1152,6 +1152,15 @@
 
 # # if __name__ == '__main__':
 # #     app.run(debug=True)
+
+
+
+
+
+
+
+
+
 # import re
 # import os
 # from flask import Flask, request, jsonify
@@ -1342,6 +1351,11 @@ import requests
 from werkzeug.utils import secure_filename
 from collections import Counter
 import matplotlib.pyplot as plt
+from collections import defaultdict
+from gradio_client import Client
+import ollama
+from collections import defaultdict
+import json
 
 app = Flask(__name__)
 CORS(app)
@@ -1501,25 +1515,29 @@ def upload_file():
         response_texts1=[]
         for index, row in error_df.iterrows():
             response_texts.append(send_query_to_api(row['timestamp'], row['message'], prompt))
-            response_texts1.append(send_query_to_api1(row['timestamp'], row['message']))
+            response_texts1.append(send_query_to_api1(row['timestamp'], row['message'],prompt))
             # print(response_texts)
             timestamps.append(row['timestamp'])
             messages.append(row['message'])
+            
         # Return the separate arrays as response
         error_phrases = []
 
-        for error in response_texts1:
-            match = re.search(r'!(.*?)\s*\n\s*\n', error)
-            if match:
-                error_phrase = match.group(1).strip()
-                error_phrases.append(error_phrase)
-            else:
-                error_phrases.append("Unknown")
+        # for error in response_texts1:
+        #     match = re.search(r'!(.*?)\s*\n\s*\n', error)
+        #     if match:
+        #         error_phrase = match.group(1).strip()
+        #         error_phrases.append(error_phrase)
+        #     else:
+        #         error_phrases.append("Unknown")
 
-        print(error_phrases)
+        # print(error_phrases)
+
+        detected_errors = [error.split("! ")[-1] for error in response_texts1]
+        print(detected_errors)
 
 
-        error_counts = Counter(error_phrases)
+        error_counts = Counter(detected_errors)
 
         print("Error Counts:")
         # for error, count in error_counts.items():
@@ -1531,65 +1549,167 @@ def upload_file():
 
         print("Error List:", error_list)
         print("Count List:", count_list)
+        data = {'error_list': error_list, 'count_list': count_list}
+        result_dict = defaultdict(list)
 
-        return jsonify({'timestamps': timestamps, 'messages': messages, 'response_texts': response_texts}), 200
+        # Iterate over each element in a, b, timestamp, and log_message and group them accordingly
+        for key, value, ts, msg in zip(error_list, response_texts, timestamps, messages):
+            result_dict[key].append({"value": value, "timestamp": ts, "log_message": msg})
+
+        # Extract the results for each unique key in a
+        results = [{"key": key, "values": values} for key, values in result_dict.items()]
+
+        # Convert results to JSON format
+        results_json = json.dumps(results)
+
+        print(results_json)
+        print(timestamps)
+        print(messages)
+        print(response_texts)
+        print(error_list)
+        print(count_list)
+        timestamps1=['2024-04-04 10:30:05', '2024-04-04 10:35:20']
+        messages1=['ERROR: Database connection failed', 'ERROR: Server overload detected']
+        count_list1=[1, 1]
+        error_list1=['Database Connection Failed', 'Server overload detected']
+        response_texts2 = [
+    'assistant\n\nWhat a great log line!\n\nError: Database connection failed\n\n**What does this error mean?**\n\nThis error indicates that the software application was unable to establish a connection to the database. This is a critical error, as the application relies heavily on the database to store and retrieve data.\n\n**Why is this error important?**\n\nThis error is important because it can cause the application to malfunction or even crash. Without a database connection, the application won\'t be able to perform its intended functions, which can lead to data inconsistencies, lost data, or even security vulnerabilities.\n\n**What can be done to resolve this error?**\n\nTo resolve this error, the following steps can be taken:\n\n1. **Check the database server status**: Ensure that the database server is up and running, and that it\'s not experiencing any issues.\n2. **Verify database credentials**: Double-check that the database username and password are correct, and that the application has the necessary permissions to connect to the database.\n3. **Check network connectivity**: Ensure that the application has network connectivity to the database server, and that there are no firewall or network configuration issues preventing the connection.\n4. **Check database configuration**: Verify that the database configuration is correct, and that the database is configured to accept connections from the application.\n5. **Restart the application**: If none of the above steps resolve the issue, try restarting the application to see if the error is temporary.\n\n**Additional troubleshooting steps**\n\nIf the above steps don\'t resolve the issue, further troubleshooting may be necessary. This could include:\n\n* Checking the database logs for any errors or issues\n* Verifying that the database is configured to allow connections from the application\'s IP address\n* Checking the application\'s configuration files for any typos or incorrect settings\n* Contacting the database administrator or a system administrator for further assistance\n\nBy following these steps, you should be able to resolve the "Database connection failed" error and get the application up and running smoothly again.',
+    
+    'assistant\n\nA new log line to analyze!\n\n**Error:** 2024-04-04 10:35:20 ERROR: Server overload detected\n\n**Summary:** This error indicates that the server hosting the software application has become overwhelmed with too many requests, causing a slowdown or even crashes. This can happen when there is a sudden surge in user activity, a misconfiguration, or insufficient resources (e.g., memory, CPU, or network bandwidth).\n\n**What this means for the user:** If you\'re experiencing this error, it means that the server is struggling to handle the current workload, which may result in:\n\n* Slow response times or timeouts\n* Inability to access certain features or functions\n* Frequent crashes or errors\n* Poor overall performance\n\n**Steps to resolve:**\n\n1. **Check server resource utilization**: Monitor the server\'s CPU, memory, and network usage to identify potential bottlenecks. This can help you determine if the issue is related to a specific component or resource.\n2. **Optimize server configuration**: Review the server\'s configuration to ensure it\'s properly tuned for the expected workload. This may involve adjusting settings, such as increasing memory allocation, adjusting CPU priorities, or configuring caching mechanisms.\n3. **Scale the server (if possible)**: If the server is underprovisioned, consider upgrading or adding resources to handle the increased demand.\n4. **Implement load balancing or clustering**: If the server is handling a large number of requests, consider implementing load balancing or clustering to distribute the load across multiple servers.\n5. **Review application code and performance**: Analyze the application\'s code and performance to identify areas that may be contributing to the server overload. Optimize the code, reduce unnecessary computations, and consider caching frequently accessed data.\n6. **Monitor server logs**: Keep a close eye on server logs to detect any patterns or trends that may indicate the root cause of the overload.\n\nBy following these steps, you should be able to identify and address the underlying cause of the server overload, ensuring a smoother and more reliable experience for your users.'
+]
+        log_data = [
+    {
+        "key": "Database Connection Failed",
+        "values": [
+            {
+                "value": "assistant\n\nAnother log line to analyze!\n\nHere's the error message:\n\n`2024-04-04 10:30:05 ERROR: Database connection failed`\n\nLet's break it down:\n\n* `ERROR`: This is the severity of the log message. It indicates that something went wrong.\n* `Database connection failed`: This is the specific error message. It's telling us that the software application was unable to connect to the database.\n\nWhat does this mean? In simple terms, the software application is unable to communicate with the database it needs to store or retrieve data. This could be due to various reasons such as:\n\n* The database is not running or is not reachable.\n* The database connection settings (e.g., username, password, hostname) are incorrect.\n* The network connection between the software application and the database is not stable or is down.\n\nSteps to resolve this error:\n\n1. **Check the database status**: Ensure the database is running and accessible. You can do this by checking the database's logs, status pages, or by running a simple query to verify its connectivity.\n2. **Verify database connection settings**: Double-check the database connection settings in the software application's configuration files or settings. Ensure that the username, password, hostname, and port are correct and match the database's configuration.\n3. **Check network connectivity**: Verify that the network connection between the software application and the database is stable and working correctly. You can try pinging the database's hostname or IP address to ensure connectivity.\n4. **Consult the software application's documentation**: If you're still having trouble, refer to the software application's documentation or support resources for specific guidance on resolving database connection issues.\n\nBy following these steps, you should be able to identify and resolve the issue preventing the software application from connecting to the database.",
+                "timestamp": "2024-04-04 10:30:05",
+                "log_message": "ERROR: Database connection failed"
+            }
+        ]
+    },
+    {
+        "key": "Server overload detected",
+        "values": [
+            {
+                "value": "assistant\n\nLog Line: 2024-04-04 10:35:20 ERROR: Server overload detected\n\nError: Server Overload Detected\n\nDescription: This error indicates that the server is experiencing a high level of traffic or activity, which is causing it to slow down or become unresponsive. This can occur when there are too many users accessing the server simultaneously, or when there are resource-intensive processes running on the server.\n\nImplications:\n\n* The server may become slow or unresponsive, leading to a poor user experience.\n* Data may not be processed or stored correctly, resulting in errors or inconsistencies.\n* The server may even crash or become unavailable, causing downtime and potential data loss.\n\nSteps to Resolve:\n\n1. **Check Server Load**: Use tools like top, vmstat, or sysctl to monitor the server's load. Identify the processes or services consuming the most resources and take steps to optimize or reduce their usage.\n2. **Scale Up the Server**: If the server is underpowered, consider upgrading the hardware or adding more resources (e.g., increasing RAM, CPU, or disk space).\n3. **Optimize Server Configuration**: Review the server's configuration to ensure it is optimized for the current workload. Adjust settings like memory allocation, CPU affinity, and disk I/O priorities as needed.\n4. **Implement Load Balancing**: Consider implementing load balancing techniques, such as round-robin DNS or a load balancer appliance, to distribute traffic across multiple servers.\n5. **Monitor and Analyze Server Logs**: Regularly review server logs to identify trends and patterns that may indicate potential issues before they become critical.\n6. **Upgrade Server Software**: Ensure the server's operating system and software are up-to-date, as newer versions often include performance optimizations and bug fixes.\n\nBy taking these steps, you can help prevent or mitigate server overload and ensure a smoother user experience.",
+                "timestamp": "2024-04-04 10:35:20",
+                "log_message": "ERROR: Server overload detected"
+            }
+        ]
+    }
+]
+
+        # return jsonify({'timestamps': timestamps, 'messages': messages, 'response_texts': response_texts,'data':data}), 200
+        # return jsonify({'timestamps': timestamps1,'messages': messages1,'response_texts': response_texts2,'error_list': error_list1,'count_list': count_list1,'results_json':log_data}), 200
+        return jsonify({'timestamps': timestamps,'messages': messages,'response_texts': response_texts,'error_list': error_list,'count_list': count_list,'results_json':results_json}), 200
     else:
         return jsonify({'error': 'Invalid file type or no file uploaded'}), 400
     
+
+
 #llama3 api 70b
 def send_query_to_api(timestamp, message, prompt):
-    # print(prompt)
-    response_text = ''
-    try:
-        response = requests.post('https://fumes-api.onrender.com/llama3',
-                                 json={
-                                     'prompt': f"""{{
-                                         'systemPrompt': 'You are an error monitor in a log file. You will receive a set of lines from a log file for some software application, find the errors and other interesting aspects of the logs, and explain them so a new user can understand what they mean. If there are any steps they can do to resolve them, list the steps in your answer.',
-                                         'user': 'hi',
-                                         'Assistant': 'Hello, I am an error monitor in a log file',
-                                         'user_query': '{prompt} {timestamp} {message}'
-                                     }}""",
-                                     "temperature": 0.75,
-                                     "topP": 0.9,
-                                     "maxTokens": 600
-                                 },
-                                 stream=True)
+    # # print(prompt)
+    # response_text = ''
+    # try:
+    #     response = requests.post('https://fumes-api.onrender.com/llama3',
+    #                              json={
+    #                                  'prompt': f"""{{
+    #                                      'systemPrompt': 'You are an error monitor in a log file. You will receive a set of lines from a log file for some software application, find the errors and other interesting aspects of the logs, and explain them so a new user can understand what they mean. If there are any steps they can do to resolve them, list the steps in your answer.',
+    #                                      'user': 'hi',
+    #                                      'Assistant': 'Hello, I am an error monitor in a log file',
+    #                                      'user_query': '{prompt} {timestamp} {message}'
+    #                                  }}""",
+    #                                  "temperature": 0.75,
+    #                                  "topP": 0.9,
+    #                                  "maxTokens": 600
+    #                              },
+    #                              stream=True)
 
-        for chunk in response.iter_content(chunk_size=1024):
-            if chunk:
-                response_text += chunk.decode('utf-8')
+    #     for chunk in response.iter_content(chunk_size=1024):
+    #         if chunk:
+    #             response_text += chunk.decode('utf-8')
                 
 
-    except Exception as e:
-        print(f"An error occurred while sending query to API: {e}")
+    # except Exception as e:
+    #     print(f"An error occurred while sending query to API: {e}")
     # print(response_text)
-    return response_text
-def send_query_to_api1(timestamp, message):
-    # print(prompt)
-    response_text1 = ''
-    try:
-        response1 = requests.post('https://fumes-api.onrender.com/llama3',
-                         json={
-                             'prompt': f"""{{
-                                 'systemPrompt': 'You are an error monitor in a log file. You will receive a set of lines from a log file for some software application, find the error type and give the error type in ! this symbol. For example Example output like ! Database Connection Failed  and ! Server overload detected',
-                                 'user': 'hi',
-                                 'Assistant': 'Hello, I am an error monitor in a log file',
-                                 'user_query':  '{timestamp} {message}'
-                             }}""",
-                             "temperature": 0.75,
-                             "topP": 0.9,
-                             "maxTokens": 600
-                         },
-                         stream=True)
+    # return response_text
+    message2="You are an error monitor in a log file. You will receive a set of lines from a log file for some software application, find the errors and other interesting aspects of the logs, and explain them so a new user can understand what they mean. If there are any steps they can do to resolve them, list the steps in your answer."
 
-        for chunk in response1.iter_content(chunk_size=1024):
-            if chunk:
-                response_text1 += chunk.decode('utf-8')
+    messageq = f"{message2} Monitor this log line: {timestamp} {message} {prompt}"
+    # Initialize the Gradio client
+    client = Client("ysharma/Chat_with_Meta_llama3_8b")
+
+    # Make a prediction request with the constructed message
+    result = client.predict(
+        message=messageq,
+        request=0.95,
+        param_3=512,
+        api_name="/chat"
+    )
+    return result
+    # print("Analyzing log message:", timestamp, message)
+    # combined_message = f"{timestamp}: {message} {prompt}"
+    # result = ollama.chat(
+    #     model="error-monitor",
+    #     messages=[{"role": "user", "content": combined_message}]
+    # )["message"]["content"]
+    # print(result)
+    # return result
+
+
+
+   
+def send_query_to_api1(timestamp, message,prompt):
+    # print(prompt)
+    # response_text1 = ''
+    # try:
+    #     response1 = requests.post('https://fumes-api.onrender.com/llama3',
+    #                      json={
+    #                          'prompt': f"""{{
+    #                              'systemPrompt': 'You are an error monitor in a log file. You will receive a set of lines from a log file for some software application, find the error type and give the error type in ! this symbol. For example Example output like ! Database Connection Failed  and ! Server overload detected',
+    #                              'user': 'hi',
+    #                              'Assistant': 'Hello, I am an error monitor in a log file',
+    #                              'user_query':  '{timestamp} {message}'
+    #                          }}""",
+    #                          "temperature": 0.75,
+    #                          "topP": 0.9,
+    #                          "maxTokens": 600
+    #                      },
+    #                      stream=True)
+
+    #     for chunk in response1.iter_content(chunk_size=1024):
+    #         if chunk:
+    #             response_text1 += chunk.decode('utf-8')
                 
 
-    except Exception as e:
-        print(f"An error occurred while sending query to API: {e}")
+    # except Exception as e:
+    #     print(f"An error occurred while sending query to API: {e}")
+    # print(response_text1)
+    # return response_text1
+
+    message1 = "You are an error monitor in a log file. You will receive a set of lines from a log file for some software application, find the error type and give the error type in ! this symbol. For example Example output like ! Database Connection Failed and ! Server overload detected."
+    message = f"{message1} Monitor this log line: {timestamp}{message}"
+    # Make a prediction request with the constructed message
+    client1 = Client("ysharma/Chat_with_Meta_llama3_8b")
+    response_text1 = client1.predict(
+        message=message,
+        request=0.95,
+        param_3=512,
+        api_name="/chat"
+    )
+
     print(response_text1)
     return response_text1
+    # print("Analyzing log message:", timestamp, message)
+    # combined_message = f"{timestamp}: {message}"
+    # response_text1 = ollama.chat(
+    #     model="mymodel",
+    #     messages=[{"role": "user", "content": combined_message}]
+    # )["message"]["content"]
+    # print(response_text1)
+    # return response_text1
 if __name__ == '__main__':
     app.run(debug=True)
