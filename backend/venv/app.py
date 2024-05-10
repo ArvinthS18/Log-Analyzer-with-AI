@@ -1484,7 +1484,7 @@ def upload_file():
         print(logs)
         parsed_logs = preprocess_logs(logs)
         print(parsed_logs)
-        # parsed_logs.to_csv('parsed_log.csv')
+        parsed_logs.to_csv('parsed_log.csv')
         error_keywords = load_error_keywords(error_keywords_file_path)
         if not error_keywords:
             print("No error keywords found.")
@@ -1638,18 +1638,18 @@ def send_query_to_api(timestamp, message, prompt):
     # return response_text
     message2="You are an error monitor in a log file. You will receive a set of lines from a log file for some software application, find the errors and other interesting aspects of the logs, and explain them so a new user can understand what they mean. If there are any steps they can do to resolve them, list the steps in your answer."
 
-    messageq = f"{message2} Monitor this log line: {timestamp} {message} {prompt}"
-    # Initialize the Gradio client
-    client = Client("ysharma/Chat_with_Meta_llama3_8b")
+    # messageq = f"{message2} Monitor this log line: {timestamp} {message} {prompt}"
+    # # Initialize the Gradio client
+    # client = Client("ysharma/Chat_with_Meta_llama3_8b")
 
-    # Make a prediction request with the constructed message
-    result = client.predict(
-        message=messageq,
-        request=0.95,
-        param_3=512,
-        api_name="/chat"
-    )
-    return result
+    # # Make a prediction request with the constructed message
+    # result = client.predict(
+    #     message=messageq,
+    #     request=0.95,
+    #     param_3=512,
+    #     api_name="/chat"
+    # )
+    # return result
     # print("Analyzing log message:", timestamp, message)
     # combined_message = f"{timestamp}: {message} {prompt}"
     # result = ollama.chat(
@@ -1658,10 +1658,51 @@ def send_query_to_api(timestamp, message, prompt):
     # )["message"]["content"]
     # print(result)
     # return result
+    content = f"{timestamp} {message} {prompt}"
+    prompt = f"""{{
+    "prompt": [
+        {{
+            "role": "system",
+            "content": "{message2}"
+        }},
+        {{
+            "role": "user",
+            "content": "{timestamp} {message}{prompt}"
+        }}
+    ],
+    "temperature": 0.75,
+    "topP": 0.9,
+    "maxTokens": 600
+}}"""
+
+# Make the POST request
+    response = requests.post('https://apix-30ox.onrender.com/llama3',
+        json=json.loads(prompt)).text
+
+    # Split the response to extract content
+    sections = response.split('data: ')
+    result = ''
+
+    # Extract content from sections
+    for section in sections:
+        if section.strip(): 
+            try:
+                cleaned_section = section.strip()
+                section_json = json.loads(cleaned_section)
+                for choice in section_json.get('choices', []):
+                    content = choice.get('delta', {}).get('content', '')
+                    result += content
+            except json.JSONDecodeError:
+                continue
+
+    # Print the final content
+    print(result)
+    return result
 
 
 
-   
+
+
 def send_query_to_api1(timestamp, message,prompt):
     # print(prompt)
     # response_text1 = ''
@@ -1690,19 +1731,19 @@ def send_query_to_api1(timestamp, message,prompt):
     # print(response_text1)
     # return response_text1
 
-    message1 = "You are an error monitor in a log file. You will receive a set of lines from a log file for some software application, find the error type and give the error type in ! this symbol. For example Example output like ! Database Connection Failed and ! Server overload detected."
-    message = f"{message1} Monitor this log line: {timestamp}{message}"
-    # Make a prediction request with the constructed message
-    client1 = Client("ysharma/Chat_with_Meta_llama3_8b")
-    response_text1 = client1.predict(
-        message=message,
-        request=0.95,
-        param_3=512,
-        api_name="/chat"
-    )
+    # message1 = "You are an error monitor in a log file. You will receive a set of lines from a log file for some software application, find the error type and give the error type in ! this symbol. For example Example output like ! Database Connection Failed and ! Server overload detected."
+    # message = f"{message1} Monitor this log line: {timestamp}{message}"
+    # # Make a prediction request with the constructed message
+    # client1 = Client("ysharma/Chat_with_Meta_llama3_8b")
+    # response_text1 = client1.predict(
+    #     message=message,
+    #     request=0.95,
+    #     param_3=512,
+    #     api_name="/chat"
+    # )
 
-    print(response_text1)
-    return response_text1
+    # print(response_text1)
+    # return response_text1
     # print("Analyzing log message:", timestamp, message)
     # combined_message = f"{timestamp}: {message}"
     # response_text1 = ollama.chat(
@@ -1711,5 +1752,81 @@ def send_query_to_api1(timestamp, message,prompt):
     # )["message"]["content"]
     # print(response_text1)
     # return response_text1
+    # Define variables
+    # a = "hi"
+    # b = "who is the sachin"
+
+    # # Concatenate the strings
+    # content = f"{timestamp} {message}"
+
+    # # Make the POST request
+    # response = requests.post('https://apix-30ox.onrender.com/llama3',
+    #     json={
+    #         'prompt': [{"role":"You are an error monitor in a log file. You will receive a set of lines from a log file for some software application, find the error type and give the error type in ! this symbol. For example Example output like ! Database Connection Failed  and ! Server overload detected","content":"Be a helpful Error monitoring assistant in a log file"},{"role":"user","content": content}],
+    #         "temperature": 0.75,
+    #         "topP": 0.9,
+    #         "maxTokens": 600
+    #     }).text
+
+    # # Split the response to extract content
+    # sections = response.split('data: ')
+    # response_text1 = ''
+
+    # # Extract content from sections
+    # for section in sections:
+    #     if section.strip(): 
+    #         try:
+    #             cleaned_section = section.strip()
+    #             section_json = json.loads(cleaned_section)
+    #             for choice in section_json.get('choices', []):
+    #                 content = choice.get('delta', {}).get('content', '')
+    #                 response_text1 += content
+    #         except json.JSONDecodeError:
+    #             continue
+
+    # # Print the final content
+    # print("ji",response_text1)
+    # return(response_text1)
+    prompt = f"""{{
+    "prompt": [
+        {{
+            "role": "system",
+            "content": "You are an error monitor in a log file. You will receive a set of lines from a log file for some software application, find the error type and give the error type in ! this symbol. For example Example output like ! Database Connection Failed and ! Server overload detected"
+        }},
+        {{
+            "role": "user",
+            "content": "{timestamp} {message}"
+        }}
+    ],
+    "temperature": 0.75,
+    "topP": 0.9,
+    "maxTokens": 600
+}}"""
+
+# Make the POST request
+    response = requests.post('https://apix-30ox.onrender.com/llama3',
+        json=json.loads(prompt)).text
+
+    # Split the response to extract content
+    sections = response.split('data: ')
+    response_text1 = ''
+
+    # Extract content from sections
+    for section in sections:
+        if section.strip(): 
+            try:
+                cleaned_section = section.strip()
+                section_json = json.loads(cleaned_section)
+                for choice in section_json.get('choices', []):
+                    content = choice.get('delta', {}).get('content', '')
+                    response_text1 += content
+            except json.JSONDecodeError:
+                continue
+
+    # Print the final content
+    print(response_text1)
+    return response_text1
+
+
 if __name__ == '__main__':
     app.run(debug=True)
