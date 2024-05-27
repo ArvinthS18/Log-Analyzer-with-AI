@@ -1,713 +1,1514 @@
-# # # # # # # # # # # # # # import streamlit as st
-# # # # # # # # # # # # # # import requests
-
-# # # # # # # # # # # # # # # Define the Flask API endpoint
-# # # # # # # # # # # # # # API_ENDPOINT = "http://localhost:5000/api/analyze"
-
-# # # # # # # # # # # # # # # Streamlit UI
-# # # # # # # # # # # # # # def main():
-# # # # # # # # # # # # # #     st.title("Log Analyzer")
-
-# # # # # # # # # # # # # #     # File Upload
-# # # # # # # # # # # # # #     uploaded_file = st.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
-
-# # # # # # # # # # # # # #     # Prompt Input
-# # # # # # # # # # # # # #     prompt = st.text_input("Enter prompt for analysis")
-
-# # # # # # # # # # # # # #     # Analyze Button
-# # # # # # # # # # # # # #     if st.button("Analyze"):
-# # # # # # # # # # # # # #         if uploaded_file is not None:
-# # # # # # # # # # # # # #             # Send file and prompt to Flask API
-# # # # # # # # # # # # # #             files = {'file': uploaded_file}
-# # # # # # # # # # # # # #             data = {'prompt': prompt}
-# # # # # # # # # # # # # #             response = requests.post(API_ENDPOINT, files=files, data=data)
-
-# # # # # # # # # # # # # #             if response.status_code == 200:
-# # # # # # # # # # # # # #                 # Display analysis results
-# # # # # # # # # # # # # #                 analysis_result = response.json()
-# # # # # # # # # # # # # #                 st.write("Analysis Results:")
-# # # # # # # # # # # # # #                 st.write("Error List:", analysis_result['error_list'])
-# # # # # # # # # # # # # #                 st.write("Error Count:", analysis_result['count_list'])
-# # # # # # # # # # # # # #                 st.write("Timestamps:", analysis_result['timestamps'])
-# # # # # # # # # # # # # #                 st.write("Messages:", analysis_result['messages'])
-# # # # # # # # # # # # # #                 st.write("Response Texts:", analysis_result['response_texts'])
-# # # # # # # # # # # # # #             else:
-# # # # # # # # # # # # # #                 st.error("Error analyzing file. Please try again.")
-
-# # # # # # # # # # # # # # if __name__ == "__main__":
-# # # # # # # # # # # # # #     main()
-# # # # # # # # # # # # # import streamlit as st
-# # # # # # # # # # # # # import requests
-
-# # # # # # # # # # # # # # Define the Flask API endpoint
-# # # # # # # # # # # # # API_ENDPOINT = "http://localhost:5000/api/analyze"
-
-# # # # # # # # # # # # # # Streamlit UI
-# # # # # # # # # # # # # def main():
-# # # # # # # # # # # # #     st.title("Log Analyzer")
-
-# # # # # # # # # # # # #     # File Upload
-# # # # # # # # # # # # #     uploaded_file = st.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
-
-# # # # # # # # # # # # #     # Prompt Input
-# # # # # # # # # # # # #     prompt = st.text_input("Enter prompt for analysis")
-
-# # # # # # # # # # # # #     # Analyze Button
-# # # # # # # # # # # # #     if st.button("Analyze"):
-# # # # # # # # # # # # #         if uploaded_file is not None:
-# # # # # # # # # # # # #             # Send file and prompt to Flask API
-# # # # # # # # # # # # #             files = {'file': uploaded_file}
-# # # # # # # # # # # # #             data = {'prompt': prompt}
-# # # # # # # # # # # # #             response = requests.post(API_ENDPOINT, files=files, data=data)
-
-# # # # # # # # # # # # #             if response.status_code == 200:
-# # # # # # # # # # # # #                 # Display analysis results
-# # # # # # # # # # # # #                 analysis_result = response.json()
-# # # # # # # # # # # # #                 display_chat(analysis_result)
-# # # # # # # # # # # # #             else:
-# # # # # # # # # # # # #                 st.error("Error analyzing file. Please try again.")
-
-# # # # # # # # # # # # # # def display_chat(analysis_result):
-# # # # # # # # # # # # # #     timestamps = analysis_result['timestamps']
-# # # # # # # # # # # # # #     messages = analysis_result['messages']
-# # # # # # # # # # # # # #     response_texts = analysis_result['response_texts']
-
-# # # # # # # # # # # # # #     st.subheader("Analysis Results:")
-    
-# # # # # # # # # # # # # #     for i in range(len(timestamps)):
-# # # # # # # # # # # # # #         st.text_area("Timestamp", value=timestamps[i], height=100, key=f"timestamp_{i}")
-# # # # # # # # # # # # # #         st.text_area("Log Message", value=messages[i], height=100, key=f"message_{i}")
-# # # # # # # # # # # # # #         st.text_area("Response", value=response_texts[i], height=400, key=f"response_{i}")
-
-# # # # # # # # # # # # # def display_chat(analysis_result):
-# # # # # # # # # # # # #     timestamps = analysis_result['timestamps']
-# # # # # # # # # # # # #     messages = analysis_result['messages']
-# # # # # # # # # # # # #     response_texts = analysis_result['response_texts']
-
-# # # # # # # # # # # # #     st.subheader("Analysis Results:")
-    
-# # # # # # # # # # # # #     for i in range(len(timestamps)):
-# # # # # # # # # # # # #         st.markdown('---')
-# # # # # # # # # # # # #         st.write(f"**Timestamp:** {timestamps[i]}")
-# # # # # # # # # # # # #         st.write(f"**Log Message:** {messages[i]}")
-# # # # # # # # # # # # #         st.markdown('**Analysis Result:**')
-# # # # # # # # # # # # #         st.write(response_texts[i])
-# # # # # # # # # # # # #         st.markdown('---')
-
-# # # # # # # # # # # # # if __name__ == "__main__":
-# # # # # # # # # # # # #     main()
-# # # # # # # # # # # # import streamlit as st
-# # # # # # # # # # # # import requests
-
-# # # # # # # # # # # # # Define the Flask API endpoint
-# # # # # # # # # # # # API_ENDPOINT = "http://localhost:5000/api/analyze"
-
-# # # # # # # # # # # # # Streamlit UI
-# # # # # # # # # # # # def main():
-# # # # # # # # # # # #     st.title("Log Analyzer")
-
-# # # # # # # # # # # #     # File Upload
-# # # # # # # # # # # #     uploaded_file = st.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
-
-# # # # # # # # # # # #     # Prompt Input
-# # # # # # # # # # # #     prompt = st.text_input("Enter prompt for analysis")
-
-# # # # # # # # # # # #     # Analyze Button
-# # # # # # # # # # # #     if st.button("Analyze"):
-# # # # # # # # # # # #         if uploaded_file is not None:
-# # # # # # # # # # # #             # Send file and prompt to Flask API
-# # # # # # # # # # # #             files = {'file': uploaded_file}
-# # # # # # # # # # # #             data = {'prompt': prompt}
-# # # # # # # # # # # #             response = requests.post(API_ENDPOINT, files=files, data=data)
-
-# # # # # # # # # # # #             if response.status_code == 200:
-# # # # # # # # # # # #                 # Display analysis results
-# # # # # # # # # # # #                 analysis_result = response.json()
-# # # # # # # # # # # #                 display_analysis_results(analysis_result)
-# # # # # # # # # # # #             else:
-# # # # # # # # # # # #                 st.error("Error analyzing file. Please try again.")
-
-# # # # # # # # # # # # def display_analysis_results(analysis_result):
-# # # # # # # # # # # #     st.subheader("Analysis Results:")
-
-# # # # # # # # # # # #     # Create a container for the analysis results
-# # # # # # # # # # # #     result_container = st.container()
-
-# # # # # # # # # # # #     with result_container:
-# # # # # # # # # # # #         # Display each analysis result in a professional format
-# # # # # # # # # # # #         for i, (timestamp, message, response_text) in enumerate(zip(analysis_result['timestamps'], analysis_result['messages'], analysis_result['response_texts'])):
-# # # # # # # # # # # #             st.markdown(f"### Analysis Result {i+1}")
-# # # # # # # # # # # #             st.write(f"**Timestamp:** {timestamp}")
-# # # # # # # # # # # #             st.write(f"**Log Message:** {message}")
-# # # # # # # # # # # #             st.markdown("---")
-# # # # # # # # # # # #             st.write(response_text)
-# # # # # # # # # # # #             st.markdown("---")
-
-# # # # # # # # # # # # if __name__ == "__main__":
-# # # # # # # # # # # #     main()
-# # # # # # # # # # # import streamlit as st
-# # # # # # # # # # # import requests
-
-# # # # # # # # # # # # Define the Flask API endpoint
-# # # # # # # # # # # API_ENDPOINT = "http://localhost:5000/api/analyze"
-
-# # # # # # # # # # # # Streamlit UI
-# # # # # # # # # # # def main():
-# # # # # # # # # # #     st.title("Log Analyzer")
-
-# # # # # # # # # # #     # Sidebar for file upload and prompt input
-# # # # # # # # # # #     st.sidebar.header("Input")
-# # # # # # # # # # #     uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
-# # # # # # # # # # #     prompt = st.sidebar.text_input("Enter prompt for analysis")
-
-# # # # # # # # # # #     # Analyze Button
-# # # # # # # # # # #     analyze_button = st.sidebar.button("Analyze")
-
-# # # # # # # # # # #     # Display analysis results in the main content area
-# # # # # # # # # # #     if analyze_button:
-# # # # # # # # # # #         if uploaded_file is not None:
-# # # # # # # # # # #             # Send file and prompt to Flask API
-# # # # # # # # # # #             files = {'file': uploaded_file}
-# # # # # # # # # # #             data = {'prompt': prompt}
-# # # # # # # # # # #             response = requests.post(API_ENDPOINT, files=files, data=data)
-
-# # # # # # # # # # #             if response.status_code == 200:
-# # # # # # # # # # #                 # Display analysis results
-# # # # # # # # # # #                 analysis_result = response.json()
-# # # # # # # # # # #                 display_analysis_results(analysis_result)
-# # # # # # # # # # #             else:
-# # # # # # # # # # #                 st.error("Error analyzing file. Please try again.")
-
-# # # # # # # # # # # def display_analysis_results(analysis_result):
-# # # # # # # # # # #     st.subheader("Analysis Results:")
-
-# # # # # # # # # # #     # Display each analysis result in a professional format
-# # # # # # # # # # #     for i, (timestamp, message, response_text) in enumerate(zip(analysis_result['timestamps'], analysis_result['messages'], analysis_result['response_texts'])):
-# # # # # # # # # # #         st.markdown(f"### Analysis Result {i+1}")
-# # # # # # # # # # #         st.write(f"**Timestamp:** {timestamp}")
-# # # # # # # # # # #         st.write(f"**Log Message:** {message}")
-# # # # # # # # # # #         st.markdown("---")
-# # # # # # # # # # #         st.write(response_text)
-# # # # # # # # # # #         st.markdown("---")
-
-# # # # # # # # # # # if __name__ == "__main__":
-# # # # # # # # # # #     main()
-# # # # # # # # # # import streamlit as st
-# # # # # # # # # # import requests
-
-# # # # # # # # # # # Define the Flask API endpoint
-# # # # # # # # # # API_ENDPOINT = "http://localhost:5000/api/analyze"
-
-# # # # # # # # # # # Streamlit UI
-# # # # # # # # # # def main():
-# # # # # # # # # #     st.title("Log Analyzer")
-
-# # # # # # # # # #     # Sidebar for file upload and prompt input
-# # # # # # # # # #     st.sidebar.header("Input")
-# # # # # # # # # #     uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
-# # # # # # # # # #     prompt = st.sidebar.text_input("Enter prompt for analysis")
-
-# # # # # # # # # #     # Analyze Button
-# # # # # # # # # #     analyze_button = st.sidebar.button("Analyze")
-
-# # # # # # # # # #     # Display analysis results in the main content area
-# # # # # # # # # #     if analyze_button:
-# # # # # # # # # #         if uploaded_file is not None:
-# # # # # # # # # #             # Send file and prompt to Flask API
-# # # # # # # # # #             files = {'file': uploaded_file}
-# # # # # # # # # #             data = {'prompt': prompt}
-# # # # # # # # # #             response = requests.post(API_ENDPOINT, files=files, data=data)
-
-# # # # # # # # # #             if response.status_code == 200:
-# # # # # # # # # #                 # Display analysis results
-# # # # # # # # # #                 analysis_result = response.json()
-# # # # # # # # # #                 display_analysis_results(analysis_result)
-# # # # # # # # # #             else:
-# # # # # # # # # #                 st.error("Error analyzing file. Please try again.")
-
-# # # # # # # # # # def display_analysis_results(analysis_result):
-    
-# # # # # # # # # #     # Display bar chart for error counts
-# # # # # # # # # #     error_list = analysis_result.get('error_list', [])
-# # # # # # # # # #     count_list = analysis_result.get('count_list', [])
-# # # # # # # # # #     if error_list and count_list:
-# # # # # # # # # #         st.subheader("Error Counts")
-# # # # # # # # # #         st.bar_chart(dict(zip(error_list, count_list)))
-# # # # # # # # # #     # Display each analysis result in a professional format
-# # # # # # # # # #     st.subheader("Analysis Results:")
-# # # # # # # # # #     for i, (timestamp, message, response_text) in enumerate(zip(analysis_result['timestamps'], analysis_result['messages'], analysis_result['response_texts'])):
-# # # # # # # # # #         st.markdown(f"### Error Result {i+1}")
-# # # # # # # # # #         st.write(f"**Timestamp:** {timestamp}")
-# # # # # # # # # #         st.write(f"**Log Message:** {message}")
-# # # # # # # # # #         st.markdown("---")
-# # # # # # # # # #         st.write(response_text)
-# # # # # # # # # #         st.markdown("---")
-
-# # # # # # # # # # if __name__ == "__main__":
-# # # # # # # # # #     main()
-# # # # # # # # # import streamlit as st
-# # # # # # # # # import requests
-# # # # # # # # # import matplotlib.pyplot as plt
-# # # # # # # # # import seaborn as sns
-
-# # # # # # # # # # Define the Flask API endpoint
-# # # # # # # # # API_ENDPOINT = "http://localhost:5000/api/analyze"
-
-# # # # # # # # # # Streamlit UI
-# # # # # # # # # def main():
-# # # # # # # # #     st.title("Log Analyzer")
-
-# # # # # # # # #     # Sidebar for file upload and prompt input
-# # # # # # # # #     st.sidebar.header("Input")
-# # # # # # # # #     uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
-# # # # # # # # #     prompt = st.sidebar.text_input("Enter prompt for analysis")
-
-# # # # # # # # #     # Analyze Button
-# # # # # # # # #     analyze_button = st.sidebar.button("Analyze")
-
-# # # # # # # # #     # Display analysis results in the main content area
-# # # # # # # # #     if analyze_button:
-# # # # # # # # #         if uploaded_file is not None:
-# # # # # # # # #             # Send file and prompt to Flask API
-# # # # # # # # #             files = {'file': uploaded_file}
-# # # # # # # # #             data = {'prompt': prompt}
-# # # # # # # # #             response = requests.post(API_ENDPOINT, files=files, data=data)
-
-# # # # # # # # #             if response.status_code == 200:
-# # # # # # # # #                 # Display analysis results
-# # # # # # # # #                 analysis_result = response.json()
-# # # # # # # # #                 display_analysis_results(analysis_result)
-# # # # # # # # #             else:
-# # # # # # # # #                 st.error("Error analyzing file. Please try again.")
-
-# # # # # # # # # def display_analysis_results(analysis_result):
-    
-# # # # # # # # #     # Extract error list and count list
-# # # # # # # # #     error_list = analysis_result.get('error_list', [])
-# # # # # # # # #     count_list = analysis_result.get('count_list', [])
-    
-# # # # # # # # #     # Create a color palette based on the length of error types
-# # # # # # # # #     colors = sns.color_palette("hsv", len(error_list))
-    
-# # # # # # # # #     if error_list and count_list:
-# # # # # # # # #         st.subheader("Error Counts")
-# # # # # # # # #         # Plot bar chart with custom colors
-# # # # # # # # #         plt.figure(figsize=(10, 6))
-# # # # # # # # #         ax = sns.barplot(x=count_list, y=error_list, palette=colors)
-# # # # # # # # #         st.pyplot(plt.gcf())  # Passing the current figure explicitly
-    
-# # # # # # # # #     # Display each analysis result in a professional format
-# # # # # # # # #     st.subheader("Analysis Results:")
-# # # # # # # # #     for i, (timestamp, message, response_text) in enumerate(zip(analysis_result['timestamps'], analysis_result['messages'], analysis_result['response_texts'])):
-# # # # # # # # #         st.markdown(f"### Error Result {i+1}")
-# # # # # # # # #         st.write(f"**Timestamp:** {timestamp}")
-# # # # # # # # #         st.write(f"**Log Message:** {message}")
-# # # # # # # # #         st.markdown("---")
-# # # # # # # # #         st.write(response_text)
-# # # # # # # # #         st.markdown("---")
-
-# # # # # # # # # if __name__ == "__main__":
-# # # # # # # # #     main()
-# # # # # # # import streamlit as st
-# # # # # # # import requests
-# # # # # # # import altair as alt
-# # # # # # # import pandas as pd
-# # # # # # # import seaborn as sns
-
-# # # # # # # # Define the Flask API endpoint
-# # # # # # # API_ENDPOINT = "http://localhost:5000/api/analyze"
-
-# # # # # # # # Streamlit UI
-# # # # # # # def main():
-# # # # # # #     st.title("Log Analyzer")
-
-# # # # # # #     # Sidebar for file upload and prompt input
-# # # # # # #     st.sidebar.header("Input")
-# # # # # # #     uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
-# # # # # # #     prompt = st.sidebar.text_input("Enter prompt for analysis")
-
-# # # # # # #     # Analyze Button
-# # # # # # #     analyze_button = st.sidebar.button("Analyze")
-
-# # # # # # #     # Display analysis results in the main content area
-# # # # # # #     if analyze_button:
-# # # # # # #         if uploaded_file is not None:
-# # # # # # #             # Send file and prompt to Flask API
-# # # # # # #             files = {'file': uploaded_file}
-# # # # # # #             data = {'prompt': prompt}
-# # # # # # #             response = requests.post(API_ENDPOINT, files=files, data=data)
-
-# # # # # # #             if response.status_code == 200:
-# # # # # # #                 # Display analysis results
-# # # # # # #                 analysis_result = response.json()
-# # # # # # #                 display_analysis_results(analysis_result)
-# # # # # # #             else:
-# # # # # # #                 st.error("Error analyzing file. Please try again.")
-
-# # # # # # # def display_analysis_results(analysis_result):
-# # # # # # #     # Extract error list and count list
-# # # # # # #     error_list = analysis_result.get('error_list', [])
-# # # # # # #     count_list = analysis_result.get('count_list', [])
-
-# # # # # # #     # Create a DataFrame for Altair
-# # # # # # #     df = pd.DataFrame({'Error Type': error_list, 'Error Count': count_list})
-
-# # # # # # #     # Create a color palette based on the length of error types
-# # # # # # #     palette = sns.color_palette("hsv", len(error_list)).as_hex()
-
-# # # # # # #     if error_list and count_list:
-# # # # # # #         st.subheader("Error Counts")
-# # # # # # #         # Create Altair chart with tooltips
-# # # # # # #         chart = alt.Chart(df).mark_bar().encode(
-# # # # # # #             x=alt.X('Error Type', axis=alt.Axis(title='Error Type')),
-# # # # # # #             y=alt.Y('Error Count', axis=alt.Axis(title='Error Count')),
-# # # # # # #             color=alt.Color('Error Type', scale=alt.Scale(range=palette), legend=None),
-# # # # # # #             tooltip=['Error Type', 'Error Count']
-# # # # # # #         ).properties(
-# # # # # # #             width=600,
-# # # # # # #             height=400
-# # # # # # #         )
-# # # # # # #         st.altair_chart(chart, use_container_width=True)
-
-# # # # # # #     # Display each analysis result in a professional format
-# # # # # # #     st.subheader("Analysis Results:")
-# # # # # # #     for i, (timestamp, message, response_text) in enumerate(zip(analysis_result['timestamps'], analysis_result['messages'], analysis_result['response_texts'])):
-# # # # # # #         st.markdown(f"### Error Result {i+1}")
-# # # # # # #         st.write(f"**Timestamp:** {timestamp}")
-# # # # # # #         st.write(f"**Log Message:** {message}")
-# # # # # # #         st.markdown("---")
-# # # # # # #         st.write(response_text)
-# # # # # # #         st.markdown("---")
-
-# # # # # # # if __name__ == "__main__":
-# # # # # # #     main()
-
-# # # import streamlit as st
-# # # import requests
-# # # import altair as alt
-# # # import pandas as pd
-
-# # # # Define the Flask API endpoint
-# # # API_ENDPOINT = "http://localhost:5000/api/analyze"
-
-# # # # Streamlit UI
-# # # def main():
-# # #     st.title("Log Analyzer")
-
-# # #     # Sidebar for file upload and prompt input
-# # #     st.sidebar.header("Input")
-# # #     uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
-# # #     prompt = st.sidebar.text_input("Enter prompt for analysis")
-
-# # #     # Analyze Button
-# # #     analyze_button = st.sidebar.button("Analyze")
-
-# # #     # Display analysis results in the main content area
-# # #     if analyze_button:
-# # #         if uploaded_file is not None:
-# # #             # Send file and prompt to Flask API
-# # #             files = {'file': uploaded_file}
-# # #             data = {'prompt': prompt}
-# # #             response = requests.post(API_ENDPOINT, files=files, data=data)
-
-# # #             if response.status_code == 200:
-# # #                 # Display analysis results
-# # #                 analysis_result = response.json()
-# # #                 display_analysis_results(analysis_result)
-# # #             else:
-# # #                 st.error("Error analyzing file. Please try again.")
-
-# # # def display_analysis_results(analysis_result):
-# # #     # Extract error list and count list
-# # #     error_list = analysis_result.get('error_list', [])
-# # #     count_list = analysis_result.get('count_list', [])
-# # #     timestamps_list = analysis_result.get('timestamps', [])
-# # #     log_messages_list = analysis_result.get('messages', [])
-
-# # #     # Create a DataFrame for Altair
-# # #     df = pd.DataFrame({'Error Type': error_list, 'Error Count': count_list, 'Timestamp': timestamps_list, 'Log Message': log_messages_list})
-
-# # #     if error_list and count_list:
-# # #         st.subheader("Error Counts")
-# # #         # Create Altair chart with tooltips
-# # #         chart = alt.Chart(df).mark_bar().encode(
-# # #             x=alt.X('Error Type', axis=alt.Axis(title='Error Type')),
-# # #             y=alt.Y('Error Count', axis=alt.Axis(title='Error Count')),
-# # #             color=alt.Color('Error Type', scale=alt.Scale(scheme='category10'), legend=None),
-# # #             tooltip=['Error Type', 'Error Count']
-# # #         ).properties(
-# # #             width=600,
-# # #             height=400
-# # #         )
-# # #         st.altair_chart(chart, use_container_width=True)
-
-# # #         # Display table with error details
-# # #         st.subheader("Error Details")
-# # #         selected_error_type = st.table(df[['Error Type', 'Error Count']].sort_values(by='Error Count', ascending=False))
-
-# # #         # Handle click events on error type
-# # #         selected_error_type_value = st.selectbox("Select Error Type", df['Error Type'])
-# # #         if st.button("Show Details"):
-# # #             selected_error_type_df = df[df['Error Type'] == selected_error_type_value]
-# # #             if not selected_error_type_df.empty:
-# # #                 for i, (timestamp, log_message) in enumerate(zip(selected_error_type_df['Timestamp'], selected_error_type_df['Log Message'])):
-# # #                     with st.expander(f"Error Result {i+1}"):
-# # #                         st.write(f"**Timestamp:** {timestamp}")
-# # #                         st.write(f"**Log Message:** {log_message}")
-# # #             else:
-# # #                 st.write("No details found for the selected error type.")
-
-
-# # # if __name__ == "__main__":
-# # #     main()  
-
-
-
-
+# # # # # # import streamlit as st
+# # # # # # import requests
+# # # # # # import pandas as pd
+# # # # # # import altair as alt
+# # # # # # import json
+
+# # # # # # # Define the Flask API endpoint
+# # # # # # API_ENDPOINT = "http://localhost:5000/api/analyze"
+
+# # # # # # @st.cache_data(show_spinner=False)
+# # # # # # def get_analysis_results(file, prompt):
+# # # # # #     # Send file and prompt to Flask API
+# # # # # #     files = {'file': file}
+# # # # # #     data = {'prompt': prompt}
+# # # # # #     response = requests.post(API_ENDPOINT, files=files, data=data)
+
+# # # # # #     if response.status_code == 200:
+# # # # # #         return response.json()
+# # # # # #     else:
+# # # # # #         return None
+
+# # # # # # def main():
+# # # # # #     st.title("Log Analyzer")
+
+# # # # # #     # Sidebar for file upload and prompt input
+# # # # # #     st.sidebar.header("Input")
+# # # # # #     uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
+# # # # # #     prompt = st.sidebar.text_input("Enter prompt for analysis")
+
+# # # # # #     # Analyze Button
+# # # # # #     analyze_button = st.sidebar.button("Analyze")
+
+# # # # # #     # Display analysis results in the main content area
+# # # # # #     if analyze_button:
+# # # # # #         if uploaded_file is not None:
+# # # # # #             analysis_result = get_analysis_results(uploaded_file, prompt)
+# # # # # #             if analysis_result:
+# # # # # #                 display_analysis_results(analysis_result)
+# # # # # #             else:
+# # # # # #                 st.error("Error analyzing file. Please try again.")
+
+# # # # # # def display_analysis_results(analysis_result):
+# # # # # #     # Extract error list and count list
+# # # # # #     error_list = analysis_result.get('error_list', [])
+# # # # # #     count_list = analysis_result.get('count_list', [])
+# # # # # #     timestamps_list = analysis_result.get('timestamps', [])
+# # # # # #     log_messages_list = analysis_result.get('messages', [])
+# # # # # #     log_data = analysis_result.get('results_json', [])
+# # # # # #     print(log_data)
+
+# # # # # #     # Create a DataFrame for Altair
+# # # # # #     df = pd.DataFrame({'Error Type': error_list, 'Error Count': count_list, 'Timestamp': timestamps_list, 'Log Message': log_messages_list})
+# # # # # #     print(df)
+# # # # # #     if error_list and count_list:
+# # # # # #         st.subheader("Error Counts")
+# # # # # #         # Create Altair chart with tooltips
+# # # # # #         chart = alt.Chart(df).mark_bar().encode(
+# # # # # #             x=alt.X('Error Type', axis=alt.Axis(title='Error Type')),
+# # # # # #             y=alt.Y('Error Count', axis=alt.Axis(title='Error Count')),
+# # # # # #             color=alt.Color('Error Type', scale=alt.Scale(scheme='category10'), legend=None),
+# # # # # #             tooltip=['Error Type', 'Error Count']
+# # # # # #         ).properties(
+# # # # # #             width=600,
+# # # # # #             height=400
+# # # # # #         )
+# # # # # #         st.altair_chart(chart, use_container_width=True)
+
+# # # # # #         # Convert JSON string to Python object
+# # # # # #         data = json.loads(log_data)
+# # # # # #         print(data)
+
+# # # # # #         # Main Streamlit app
+# # # # # #         st.title('JSON Data Visualization')
+
+# # # # # #         # Iterate over each dictionary in the data
+# # # # # #         # for entry in data:
+# # # # # #         #     key = entry['key']
+# # # # # #         #     values = entry['values']
+            
+# # # # # #         #     st.subheader(f'Data for key: {key}')
+            
+# # # # # #         #     # Display each value
+# # # # # #         #     for value_data in values:
+# # # # # #         #         value = value_data['value']
+# # # # # #         #         timestamp = value_data['timestamp']
+# # # # # #         #         log_message = value_data['log_message']
+                
+# # # # # #         #         st.write(f"Value: {value}, Timestamp: {timestamp}, Log Message: {log_message}")
+# # # # # #         # Iterate over each dictionary in the data
+# # # # # #         for entry in data:
+# # # # # #             key = entry['key']
+# # # # # #             values = entry['values']
+            
+# # # # # #             # Display key in a box
+# # # # # #             expander_key = st.expander(f'Data for key: {key}', expanded=False)
+            
+# # # # # #             # Check if the expander is expanded (arrow icon clicked)
+# # # # # #             if expander_key.expanded:
+# # # # # #                 # Display details
+# # # # # #                 with expander_key:
+# # # # # #                     # Display each value
+# # # # # #                     for value_data in values:
+# # # # # #                         value = value_data['value']
+# # # # # #                         timestamp = value_data['timestamp']
+# # # # # #                         log_message = value_data['log_message']
+                        
+# # # # # #                         # Style the output
+# # # # # #                         st.markdown(f"<p style='color:red;'>Timestamp: {timestamp}</p>", unsafe_allow_html=True)
+# # # # # #                         st.markdown(f"<p style='color:green;'>Log Message: {log_message}</p>", unsafe_allow_html=True)
+# # # # # #                         st.write(f"Value: {value}")
+
+
+# # # # # # if __name__ == "__main__":
+# # # # # #     main()
+
+
+
+
+
+
+
+
+# # # # # # import streamlit as st
+# # # # # # import requests
+# # # # # # import pandas as pd
+# # # # # # import altair as alt
+# # # # # # import json
+
+# # # # # # # Define the Flask API endpoint
+# # # # # # API_ENDPOINT = "http://localhost:5000/api/analyze"
+
+# # # # # # @st.cache_data(show_spinner=False)
+# # # # # # def get_analysis_results(file, prompt):
+# # # # # #     # Send file and prompt to Flask API
+# # # # # #     files = {'file': file}
+# # # # # #     data = {'prompt': prompt}
+# # # # # #     response = requests.post(API_ENDPOINT, files=files, data=data)
+
+# # # # # #     if response.status_code == 200:
+# # # # # #         return response.json()
+# # # # # #     else:
+# # # # # #         return None
+
+# # # # # # def main():
+# # # # # #     st.title("Log Analyzer")
+
+# # # # # #     # Sidebar for file upload and prompt input
+# # # # # #     st.sidebar.header("Input")
+# # # # # #     uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
+# # # # # #     prompt = st.sidebar.text_input("Enter prompt for analysis")
+
+# # # # # #     # Analyze Button
+# # # # # #     analyze_button = st.sidebar.button("Analyze")
+
+# # # # # #     # Display analysis results in the main content area
+# # # # # #     if analyze_button:
+# # # # # #         if uploaded_file is not None:
+# # # # # #             analysis_result = get_analysis_results(uploaded_file, prompt)
+# # # # # #             if analysis_result:
+# # # # # #                 display_analysis_results(analysis_result)
+# # # # # #             else:
+# # # # # #                 st.error("Error analyzing file. Please try again.")
+
+# # # # # # def display_analysis_results(analysis_result):
+# # # # # #     # Extract error list and count list
+# # # # # #     error_list = analysis_result.get('error_list', [])
+# # # # # #     count_list = analysis_result.get('count_list', [])
+# # # # # #     timestamps_list = analysis_result.get('timestamps', [])
+# # # # # #     log_messages_list = analysis_result.get('messages', [])
+# # # # # #     log_data = analysis_result.get('results_json', [])
+# # # # # #     print(log_data)
+
+# # # # # #     # Create a DataFrame for Altair
+# # # # # #     df = pd.DataFrame({'Error Type': error_list, 'Error Count': count_list, 'Timestamp': timestamps_list, 'Log Message': log_messages_list})
+# # # # # #     print(df)
+# # # # # #     if error_list and count_list:
+# # # # # #         st.subheader("Error Counts")
+# # # # # #         # Create Altair chart with tooltips
+# # # # # #         chart = alt.Chart(df).mark_bar().encode(
+# # # # # #             x=alt.X('Error Type', axis=alt.Axis(title='Error Type')),
+# # # # # #             y=alt.Y('Error Count', axis=alt.Axis(title='Error Count')),
+# # # # # #             color=alt.Color('Error Type', scale=alt.Scale(scheme='category10'), legend=None),
+# # # # # #             tooltip=['Error Type', 'Error Count']
+# # # # # #         ).properties(
+# # # # # #             width=600,
+# # # # # #             height=400
+# # # # # #         )
+# # # # # #         st.altair_chart(chart, use_container_width=True)
+
+# # # # # #         # Convert JSON string to Python object
+# # # # # #         data = json.loads(log_data)
+# # # # # #         print(data)
+
+# # # # # #         # Main Streamlit app
+# # # # # #         st.title('Assistant....')
+
+# # # # # #         for entry in data:
+# # # # # #             key = entry['key']
+# # # # # #             values = entry['values']
+            
+# # # # # #             # Display key in a box
+# # # # # #             expander_key = st.expander(f'Error: {key}', expanded=False)
+            
+# # # # # #             # Check if the expander is expanded (arrow icon clicked)
+# # # # # #             if expander_key.expanded:
+# # # # # #                 # Display details
+# # # # # #                 with expander_key:
+# # # # # #                     # Display each value
+# # # # # #                     for value_data in values:
+# # # # # #                         value = value_data['value']
+# # # # # #                         timestamp = value_data['timestamp']
+# # # # # #                         log_message = value_data['log_message']
+                        
+# # # # # #                         # Style the output
+# # # # # #                         st.markdown(f"<p style='color:red;'>Timestamp: {timestamp}</p>", unsafe_allow_html=True)
+# # # # # #                         st.markdown(f"<p style='color:green;'>Log Message: {log_message}</p>", unsafe_allow_html=True)
+# # # # # #                         st.write(f"Value: {value}")
+
+
+# # # # # # if __name__ == "__main__":
+# # # # # #     main()
 
 
 
 # # # # # import streamlit as st
+# # # # # import requests
+# # # # # import time
+# # # # # import pandas as pd
+# # # # # from collections import Counter
+# # # # # import altair as alt
 
-# # # # # log_data = [
-# # # # #     {
-# # # # #         "key": "Database Connection Failed",
-# # # # #         "values": [
-# # # # #             {
-# # # # #                 "value": "assistant\n\nAnother log line to analyze!\n\nHere's the error message:\n\n`2024-04-04 10:30:05 ERROR: Database connection failed`\n\nLet's break it down:\n\n* `ERROR`: This is the severity of the log message. It indicates that something went wrong.\n* `Database connection failed`: This is the specific error message. It's telling us that the software application was unable to connect to the database.\n\nWhat does this mean? In simple terms, the software application is unable to communicate with the database it needs to store or retrieve data. This could be due to various reasons such as:\n\n* The database is not running or is not reachable.\n* The database connection settings (e.g., username, password, hostname) are incorrect.\n* The network connection between the software application and the database is not stable or is down.\n\nSteps to resolve this error:\n\n1. **Check the database status**: Ensure the database is running and accessible. You can do this by checking the database's logs, status pages, or by running a simple query to verify its connectivity.\n2. **Verify database connection settings**: Double-check the database connection settings in the software application's configuration files or settings. Ensure that the username, password, hostname, and port are correct and match the database's configuration.\n3. **Check network connectivity**: Verify that the network connection between the software application and the database is stable and working correctly. You can try pinging the database's hostname or IP address to ensure connectivity.\n4. **Consult the software application's documentation**: If you're still having trouble, refer to the software application's documentation or support resources for specific guidance on resolving database connection issues.\n\nBy following these steps, you should be able to identify and resolve the issue preventing the software application from connecting to the database.",
-# # # # #                 "timestamp": "2024-04-04 10:30:05",
-# # # # #                 "log_message": "ERROR: Database connection failed"
-# # # # #             }
-# # # # #         ]
-# # # # #     },
-# # # # #     {
-# # # # #         "key": "Server overload detected",
-# # # # #         "values": [
-# # # # #             {
-# # # # #                 "value": "assistant\n\nLog Line: 2024-04-04 10:35:20 ERROR: Server overload detected\n\nError: Server Overload Detected\n\nDescription: This error indicates that the server is experiencing a high level of traffic or activity, which is causing it to slow down or become unresponsive. This can occur when there are too many users accessing the server simultaneously, or when there are resource-intensive processes running on the server.\n\nImplications:\n\n* The server may become slow or unresponsive, leading to a poor user experience.\n* Data may not be processed or stored correctly, resulting in errors or inconsistencies.\n* The server may even crash or become unavailable, causing downtime and potential data loss.\n\nSteps to Resolve:\n\n1. **Check Server Load**: Use tools like top, vmstat, or sysctl to monitor the server's load. Identify the processes or services consuming the most resources and take steps to optimize or reduce their usage.\n2. **Scale Up the Server**: If the server is underpowered, consider upgrading the hardware or adding more resources (e.g., increasing RAM, CPU, or disk space).\n3. **Optimize Server Configuration**: Review the server's configuration to ensure it is optimized for the current workload. Adjust settings like memory allocation, CPU affinity, and disk I/O priorities as needed.\n4. **Implement Load Balancing**: Consider implementing load balancing techniques, such as round-robin DNS or a load balancer appliance, to distribute traffic across multiple servers.\n5. **Monitor and Analyze Server Logs**: Regularly review server logs to identify trends and patterns that may indicate potential issues before they become critical.\n6. **Upgrade Server Software**: Ensure the server's operating system and software are up-to-date, as newer versions often include performance optimizations and bug fixes.\n\nBy taking these steps, you can help prevent or mitigate server overload and ensure a smoother user experience.",
-# # # # #                 "timestamp": "2024-04-04 10:35:20",
-# # # # #                 "log_message": "ERROR: Server overload detected"
-# # # # #             }
-# # # # #         ]
-# # # # #     }
-# # # # # ]
+# # # # # # Define the Flask server URLs
+# # # # # FLASK_DATA_URL = "http://127.0.0.1:5000/get_data"
+# # # # # FLASK_TIMESTAMP_URL = "http://127.0.0.1:5000/get_timestamps"
+# # # # # FLASK_MESSAGE_URL = "http://127.0.0.1:5000/get_messages"
+# # # # # FLASK_ANALYZED_MESSAGE_URL = "http://127.0.0.1:5000/get_analyzed_messages"
+# # # # # FLASK_ERROR_COUNTS_URL = "http://127.0.0.1:5000/get_error_counts"
 
-# # # # # def main():
-# # # # #     st.title("Log Analyzer")
+# # # # # # Predefined list of colors
+# # # # # colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
 
-# # # # #     # Display selectbox to choose log keys
-# # # # #     selected_key = st.selectbox("Select Log Key", [data['key'] for data in log_data])
+# # # # # st.title('Live Streaming Log Analyzer')
 
-# # # # #     # Display the corresponding value for the selected key
-# # # # #     for data in log_data:
-# # # # #         if data['key'] == selected_key:
-# # # # #             st.subheader("Log Value")
-# # # # #             st.text(data['values'][0]['value'])  # Assuming only one value for simplicity
-
-# # # # # if __name__ == "__main__":
-# # # # #     main()
-
-
-# # import streamlit as st
-# # import requests
-# # import pandas as pd
-# # import altair as alt
-
-# # # Define the Flask API endpoint
-# # API_ENDPOINT = "http://localhost:5000/api/analyze"
-
-# # @st.cache
-# # def get_analysis_results(file, prompt):
-# #     # Send file and prompt to Flask API
-# #     files = {'file': file}
-# #     data = {'prompt': prompt}
-# #     response = requests.post(API_ENDPOINT, files=files, data=data)
-
-# #     if response.status_code == 200:
-# #         return response.json()
-# #     else:
-# #         return None
-
-# # def main():
-# #     st.title("Log Analyzer")
-
-# #     # Sidebar for file upload and prompt input
-# #     st.sidebar.header("Input")
-# #     uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
-# #     prompt = st.sidebar.text_input("Enter prompt for analysis")
-
-# #     # Analyze Button
-# #     analyze_button = st.sidebar.button("Analyze")
-
-# #     # Display analysis results in the main content area
-# #     if analyze_button:
-# #         if uploaded_file is not None:
-# #             analysis_result = get_analysis_results(uploaded_file, prompt)
-# #             if analysis_result:
-# #                 display_analysis_results(analysis_result)
-# #             else:
-# #                 st.error("Error analyzing file. Please try again.")
-
-# # def display_analysis_results(analysis_result):
-# #     # Extract error list and count list
-# #     error_list = analysis_result.get('error_list', [])
-# #     count_list = analysis_result.get('count_list', [])
-# #     timestamps_list = analysis_result.get('timestamps', [])
-# #     log_messages_list = analysis_result.get('messages', [])
-# #     log_data = analysis_result.get('results_json', [])
-
-# #     # Create a DataFrame for Altair
-# #     df = pd.DataFrame({'Error Type': error_list, 'Error Count': count_list, 'Timestamp': timestamps_list, 'Log Message': log_messages_list})
-
-# #     if error_list and count_list:
-# #         st.subheader("Error Counts")
-# #         # Create Altair chart with tooltips
-# #         chart = alt.Chart(df).mark_bar().encode(
-# #             x=alt.X('Error Type', axis=alt.Axis(title='Error Type')),
-# #             y=alt.Y('Error Count', axis=alt.Axis(title='Error Count')),
-# #             color=alt.Color('Error Type', scale=alt.Scale(scheme='category10'), legend=None),
-# #             tooltip=['Error Type', 'Error Count']
-# #         ).properties(
-# #             width=600,
-# #             height=400
-# #         )
-# #         st.altair_chart(chart, use_container_width=True)
-
-# #         # Display table with error details
-# #         st.subheader("Error Details")
-# #         selected_error_type = st.selectbox("Select Error Type", df['Error Type'], index=0)  # Default to the first error type
-
-# #         # Find the corresponding log value for the selected error type
-# #         selected_log_value = None
-# #         for data in log_data:
-# #             if data['key'] == selected_error_type:
-# #                 selected_log_value = data['values'][0]['value']  # Assuming only one value for simplicity
-
-# #         if selected_log_value:
-# #             st.subheader("Log Value")
-# #             st.text(selected_log_value)
-# #         else:
-# #             st.write("No log value found for the selected error type.")
+# # # # # def fetch_data():
+# # # # #     response_data = requests.get(FLASK_DATA_URL)
+# # # # #     response_timestamps = requests.get(FLASK_TIMESTAMP_URL)
+# # # # #     response_messages = requests.get(FLASK_MESSAGE_URL)
+# # # # #     response_analyzed_messages = requests.get(FLASK_ANALYZED_MESSAGE_URL)
+# # # # #     response_error_counts = requests.get(FLASK_ERROR_COUNTS_URL)
+    
+# # # # #     if (response_data.status_code == 200 and response_timestamps.status_code == 200 and 
+# # # # #         response_messages.status_code == 200 and response_analyzed_messages.status_code == 200 and 
+# # # # #         response_error_counts.status_code == 200):
         
+# # # # #         data = response_data.json()
+# # # # #         timestamps = response_timestamps.json()
+# # # # #         messages = response_messages.json()
+# # # # #         analyzed_messages = response_analyzed_messages.json()
+# # # # #         error_counts = response_error_counts.json()
+        
+# # # # #         return data, timestamps, messages, analyzed_messages, error_counts
+# # # # #     else:
+# # # # #         return None, None, None, None, None
 
-# # if __name__ == "__main__":
-# #     main()
+# # # # # def display_analysis_results(error_counts, timestamps, messages, analyzed_messages):
+# # # # #     # Extract error types and counts from the data
+# # # # #     error_types = list(error_counts.keys())
+# # # # #     error_values = list(error_counts.values())
+    
+# # # # #     # Display current data with occurrences
+# # # # #     formatted_data = "\n".join(f"{i+1}. {item}: {error_counts[item]}" for i, item in enumerate(error_types))
+# # # # #     st.text(f"Current data:\n{formatted_data}")
+    
+# # # # #     # Create a DataFrame from the error counts
+# # # # #     df = pd.DataFrame({'Error Type': error_types, 'Error Count': error_values})
+    
+# # # # #     # Assign colors to each error type
+# # # # #     color_mapping = {error_type: colors[i % len(colors)] for i, error_type in enumerate(error_types)}
+# # # # #     df['Color'] = df['Error Type'].map(color_mapping)
+    
+# # # # #     # Create Altair chart with tooltips
+# # # # #     chart = alt.Chart(df).mark_bar().encode(
+# # # # #         x=alt.X('Error Type', axis=alt.Axis(title='Error Type')),
+# # # # #         y=alt.Y('Error Count', axis=alt.Axis(title='Error Count')),
+# # # # #         color=alt.Color('Color', scale=None),  # Disable color scale
+# # # # #         tooltip=['Error Type', 'Error Count']
+# # # # #     ).properties(
+# # # # #         width=600,
+# # # # #         height=400
+# # # # #     )
+    
+# # # # #     st.altair_chart(chart, use_container_width=True)
+    
+# # # # #     # Display timestamps, messages, and analyzed messages
+# # # # #     combined_info = []
+# # # # #     for i in range(len(timestamps)):
+# # # # #         combined_info.append(f"**{i+1}. Error Assistant.........**")
+# # # # #         combined_info.append(f"<span style='color:green;'>**Timestamp:** {timestamps[i]}</span>")
+# # # # #         combined_info.append(f"<span style='color:red;'>**Message:** {messages[i]}</span>")
+# # # # #         combined_info.append(f"**Analyzed Message:** {analyzed_messages[i]}")
+    
+# # # # #     st.markdown("<br><br>".join(combined_info), unsafe_allow_html=True)
+
+# # # # # st.sidebar.title("Log File Upload and Analysis")
+# # # # # uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
+# # # # # prompt = st.sidebar.text_input("Enter prompt for analysis")
+# # # # # analyze_button = st.sidebar.button("Analyze")
+
+# # # # # if analyze_button:
+# # # # #     if uploaded_file is not None and prompt:
+# # # # #         files = {'file': uploaded_file}
+# # # # #         data = {'prompt': prompt}
+# # # # #         response = requests.post("http://127.0.0.1:5000/api/analyze", files=files, data=data)
+# # # # #         if response.status_code == 200:
+# # # # #             st.sidebar.success("File uploaded and analysis started.")
+# # # # #         else:
+# # # # #             st.sidebar.error("Error analyzing file. Please try again.")
+# # # # #     else:
+# # # # #         st.sidebar.error("Please upload a file and enter a prompt.")
+
+# # # # # while True:
+# # # # #     try:
+# # # # #         data, timestamps, messages, analyzed_messages, error_counts = fetch_data()
+        
+# # # # #         if data is not None:
+# # # # #             display_analysis_results(error_counts, timestamps, messages, analyzed_messages)
+# # # # #         else:
+# # # # #             st.text("Error fetching data. Please check the server.")
+# # # # #     except Exception as e:
+# # # # #         st.text(f"Exception: {str(e)}")
+    
+# # # # #     time.sleep(5)  # Fetch new data every 5 seconds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # # # # #----------------------------------------------------------------------------------
+
+# # # # # # # # # import streamlit as st
+
+# # # # # # # # # # Mock data
+# # # # # # # # # log_data = [
+# # # # # # # # #     {
+# # # # # # # # #         'key': 'Database Connection Failed',
+# # # # # # # # #         'values': [
+# # # # # # # # #             {
+# # # # # # # # #                 'log_message': 'ERROR: Database connection failed',
+# # # # # # # # #                 'timestamp': '2024-04-04 10:30:05',
+# # # # # # # # #                 'value': "assistant\n\nAnother log line to analyze!\n\nHere's the error message:\n\n`2024-04-04 10:30:05 ERROR: Database connection failed`\n\nLet's break it down:\n\n* `ERROR`: This is the severity of the log message. It indicates that something went wrong.\n* `Database connection failed`: This is the specific error message. It's telling us that the software application was unable to connect to the database.\n\nWhat does this mean? In simple terms, the software application is unable to communicate with the database it needs to store or retrieve data. This could be due to various reasons such as:\n\n* The database is not running or is not reachable.\n* The database connection settings (e.g., username, password, hostname) are incorrect.\n* The network connection between the software application and the database is not stable or is down.\n\nSteps to resolve this error:\n\n1. **Check the database status**: Ensure the database is running and accessible. You can do this by checking the database's logs, status pages, or by running a simple query to verify its connectivity.\n2. **Verify database connection settings**: Double-check the database connection settings in the software application's configuration files or settings. Ensure that the username, password, hostname, and port are correct and match the database's configuration.\n3. **Check network connectivity**: Verify that the network connection between the software application and the database is stable and working correctly. You can try pinging the database's hostname or IP address to ensure connectivity.\n4. **Consult the software application's documentation**: If you're still having trouble, refer to the software application's documentation or support resources for specific guidance on resolving database connection issues.\n\nBy following these steps, you should be able to identify and resolve the issue preventing the software application from connecting to the database."
+# # # # # # # # #             }
+# # # # # # # # #         ]
+# # # # # # # # #     },
+# # # # # # # # #     {
+# # # # # # # # #         'key': 'Server overload detected',
+# # # # # # # # #         'values': [
+# # # # # # # # #             {
+# # # # # # # # #                 'log_message': 'ERROR: Server overload detected',
+# # # # # # # # #                 'timestamp': '2024-04-04 10:35:20',
+# # # # # # # # #                 'value': "assistant\n\nLog Line: 2024-04-04 10:35:20 ERROR: Server overload detected\n\nError: Server Overload Detected\n\nDescription: This error indicates that the server is experiencing a high level of traffic or activity, which is causing it to slow down or become unresponsive. This can occur when there are too many users accessing the server simultaneously, or when there are resource-intensive processes running on the server.\n\nImplications:\n\n* The server may become slow or unresponsive, leading to a poor user experience.\n* Data may not be processed or stored correctly, resulting in errors or inconsistencies.\n* The server may even crash or become unavailable, causing downtime and potential data loss.\n\nSteps to Resolve:\n\n1. **Check Server Load**: Use tools like top, vmstat, or sysctl to monitor the server's load. Identify the processes or services consuming the most resources and take steps to optimize or reduce their usage.\n2. **Scale Up the Server**: If the server is underpowered, consider upgrading the hardware or adding more resources (e.g., increasing RAM, CPU, or disk space).\n3. **Optimize Server Configuration**: Review the server's configuration to ensure it is optimized for the current workload. Adjust settings like memory allocation, CPU affinity, and disk I/O priorities as needed.\n4. **Implement Load Balancing**: Consider implementing load balancing techniques, such as round-robin DNS or a load balancer appliance, to distribute traffic across multiple servers.\n5. **Monitor and Analyze Server Logs**: Regularly review server logs to identify trends and patterns that may indicate potential issues before they become critical.\n6. **Upgrade Server Software**: Ensure the server's operating system and software are up-to-date, as newer versions often include performance optimizations and bug fixes.\n\nBy taking these steps, you can help prevent or mitigate server overload and ensure a smoother user experience."
+# # # # # # # # #             }
+# # # # # # # # #         ]
+# # # # # # # # #     }
+# # # # # # # # # ]
+
+# # # # # # # # # # Streamlit app
+# # # # # # # # # st.title('Error Log Analyzer')
+
+# # # # # # # # # # Iterate through each key-value pair and create dropdowns
+# # # # # # # # # for data in log_data:
+# # # # # # # # #     with st.expander(data['key'], expanded=False):
+# # # # # # # # #         for value in data['values']:
+# # # # # # # # #             st.subheader('Log Values:')
+# # # # # # # # #             st.write('Timestamp:', value['timestamp'])
+# # # # # # # # #             st.write('Log Message:', value['log_message'])
+# # # # # # # # #             st.write('Value:', value['value'])
+
+
+# # # # # # # import streamlit as st
+
+# # # # # # # # Mock JSON data
+# # # # # # # data = [
+# # # # # # #     {
+# # # # # # #         'key': 'Key 1',
+# # # # # # #         'values': [
+# # # # # # #             {'value': 10, 'timestamp': '2024-05-15 08:00:00', 'log_message': 'Value updated'},
+# # # # # # #             {'value': 15, 'timestamp': '2024-05-15 09:00:00', 'log_message': 'Value updated again'}
+# # # # # # #         ]
+# # # # # # #     },
+# # # # # # #     {
+# # # # # # #         'key': 'Key 2',
+# # # # # # #         'values': [
+# # # # # # #             {'value': 20, 'timestamp': '2024-05-15 10:00:00', 'log_message': 'Another value'}
+# # # # # # #         ]
+# # # # # # #     }
+# # # # # # # ]
+
+# # # # # # # # Main layout
+# # # # # # # st.title('JSON Data Visualization')
+
+# # # # # # # # Iterate over each dictionary in the data
+# # # # # # # for entry in data:
+# # # # # # #     key = entry['key']
+# # # # # # #     values = entry['values']
+    
+# # # # # # #     # Display key in a box
+# # # # # # #     expander_key = st.expander(f'Data for key: {key}', expanded=False)
+    
+# # # # # # #     # Check if the expander is expanded (arrow icon clicked)
+# # # # # # #     if expander_key.expanded:
+# # # # # # #         # Display details
+# # # # # # #         with expander_key:
+# # # # # # #             # Display each value
+# # # # # # #             for value_data in values:
+# # # # # # #                 value = value_data['value']
+# # # # # # #                 timestamp = value_data['timestamp']
+# # # # # # #                 log_message = value_data['log_message']
+                
+# # # # # # #                 # Show timestamp and log message
+# # # # # # #                 st.write(f"Value: {value}, Timestamp: {timestamp}, Log Message: {log_message}")
+# # # # # # import streamlit as st
+
+# # # # # # # Mock JSON data
+# # # # # # data = [
+# # # # # #     {
+# # # # # #         'key': 'Key 1',
+# # # # # #         'values': [
+# # # # # #             {'value': 10, 'timestamp': '2024-05-15 08:00:00', 'log_message': 'Value updated'},
+# # # # # #             {'value': 15, 'timestamp': '2024-05-15 09:00:00', 'log_message': 'Value updated again'}
+# # # # # #         ]
+# # # # # #     },
+# # # # # #     {
+# # # # # #         'key': 'Key 2',
+# # # # # #         'values': [
+# # # # # #             {'value': 20, 'timestamp': '2024-05-15 10:00:00', 'log_message': 'Another value'}
+# # # # # #         ]
+# # # # # #     }
+# # # # # # ]
+
+# # # # # # # Main layout
+# # # # # # st.title('JSON Data Visualization')
+
+# # # # # # # Iterate over each dictionary in the data
+# # # # # # for entry in data:
+# # # # # #     key = entry['key']
+# # # # # #     values = entry['values']
+    
+# # # # # #     # Display key in a box
+# # # # # #     expander_key = st.expander(f'Data for key: {key}', expanded=False)
+    
+# # # # # #     # Check if the expander is expanded (arrow icon clicked)
+# # # # # #     if expander_key.expanded:
+# # # # # #         # Display details
+# # # # # #         with expander_key:
+# # # # # #             # Display each value
+# # # # # #             for value_data in values:
+# # # # # #                 value = value_data['value']
+# # # # # #                 timestamp = value_data['timestamp']
+# # # # # #                 log_message = value_data['log_message']
+                
+# # # # # #                 # Style the output
+# # # # # #                 st.markdown(f"<p style='color:red;'>Timestamp: {timestamp}</p>", unsafe_allow_html=True)
+# # # # # #                 st.markdown(f"<p style='color:green;'>Log Message: {log_message}</p>", unsafe_allow_html=True)
+# # # # # #                 st.write(f"Value: {value}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # # # # #----------------------------------------------------------------------------------
+
+# # # # # # # # # import streamlit as st
+
+# # # # # # # # # # Mock data
+# # # # # # # # # log_data = [
+# # # # # # # # #     {
+# # # # # # # # #         'key': 'Database Connection Failed',
+# # # # # # # # #         'values': [
+# # # # # # # # #             {
+# # # # # # # # #                 'log_message': 'ERROR: Database connection failed',
+# # # # # # # # #                 'timestamp': '2024-04-04 10:30:05',
+# # # # # # # # #                 'value': "assistant\n\nAnother log line to analyze!\n\nHere's the error message:\n\n`2024-04-04 10:30:05 ERROR: Database connection failed`\n\nLet's break it down:\n\n* `ERROR`: This is the severity of the log message. It indicates that something went wrong.\n* `Database connection failed`: This is the specific error message. It's telling us that the software application was unable to connect to the database.\n\nWhat does this mean? In simple terms, the software application is unable to communicate with the database it needs to store or retrieve data. This could be due to various reasons such as:\n\n* The database is not running or is not reachable.\n* The database connection settings (e.g., username, password, hostname) are incorrect.\n* The network connection between the software application and the database is not stable or is down.\n\nSteps to resolve this error:\n\n1. **Check the database status**: Ensure the database is running and accessible. You can do this by checking the database's logs, status pages, or by running a simple query to verify its connectivity.\n2. **Verify database connection settings**: Double-check the database connection settings in the software application's configuration files or settings. Ensure that the username, password, hostname, and port are correct and match the database's configuration.\n3. **Check network connectivity**: Verify that the network connection between the software application and the database is stable and working correctly. You can try pinging the database's hostname or IP address to ensure connectivity.\n4. **Consult the software application's documentation**: If you're still having trouble, refer to the software application's documentation or support resources for specific guidance on resolving database connection issues.\n\nBy following these steps, you should be able to identify and resolve the issue preventing the software application from connecting to the database."
+# # # # # # # # #             }
+# # # # # # # # #         ]
+# # # # # # # # #     },
+# # # # # # # # #     {
+# # # # # # # # #         'key': 'Server overload detected',
+# # # # # # # # #         'values': [
+# # # # # # # # #             {
+# # # # # # # # #                 'log_message': 'ERROR: Server overload detected',
+# # # # # # # # #                 'timestamp': '2024-04-04 10:35:20',
+# # # # # # # # #                 'value': "assistant\n\nLog Line: 2024-04-04 10:35:20 ERROR: Server overload detected\n\nError: Server Overload Detected\n\nDescription: This error indicates that the server is experiencing a high level of traffic or activity, which is causing it to slow down or become unresponsive. This can occur when there are too many users accessing the server simultaneously, or when there are resource-intensive processes running on the server.\n\nImplications:\n\n* The server may become slow or unresponsive, leading to a poor user experience.\n* Data may not be processed or stored correctly, resulting in errors or inconsistencies.\n* The server may even crash or become unavailable, causing downtime and potential data loss.\n\nSteps to Resolve:\n\n1. **Check Server Load**: Use tools like top, vmstat, or sysctl to monitor the server's load. Identify the processes or services consuming the most resources and take steps to optimize or reduce their usage.\n2. **Scale Up the Server**: If the server is underpowered, consider upgrading the hardware or adding more resources (e.g., increasing RAM, CPU, or disk space).\n3. **Optimize Server Configuration**: Review the server's configuration to ensure it is optimized for the current workload. Adjust settings like memory allocation, CPU affinity, and disk I/O priorities as needed.\n4. **Implement Load Balancing**: Consider implementing load balancing techniques, such as round-robin DNS or a load balancer appliance, to distribute traffic across multiple servers.\n5. **Monitor and Analyze Server Logs**: Regularly review server logs to identify trends and patterns that may indicate potential issues before they become critical.\n6. **Upgrade Server Software**: Ensure the server's operating system and software are up-to-date, as newer versions often include performance optimizations and bug fixes.\n\nBy taking these steps, you can help prevent or mitigate server overload and ensure a smoother user experience."
+# # # # # # # # #             }
+# # # # # # # # #         ]
+# # # # # # # # #     }
+# # # # # # # # # ]
+
+# # # # # # # # # # Streamlit app
+# # # # # # # # # st.title('Error Log Analyzer')
+
+# # # # # # # # # # Iterate through each key-value pair and create dropdowns
+# # # # # # # # # for data in log_data:
+# # # # # # # # #     with st.expander(data['key'], expanded=False):
+# # # # # # # # #         for value in data['values']:
+# # # # # # # # #             st.subheader('Log Values:')
+# # # # # # # # #             st.write('Timestamp:', value['timestamp'])
+# # # # # # # # #             st.write('Log Message:', value['log_message'])
+# # # # # # # # #             st.write('Value:', value['value'])
+
+
+# # # # # # # import streamlit as st
+
+# # # # # # # # Mock JSON data
+# # # # # # # data = [
+# # # # # # #     {
+# # # # # # #         'key': 'Key 1',
+# # # # # # #         'values': [
+# # # # # # #             {'value': 10, 'timestamp': '2024-05-15 08:00:00', 'log_message': 'Value updated'},
+# # # # # # #             {'value': 15, 'timestamp': '2024-05-15 09:00:00', 'log_message': 'Value updated again'}
+# # # # # # #         ]
+# # # # # # #     },
+# # # # # # #     {
+# # # # # # #         'key': 'Key 2',
+# # # # # # #         'values': [
+# # # # # # #             {'value': 20, 'timestamp': '2024-05-15 10:00:00', 'log_message': 'Another value'}
+# # # # # # #         ]
+# # # # # # #     }
+# # # # # # # ]
+
+# # # # # # # # Main layout
+# # # # # # # st.title('JSON Data Visualization')
+
+# # # # # # # # Iterate over each dictionary in the data
+# # # # # # # for entry in data:
+# # # # # # #     key = entry['key']
+# # # # # # #     values = entry['values']
+    
+# # # # # # #     # Display key in a box
+# # # # # # #     expander_key = st.expander(f'Data for key: {key}', expanded=False)
+    
+# # # # # # #     # Check if the expander is expanded (arrow icon clicked)
+# # # # # # #     if expander_key.expanded:
+# # # # # # #         # Display details
+# # # # # # #         with expander_key:
+# # # # # # #             # Display each value
+# # # # # # #             for value_data in values:
+# # # # # # #                 value = value_data['value']
+# # # # # # #                 timestamp = value_data['timestamp']
+# # # # # # #                 log_message = value_data['log_message']
+                
+# # # # # # #                 # Show timestamp and log message
+# # # # # # #                 st.write(f"Value: {value}, Timestamp: {timestamp}, Log Message: {log_message}")
+# # # # # # import streamlit as st
+
+# # # # # # # Mock JSON data
+# # # # # # data = [
+# # # # # #     {
+# # # # # #         'key': 'Key 1',
+# # # # # #         'values': [
+# # # # # #             {'value': 10, 'timestamp': '2024-05-15 08:00:00', 'log_message': 'Value updated'},
+# # # # # #             {'value': 15, 'timestamp': '2024-05-15 09:00:00', 'log_message': 'Value updated again'}
+# # # # # #         ]
+# # # # # #     },
+# # # # # #     {
+# # # # # #         'key': 'Key 2',
+# # # # # #         'values': [
+# # # # # #             {'value': 20, 'timestamp': '2024-05-15 10:00:00', 'log_message': 'Another value'}
+# # # # # #         ]
+# # # # # #     }
+# # # # # # ]
+
+# # # # # # # Main layout
+# # # # # # st.title('JSON Data Visualization')
+
+# # # # # # # Iterate over each dictionary in the data
+# # # # # # for entry in data:
+# # # # # #     key = entry['key']
+# # # # # #     values = entry['values']
+    
+# # # # # #     # Display key in a box
+# # # # # #     expander_key = st.expander(f'Data for key: {key}', expanded=False)
+    
+# # # # # #     # Check if the expander is expanded (arrow icon clicked)
+# # # # # #     if expander_key.expanded:
+# # # # # #         # Display details
+# # # # # #         with expander_key:
+# # # # # #             # Display each value
+# # # # # #             for value_data in values:
+# # # # # #                 value = value_data['value']
+# # # # # #                 timestamp = value_data['timestamp']
+# # # # # #                 log_message = value_data['log_message']
+                
+# # # # # #                 # Style the output
+# # # # # #                 st.markdown(f"<p style='color:red;'>Timestamp: {timestamp}</p>", unsafe_allow_html=True)
+# # # # # #                 st.markdown(f"<p style='color:green;'>Log Message: {log_message}</p>", unsafe_allow_html=True)
+# # # # # #                 st.write(f"Value: {value}")
+
+
+# # # # import streamlit as st
+# # # # import requests
+# # # # import time
+# # # # import pandas as pd
+# # # # from collections import Counter
+# # # # import altair as alt
+
+# # # # # Define the Flask server URLs
+# # # # FLASK_DATA_URL = "http://127.0.0.1:5000/get_data"
+# # # # FLASK_TIMESTAMP_URL = "http://127.0.0.1:5000/get_timestamps"
+# # # # FLASK_MESSAGE_URL = "http://127.0.0.1:5000/get_messages"
+# # # # FLASK_ANALYZED_MESSAGE_URL = "http://127.0.0.1:5000/get_analyzed_messages"
+# # # # FLASK_ERROR_COUNTS_URL = "http://127.0.0.1:5000/get_error_counts"
+
+# # # # # Predefined list of colors
+# # # # colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
+
+# # # # st.title('Live Streaming Log Analyzer')
+
+# # # # chart_placeholder = st.empty()
+
+# # # # def fetch_data():
+# # # #     response_data = requests.get(FLASK_DATA_URL)
+# # # #     response_timestamps = requests.get(FLASK_TIMESTAMP_URL)
+# # # #     response_messages = requests.get(FLASK_MESSAGE_URL)
+# # # #     response_analyzed_messages = requests.get(FLASK_ANALYZED_MESSAGE_URL)
+# # # #     response_error_counts = requests.get(FLASK_ERROR_COUNTS_URL)
+    
+# # # #     if (response_data.status_code == 200 and response_timestamps.status_code == 200 and 
+# # # #         response_messages.status_code == 200 and response_analyzed_messages.status_code == 200 and 
+# # # #         response_error_counts.status_code == 200):
+        
+# # # #         data = response_data.json()
+# # # #         timestamps = response_timestamps.json()
+# # # #         messages = response_messages.json()
+# # # #         analyzed_messages = response_analyzed_messages.json()
+# # # #         error_counts = response_error_counts.json()
+        
+# # # #         return data, timestamps, messages, analyzed_messages, error_counts
+# # # #     else:
+# # # #         return None, None, None, None, None
+
+# # # # def display_analysis_results(error_counts, timestamps, messages, analyzed_messages):
+# # # #     # Extract error types and counts from the data
+# # # #     error_types = list(error_counts.keys())
+# # # #     error_values = list(error_counts.values())
+    
+# # # #     # Create a DataFrame from the error counts
+# # # #     df = pd.DataFrame({'Error Type': error_types, 'Error Count': error_values})
+    
+# # # #     # Assign colors to each error type
+# # # #     color_mapping = {error_type: colors[i % len(colors)] for i, error_type in enumerate(error_types)}
+# # # #     df['Color'] = df['Error Type'].map(color_mapping)
+    
+# # # #     # Create Altair chart with tooltips
+# # # #     chart = alt.Chart(df).mark_bar().encode(
+# # # #         x=alt.X('Error Type', axis=alt.Axis(title='Error Type')),
+# # # #         y=alt.Y('Error Count', axis=alt.Axis(title='Error Count')),
+# # # #         color=alt.Color('Color', scale=None),  # Disable color scale
+# # # #         tooltip=['Error Type', 'Error Count']
+# # # #     ).properties(
+# # # #         width=600,
+# # # #         height=400
+# # # #     )
+    
+# # # #     chart_placeholder.altair_chart(chart, use_container_width=True)
+
+# # # # st.sidebar.title("Log File Upload and Analysis")
+# # # # uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
+# # # # prompt = st.sidebar.text_input("Enter prompt for analysis")
+# # # # analyze_button = st.sidebar.button("Analyze")
+
+# # # # if analyze_button:
+# # # #     if uploaded_file is not None and prompt:
+# # # #         files = {'file': uploaded_file}
+# # # #         data = {'prompt': prompt}
+# # # #         response = requests.post("http://127.0.0.1:5000/api/analyze", files=files, data=data)
+# # # #         if response.status_code == 200:
+# # # #             st.sidebar.success("File uploaded and analysis started.")
+# # # #         else:
+# # # #             st.sidebar.error("Error analyzing file. Please try again.")
+# # # #     else:
+# # # #         st.sidebar.error("Please upload a file and enter a prompt.")
+
+# # # # while True:
+# # # #     try:
+# # # #         data, timestamps, messages, analyzed_messages, error_counts = fetch_data()
+        
+# # # #         if data is not None:
+# # # #             display_analysis_results(error_counts, timestamps, messages, analyzed_messages)
+# # # #         else:
+# # # #             st.text("Error fetching data. Please check the server.")
+# # # #     except Exception as e:
+# # # #         st.text(f"Exception: {str(e)}")
+    
+# # # #     time.sleep(5)  # Fetch new data every 5 seconds
+
+
+
+# # # # import streamlit as st
+# # # # import requests
+# # # # import time
+# # # # import pandas as pd
+# # # # from collections import Counter
+# # # # import altair as alt
+
+# # # # # Define the Flask server URLs
+# # # # FLASK_DATA_URL = "http://127.0.0.1:5000/get_data"
+# # # # FLASK_TIMESTAMP_URL = "http://127.0.0.1:5000/get_timestamps"
+# # # # FLASK_MESSAGE_URL = "http://127.0.0.1:5000/get_messages"
+# # # # FLASK_ANALYZED_MESSAGE_URL = "http://127.0.0.1:5000/get_analyzed_messages"
+# # # # FLASK_ERROR_COUNTS_URL = "http://127.0.0.1:5000/get_error_counts"
+
+# # # # # Predefined list of colors
+# # # # colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
+
+# # # # st.title('Live Streaming Log Analyzer')
+
+# # # # chart_placeholder = st.empty()
+# # # # info_placeholder = st.empty()
+
+# # # # def fetch_data():
+# # # #     try:
+# # # #         response_data = requests.get(FLASK_DATA_URL)
+# # # #         response_timestamps = requests.get(FLASK_TIMESTAMP_URL)
+# # # #         response_messages = requests.get(FLASK_MESSAGE_URL)
+# # # #         response_analyzed_messages = requests.get(FLASK_ANALYZED_MESSAGE_URL)
+# # # #         response_error_counts = requests.get(FLASK_ERROR_COUNTS_URL)
+        
+# # # #         if (response_data.status_code == 200 and response_timestamps.status_code == 200 and 
+# # # #             response_messages.status_code == 200 and response_analyzed_messages.status_code == 200 and 
+# # # #             response_error_counts.status_code == 200):
+            
+# # # #             data = response_data.json()
+# # # #             timestamps = response_timestamps.json()
+# # # #             messages = response_messages.json()
+# # # #             analyzed_messages = response_analyzed_messages.json()
+# # # #             error_counts = response_error_counts.json()
+            
+# # # #             return data, timestamps, messages, analyzed_messages, error_counts
+# # # #         else:
+# # # #             st.error(f"Error fetching data. Status codes: {response_data.status_code}, {response_timestamps.status_code}, {response_messages.status_code}, {response_analyzed_messages.status_code}, {response_error_counts.status_code}")
+# # # #             return None, None, None, None, None
+# # # #     except Exception as e:
+# # # #         st.error(f"Exception occurred while fetching data: {str(e)}")
+# # # #         return None, None, None, None, None
+
+# # # # def display_analysis_results(error_counts, timestamps, messages, analyzed_messages):
+# # # #     # Extract error types and counts from the data
+# # # #     error_types = list(error_counts.keys())
+# # # #     error_values = list(error_counts.values())
+    
+# # # #     # Create a DataFrame from the error counts
+# # # #     df = pd.DataFrame({'Error Type': error_types, 'Error Count': error_values})
+    
+# # # #     # Assign colors to each error type
+# # # #     color_mapping = {error_type: colors[i % len(colors)] for i, error_type in enumerate(error_types)}
+# # # #     df['Color'] = df['Error Type'].map(color_mapping)
+    
+# # # #     # Create Altair chart with tooltips
+# # # #     chart = alt.Chart(df).mark_bar().encode(
+# # # #         x=alt.X('Error Type', axis=alt.Axis(title='Error Type')),
+# # # #         y=alt.Y('Error Count', axis=alt.Axis(title='Error Count')),
+# # # #         color=alt.Color('Color', scale=None),  # Disable color scale
+# # # #         tooltip=['Error Type', 'Error Count']
+# # # #     ).properties(
+# # # #         width=600,
+# # # #         height=400
+# # # #     )
+    
+# # # #     chart_placeholder.altair_chart(chart, use_container_width=True)
+    
+# # # #     # Display timestamps, messages, and analyzed messages
+# # # #     combined_info = []
+# # # #     for i in range(len(timestamps)):
+# # # #         combined_info.append(f"**{i+1}. Error Assistant.........**")
+# # # #         combined_info.append(f"<span style='color:green;'>**Timestamp:** {timestamps[i]}</span>")
+# # # #         combined_info.append(f"<span style='color:red;'>**Message:** {messages[i]}</span>")
+# # # #         combined_info.append(f"**Analyzed Message:** {analyzed_messages[i]}")
+    
+# # # #     info_placeholder.markdown("<br><br>".join(combined_info), unsafe_allow_html=True)
+
+# # # # st.sidebar.title("Log File Upload and Analysis")
+# # # # uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
+# # # # prompt = st.sidebar.text_input("Enter prompt for analysis")
+# # # # analyze_button = st.sidebar.button("Analyze")
+
+# # # # if analyze_button:
+# # # #     if uploaded_file is not None and prompt:
+# # # #         files = {'file': uploaded_file}
+# # # #         data = {'prompt': prompt}
+# # # #         response = requests.post("http://127.0.0.1:5000/api/analyze", files=files, data=data)
+# # # #         if response.status_code == 200:
+# # # #             st.sidebar.success("File uploaded and analysis started.")
+# # # #         else:
+# # # #             st.sidebar.error("Error analyzing file. Please try again.")
+# # # #     else:
+# # # #         st.sidebar.error("Please upload a file and enter a prompt.")
+
+# # # # while True:
+# # # #     data, timestamps, messages, analyzed_messages, error_counts = fetch_data()
+    
+# # # #     if data is not None:
+# # # #         display_analysis_results(error_counts, timestamps, messages, analyzed_messages)
+# # # #     else:
+# # # #         st.text("Error fetching data. Please check the server.")
+    
+# # # #     time.sleep(5)  # Fetch new data every 5 seconds
+
+# # # import streamlit as st
+# # # import requests
+# # # import time
+# # # import pandas as pd
+# # # from collections import Counter
+# # # import altair as alt
+
+# # # # Define the Flask server URLs
+# # # FLASK_DATA_URL = "http://127.0.0.1:5000/get_data"
+# # # FLASK_TIMESTAMP_URL = "http://127.0.0.1:5000/get_timestamps"
+# # # FLASK_MESSAGE_URL = "http://127.0.0.1:5000/get_messages"
+# # # FLASK_ANALYZED_MESSAGE_URL = "http://127.0.0.1:5000/get_analyzed_messages"
+# # # FLASK_ERROR_COUNTS_URL = "http://127.0.0.1:5000/get_error_counts"
+
+# # # # Predefined list of colors
+# # # colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
+
+# # # st.title('Live Streaming Log Analyzer')
+
+# # # chart_placeholder = st.empty()
+# # # info_placeholder = st.empty()
+
+# # # def fetch_data():
+# # #     try:
+# # #         response_data = requests.get(FLASK_DATA_URL)
+# # #         response_timestamps = requests.get(FLASK_TIMESTAMP_URL)
+# # #         response_messages = requests.get(FLASK_MESSAGE_URL)
+# # #         response_analyzed_messages = requests.get(FLASK_ANALYZED_MESSAGE_URL)
+# # #         response_error_counts = requests.get(FLASK_ERROR_COUNTS_URL)
+        
+# # #         if (response_data.status_code == 200 and response_timestamps.status_code == 200 and 
+# # #             response_messages.status_code == 200 and response_analyzed_messages.status_code == 200 and 
+# # #             response_error_counts.status_code == 200):
+            
+# # #             data = response_data.json()
+# # #             timestamps = response_timestamps.json()
+# # #             messages = response_messages.json()
+# # #             analyzed_messages = response_analyzed_messages.json()
+# # #             error_counts = response_error_counts.json()
+            
+# # #             return data, timestamps, messages, analyzed_messages, error_counts
+# # #         else:
+# # #             st.error(f"Error fetching data. Status codes: {response_data.status_code}, {response_timestamps.status_code}, {response_messages.status_code}, {response_analyzed_messages.status_code}, {response_error_counts.status_code}")
+# # #             return None, None, None, None, None
+# # #     except Exception as e:
+# # #         st.error(f"Exception occurred while fetching data: {str(e)}")
+# # #         return None, None, None, None, None
+
+# # # def display_analysis_results(data, error_counts, timestamps, messages, analyzed_messages):
+# # #     # Extract error types and counts from the data
+# # #     error_types = list(error_counts.keys())
+# # #     error_values = list(error_counts.values())
+    
+# # #     # Create a DataFrame from the error counts
+# # #     df = pd.DataFrame({'Error Type': error_types, 'Error Count': error_values})
+    
+# # #     # Assign colors to each error type
+# # #     color_mapping = {error_type: colors[i % len(colors)] for i, error_type in enumerate(error_types)}
+# # #     df['Color'] = df['Error Type'].map(color_mapping)
+    
+# # #     # Create Altair chart with tooltips
+# # #     chart = alt.Chart(df).mark_bar().encode(
+# # #         x=alt.X('Error Type', axis=alt.Axis(title='Error Type')),
+# # #         y=alt.Y('Error Count', axis=alt.Axis(title='Error Count')),
+# # #         color=alt.Color('Color', scale=None),  # Disable color scale
+# # #         tooltip=['Error Type', 'Error Count']
+# # #     ).properties(
+# # #         width=600,
+# # #         height=400
+# # #     )
+    
+# # #     chart_placeholder.altair_chart(chart, use_container_width=True)
+    
+# # #     # Display headers from the data
+# # #     for i, entry in enumerate(data):
+# # #         with st.expander(f"Entry {i+1}"):
+# # #             st.write(entry)
+
+# # #     # Display timestamps, messages, and analyzed messages
+# # #     for i in range(len(timestamps)):
+# # #         with st.expander(f"Detailed Entry {i+1}"):
+# # #             st.markdown(f"<span style='color:green;'>**Timestamp:** {timestamps[i]}</span>", unsafe_allow_html=True)
+# # #             st.markdown(f"<span style='color:red;'>**Message:** {messages[i]}</span>", unsafe_allow_html=True)
+# # #             st.markdown(f"**Analyzed Message:** {analyzed_messages[i]}")
+
+# # # st.sidebar.title("Log File Upload and Analysis")
+# # # uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
+# # # prompt = st.sidebar.text_input("Enter prompt for analysis")
+# # # analyze_button = st.sidebar.button("Analyze")
+
+# # # if analyze_button:
+# # #     if uploaded_file is not None and prompt:
+# # #         analysis_triggered = True
+# # #         files = {'file': uploaded_file}
+# # #         data = {'prompt': prompt}
+# # #         response = requests.post("http://127.0.0.1:5000/api/analyze", files=files, data=data)
+# # #         if response.status_code == 200:
+# # #             st.sidebar.success("File uploaded and analysis started.")
+# # #             while True:
+# # #                 data, timestamps, messages, analyzed_messages, error_counts = fetch_data()
+
+# # #                 if data is not None:
+# # #                     display_analysis_results(data, error_counts, timestamps, messages, analyzed_messages)
+# # #                 else:
+# # #                     st.text("Error fetching data. Please check the server.")
+
+# # #                 time.sleep(5)  # Fetch new data every 5 seconds
+# # #         else:
+# # #             st.sidebar.error("Error analyzing file. Please try again.")
+# # #     else:
+# # #         st.sidebar.error("Please upload a file and enter a prompt.")
+
+
+# # # import streamlit as st
+# # # import requests
+# # # import time
+# # # import pandas as pd
+# # # from collections import Counter
+# # # import altair as alt
+
+# # # # Define the Flask server URLs
+# # # FLASK_DATA_URL = "http://127.0.0.1:5000/get_data"
+# # # FLASK_TIMESTAMP_URL = "http://127.0.0.1:5000/get_timestamps"
+# # # FLASK_MESSAGE_URL = "http://127.0.0.1:5000/get_messages"
+# # # FLASK_ANALYZED_MESSAGE_URL = "http://127.0.0.1:5000/get_analyzed_messages"
+# # # FLASK_ERROR_COUNTS_URL = "http://127.0.0.1:5000/get_error_counts"
+
+# # # # Predefined list of colors
+# # # colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
+
+# # # st.title('Live Streaming Log Analyzer')
+
+# # # chart_placeholder = st.empty()
+# # # info_placeholder = st.empty()
+
+# # # def fetch_data():
+# # #     try:
+# # #         response_data = requests.get(FLASK_DATA_URL)
+# # #         response_timestamps = requests.get(FLASK_TIMESTAMP_URL)
+# # #         response_messages = requests.get(FLASK_MESSAGE_URL)
+# # #         response_analyzed_messages = requests.get(FLASK_ANALYZED_MESSAGE_URL)
+# # #         response_error_counts = requests.get(FLASK_ERROR_COUNTS_URL)
+        
+# # #         if (response_data.status_code == 200 and response_timestamps.status_code == 200 and 
+# # #             response_messages.status_code == 200 and response_analyzed_messages.status_code == 200 and 
+# # #             response_error_counts.status_code == 200):
+            
+# # #             data = response_data.json()
+# # #             timestamps = response_timestamps.json()
+# # #             messages = response_messages.json()
+# # #             analyzed_messages = response_analyzed_messages.json()
+# # #             error_counts = response_error_counts.json()
+            
+# # #             return data, timestamps, messages, analyzed_messages, error_counts
+# # #         else:
+# # #             st.error(f"Error fetching data. Status codes: {response_data.status_code}, {response_timestamps.status_code}, {response_messages.status_code}, {response_analyzed_messages.status_code}, {response_error_counts.status_code}")
+# # #             return None, None, None, None, None
+# # #     except Exception as e:
+# # #         st.error(f"Exception occurred while fetching data: {str(e)}")
+# # #         return None, None, None, None, None
+
+# # # def display_analysis_results(error_counts, timestamps, messages, analyzed_messages):
+# # #     # Extract error types and counts from the data
+# # #     error_types = list(error_counts.keys())
+# # #     error_values = list(error_counts.values())
+    
+# # #     # Create a DataFrame from the error counts
+# # #     df = pd.DataFrame({'Error Type': error_types, 'Error Count': error_values})
+    
+# # #     # Assign colors to each error type
+# # #     color_mapping = {error_type: colors[i % len(colors)] for i, error_type in enumerate(error_types)}
+# # #     df['Color'] = df['Error Type'].map(color_mapping)
+    
+# # #     # Create Altair chart with tooltips
+# # #     chart = alt.Chart(df).mark_bar().encode(
+# # #         # x=alt.X('Error Type', axis=alt.Axis(title='Error Type')),
+# # #         # y=alt.Y('Error Count', axis=alt.Axis(title='Error Count')),
+# # #         x=alt.X('Error Count', axis=alt.Axis(title='Error Count')),
+# # #         y=alt.Y('Error Type', axis=alt.Axis(title='Error Type')),
+# # #         color=alt.Color('Color', scale=None),  # Disable color scale
+# # #         tooltip=['Error Type', 'Error Count']
+# # #     ).properties(
+# # #         width=600,
+# # #         height=400
+# # #     )
+    
+# # #     chart_placeholder.altair_chart(chart, use_container_width=True)
+    
+# # #     # # Display timestamps, messages, and analyzed messages
+# # #     # combined_info = []
+# # #     # for i in range(len(timestamps)):
+# # #     #     combined_info.append(f"**{i+1}.<span style='color:green;'>**Error:** {data[i]}</span>**")
+# # #     #     combined_info.append(f"<span style='color:green;'>**Timestamp:** {timestamps[i]}</span>")
+# # #     #     combined_info.append(f"<span style='color:red;'>**Message:** {messages[i]}</span>")
+# # #     #     combined_info.append(f"**Analyzed Message:** {analyzed_messages[i]}")
+    
+# # #     # info_placeholder.markdown("<br><br>".join(combined_info), unsafe_allow_html=True)
+# # #     # Display data[i] and use expander for details
+# # #     # for i in range(len(timestamps)):
+# # #     #     st.markdown(f"**{i+1}.** {data[i]}")
+# # #     #     with st.expander("Details"):
+# # #     #         st.markdown(f"<span style='color:green;'>**Timestamp:** {timestamps[i]}</span>", unsafe_allow_html=True)
+# # #     #         st.markdown(f"<span style='color:red;'>**Message:** {messages[i]}</span>", unsafe_allow_html=True)
+# # #     #         st.markdown(f"**Analyzed Message:** {analyzed_messages[i]}", unsafe_allow_html=True)
+# # #         # Display data[i] and use expander for details
+# # #     # combined_info = []
+# # #     # for i in range(len(timestamps)):
+# # #     #     combined_info.append(f"**{i+1}.** {data[i]}")
+# # #     #     with st.expander("Details"):
+# # #     #         st.markdown(f"<span style='color:green;'>**Timestamp:** {timestamps[i]}</span>", unsafe_allow_html=True)
+# # #     #         st.markdown(f"<span style='color:red;'>**Message:** {messages[i]}</span>", unsafe_allow_html=True)
+# # #     #         st.markdown(f"**Analyzed Message:** {analyzed_messages[i]}", unsafe_allow_html=True)
+    
+# # #     # info_placeholder.markdown("<br><br>".join(combined_info), unsafe_allow_html=True)
+# # #      # Display messages with expanders for details
+# # #     # info_placeholder.empty()  # Clear previous content
+# # #     # for i in range(len(messages)):
+# # #     #     with st.expander(f"**Message:** {messages[i]}", expanded=False):
+# # #     #         st.markdown(f"<span style='color:green;'>**Error:** {data[i]}</span>", unsafe_allow_html=True)
+# # #     #         st.markdown(f"<span style='color:green;'>**Timestamp:** {timestamps[i]}</span>", unsafe_allow_html=True)
+# # #     #         st.markdown(f"**Analyzed Message:** {analyzed_messages[i]}", unsafe_allow_html=True)
+# # #         # Display messages with expanders for details
+# # #     if 'displayed' not in st.session_state:
+# # #         st.session_state.displayed = set()
+
+# # #     info_placeholder.empty()  # Clear previous content
+# # #     for i in range(len(messages)):
+# # #         if messages[i] not in st.session_state.displayed:
+# # #             with st.expander(f"**Message:** {messages[i]}", expanded=False):
+# # #                 st.markdown(f"<span style='color:green;'>**Error:** {data[i]}</span>", unsafe_allow_html=True)
+# # #                 st.markdown(f"<span style='color:green;'>**Timestamp:** {timestamps[i]}</span>", unsafe_allow_html=True)
+# # #                 st.markdown(f"**Analyzed Message:** {analyzed_messages[i]}", unsafe_allow_html=True)
+# # #             st.session_state.displayed.add(messages[i])
+
+# # # st.sidebar.title("Log File Upload and Analysis")
+# # # uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
+# # # prompt = st.sidebar.text_input("Enter prompt for analysis")
+# # # analyze_button = st.sidebar.button("Analyze")
+
+# # # if analyze_button:
+# # #     if uploaded_file is not None and prompt:
+# # #         analysis_triggered = True
+# # #         files = {'file': uploaded_file}
+# # #         data = {'prompt': prompt}
+# # #         response = requests.post("http://127.0.0.1:5000/api/analyze", files=files, data=data)
+# # #         if response.status_code == 200:
+# # #             st.sidebar.success("File uploaded and analysis started.")
+# # #             while True:
+# # #                 data, timestamps, messages, analyzed_messages, error_counts = fetch_data()
+
+# # #                 if data is not None:
+# # #                     display_analysis_results(error_counts, timestamps, messages, analyzed_messages)
+# # #                 else:
+# # #                     st.text("Error fetching data. Please check the server.")
+
+# # #                 time.sleep(5)  # Fetch new data every 5 seconds
+# # #         else:
+# # #             st.sidebar.error("Error analyzing file. Please try again.")
+# # #     else:
+# # #         st.sidebar.error("Please upload a file and enter a prompt.")
+
+
+
 
 import streamlit as st
 import requests
+import time
 import pandas as pd
+from collections import Counter
 import altair as alt
 
-# Define the Flask API endpoint
-API_ENDPOINT = "http://localhost:5000/api/analyze"
+# Define the Flask server URLs
+FLASK_DATA_URL = "http://127.0.0.1:5000/get_data"
+FLASK_TIMESTAMP_URL = "http://127.0.0.1:5000/get_timestamps"
+FLASK_MESSAGE_URL = "http://127.0.0.1:5000/get_messages"
+FLASK_ANALYZED_MESSAGE_URL = "http://127.0.0.1:5000/get_analyzed_messages"
+FLASK_ERROR_COUNTS_URL = "http://127.0.0.1:5000/get_error_counts"
 
-@st.cache_data(show_spinner=False)
-def get_analysis_results(file, prompt):
-    # Send file and prompt to Flask API
-    files = {'file': file}
-    data = {'prompt': prompt}
-    response = requests.post(API_ENDPOINT, files=files, data=data)
+# Predefined list of colors
+colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
 
-    if response.status_code == 200:
-        return response.json()
+st.title('Log Details')
+
+chart_placeholder = st.empty()
+info_placeholder = st.empty()
+
+def fetch_data():
+    try:
+        response_data = requests.get(FLASK_DATA_URL)
+        response_timestamps = requests.get(FLASK_TIMESTAMP_URL)
+        response_messages = requests.get(FLASK_MESSAGE_URL)
+        response_analyzed_messages = requests.get(FLASK_ANALYZED_MESSAGE_URL)
+        response_error_counts = requests.get(FLASK_ERROR_COUNTS_URL)
+        
+        if (response_data.status_code == 200 and response_timestamps.status_code == 200 and 
+            response_messages.status_code == 200 and response_analyzed_messages.status_code == 200 and 
+            response_error_counts.status_code == 200):
+            
+            data = response_data.json()
+            timestamps = response_timestamps.json()
+            messages = response_messages.json()
+            analyzed_messages = response_analyzed_messages.json()
+            error_counts = response_error_counts.json()
+            
+            return data, timestamps, messages, analyzed_messages, error_counts
+        else:
+            st.error(f"Error fetching data. Status codes: {response_data.status_code}, {response_timestamps.status_code}, {response_messages.status_code}, {response_analyzed_messages.status_code}, {response_error_counts.status_code}")
+            return None, None, None, None, None
+    except Exception as e:
+        st.error(f"Exception occurred while fetching data: {str(e)}")
+        return None, None, None, None, None
+
+def display_analysis_results(error_counts, timestamps, messages, analyzed_messages):
+    # Extract error types and counts from the data
+    error_types = list(error_counts.keys())
+    error_values = list(error_counts.values())
+    
+    # Create a DataFrame from the error counts
+    df = pd.DataFrame({'Error Type': error_types, 'Error Count': error_values})
+    
+    # Assign colors to each error type
+    color_mapping = {error_type: colors[i % len(colors)] for i, error_type in enumerate(error_types)}
+    df['Color'] = df['Error Type'].map(color_mapping)
+    
+    # Create Altair chart with tooltips
+    chart = alt.Chart(df).mark_bar().encode(
+        # x=alt.X('Error Type', axis=alt.Axis(title='Error Type')),
+        # y=alt.Y('Error Count', axis=alt.Axis(title='Error Count')),
+        x=alt.X('Error Count', axis=alt.Axis(title='Error Count')),
+        y=alt.Y('Error Type', axis=alt.Axis(title='Error Type')),
+        color=alt.Color('Color', scale=None),  # Disable color scale
+        tooltip=['Error Type', 'Error Count']
+    ).properties(
+        width=600,
+        height=400
+    )
+    # chart = alt.Chart(df).mark_bar().encode(
+    #     x=alt.X('Error Count', axis=alt.Axis(title='Error Count'), scale=alt.Scale(domain=[1, max(error_values)])),
+    #     y=alt.Y('Error Type', axis=alt.Axis()),
+    #     color=alt.Color('Color', scale=None),  # Disable color scale
+    #     tooltip=['Error Type', 'Error Count']
+    # ).properties(
+    #     width=600,
+    #     height=400
+    # )
+
+
+    
+
+
+
+    
+    chart_placeholder.altair_chart(chart, use_container_width=True)
+    if 'displayed' not in st.session_state:
+        st.session_state.displayed = set()
+
+    info_placeholder.empty()  # Clear previous content
+    for i in range(len(messages)):
+        if messages[i] not in st.session_state.displayed:
+            with st.expander(f"**Message:** {messages[i]}", expanded=False):
+                st.markdown(f"<span style='color:green;'>**Error:** {data[i]}</span>", unsafe_allow_html=True)
+                st.markdown(f"<span style='color:green;'>**Timestamp:** {timestamps[i]}</span>", unsafe_allow_html=True)
+                st.markdown(f"**Analyzed Message:** {analyzed_messages[i]}", unsafe_allow_html=True)
+            st.session_state.displayed.add(messages[i])
+
+st.sidebar.title("Log File Upload and Analysis")
+uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
+prompt = st.sidebar.text_input("Enter prompt for analysis")
+analyze_button = st.sidebar.button("Analyze")
+
+if analyze_button:
+    if uploaded_file is not None and prompt:
+        analysis_triggered = True
+        files = {'file': uploaded_file}
+        data = {'prompt': prompt}
+        response = requests.post("http://127.0.0.1:5000/api/analyze", files=files, data=data)
+        if response.status_code == 200:
+            st.sidebar.success("File uploaded and analysis started.")
+            while True:
+                data, timestamps, messages, analyzed_messages, error_counts = fetch_data()
+
+                if data is not None:
+                    display_analysis_results(error_counts, timestamps, messages, analyzed_messages)
+                else:
+                    st.text("Error fetching data. Please check the server.")
+
+                time.sleep(5)  # Fetch new data every 5 seconds
+        else:
+            st.sidebar.error("Error analyzing file. Please try again.")
     else:
-        return None
+        st.sidebar.error("Please upload a file and enter a prompt.")
 
-def main():
-    st.title("Log Analyzer")
-
-    # Sidebar for file upload and prompt input
-    st.sidebar.header("Input")
-    uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
-    prompt = st.sidebar.text_input("Enter prompt for analysis")
-
-    # Analyze Button
-    analyze_button = st.sidebar.button("Analyze")
-
-    # Display analysis results in the main content area
-    if analyze_button:
-        if uploaded_file is not None:
-            analysis_result = get_analysis_results(uploaded_file, prompt)
-            if analysis_result:
-                display_analysis_results(analysis_result)
-            else:
-                st.error("Error analyzing file. Please try again.")
-
-def display_analysis_results(analysis_result):
-    # Extract error list and count list
-    error_list = analysis_result.get('error_list', [])
-    count_list = analysis_result.get('count_list', [])
-    timestamps_list = analysis_result.get('timestamps', [])
-    log_messages_list = analysis_result.get('messages', [])
-    log_data = analysis_result.get('results_json', [])
-    print(log_data)
-
-    # Create a DataFrame for Altair
-    df = pd.DataFrame({'Error Type': error_list, 'Error Count': count_list, 'Timestamp': timestamps_list, 'Log Message': log_messages_list})
-
-    if error_list and count_list:
-        st.subheader("Error Counts")
-        # Create Altair chart with tooltips
-        chart = alt.Chart(df).mark_bar().encode(
-            x=alt.X('Error Type', axis=alt.Axis(title='Error Type')),
-            y=alt.Y('Error Count', axis=alt.Axis(title='Error Count')),
-            color=alt.Color('Error Type', scale=alt.Scale(scheme='category10'), legend=None),
-            tooltip=['Error Type', 'Error Count']
-        ).properties(
-            width=600,
-            height=400
-        )
-        st.altair_chart(chart, use_container_width=True)
-        for data in log_data:
-            print(type(data))
-            with st.expander(data['key'], expanded=False):
-                for value in data['values']:
-                    st.subheader('Log Values:')
-                    st.write('Timestamp:', value['timestamp'])
-                    st.write('Log Message:', value['log_message'])
-                    st.write('Value:', value['value'])
-
-
-if __name__ == "__main__":
-    main()
 
 
 # import streamlit as st
+# import requests
+# import time
+# import pandas as pd
+# import altair as alt
 
-# # Mock data
-# log_data = [
-#     {
-#         'key': 'Database Connection Failed',
-#         'values': [
-#             {
-#                 'log_message': 'ERROR: Database connection failed',
-#                 'timestamp': '2024-04-04 10:30:05',
-#                 'value': "assistant\n\nAnother log line to analyze!\n\nHere's the error message:\n\n`2024-04-04 10:30:05 ERROR: Database connection failed`\n\nLet's break it down:\n\n* `ERROR`: This is the severity of the log message. It indicates that something went wrong.\n* `Database connection failed`: This is the specific error message. It's telling us that the software application was unable to connect to the database.\n\nWhat does this mean? In simple terms, the software application is unable to communicate with the database it needs to store or retrieve data. This could be due to various reasons such as:\n\n* The database is not running or is not reachable.\n* The database connection settings (e.g., username, password, hostname) are incorrect.\n* The network connection between the software application and the database is not stable or is down.\n\nSteps to resolve this error:\n\n1. **Check the database status**: Ensure the database is running and accessible. You can do this by checking the database's logs, status pages, or by running a simple query to verify its connectivity.\n2. **Verify database connection settings**: Double-check the database connection settings in the software application's configuration files or settings. Ensure that the username, password, hostname, and port are correct and match the database's configuration.\n3. **Check network connectivity**: Verify that the network connection between the software application and the database is stable and working correctly. You can try pinging the database's hostname or IP address to ensure connectivity.\n4. **Consult the software application's documentation**: If you're still having trouble, refer to the software application's documentation or support resources for specific guidance on resolving database connection issues.\n\nBy following these steps, you should be able to identify and resolve the issue preventing the software application from connecting to the database."
-#             }
-#         ]
-#     },
-#     {
-#         'key': 'Server overload detected',
-#         'values': [
-#             {
-#                 'log_message': 'ERROR: Server overload detected',
-#                 'timestamp': '2024-04-04 10:35:20',
-#                 'value': "assistant\n\nLog Line: 2024-04-04 10:35:20 ERROR: Server overload detected\n\nError: Server Overload Detected\n\nDescription: This error indicates that the server is experiencing a high level of traffic or activity, which is causing it to slow down or become unresponsive. This can occur when there are too many users accessing the server simultaneously, or when there are resource-intensive processes running on the server.\n\nImplications:\n\n* The server may become slow or unresponsive, leading to a poor user experience.\n* Data may not be processed or stored correctly, resulting in errors or inconsistencies.\n* The server may even crash or become unavailable, causing downtime and potential data loss.\n\nSteps to Resolve:\n\n1. **Check Server Load**: Use tools like top, vmstat, or sysctl to monitor the server's load. Identify the processes or services consuming the most resources and take steps to optimize or reduce their usage.\n2. **Scale Up the Server**: If the server is underpowered, consider upgrading the hardware or adding more resources (e.g., increasing RAM, CPU, or disk space).\n3. **Optimize Server Configuration**: Review the server's configuration to ensure it is optimized for the current workload. Adjust settings like memory allocation, CPU affinity, and disk I/O priorities as needed.\n4. **Implement Load Balancing**: Consider implementing load balancing techniques, such as round-robin DNS or a load balancer appliance, to distribute traffic across multiple servers.\n5. **Monitor and Analyze Server Logs**: Regularly review server logs to identify trends and patterns that may indicate potential issues before they become critical.\n6. **Upgrade Server Software**: Ensure the server's operating system and software are up-to-date, as newer versions often include performance optimizations and bug fixes.\n\nBy taking these steps, you can help prevent or mitigate server overload and ensure a smoother user experience."
-#             }
-#         ]
-#     }
-# ]
+# # Define the Flask server URLs
+# FLASK_DATA_URL = "http://127.0.0.1:5000/get_data"
+# FLASK_TIMESTAMP_URL = "http://127.0.0.1:5000/get_timestamps"
+# FLASK_MESSAGE_URL = "http://127.0.0.1:5000/get_messages"
+# FLASK_ANALYZED_MESSAGE_URL = "http://127.0.0.1:5000/get_analyzed_messages"
+# FLASK_ERROR_COUNTS_URL = "http://127.0.0.1:5000/get_error_counts"
 
-# # Streamlit app
-# st.title('Error Log Analyzer')
+# # Predefined list of colors
+# colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
 
-# # Iterate through each key-value pair and create dropdowns
-# for data in log_data:
-#     with st.expander(data['key'], expanded=False):
-#         for value in data['values']:
-#             st.subheader('Log Values:')
-#             st.write('Timestamp:', value['timestamp'])
-#             st.write('Log Message:', value['log_message'])
-#             st.write('Value:', value['value'])
+# st.title('Error Update')
 
+# chart_placeholder = st.empty()
+# info_placeholder = st.empty()
 
+# def fetch_data():
+#     try:
+#         response_data = requests.get(FLASK_DATA_URL)
+#         response_timestamps = requests.get(FLASK_TIMESTAMP_URL)
+#         response_messages = requests.get(FLASK_MESSAGE_URL)
+#         response_analyzed_messages = requests.get(FLASK_ANALYZED_MESSAGE_URL)
+#         response_error_counts = requests.get(FLASK_ERROR_COUNTS_URL)
+        
+#         if (response_data.status_code == 200 and response_timestamps.status_code == 200 and 
+#             response_messages.status_code == 200 and response_analyzed_messages.status_code == 200 and 
+#             response_error_counts.status_code == 200):
+            
+#             data = response_data.json()
+#             timestamps = response_timestamps.json()
+#             messages = response_messages.json()
+#             analyzed_messages = response_analyzed_messages.json()
+#             error_counts = response_error_counts.json()
+            
+#             return data, timestamps, messages, analyzed_messages, error_counts
+#         else:
+#             st.error(f"Error fetching data. Status codes: {response_data.status_code}, {response_timestamps.status_code}, {response_messages.status_code}, {response_analyzed_messages.status_code}, {response_error_counts.status_code}")
+#             return None, None, None, None, None
+#     except Exception as e:
+#         st.error(f"Exception occurred while fetching data: {str(e)}")
+#         return None, None, None, None, None
+
+# def display_analysis_results(error_counts, timestamps, messages, analyzed_messages):
+#     # Extract error types and counts from the data
+#     error_types = list(error_counts.keys())
+#     error_values = list(error_counts.values())
+    
+#     # Create a DataFrame from the error counts
+#     df = pd.DataFrame({'Error Type': error_types, 'Error Count': error_values})
+    
+#     # Assign colors to each error type
+#     color_mapping = {error_type: colors[i % len(colors)] for i, error_type in enumerate(error_types)}
+#     df['Color'] = df['Error Type'].map(color_mapping)
+    
+#     # Create Altair chart with tooltips
+#     chart = alt.Chart(df).mark_bar().encode(
+#         x=alt.X('Error Count', axis=alt.Axis(title='Error Count'), scale=alt.Scale(domain=[1, 7])),
+#         y=alt.Y('Error Type', axis=alt.Axis()),
+#         color=alt.Color('Color', scale=None),  # Disable color scale
+#         tooltip=['Error Type', 'Error Count']
+#     ).properties(
+#         width=600,
+#         height=400
+#     )
+    
+#     chart_placeholder.altair_chart(chart, use_container_width=True)
+#     if 'displayed' not in st.session_state:
+#         st.session_state.displayed = set()
+
+#     info_placeholder.empty()  # Clear previous content
+#     for i in range(len(messages)):
+#         if messages[i] not in st.session_state.displayed:
+#             with st.expander(f"**Message:** {messages[i]}", expanded=False):
+#                 st.markdown(f"<span style='color:green;'>**Error:** {data[i]}</span>", unsafe_allow_html=True)
+#                 st.markdown(f"<span style='color:green;'>**Timestamp:** {timestamps[i]}</span>", unsafe_allow_html=True)
+#                 st.markdown(f"**Analyzed Message:** {analyzed_messages[i]}", unsafe_allow_html=True)
+#             st.session_state.displayed.add(messages[i])
+
+# st.sidebar.title("Log File Upload and Analysis")
+# uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
+# prompt = st.sidebar.text_input("Enter prompt for analysis")
+# analyze_button = st.sidebar.button("Analyze")
+
+# if analyze_button:
+#     if uploaded_file is not None and prompt:
+#         analysis_triggered = True
+#         files = {'file': uploaded_file}
+#         data = {'prompt': prompt}
+#         response = requests.post("http://127.0.0.1:5000/api/analyze", files=files, data=data)
+#         if response.status_code == 200:
+#             st.sidebar.success("File uploaded and analysis started.")
+#             while True:
+#                 data, timestamps, messages, analyzed_messages, error_counts = fetch_data()
+
+#                 if data is not None:
+#                     display_analysis_results(error_counts, timestamps, messages, analyzed_messages)
+#                 else:
+#                     st.text("Error fetching data. Please check the server.")
+
+#                 time.sleep(5)  # Fetch new data every 5 seconds
+#         else:
+#             st.sidebar.error("Error analyzing file. Please try again.")
+#     else:
+#         st.sidebar.error("Please upload a file and enter a prompt.")
+# import streamlit as st
+# import requests
+# import time
+# import pandas as pd
+# import altair as alt
+
+# # Define the Flask server URLs
+# FLASK_DATA_URL = "http://127.0.0.1:5000/get_data"
+# FLASK_TIMESTAMP_URL = "http://127.0.0.1:5000/get_timestamps"
+# FLASK_MESSAGE_URL = "http://127.0.0.1:5000/get_messages"
+# FLASK_ANALYZED_MESSAGE_URL = "http://127.0.0.1:5000/get_analyzed_messages"
+# FLASK_ERROR_COUNTS_URL = "http://127.0.0.1:5000/get_error_counts"
+
+# # Predefined list of colors
+# colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
+
+# st.title('Error Update')
+
+# chart_placeholder = st.empty()
+# info_placeholder = st.empty()
+
+# def fetch_data():
+#     try:
+#         response_data = requests.get(FLASK_DATA_URL)
+#         response_timestamps = requests.get(FLASK_TIMESTAMP_URL)
+#         response_messages = requests.get(FLASK_MESSAGE_URL)
+#         response_analyzed_messages = requests.get(FLASK_ANALYZED_MESSAGE_URL)
+#         response_error_counts = requests.get(FLASK_ERROR_COUNTS_URL)
+        
+#         if (response_data.status_code == 200 and response_timestamps.status_code == 200 and 
+#             response_messages.status_code == 200 and response_analyzed_messages.status_code == 200 and 
+#             response_error_counts.status_code == 200):
+            
+#             data = response_data.json()
+#             timestamps = response_timestamps.json()
+#             messages = response_messages.json()
+#             analyzed_messages = response_analyzed_messages.json()
+#             error_counts = response_error_counts.json()
+            
+#             return data, timestamps, messages, analyzed_messages, error_counts
+#         else:
+#             st.error(f"Error fetching data. Status codes: {response_data.status_code}, {response_timestamps.status_code}, {response_messages.status_code}, {response_analyzed_messages.status_code}, {response_error_counts.status_code}")
+#             return None, None, None, None, None
+#     except Exception as e:
+#         st.error(f"Exception occurred while fetching data: {str(e)}")
+#         return None, None, None, None, None
+
+# def display_analysis_results(error_counts, timestamps, messages, analyzed_messages):
+#     # Extract error types and counts from the data
+#     error_types = list(error_counts.keys())
+#     error_values = list(error_counts.values())
+    
+#     # Create a DataFrame from the error counts
+#     df = pd.DataFrame({'Error Type': error_types, 'Error Count': error_values})
+    
+#     # Assign colors to each error type
+#     color_mapping = {error_type: colors[i % len(colors)] for i, error_type in enumerate(error_types)}
+#     df['Color'] = df['Error Type'].map(color_mapping)
+    
+#     # Create Altair chart with tooltips
+#     chart = alt.Chart(df).mark_bar().encode(
+#         x=alt.X('Error Count', axis=alt.Axis(title='Error Count', tickMinStep=1), scale=alt.Scale(domain=[1, 7])),
+#         y=alt.Y('Error Type', axis=alt.Axis()),
+#         color=alt.Color('Color', scale=None),  # Disable color scale
+#         tooltip=['Error Type', 'Error Count']
+#     ).properties(
+#         width=600,
+#         height=400
+#     )
+    
+#     chart_placeholder.altair_chart(chart, use_container_width=True)
+#     if 'displayed' not in st.session_state:
+#         st.session_state.displayed = set()
+
+#     info_placeholder.empty()  # Clear previous content
+#     for i in range(len(messages)):
+#         if messages[i] not in st.session_state.displayed:
+#             with st.expander(f"**Message:** {messages[i]}", expanded=False):
+#                 st.markdown(f"<span style='color:green;'>**Error:** {data[i]}</span>", unsafe_allow_html=True)
+#                 st.markdown(f"<span style='color:green;'>**Timestamp:** {timestamps[i]}</span>", unsafe_allow_html=True)
+#                 st.markdown(f"**Analyzed Message:** {analyzed_messages[i]}", unsafe_allow_html=True)
+#             st.session_state.displayed.add(messages[i])
+
+# st.sidebar.title("Log File Upload and Analysis")
+# uploaded_file = st.sidebar.file_uploader("Upload log file", type=['csv', 'json', 'xml', 'txt', 'log'])
+# prompt = st.sidebar.text_input("Enter prompt for analysis")
+# analyze_button = st.sidebar.button("Analyze")
+
+# if analyze_button:
+#     if uploaded_file is not None and prompt:
+#         analysis_triggered = True
+#         files = {'file': uploaded_file}
+#         data = {'prompt': prompt}
+#         response = requests.post("http://127.0.0.1:5000/api/analyze", files=files, data=data)
+#         if response.status_code == 200:
+#             st.sidebar.success("File uploaded and analysis started.")
+#             while True:
+#                 data, timestamps, messages, analyzed_messages, error_counts = fetch_data()
+
+#                 if data is not None:
+#                     display_analysis_results(error_counts, timestamps, messages, analyzed_messages)
+#                 else:
+#                     st.text("Error fetching data. Please check the server.")
+
+#                 time.sleep(5)  # Fetch new data every 5 seconds
+#         else:
+#             st.sidebar.error("Error analyzing file. Please try again.")
+#     else:
+#         st.sidebar.error("Please upload a file and enter a prompt.")

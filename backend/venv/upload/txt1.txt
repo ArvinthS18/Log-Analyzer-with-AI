@@ -1,0 +1,80 @@
+2021-04-18 05:59:33.563896(+0530)[65518:1012603] INF Timezone: IST, Offset: 19800, Standard Name: IST, UTC Offset: 19800
+2021-04-18 05:59:33.568206(+0530)[65518:1012603] INF Starting Service version 3.2.0.62:274610
+2021-04-18 05:59:33.576621(+0530)[65518:1012603] INF launchctl: 0
+kern.maxfiles: 65535 -> 65535
+kern.maxfilesperproc: 65535 -> 65535
+kern.ipc.somaxconn: 4096 -> 4096
+2021-04-18 05:59:33.608820(+0530)[65518:1012603] INF sysctl: 0
+2021-04-18 05:59:33.609612(+0530)[65518:1012603] INF Zapp Version 3.2.0.62
+2021-04-18 05:59:33.957027(+0530)[65518:1012603] INF Got 177 system root certificates
+2021-04-18 05:59:33.958346(+0530)[65518:1012603] INF Auth::Lib::initializeAuthenticationLibrary: Called: 177
+2021-04-18 05:59:33.967529(+0530)[65518:1012603] INF Auth::Lib::initializeAuthenticationLibrary: FIPS Mode Set: 1
+2021-04-18 05:59:33.967649(+0530)[65518:1012603] INF Auth::Lib:loadSSLCerts: Called: 183
+2021-04-18 05:59:33.999301(+0530)[65518:1012603] INF Auth::Lib::loadSSLCerts: Number of CA certs loaded: 178
+2021-04-18 05:59:33.999350(+0530)[65518:1012603] INF Auth::Lib::initializeAuthenticationLibrary: Finish
+2021-04-18 05:59:34.019466(+0530)[65518:1012609] INF Signature of PID 65517 (xxxxx/com.xxxxx.xxxxx) meets requirements
+2021-04-18 05:59:34.019858(+0530)[65518:1012609] INF Connection for com.xxxxx.service-tray-communication accepted, pid: 65517, euid: 502
+2021-04-18 05:59:34.020652(+0530)[65518:1012621] DBG fetchFromKeychain with uid: 502
+2021-04-18 05:59:34.044776(+0530)[65518:1012621] DBG fetchFromKeychain data found with length: 9541
+2021-04-18 05:59:34.419520(+0530)[65518:1012621] INF Service com.xxxxx.UPMServiceController stop
+2021-04-18 05:59:34.447543(+0530)[65518:1012621] INF disable com.xxxxx.UPMServiceController:0 
+Boot-out failed: 3: No such process
+2021-04-18 05:59:34.458810(+0530)[65518:1012621] INF Stop com.xxxxx.UPMServiceController:300 
+Could not find service "com.xxxxx.UPMServiceController" in domain for system
+2021-04-18 05:59:34.467801(+0530)[65518:1012621] INF Service com.xxxxx.UPMServiceController exit wait time 0.0
+2021-04-18 05:59:34.470269(+0530)[65518:1012621] INF com.xxxxx.UPMServiceController path is /Library/Application Support/xxxxx/UPM/UPMServiceController
+2021-04-18 05:59:34.471212(+0530)[65518:1012621] INF com.xxxxx.UPMServiceController path is /Library/Application Support/xxxxx/UPM/UPMServiceController
+2021-04-18 05:59:34.471672(+0530)[65518:1012621] INF Service com.xxxxx.UPMServiceController is installed
+Could not find service "com.xxxxx.UPMServiceController" in domain for system
+2021-04-18 05:59:34.498728(+0530)[65518:1012621] ERR Unable to determine if com.xxxxx.UPMServiceController is running, exit status: 113, rc: 28928
+2021-04-18 05:59:34.499678(+0530)[65518:1012621] INF send notification to tunnel to stop
+/Library/LaunchDaemons/com.xxxxx.tunnel.plist: Could not find specified service
+Unload failed: 113: Could not find specified service
+2021-04-18 05:59:34.510794(+0530)[65518:1012621] INF unloadTunnel: 0
+2021-04-19 01:31:50.832724(+0530)[65518:1533835] INF send notification to tunnel to stop
+/Library/LaunchDaemons/com.xxxxx.tunnel.plist: Could not find specified service
+Unload failed: 113: Could not find specified service
+2021-04-19 01:31:52.628284(+0530)[65518:1533835] INF unloadTunnel: 0
+2021-04-19 01:31:52.628523(+0530)[65518:1533835] INF com.xxxxx.service-tray-communication: Connection from pid 65517 invalidated
+2021-04-19 01:32:03.455809(+0530)[65518:1012603] INF No N/W
+2021-03-17 17:33:45.458608(+0530)[26248:192929] INF  proxy settings:0 
+2021-03-17 17:33:45.458648(+0530)[26248:192929] INF check service health
+2021-03-17 17:33:45.458678(+0530)[26248:192929] INF helper tool is nil, alloc it
+2021-03-17 17:33:45.459083(+0530)[26248:192929] INF fetching config
+2021-03-17 17:33:45.459124(+0530)[26248:192929] INF Fetch Keychain data with uid: 502
+2021-03-17 17:33:45.473336(+0530)[26248:192937] INF -[AppDelegate connectToHelperTool]_block_invoke_4: Sending:3.0.0.144 on time: 2021-03-17 17:33:45 +0000
+2021-03-17 17:33:45.490573(+0530)[26248:192937] INF Signature of PID 26177 (xxxxxService/com.xxxxx.service) meets requirements
+2021-03-17 17:33:45.490734(+0530)[26248:192937] INF -[AppDelegate checkServiceHealth]_block_invoke_3: Sending:3.0.0.144 on time: 2021-03-17 17:33:45 +0000
+2021-03-17 17:33:45.490785(+0530)[26248:192937] INF fetchFromKeychainFromService reply:@
+2021-03-17 17:33:45.490803(+0530)[26248:192937] INF Data not found in System Keychain, Trying from User context keychain
+2021-03-17 17:33:45.498010(+0530)[26248:192937] INF error in copying The specified item could not be found in the keychain.
+2021-03-17 17:33:45.530760(+0530)[26248:192929] INF user is not logged in
+2021-03-17 17:33:45.531093(+0530)[26248:192929] INF getInstallationFips: 0
+2021-03-17 17:33:45.531130(+0530)[26248:192929] INF Get Fips Value: 0
+2021-03-17 17:33:45.531192(+0530)[26248:192929] INF Auth::Lib::initializeAuthenticationLibrary: Called: 0
+2021-03-17 17:33:45.531339(+0530)[26248:192929] INF Auth::Lib:loadSSLCerts: Called: 6
+2021-03-17 17:33:45.534537(+0530)[26248:192929] INF Auth::Lib::loadSSLCerts: Number of CA certs loaded: 6
+2021-03-17 17:33:45.534562(+0530)[26248:192929] INF Auth::Lib::initializeAuthenticationLibrary: Finish
+2021-03-17 17:33:45.534586(+0530)[26248:192929] INF Openssl version: OpenSSL 1.0.2u-fips  20 Dec 2019
+2021-03-17 17:33:45.534762(+0530)[26248:192929] INF installation configuration : {
+2021-03-17 17:34:24.991417(+0530)[26248:192929] INF saml form fill username:avinash.kukkapalli@servicenow.com
+2021-03-17 17:34:25.247826(+0530)[26248:192929] INF didReceiveAuthenticationChallenge NSURLAuthenticationMethodServerTrust
+2021-03-17 17:34:26.064975(+0530)[26248:192929] INF samlAutoFillFunction result:true
+2021-03-17 17:34:37.070255(+0530)[26248:192929] INF didReceiveAuthenticationChallenge NSURLAuthenticationMethodServerTrust
+2021-03-17 17:34:37.074692(+0530)[26248:192929] INF didReceiveAuthenticationChallenge NSURLAuthenticationMethodServerTrust
+2021-03-17 17:34:39.668771(+0530)[26248:192929] INF ###url: zsa://ca?token=671f25dda3f9f0323af789753c5196cb922386&cke=iMVsQWjq7fZQjj0q5vs
+2021-03-17 17:34:39.669355(+0530)[26248:192929] ERR didFailProvisionalNavigation:Error Domain=WebKitErrorDomain Code=102 "Frame load interrupted" UserInfo={_WKRecoveryAttempterErrorKey=<WKReloadFrameErrorRecoveryAttempter: 0x7fafb6b40210>, NSErrorFailingURLStringKey=zsa://ca?token=671f25dda3f9f0323af789753c5196cb922386&cke=iMVsQWjq7fZQjj0q5vs, NSErrorFailingURLKey=zsa://ca?token=671f25dda3f9f0323af789753c5196cb922386&cke=iMVsQWjq7fZQjj0q5vs, NSLocalizedDescription=Frame load interrupted}
+2021-03-17 17:34:39.669410(+0530)[26248:192929] INF handleWebViewError:Error Domain=WebKitErrorDomain Code=102 "Frame load interrupted" UserInfo={_WKRecoveryAttempterErrorKey=<WKReloadFrameErrorRecoveryAttempter: 0x7fafb6b40210>, NSErrorFailingURLStringKey=zsa://ca?token=671f25dda3f9f0323af789753c5196cb922386&cke=iMVsQWjq7fZQjj0q5vs, NSErrorFailingURLKey=zsa://ca?token=671f25dda3f9f0323af789753c5196cb922386&cke=iMVsQWjq7fZQjj0q5vs, NSLocalizedDescription=Frame load interrupted}
+2021-03-17 17:34:39.669433(+0530)[26248:192929] INF processSMCACookieRedirect for url:zsa://ca?token=671f25dda3f9f0323af789753c5196cb922386&cke=iMVsQWjq7fZQjj0q5vs
+2021-03-17 17:34:39.669869(+0530)[26248:192929] INF start registration for : 1
+2021-03-17 17:34:39.669990(+0530)[26248:192929] INF cancel saml login
+2021-03-17 17:34:39.670455(+0530)[26248:193220] INF udid:210DB0FF-9484-5382-8336-8F0C711CB5D3:502
+2021-03-17 17:34:39.670940(+0530)[26248:193220] INF Auth::Lib::getSHA2Hash: Called
+2021-03-17 17:34:39.670999(+0530)[26248:193220] INF Auth::Lib::getSHA2Hash: Value: d3fb7f66bd2ae50cd7aa4ec239168e383d8dd7b249bc460568a1ef835a39e468
+2021-03-17 17:34:39.671020(+0530)[26248:193220] INF Auth::Lib::getSHA2Hash: Finished
+2021-03-17 17:34:39.671114(+0530)[26248:193220] INF Auth::Library::apiRegisterWithZIA: Called
+2021-03-17 17:34:39.671188(+0530)[26248:193220] INF Auth::Lib::executeServerGetAPI: Begin
+2021-03-17 17:34:39.671205(+0530)[26248:193220] INF Auth::Lib::executeServerGetAPI: Trial: 0
+2021-03-17 17:34:39.671512(+0530)[26248:192929] INF button is hidden
+2021-03-17 17:34:39.690574(+0530)[26248:192929] ERR didFailNavigation:@
+
