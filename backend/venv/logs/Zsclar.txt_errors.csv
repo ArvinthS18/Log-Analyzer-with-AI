@@ -1,0 +1,28 @@
+timestamp,message,errors_found
+2024-04-04 10:20:45,WARNING: Disk space low,['warning']
+2024-04-04 10:30:05,ERROR: Database connection failed,"['error', 'failed']"
+2024-04-04 10:35:20,ERROR: Server overload detected,['error']
+2024-04-04 10:40:55,WARNING: CPU temperature high,['warning']
+2024-04-04 10:55:20,ERROR: Server overload detected,['error']
+2024-05-01 08:15:30,ERROR: Unable to connect to remote server,"['error', 'unable']"
+2024-05-01 08:20:45,WARNING: Disk space low,['warning']
+2024-05-01 08:30:05,ERROR: Database query timeout,"['error', 'timeout']"
+2024-05-01 08:30:15,ERROR: Database query timeout,"['error', 'timeout']"
+2024-05-01 08:35:20,ERROR: Server overload detected,['error']
+2024-05-01 08:40:55,WARNING: CPU temperature high,['warning']
+2024-05-01 08:50:25,ERROR: Unexpected system shutdown,['error']
+2024-05-01 08:55:30,ERROR: Authentication failed,"['error', 'failed']"
+2024-05-01 08:55:39,ERROR: Authentication failed,"['error', 'failed']"
+2024-05-01 09:00:45,WARNING: Network connection unstable,['warning']
+2021-03-26 15:45:10,.278340(-0700)[344444:344709] ERR evaluateEnterpriseVpnFailOpen result: 0,['err']
+2021-03-26 15:45:10,.278385(-0700)[344444:344709] ERR evaluateEnterpriseVpnFailOpen result: 0,['err']
+2021-03-26 15:45:10,.278406(-0700)[344444:344709] ERR evaluateEnterpriseVpnFailOpen result: 0,['err']
+2021-03-26 15:45:10,".280651(-0700)[344444:344575] ERR ID=630545273, TcpServer: poll server revent code: 16",['err']
+2021-03-26 15:45:10,.280786(-0700)[344444:344709] ERR evaluateEnterpriseVpnFailOpen result: 0,['err']
+2021-03-26 15:45:10,.281175(-0700)[344444:344580] ERR Deleting handler!,['err']
+2021-03-26 15:45:13,.679589(-0700)[344444:344708] ERR evaluateEnterpriseVpnFailOpen result: 0,['err']
+2021-03-26 15:45:20,.636722(-0700)[344444:345363] ERR ZPHM: Cleanup list size: 6,['err']
+2021-03-26 15:45:20,.637125(-0700)[344444:361036] ERR cloud: zscalerbeta.net len: 15,['err']
+2021-03-26 15:45:20,.737363(-0700)[344444:361037] ERR cloud: zscalerbeta.net len: 15,['err']
+2021-03-26 15:45:20,.837576(-0700)[344444:361038] ERR cloud: zscalerbeta.net len: 15,['err']
+2021-03-26 15:45:20,.937687(-0700)[344444:361039] ERR cloud: zscalerbeta.net len: 15,['err']

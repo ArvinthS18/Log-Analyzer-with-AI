@@ -1,0 +1,1013 @@
+2021-03-27 03:01:48.384753 #NORMAL #INFO : Executing route -n -v get -inet6 default 
+2021-03-27 03:01:48.388736 #NORMAL #INFO : u: link ; 
+2021-03-27 03:01:48.388937 #NORMAL #INFO : RTM_GET: Report Metrics: len 144, pid: 0, seq 1979, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> :: default 
+
+2021-03-27 03:01:48.389145 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-27 03:01:48.389314 #NORMAL #INFO : Interface monitor: IPv4 interface en0(0), IPv6 interface (973)
+2021-03-27 03:01:52.367529 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:01:52.367911 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:01:52.368047 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:01:52.368188 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:01:52.368520 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:01:52.368654 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:01:52.368775 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:01:52.368912 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:01:57.350333 #NORMAL #DEBUG : ZPHM Checking health of sme: 165.225.208.24:443
+2021-03-27 03:01:57.351064 #NORMAL #INFO : ZPHM: Trying Connecting to 165.225.208.24: 443
+2021-03-27 03:01:57.367460 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:01:57.367789 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:01:57.367923 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:01:57.368045 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:01:57.368399 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:01:57.368542 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:01:57.368679 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:01:57.368797 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:01:57.451055 #NORMAL #INFO : ZPHM: Connected to Proxy: 165.225.208.24: 443. Will check for auth now.
+2021-03-27 03:01:57.657787 #NORMAL #INFO : ZPHM: Received response size: 244
+2021-03-27 03:01:57.658163 #NORMAL #INFO : ZPHM: Got status code: 407
+2021-03-27 03:01:57.658275 #NORMAL #INFO : ZPHM: Proxy: 165.225.208.24:443 is up and healthy.
+2021-03-27 03:01:57.658543 #NORMAL #INFO : ZPHM Good health
+2021-03-27 03:02:02.367478 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:02.367882 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:02.368019 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:02.368144 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:02.368490 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:02.368623 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:02.368746 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:02.368866 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:04.141276 #NORMAL #DEBUG : check proxyReactivate called.
+2021-03-27 03:02:04.141585 #NORMAL #DEBUG : checkZtunnelHealth called.
+2021-03-27 03:02:04.141690 #NORMAL #DEBUG : startServicesIfRequired called!!
+2021-03-27 03:02:04.141808 #NORMAL #DEBUG : Refreshing exclude ip list. Old list size : 4
+2021-03-27 03:02:04.141947 #NORMAL #DEBUG : Resolving exclude hostname: mobilesupport.zscaler.com
+2021-03-27 03:02:04.178484 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-27 03:02:04.178759 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-27 03:02:04.178885 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-27 03:02:04.179005 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-27 03:02:04.179261 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-27 03:02:04.179366 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-27 03:02:04.179469 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-27 03:02:04.179571 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-27 03:02:04.179719 #NORMAL #INFO : resfreshExcludeIpsList Previous and new list are same!!
+2021-03-27 03:02:04.179821 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-27 03:02:04.179909 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-27 03:02:04.180000 #NORMAL #DEBUG : checkAndRestartTunIfRequired called!!
+2021-03-27 03:02:04.180109 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:04.180211 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:04.180308 #NORMAL #DEBUG : getSmeProxyState: (4 -> TUNNEL_FORWARDING) getZpnProxyState: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:04.180421 #NORMAL #WARN : restartRawSocket returning!!
+2021-03-27 03:02:04.180505 #NORMAL #DEBUG : isTunDnsEchoServerUp called!!
+2021-03-27 03:02:04.180591 #NORMAL #DEBUG : isTunUdpEchoServerUp called!!
+2021-03-27 03:02:04.180695 #NORMAL #INFO : Time elapsed since Zpn socket last read: 30 sec
+2021-03-27 03:02:04.180788 #NORMAL #DEBUG : Skipping connectZpnSocket as zpn socket state is: 2
+2021-03-27 03:02:04.180881 #NORMAL #DEBUG : startServicesIfRequired end!!
+2021-03-27 03:02:07.363450 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:07.363784 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:07.363899 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:07.364004 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:07.364346 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:07.364476 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:07.364601 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:07.364728 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:12.367449 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:12.367783 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:12.367899 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:12.368026 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:12.368363 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:12.368477 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:12.368583 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:12.368684 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:17.363447 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:17.363848 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:17.363969 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:17.364098 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:17.364453 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:17.364574 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:17.364683 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:17.364782 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:18.383276 #NORMAL #INFO : Executing route -n -v get -inet default 
+2021-03-27 03:02:18.383640 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-27 03:02:18.383732 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-27 03:02:18.383826 #NORMAL #INFO : u: link ; 
+2021-03-27 03:02:18.384120 #NORMAL #INFO : RTM_GET: Report Metrics: len 132, pid: 0, seq 1980, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> default default 
+
+2021-03-27 03:02:18.384430 #NORMAL #INFO :    route to: default
+2021-03-27 03:02:18.384531 #NORMAL #INFO : destination: default
+2021-03-27 03:02:18.384633 #NORMAL #INFO :        mask: default
+2021-03-27 03:02:18.384737 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-27 03:02:18.384838 #NORMAL #INFO :   interface: en0
+2021-03-27 03:02:18.384951 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-27 03:02:18.385054 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-27 03:02:18.385184 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-27 03:02:18.385354 #NORMAL #INFO :  locks:  inits:  sockaddrs: <DST,GATEWAY,NETMASK,IFP,IFA> default 192.168.0.1 default en0:2.0.0.0.0.0 192.168.0.27
+
+2021-03-27 03:02:18.385536 #NORMAL #INFO : Executing route -n -v get -inet6 default 
+2021-03-27 03:02:18.385648 #NORMAL #INFO : u: link ; 
+2021-03-27 03:02:18.385804 #NORMAL #INFO : RTM_GET: Report Metrics: len 144, pid: 0, seq 1981, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> :: default 
+
+2021-03-27 03:02:18.385982 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-27 03:02:18.386110 #NORMAL #INFO : Interface monitor: IPv4 interface en0(0), IPv6 interface (974)
+2021-03-27 03:02:22.364155 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:22.364511 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:22.364632 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:22.364752 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:22.365160 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:22.365278 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:22.365384 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:22.365484 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:27.365425 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:27.365778 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:27.365897 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:27.366007 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:27.366329 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:27.366449 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:27.366570 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:27.366691 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:27.663698 #NORMAL #DEBUG : ZPHM Checking health of sme: 165.225.208.24:443
+2021-03-27 03:02:27.664316 #NORMAL #INFO : ZPHM: Trying Connecting to 165.225.208.24: 443
+2021-03-27 03:02:27.762035 #NORMAL #INFO : ZPHM: Connected to Proxy: 165.225.208.24: 443. Will check for auth now.
+2021-03-27 03:02:27.966855 #NORMAL #INFO : ZPHM: Received response size: 244
+2021-03-27 03:02:27.967161 #NORMAL #INFO : ZPHM: Got status code: 407
+2021-03-27 03:02:27.967251 #NORMAL #INFO : ZPHM: Proxy: 165.225.208.24:443 is up and healthy.
+2021-03-27 03:02:27.967525 #NORMAL #INFO : ZPHM Good health
+2021-03-27 03:02:32.367394 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:32.367854 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:32.367988 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:32.368112 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:32.368465 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:32.369128 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:32.369318 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:32.369420 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:34.186010 #NORMAL #DEBUG : check proxyReactivate called.
+2021-03-27 03:02:34.186293 #NORMAL #DEBUG : checkZtunnelHealth called.
+2021-03-27 03:02:34.186384 #NORMAL #DEBUG : startServicesIfRequired called!!
+2021-03-27 03:02:34.186491 #NORMAL #DEBUG : Refreshing exclude ip list. Old list size : 4
+2021-03-27 03:02:34.186615 #NORMAL #DEBUG : Resolving exclude hostname: mobilesupport.zscaler.com
+2021-03-27 03:02:34.219388 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-27 03:02:34.219634 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-27 03:02:34.219746 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-27 03:02:34.219854 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-27 03:02:34.219975 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-27 03:02:34.220096 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-27 03:02:34.220217 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-27 03:02:34.220338 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-27 03:02:34.220506 #NORMAL #INFO : resfreshExcludeIpsList Previous and new list are same!!
+2021-03-27 03:02:34.220620 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-27 03:02:34.220720 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-27 03:02:34.220822 #NORMAL #DEBUG : checkAndRestartTunIfRequired called!!
+2021-03-27 03:02:34.220942 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:34.221054 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:34.221160 #NORMAL #DEBUG : getSmeProxyState: (4 -> TUNNEL_FORWARDING) getZpnProxyState: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:34.221283 #NORMAL #WARN : restartRawSocket returning!!
+2021-03-27 03:02:34.221408 #NORMAL #DEBUG : isTunDnsEchoServerUp called!!
+2021-03-27 03:02:34.221528 #NORMAL #DEBUG : isTunUdpEchoServerUp called!!
+2021-03-27 03:02:34.221671 #NORMAL #INFO : Time elapsed since Zpn socket last read: 60 sec
+2021-03-27 03:02:34.221762 #NORMAL #DEBUG : Zpn socket keepalive request timeout reached! Sending keepalive message!
+2021-03-27 03:02:34.221996 #NORMAL #DEBUG : Sending fohh_status_request request: Size: 100 Data: { "fohh_status_request" : { "request_epoch_in_us" : 1616814154221897, "request_id" : 479 } }
+2021-03-27 03:02:34.222193 #NORMAL #DEBUG : Keepalive json: Written 100 bytes to request buffer.
+2021-03-27 03:02:34.222566 #NORMAL #DEBUG : Zpn socket Written bytes: 100 Available bytes to write: 0
+2021-03-27 03:02:34.222842 #NORMAL #DEBUG : Skipping connectZpnSocket as zpn socket state is: 2
+2021-03-27 03:02:34.222963 #NORMAL #DEBUG : startServicesIfRequired end!!
+2021-03-27 03:02:34.246165 #NORMAL #DEBUG : zpnSocketReadCallback called
+2021-03-27 03:02:34.246466 #NORMAL #DEBUG : Zpn socket read bytes: 150 Used: 150
+2021-03-27 03:02:34.246586 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 0 SSL read: 0
+2021-03-27 03:02:34.246703 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-27 03:02:34.246783 #NORMAL #DEBUG : Response tag: 0
+2021-03-27 03:02:34.246878 #NORMAL #DEBUG : Response length: 142
+2021-03-27 03:02:34.246970 #NORMAL #INFO : ZPN: Control Message Response Data: {"fohh_status_response":{"request_id":479,"request_epoch_in_us":1616814154221897,"response_epoch_in_us":1616814154234602,"received_bytes":0}}
+
+2021-03-27 03:02:34.247277 #NORMAL #DEBUG : Got fohh_status_response response.
+2021-03-27 03:02:34.247382 #NORMAL #DEBUG : fohh_status_response request_id: 479 Current Time us: 1616814154247363 RTT us: 25466
+2021-03-27 03:02:37.367377 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:37.367865 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:37.367979 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:37.368083 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:37.368422 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:37.368536 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:37.368641 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:37.368762 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:42.367371 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:42.367712 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:42.367827 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:42.367951 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:42.368321 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:42.368449 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:42.368573 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:42.368726 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:47.366439 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:47.366771 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:47.366894 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:47.367014 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:47.367346 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:47.367473 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:47.367582 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:47.367697 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:48.379691 #NORMAL #INFO : Executing route -n -v get -inet default 
+2021-03-27 03:02:48.380059 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-27 03:02:48.380154 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-27 03:02:48.380236 #NORMAL #INFO : u: link ; 
+2021-03-27 03:02:48.380367 #NORMAL #INFO : RTM_GET: Report Metrics: len 132, pid: 0, seq 1982, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> default default 
+
+2021-03-27 03:02:48.380689 #NORMAL #INFO :    route to: default
+2021-03-27 03:02:48.380776 #NORMAL #INFO : destination: default
+2021-03-27 03:02:48.380863 #NORMAL #INFO :        mask: default
+2021-03-27 03:02:48.380968 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-27 03:02:48.381075 #NORMAL #INFO :   interface: en0
+2021-03-27 03:02:48.381177 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-27 03:02:48.381277 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-27 03:02:48.381400 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-27 03:02:48.381565 #NORMAL #INFO :  locks:  inits:  sockaddrs: <DST,GATEWAY,NETMASK,IFP,IFA> default 192.168.0.1 default en0:2.0.0.0.0.0 192.168.0.27
+
+2021-03-27 03:02:48.381768 #NORMAL #INFO : Executing route -n -v get -inet6 default 
+2021-03-27 03:02:48.381899 #NORMAL #INFO : u: link ; 
+2021-03-27 03:02:48.382076 #NORMAL #INFO : RTM_GET: Report Metrics: len 144, pid: 0, seq 1983, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> :: default 
+
+2021-03-27 03:02:48.382251 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-27 03:02:48.382402 #NORMAL #INFO : Interface monitor: IPv4 interface en0(0), IPv6 interface (975)
+2021-03-27 03:02:52.367427 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:52.367774 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:52.368013 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:52.368130 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:52.368468 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:52.368585 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:52.368711 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:52.368850 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:57.367299 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:57.367652 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:57.367771 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:57.367888 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:57.368251 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:57.368376 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:02:57.368485 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:02:57.368606 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:02:57.972645 #NORMAL #DEBUG : ZPHM Checking health of sme: 165.225.208.24:443
+2021-03-27 03:02:57.973212 #NORMAL #INFO : ZPHM: Trying Connecting to 165.225.208.24: 443
+2021-03-27 03:02:58.277882 #NORMAL #INFO : ZPHM: Connected to Proxy: 165.225.208.24: 443. Will check for auth now.
+2021-03-27 03:02:58.482830 #NORMAL #INFO : ZPHM: Received response size: 244
+2021-03-27 03:02:58.483131 #NORMAL #INFO : ZPHM: Got status code: 407
+2021-03-27 03:02:58.483234 #NORMAL #INFO : ZPHM: Proxy: 165.225.208.24:443 is up and healthy.
+2021-03-27 03:02:58.483487 #NORMAL #INFO : ZPHM Good health
+2021-03-27 03:03:02.367311 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:02.367691 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:02.367830 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:02.367966 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:02.368337 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:02.368468 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:02.368589 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:02.368714 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:04.225888 #NORMAL #DEBUG : check proxyReactivate called.
+2021-03-27 03:03:04.226209 #NORMAL #DEBUG : checkZtunnelHealth called.
+2021-03-27 03:03:04.226312 #NORMAL #DEBUG : startServicesIfRequired called!!
+2021-03-27 03:03:04.226441 #NORMAL #DEBUG : Refreshing exclude ip list. Old list size : 4
+2021-03-27 03:03:04.226573 #NORMAL #DEBUG : Resolving exclude hostname: mobilesupport.zscaler.com
+2021-03-27 03:03:04.234029 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-27 03:03:04.234313 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-27 03:03:04.234438 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-27 03:03:04.234558 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-27 03:03:04.234675 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-27 03:03:04.234792 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-27 03:03:04.234909 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-27 03:03:04.235026 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-27 03:03:04.235191 #NORMAL #INFO : resfreshExcludeIpsList Previous and new list are same!!
+2021-03-27 03:03:04.235307 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-27 03:03:04.235534 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-27 03:03:04.235646 #NORMAL #DEBUG : checkAndRestartTunIfRequired called!!
+2021-03-27 03:03:04.235775 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:04.235888 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:04.236005 #NORMAL #DEBUG : getSmeProxyState: (4 -> TUNNEL_FORWARDING) getZpnProxyState: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:04.236121 #NORMAL #WARN : restartRawSocket returning!!
+2021-03-27 03:03:04.236246 #NORMAL #DEBUG : isTunDnsEchoServerUp called!!
+2021-03-27 03:03:04.236356 #NORMAL #DEBUG : isTunUdpEchoServerUp called!!
+2021-03-27 03:03:04.236493 #NORMAL #INFO : Time elapsed since Zpn socket last read: 29 sec
+2021-03-27 03:03:04.236642 #NORMAL #DEBUG : Skipping connectZpnSocket as zpn socket state is: 2
+2021-03-27 03:03:04.236736 #NORMAL #DEBUG : startServicesIfRequired end!!
+2021-03-27 03:03:07.365600 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:07.365904 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:07.366017 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:07.366132 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:07.366461 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:07.366595 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:07.366721 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:07.366861 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:12.362796 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:12.363152 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:12.363268 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:12.363377 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:12.363684 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:12.363838 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:12.363943 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:12.364045 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:17.367274 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:17.367657 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:17.367773 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:17.367888 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:17.368236 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:17.368351 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:17.368458 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:17.368596 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:18.370651 #NORMAL #INFO : Executing route -n -v get -inet default 
+2021-03-27 03:03:18.371009 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-27 03:03:18.371104 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-27 03:03:18.371187 #NORMAL #INFO : u: link ; 
+2021-03-27 03:03:18.371332 #NORMAL #INFO : RTM_GET: Report Metrics: len 132, pid: 0, seq 1984, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> default default 
+
+2021-03-27 03:03:18.371640 #NORMAL #INFO :    route to: default
+2021-03-27 03:03:18.371729 #NORMAL #INFO : destination: default
+2021-03-27 03:03:18.371809 #NORMAL #INFO :        mask: default
+2021-03-27 03:03:18.371907 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-27 03:03:18.371992 #NORMAL #INFO :   interface: en0
+2021-03-27 03:03:18.372088 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-27 03:03:18.372179 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-27 03:03:18.372398 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-27 03:03:18.372525 #NORMAL #INFO :  locks:  inits:  sockaddrs: <DST,GATEWAY,NETMASK,IFP,IFA> default 192.168.0.1 default en0:2.0.0.0.0.0 192.168.0.27
+
+2021-03-27 03:03:18.372716 #NORMAL #INFO : Executing route -n -v get -inet6 default 
+2021-03-27 03:03:18.372843 #NORMAL #INFO : u: link ; 
+2021-03-27 03:03:18.372983 #NORMAL #INFO : RTM_GET: Report Metrics: len 144, pid: 0, seq 1985, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> :: default 
+
+2021-03-27 03:03:18.373159 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-27 03:03:18.373290 #NORMAL #INFO : Interface monitor: IPv4 interface en0(0), IPv6 interface (976)
+2021-03-27 03:03:22.367028 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:22.367374 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:22.367492 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:22.367626 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:22.367959 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:22.368083 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:22.368189 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:22.368290 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:27.362980 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:27.363338 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:27.363488 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:27.363593 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:27.363942 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:27.364064 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:27.364188 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:27.364308 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:28.483724 #NORMAL #DEBUG : ZPHM Checking health of sme: 165.225.208.24:443
+2021-03-27 03:03:28.484382 #NORMAL #INFO : ZPHM: Trying Connecting to 165.225.208.24: 443
+2021-03-27 03:03:28.588642 #NORMAL #INFO : ZPHM: Connected to Proxy: 165.225.208.24: 443. Will check for auth now.
+2021-03-27 03:03:28.794888 #NORMAL #INFO : ZPHM: Received response size: 244
+2021-03-27 03:03:28.795188 #NORMAL #INFO : ZPHM: Got status code: 407
+2021-03-27 03:03:28.795280 #NORMAL #INFO : ZPHM: Proxy: 165.225.208.24:443 is up and healthy.
+2021-03-27 03:03:28.795554 #NORMAL #INFO : ZPHM Good health
+2021-03-27 03:03:32.366269 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:32.366681 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:32.366812 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:32.366942 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:32.367313 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:32.367444 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:32.367564 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:32.367681 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:34.241926 #NORMAL #DEBUG : check proxyReactivate called.
+2021-03-27 03:03:34.242229 #NORMAL #DEBUG : checkZtunnelHealth called.
+2021-03-27 03:03:34.242337 #NORMAL #DEBUG : startServicesIfRequired called!!
+2021-03-27 03:03:34.242458 #NORMAL #DEBUG : Refreshing exclude ip list. Old list size : 4
+2021-03-27 03:03:34.242626 #NORMAL #DEBUG : Resolving exclude hostname: mobilesupport.zscaler.com
+2021-03-27 03:03:34.278799 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-27 03:03:34.279196 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-27 03:03:34.279309 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-27 03:03:34.279412 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-27 03:03:34.279515 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-27 03:03:34.279616 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-27 03:03:34.279717 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-27 03:03:34.279819 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-27 03:03:34.279976 #NORMAL #INFO : resfreshExcludeIpsList Previous and new list are same!!
+2021-03-27 03:03:34.280098 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-27 03:03:34.280200 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-27 03:03:34.280309 #NORMAL #DEBUG : checkAndRestartTunIfRequired called!!
+2021-03-27 03:03:34.280449 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:34.280575 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:34.280675 #NORMAL #DEBUG : getSmeProxyState: (4 -> TUNNEL_FORWARDING) getZpnProxyState: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:34.280790 #NORMAL #WARN : restartRawSocket returning!!
+2021-03-27 03:03:34.280879 #NORMAL #DEBUG : isTunDnsEchoServerUp called!!
+2021-03-27 03:03:34.280981 #NORMAL #DEBUG : isTunUdpEchoServerUp called!!
+2021-03-27 03:03:34.281101 #NORMAL #INFO : Time elapsed since Zpn socket last read: 60 sec
+2021-03-27 03:03:34.281198 #NORMAL #DEBUG : Zpn socket keepalive request timeout reached! Sending keepalive message!
+2021-03-27 03:03:34.281416 #NORMAL #DEBUG : Sending fohh_status_request request: Size: 100 Data: { "fohh_status_request" : { "request_epoch_in_us" : 1616814214281319, "request_id" : 480 } }
+2021-03-27 03:03:34.281596 #NORMAL #DEBUG : Keepalive json: Written 100 bytes to request buffer.
+2021-03-27 03:03:34.281966 #NORMAL #DEBUG : Zpn socket Written bytes: 100 Available bytes to write: 0
+2021-03-27 03:03:34.282067 #NORMAL #DEBUG : Skipping connectZpnSocket as zpn socket state is: 2
+2021-03-27 03:03:34.282202 #NORMAL #DEBUG : startServicesIfRequired end!!
+2021-03-27 03:03:34.305288 #NORMAL #DEBUG : zpnSocketReadCallback called
+2021-03-27 03:03:34.305547 #NORMAL #DEBUG : Zpn socket read bytes: 150 Used: 150
+2021-03-27 03:03:34.305661 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 0 SSL read: 0
+2021-03-27 03:03:34.305762 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-27 03:03:34.305841 #NORMAL #DEBUG : Response tag: 0
+2021-03-27 03:03:34.305917 #NORMAL #DEBUG : Response length: 142
+2021-03-27 03:03:34.306011 #NORMAL #INFO : ZPN: Control Message Response Data: {"fohh_status_response":{"request_id":480,"request_epoch_in_us":1616814214281319,"response_epoch_in_us":1616814214293940,"received_bytes":0}}
+
+2021-03-27 03:03:34.306293 #NORMAL #DEBUG : Got fohh_status_response response.
+2021-03-27 03:03:34.306404 #NORMAL #DEBUG : fohh_status_response request_id: 480 Current Time us: 1616814214306383 RTT us: 25064
+2021-03-27 03:03:37.367317 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:37.367638 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:37.367758 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:37.367864 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:37.368277 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:37.368435 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:37.368551 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:37.368672 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:42.365386 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:42.365696 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:42.365808 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:42.365923 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:42.366271 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:42.366385 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:42.366490 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:42.366597 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:47.363037 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:47.363393 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:47.363516 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:47.363621 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:47.363943 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:47.364057 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:47.364162 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:47.364262 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:48.377432 #NORMAL #INFO : Executing route -n -v get -inet default 
+2021-03-27 03:03:48.377797 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-27 03:03:48.377887 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-27 03:03:48.378036 #NORMAL #INFO : u: link ; 
+2021-03-27 03:03:48.378159 #NORMAL #INFO : RTM_GET: Report Metrics: len 132, pid: 0, seq 1986, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> default default 
+
+2021-03-27 03:03:48.378449 #NORMAL #INFO :    route to: default
+2021-03-27 03:03:48.378535 #NORMAL #INFO : destination: default
+2021-03-27 03:03:48.378626 #NORMAL #INFO :        mask: default
+2021-03-27 03:03:48.378729 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-27 03:03:48.378826 #NORMAL #INFO :   interface: en0
+2021-03-27 03:03:48.378932 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-27 03:03:48.379033 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-27 03:03:48.379142 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-27 03:03:48.379278 #NORMAL #INFO :  locks:  inits:  sockaddrs: <DST,GATEWAY,NETMASK,IFP,IFA> default 192.168.0.1 default en0:2.0.0.0.0.0 192.168.0.27
+
+2021-03-27 03:03:48.379480 #NORMAL #INFO : Executing route -n -v get -inet6 default 
+2021-03-27 03:03:48.379587 #NORMAL #INFO : u: link ; 
+2021-03-27 03:03:48.379727 #NORMAL #INFO : RTM_GET: Report Metrics: len 144, pid: 0, seq 1987, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> :: default 
+
+2021-03-27 03:03:48.379882 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-27 03:03:48.380023 #NORMAL #INFO : Interface monitor: IPv4 interface en0(0), IPv6 interface (977)
+2021-03-27 03:03:52.366256 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:52.366590 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:52.366709 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:52.366846 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:52.367174 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:52.367328 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:52.367435 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:52.367561 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:57.362879 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:57.363301 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:57.363422 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:57.363555 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:57.363891 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:57.364006 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:03:57.364111 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:03:57.364237 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:03:58.795785 #NORMAL #DEBUG : ZPHM Checking health of sme: 165.225.208.24:443
+2021-03-27 03:03:58.796388 #NORMAL #INFO : ZPHM: Trying Connecting to 165.225.208.24: 443
+2021-03-27 03:03:58.899682 #NORMAL #INFO : ZPHM: Connected to Proxy: 165.225.208.24: 443. Will check for auth now.
+2021-03-27 03:03:59.104546 #NORMAL #INFO : ZPHM: Received response size: 244
+2021-03-27 03:03:59.104834 #NORMAL #INFO : ZPHM: Got status code: 407
+2021-03-27 03:03:59.104928 #NORMAL #INFO : ZPHM: Proxy: 165.225.208.24:443 is up and healthy.
+2021-03-27 03:03:59.105159 #NORMAL #INFO : ZPHM Good health
+2021-03-27 03:04:02.367185 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:02.367672 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:02.367806 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:04:02.368164 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:04:02.368504 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:02.368641 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:02.368763 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:04:02.368880 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:04:04.286323 #NORMAL #DEBUG : check proxyReactivate called.
+2021-03-27 03:04:04.286635 #NORMAL #DEBUG : checkZtunnelHealth called.
+2021-03-27 03:04:04.286742 #NORMAL #DEBUG : startServicesIfRequired called!!
+2021-03-27 03:04:04.286865 #NORMAL #DEBUG : Refreshing exclude ip list. Old list size : 4
+2021-03-27 03:04:04.286992 #NORMAL #DEBUG : Resolving exclude hostname: mobilesupport.zscaler.com
+2021-03-27 03:04:04.316944 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-27 03:04:04.317192 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-27 03:04:04.317513 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-27 03:04:04.317651 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-27 03:04:04.317742 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-27 03:04:04.317825 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-27 03:04:04.317996 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-27 03:04:04.318087 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-27 03:04:04.318225 #NORMAL #INFO : resfreshExcludeIpsList Previous and new list are same!!
+2021-03-27 03:04:04.318312 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-27 03:04:04.318383 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-27 03:04:04.318455 #NORMAL #DEBUG : checkAndRestartTunIfRequired called!!
+2021-03-27 03:04:04.318544 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:04.318623 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:04.318699 #NORMAL #DEBUG : getSmeProxyState: (4 -> TUNNEL_FORWARDING) getZpnProxyState: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:04.318780 #NORMAL #WARN : restartRawSocket returning!!
+2021-03-27 03:04:04.318848 #NORMAL #DEBUG : isTunDnsEchoServerUp called!!
+2021-03-27 03:04:04.318983 #NORMAL #DEBUG : isTunUdpEchoServerUp called!!
+2021-03-27 03:04:04.319045 #NORMAL #INFO : Time elapsed since Zpn socket last read: 30 sec
+2021-03-27 03:04:04.319107 #NORMAL #DEBUG : Skipping connectZpnSocket as zpn socket state is: 2
+2021-03-27 03:04:04.319177 #NORMAL #DEBUG : startServicesIfRequired end!!
+2021-03-27 03:04:07.367119 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:07.367527 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:07.367887 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:04:07.368021 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:04:07.368369 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:07.368495 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:07.368607 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:04:07.368744 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:04:12.367124 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:12.367662 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:12.367800 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:04:12.367915 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:04:12.368289 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:12.368404 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:12.368509 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:04:12.368636 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:04:17.367501 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:17.367842 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:17.367961 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:04:17.368068 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:04:17.368442 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:17.368566 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:17.368675 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:04:17.368779 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:04:18.384003 #NORMAL #INFO : Executing route -n -v get -inet default 
+2021-03-27 03:04:18.384283 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-27 03:04:18.384374 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-27 03:04:18.384453 #NORMAL #INFO : u: link ; 
+2021-03-27 03:04:18.384571 #NORMAL #INFO : RTM_GET: Report Metrics: len 132, pid: 0, seq 1988, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> default default 
+
+2021-03-27 03:04:18.384817 #NORMAL #INFO :    route to: default
+2021-03-27 03:04:18.384906 #NORMAL #INFO : destination: default
+2021-03-27 03:04:18.384988 #NORMAL #INFO :        mask: default
+2021-03-27 03:04:18.385073 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-27 03:04:18.385150 #NORMAL #INFO :   interface: en0
+2021-03-27 03:04:18.385194 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-27 03:04:18.385239 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-27 03:04:18.385294 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-27 03:04:18.385357 #NORMAL #INFO :  locks:  inits:  sockaddrs: <DST,GATEWAY,NETMASK,IFP,IFA> default 192.168.0.1 default en0:2.0.0.0.0.0 192.168.0.27
+
+2021-03-27 03:04:18.385457 #NORMAL #INFO : Executing route -n -v get -inet6 default 
+2021-03-27 03:04:18.385512 #NORMAL #INFO : u: link ; 
+2021-03-27 03:04:18.385579 #NORMAL #INFO : RTM_GET: Report Metrics: len 144, pid: 0, seq 1989, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> :: default 
+
+2021-03-27 03:04:18.385730 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-27 03:04:18.385788 #NORMAL #INFO : Interface monitor: IPv4 interface en0(0), IPv6 interface (978)
+2021-03-27 03:04:18.584625 #NORMAL #INFO : ===> ID=487632331, TUN-Proxy: connection to 165.225.210.24 sock-fd=18, src_port=56338, dst_port=443
+2021-03-27 03:04:18.584921 #NORMAL #DEBUG : ID=487632331, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:18.585068 #NORMAL #DEBUG : ID=487632331, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:18.585234 #NORMAL #DEBUG : ID=487632331, readFromClient: read bytes 517
+2021-03-27 03:04:18.585312 #NORMAL #DEBUG : ID=487632331, HTTPS, SNI-Host=gateway.zscalertwo.net
+2021-03-27 03:04:18.585380 #NORMAL #DEBUG : ID=487632331, readFromClient: Host Address: gateway.zscalertwo.net:443
+2021-03-27 03:04:18.592557 #NORMAL #DEBUG : ID=487632331, PAC Parse Host: gateway.zscalertwo.net uri=https://gateway.zscalertwo.net Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:18.592733 #NORMAL #INFO : ID=487632331, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:18.592795 #NORMAL #DEBUG : ID=487632331, match host:gateway.zscalertwo.net:443 result:0
+2021-03-27 03:04:18.593022 #NORMAL #DEBUG : ID=487632331, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:18.659152 #NORMAL #INFO : ID=487632331, Tunnel to SME for host=gateway.zscalertwo.net:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:18.659495 #NORMAL #DEBUG : ID=487632331, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:18.659558 #NORMAL #DEBUG : ID=487632331, SME request: 
+CONNECT gateway.zscalertwo.net:443 HTTP/1.1
+Host: gateway.zscalertwo.net:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@6cbac674eb46d6d3a491296a8dd9d9a56e479bd1650600a967b7d0431a7c4d9f", nonce="e6085ce89f40eaa77e0ab61dcde9a1f9", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="facb8a26e09f787641e5e52c2d5b59b9", qop="auth", uri="gateway.zscalertwo.net:443", nc=00000002, response="3dfdc7b624940f4cbd7ff18c72aa50a0"
+2021-03-27 03:04:18.659687 #NORMAL #DEBUG : ID=487632331, startServerConnection done!!
+2021-03-27 03:04:18.732536 #NORMAL #DEBUG : ID=487632331, SME response: Version: HTTP/1.1 Status: 200 Reason: Connection Established
+2021-03-27 03:04:18.951096 #NORMAL #DEBUG : ID=487632331, Server Socket closed normally!
+2021-03-27 03:04:18.951473 #NORMAL #DEBUG : ID=487632331, Closing client socket as server socket is already closed!
+2021-03-27 03:04:18.952933 #NORMAL #WARN : ID=487632331, Exception in TcpConnection run() (Error=Application exception: Both client and server sockets are closed!)
+2021-03-27 03:04:18.953318 #NORMAL #DEBUG : ID=487632331, Disconnecting!
+2021-03-27 03:04:18.953430 #NORMAL #INFO : ===> ID=487632331, ~ZTCPServerConnection state=closed ServerConnections=1 clt_bytes=751, srv_bytes=3744!
+2021-03-27 03:04:18.991512 #NORMAL #INFO : ===> ID=640588999, TUN-Proxy: connection to 104.129.202.231 sock-fd=18, src_port=56340, dst_port=443
+2021-03-27 03:04:18.991787 #NORMAL #DEBUG : ID=640588999, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:18.991923 #NORMAL #DEBUG : ID=640588999, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:18.992095 #NORMAL #DEBUG : ID=640588999, readFromClient: read bytes 517
+2021-03-27 03:04:18.992209 #NORMAL #DEBUG : ID=640588999, HTTPS, SNI-Host=mobile.zscalertwo.net
+2021-03-27 03:04:18.992327 #NORMAL #DEBUG : ID=640588999, readFromClient: Host Address: mobile.zscalertwo.net:443
+2021-03-27 03:04:18.992601 #NORMAL #INFO : ID=640588999, Url host found in host bypass list. Host: mobile.zscalertwo.net
+2021-03-27 03:04:18.992739 #NORMAL #INFO : ID=640588999, PAC Parse Action: Direct
+2021-03-27 03:04:18.992828 #NORMAL #DEBUG : ID=640588999, Bypassing proxy for url=https://mobile.zscalertwo.net:443
+2021-03-27 03:04:18.992963 #NORMAL #DEBUG : ID=640588999, match host:mobile.zscalertwo.net:443 result:0
+2021-03-27 03:04:18.993380 #NORMAL #DEBUG : ID=640588999, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:18.993487 #NORMAL #DEBUG : ID=640588999, Connecting direct to 104.129.202.231:443
+2021-03-27 03:04:19.033013 #NORMAL #DEBUG : ID=640588999, startServerConnection done!!
+2021-03-27 03:04:19.186076 #NORMAL #DEBUG : ID=640588999, readFromClient: read bytes: 0
+2021-03-27 03:04:19.186276 #NORMAL #DEBUG : ID=640588999, Sending FIN to server!
+2021-03-27 03:04:19.225080 #NORMAL #DEBUG : ID=640588999, Server Socket Fin received!
+2021-03-27 03:04:19.225370 #NORMAL #DEBUG : ID=640588999, Sending FIN to client!
+2021-03-27 03:04:19.225727 #NORMAL #WARN : ID=640588999, Exception in TcpConnection run() (Error=Application exception: Both client and server sockets are closed!)
+2021-03-27 03:04:19.226197 #NORMAL #WARN : ID=640588999, Exception in TcpConnection DELETE_CONNECTION (Error: Invalid argument)
+2021-03-27 03:04:19.226386 #NORMAL #INFO : ===> ID=640588999, ~ZTCPServerConnection state=closed ServerConnections=1 clt_bytes=1726, srv_bytes=4430!
+2021-03-27 03:04:21.480379 #HIGH #DEBUG : ### handle App message
+2021-03-27 03:04:22.367196 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:22.367533 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:22.367660 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:04:22.367780 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:04:22.368107 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:22.368222 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-27 03:04:22.368328 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-27 03:04:22.368430 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-27 03:04:23.891889 #NORMAL #INFO : ===> ID=228140210, TUN-Proxy: connection to 173.222.117.121 sock-fd=18, src_port=58703, dst_port=443
+2021-03-27 03:04:23.891989 #NORMAL #DEBUG : ID=228140210, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:23.891989 #NORMAL #INFO : ===> ID=1822410154, TUN-Proxy: connection to 12.129.210.53 sock-fd=19, src_port=58704, dst_port=443
+2021-03-27 03:04:23.892088 #NORMAL #DEBUG : ID=228140210, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:23.892090 #NORMAL #DEBUG : ID=1822410154, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:23.892167 #NORMAL #DEBUG : ID=1822410154, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:23.892205 #NORMAL #DEBUG : ID=228140210, readFromClient: read bytes 517
+2021-03-27 03:04:23.892249 #NORMAL #DEBUG : ID=1822410154, readFromClient: read bytes 517
+2021-03-27 03:04:23.892252 #NORMAL #DEBUG : ID=228140210, HTTPS, SNI-Host=www.washingtonpost.com
+2021-03-27 03:04:23.892331 #NORMAL #DEBUG : ID=1822410154, HTTPS, SNI-Host=bs.serving-sys.com
+2021-03-27 03:04:23.892333 #NORMAL #DEBUG : ID=228140210, readFromClient: Host Address: www.washingtonpost.com:443
+2021-03-27 03:04:23.892409 #NORMAL #DEBUG : ID=1822410154, readFromClient: Host Address: bs.serving-sys.com:443
+2021-03-27 03:04:24.057966 #NORMAL #INFO : ===> ID=1230895052, TUN-Proxy: connection to 54.189.10.237 sock-fd=22, src_port=58705, dst_port=443
+2021-03-27 03:04:24.058080 #NORMAL #DEBUG : ID=1230895052, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:24.058140 #NORMAL #DEBUG : ID=1230895052, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:24.058252 #NORMAL #DEBUG : ID=1230895052, readFromClient: read bytes 517
+2021-03-27 03:04:24.058303 #NORMAL #DEBUG : ID=1230895052, HTTPS, SNI-Host=api.smoot.apple.com
+2021-03-27 03:04:24.058338 #NORMAL #DEBUG : ID=1230895052, readFromClient: Host Address: api.smoot.apple.com:443
+2021-03-27 03:04:24.138576 #NORMAL #INFO : ===> ID=1590643224, TUN-Proxy: connection to 69.192.82.217 sock-fd=24, src_port=58706, dst_port=443
+2021-03-27 03:04:24.138679 #NORMAL #DEBUG : ID=1590643224, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:24.138730 #NORMAL #DEBUG : ID=1590643224, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:24.138845 #NORMAL #DEBUG : ID=1590643224, readFromClient: read bytes 616
+2021-03-27 03:04:24.138883 #NORMAL #DEBUG : ID=1590643224, HTTPS, SNI-Host=init.itunes.apple.com
+2021-03-27 03:04:24.138919 #NORMAL #DEBUG : ID=1590643224, readFromClient: Host Address: init.itunes.apple.com:443
+2021-03-27 03:04:24.442027 #NORMAL #INFO : ===> ID=1600856360, TUN-Proxy: connection to 184.31.17.89 sock-fd=26, src_port=58707, dst_port=443
+2021-03-27 03:04:24.442174 #NORMAL #DEBUG : ID=1600856360, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:24.442246 #NORMAL #DEBUG : ID=1600856360, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:24.442369 #NORMAL #DEBUG : ID=1600856360, readFromClient: read bytes 517
+2021-03-27 03:04:24.442444 #NORMAL #DEBUG : ID=1600856360, HTTPS, SNI-Host=sb.scorecardresearch.com
+2021-03-27 03:04:24.442499 #NORMAL #DEBUG : ID=1600856360, readFromClient: Host Address: sb.scorecardresearch.com:443
+2021-03-27 03:04:24.598134 #NORMAL #INFO : ===> ID=1031622616, TUN-Proxy: connection to 151.101.53.67 sock-fd=28, src_port=58708, dst_port=443
+2021-03-27 03:04:24.598329 #NORMAL #DEBUG : ID=1031622616, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:24.598420 #NORMAL #DEBUG : ID=1031622616, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:24.598578 #NORMAL #DEBUG : ID=1031622616, readFromClient: read bytes 517
+2021-03-27 03:04:24.598657 #NORMAL #DEBUG : ID=1031622616, HTTPS, SNI-Host=data.cnn.com
+2021-03-27 03:04:24.598728 #NORMAL #DEBUG : ID=1031622616, readFromClient: Host Address: data.cnn.com:443
+2021-03-27 03:04:24.676263 #NORMAL #DEBUG : DNS: MSG=Request from=100.64.0.1:50842 Family=IPv4 Size=88, Qcount=1
+2021-03-27 03:04:24.676491 #NORMAL #INFO : DNS: QRY=AAAA(28), Name=deplo-logmo-15esesi26zph7-0609daf6e2c56d94.elb.us-east-1.amazonaws.com
+2021-03-27 03:04:24.676579 #NORMAL #INFO : DNS: QRY=28, Name=deplo-logmo-15esesi26zph7-0609daf6e2c56d94.elb.us-east-1.amazonaws.com
+2021-03-27 03:04:24.676712 #NORMAL #INFO : DNS: Domain: deplo-logmo-15esesi26zph7-0609daf6e2c56d94.elb.us-east-1.amazonaws.com is not a ZPA domain.
+2021-03-27 03:04:24.676831 #NORMAL #INFO : DNS: Forwarding Dns request Size: 88 to Server=192.168.0.1:53
+2021-03-27 03:04:24.677215 #NORMAL #DEBUG : DNS: MSG=Request from=100.64.0.1:65478 Family=IPv4 Size=88, Qcount=1
+2021-03-27 03:04:24.677329 #NORMAL #INFO : DNS: QRY=A(1), Name=deplo-logmo-15esesi26zph7-0609daf6e2c56d94.elb.us-east-1.amazonaws.com
+2021-03-27 03:04:24.677422 #NORMAL #INFO : DNS: Domain: deplo-logmo-15esesi26zph7-0609daf6e2c56d94.elb.us-east-1.amazonaws.com found in bypass cache.
+2021-03-27 03:04:24.677676 #NORMAL #INFO : initializeUdpSocket: Initializing Udp Outgoing socket!!
+2021-03-27 03:04:24.677790 #NORMAL #INFO : DNS: Forwarding Dns request Size: 88 to Server=192.168.0.1:53
+2021-03-27 03:04:24.678457 #NORMAL #DEBUG : clearIdleUdpProxyConnections: Old size: 4 Remaining size: 1
+2021-03-27 03:04:24.704251 #NORMAL #DEBUG : ID=1822410154, PAC Parse Host: bs.serving-sys.com uri=https://bs.serving-sys.com Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:24.704352 #NORMAL #INFO : ID=1822410154, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:24.704395 #NORMAL #DEBUG : ID=1822410154, match host:bs.serving-sys.com:443 result:0
+2021-03-27 03:04:24.704543 #NORMAL #DEBUG : ID=1822410154, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:24.705609 #NORMAL #DEBUG : ID=228140210, PAC Parse Host: www.washingtonpost.com uri=https://www.washingtonpost.com Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:24.705703 #NORMAL #INFO : ID=228140210, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:24.705746 #NORMAL #DEBUG : ID=228140210, match host:www.washingtonpost.com:443 result:0
+2021-03-27 03:04:24.705857 #NORMAL #DEBUG : ID=228140210, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:24.707149 #NORMAL #DEBUG : DNS: MSG=Response from=192.168.0.1:53 Family=IPv4 Size=152, Qcount=1
+2021-03-27 03:04:24.707230 #NORMAL #DEBUG : DNS: Local response SocketAddress found from cache: 100.64.0.1:65478
+2021-03-27 03:04:24.710675 #NORMAL #DEBUG : ID=1230895052, PAC Parse Host: api.smoot.apple.com uri=https://api.smoot.apple.com Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:24.710776 #NORMAL #INFO : ID=1230895052, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:24.710819 #NORMAL #DEBUG : ID=1230895052, match host:api.smoot.apple.com:443 result:0
+2021-03-27 03:04:24.710942 #NORMAL #DEBUG : ID=1230895052, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:24.730224 #NORMAL #INFO : ===> ID=238157099, TUN-Proxy: connection to 3.222.127.217 sock-fd=20, src_port=58709, dst_port=443
+2021-03-27 03:04:24.730317 #NORMAL #DEBUG : ID=238157099, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:24.730366 #NORMAL #DEBUG : ID=238157099, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:24.730435 #NORMAL #DEBUG : ID=238157099, readFromClient: read bytes 517
+2021-03-27 03:04:24.730475 #NORMAL #DEBUG : ID=238157099, HTTPS, SNI-Host=lm.serving-sys.com
+2021-03-27 03:04:24.730509 #NORMAL #DEBUG : ID=238157099, readFromClient: Host Address: lm.serving-sys.com:443
+2021-03-27 03:04:24.738265 #NORMAL #DEBUG : ID=1590643224, PAC Parse Host: init.itunes.apple.com uri=https://init.itunes.apple.com Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:24.738394 #NORMAL #INFO : ID=1590643224, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:24.738447 #NORMAL #DEBUG : ID=1590643224, match host:init.itunes.apple.com:443 result:0
+2021-03-27 03:04:24.738631 #NORMAL #DEBUG : ID=1590643224, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:24.741332 #NORMAL #DEBUG : ID=238157099, PAC Parse Host: lm.serving-sys.com uri=https://lm.serving-sys.com Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:24.741468 #NORMAL #INFO : ID=238157099, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:24.741523 #NORMAL #DEBUG : ID=238157099, match host:lm.serving-sys.com:443 result:0
+2021-03-27 03:04:24.741715 #NORMAL #DEBUG : ID=238157099, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:24.751989 #NORMAL #DEBUG : ID=1600856360, PAC Parse Host: sb.scorecardresearch.com uri=https://sb.scorecardresearch.com Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:24.752111 #NORMAL #INFO : ID=1600856360, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:24.752158 #NORMAL #DEBUG : ID=1600856360, match host:sb.scorecardresearch.com:443 result:0
+2021-03-27 03:04:24.752305 #NORMAL #DEBUG : ID=1600856360, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:24.758917 #NORMAL #DEBUG : ID=1031622616, PAC Parse Host: data.cnn.com uri=https://data.cnn.com Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:24.759045 #NORMAL #INFO : ID=1031622616, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:24.759096 #NORMAL #DEBUG : ID=1031622616, match host:data.cnn.com:443 result:0
+2021-03-27 03:04:24.759251 #NORMAL #DEBUG : ID=1031622616, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:24.766449 #NORMAL #DEBUG : DNS: MSG=Response from=192.168.0.1:53 Family=IPv4 Size=172, Qcount=1
+2021-03-27 03:04:24.766565 #NORMAL #DEBUG : DNS: Local response SocketAddress found from cache: 100.64.0.1:50842
+2021-03-27 03:04:24.776578 #NORMAL #INFO : ID=1822410154, Tunnel to SME for host=bs.serving-sys.com:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:24.776760 #NORMAL #DEBUG : ID=1822410154, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:24.776810 #NORMAL #DEBUG : ID=1822410154, SME request: 
+CONNECT bs.serving-sys.com:443 HTTP/1.1
+Host: bs.serving-sys.com:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@6cbac674eb46d6d3a491296a8dd9d9a56e479bd1650600a967b7d0431a7c4d9f", nonce="e6085ce89f40eaa77e0ab61dcde9a1f9", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="facb8a26e09f787641e5e52c2d5b59b9", qop="auth", uri="bs.serving-sys.com:443", nc=00000003, response="54047b8744a16f6ba1c25152355441df"
+2021-03-27 03:04:24.776965 #NORMAL #DEBUG : ID=1822410154, startServerConnection done!!
+2021-03-27 03:04:24.778417 #NORMAL #INFO : ID=228140210, Tunnel to SME for host=www.washingtonpost.com:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:24.778563 #NORMAL #DEBUG : ID=228140210, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:24.778606 #NORMAL #DEBUG : ID=228140210, SME request: 
+CONNECT www.washingtonpost.com:443 HTTP/1.1
+Host: www.washingtonpost.com:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@6cbac674eb46d6d3a491296a8dd9d9a56e479bd1650600a967b7d0431a7c4d9f", nonce="e6085ce89f40eaa77e0ab61dcde9a1f9", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="facb8a26e09f787641e5e52c2d5b59b9", qop="auth", uri="www.washingtonpost.com:443", nc=00000004, response="cdfdbe937d41f0c39f0d9d3064d62426"
+2021-03-27 03:04:24.778716 #NORMAL #DEBUG : ID=228140210, startServerConnection done!!
+2021-03-27 03:04:24.778900 #NORMAL #INFO : ID=1230895052, Tunnel to SME for host=api.smoot.apple.com:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:24.778988 #NORMAL #DEBUG : ID=1230895052, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:24.779034 #NORMAL #DEBUG : ID=1230895052, SME request: 
+CONNECT api.smoot.apple.com:443 HTTP/1.1
+Host: api.smoot.apple.com:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@6cbac674eb46d6d3a491296a8dd9d9a56e479bd1650600a967b7d0431a7c4d9f", nonce="e6085ce89f40eaa77e0ab61dcde9a1f9", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="facb8a26e09f787641e5e52c2d5b59b9", qop="auth", uri="api.smoot.apple.com:443", nc=00000005, response="29c5c527d8ffd31477948f549e09201c"
+2021-03-27 03:04:24.779140 #NORMAL #DEBUG : ID=1230895052, startServerConnection done!!
+2021-03-27 03:04:24.811621 #NORMAL #INFO : ID=1590643224, Tunnel to SME for host=init.itunes.apple.com:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:24.811924 #NORMAL #DEBUG : ID=1590643224, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:24.811997 #NORMAL #DEBUG : ID=1590643224, SME request: 
+CONNECT init.itunes.apple.com:443 HTTP/1.1
+Host: init.itunes.apple.com:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@6cbac674eb46d6d3a491296a8dd9d9a56e479bd1650600a967b7d0431a7c4d9f", nonce="e6085ce89f40eaa77e0ab61dcde9a1f9", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="facb8a26e09f787641e5e52c2d5b59b9", qop="auth", uri="init.itunes.apple.com:443", nc=00000006, response="8b320a25851e994daece5a742c406a1f"
+2021-03-27 03:04:24.812162 #NORMAL #DEBUG : ID=1590643224, startServerConnection done!!
+2021-03-27 03:04:24.813269 #NORMAL #INFO : ID=238157099, Tunnel to SME for host=lm.serving-sys.com:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:24.813392 #NORMAL #DEBUG : ID=238157099, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:24.813456 #NORMAL #DEBUG : ID=238157099, SME request: 
+CONNECT lm.serving-sys.com:443 HTTP/1.1
+Host: lm.serving-sys.com:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@6cbac674eb46d6d3a491296a8dd9d9a56e479bd1650600a967b7d0431a7c4d9f", nonce="e6085ce89f40eaa77e0ab61dcde9a1f9", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="facb8a26e09f787641e5e52c2d5b59b9", qop="auth", uri="lm.serving-sys.com:443", nc=00000007, response="f9f4696ce222df19f2b06cee03f6e5d0"
+2021-03-27 03:04:24.813631 #NORMAL #DEBUG : ID=238157099, startServerConnection done!!
+2021-03-27 03:04:24.842215 #NORMAL #INFO : ID=1600856360, Tunnel to SME for host=sb.scorecardresearch.com:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:24.842216 #NORMAL #INFO : ID=1031622616, Tunnel to SME for host=data.cnn.com:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:24.842694 #NORMAL #DEBUG : ID=1031622616, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:24.842801 #NORMAL #DEBUG : ID=1031622616, SME request: 
+CONNECT data.cnn.com:443 HTTP/1.1
+Host: data.cnn.com:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@6cbac674eb46d6d3a491296a8dd9d9a56e479bd1650600a967b7d0431a7c4d9f", nonce="e6085ce89f40eaa77e0ab61dcde9a1f9", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="facb8a26e09f787641e5e52c2d5b59b9", qop="auth", uri="data.cnn.com:443", nc=00000009, response="2fa826eb494b42900d1b33380a1283d6"
+2021-03-27 03:04:24.843021 #NORMAL #DEBUG : ID=1031622616, startServerConnection done!!
+2021-03-27 03:04:24.843090 #NORMAL #DEBUG : ID=1600856360, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:24.843189 #NORMAL #DEBUG : ID=1600856360, SME request: 
+CONNECT sb.scorecardresearch.com:443 HTTP/1.1
+Host: sb.scorecardresearch.com:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@6cbac674eb46d6d3a491296a8dd9d9a56e479bd1650600a967b7d0431a7c4d9f", nonce="e6085ce89f40eaa77e0ab61dcde9a1f9", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="facb8a26e09f787641e5e52c2d5b59b9", qop="auth", uri="sb.scorecardresearch.com:443", nc=00000008, response="31eb7952dbd8e11d219e8b069981e5a3"
+2021-03-27 03:04:24.843404 #NORMAL #DEBUG : ID=1600856360, startServerConnection done!!
+2021-03-27 03:04:24.850691 #NORMAL #DEBUG : ID=228140210, SME response: Version: HTTP/1.1 Status: 200 Reason: Connection Established
+2021-03-27 03:04:24.850973 #NORMAL #DEBUG : ID=1822410154, SME response: Version: HTTP/1.1 Status: 200 Reason: Connection Established
+2021-03-27 03:04:24.851071 #NORMAL #DEBUG : ID=1230895052, SME response: Version: HTTP/1.1 Status: 200 Reason: Connection Established
+2021-03-27 03:04:24.884035 #NORMAL #DEBUG : ID=238157099, SME response: Version: HTTP/1.1 Status: 200 Reason: Connection Established
+2021-03-27 03:04:24.887957 #NORMAL #DEBUG : ID=1590643224, SME response: Version: HTTP/1.1 Status: 200 Reason: Connection Established
+2021-03-27 03:04:24.951205 #NORMAL #DEBUG : ID=1600856360, SME response: Version: HTTP/1.1 Status: 200 Reason: Connection Established
+2021-03-27 03:04:24.951205 #NORMAL #DEBUG : ID=1031622616, SME response: Version: HTTP/1.1 Status: 200 Reason: Connection Established
+2021-03-27 03:04:25.060550 #NORMAL #INFO : ===> ID=1687690716, TUN-Proxy: connection to 99.86.33.60 sock-fd=29, src_port=58710, dst_port=443
+2021-03-27 03:04:25.060661 #NORMAL #DEBUG : ID=1687690716, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.060709 #NORMAL #DEBUG : ID=1687690716, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:25.060796 #NORMAL #DEBUG : ID=1687690716, readFromClient: read bytes 517
+2021-03-27 03:04:25.060837 #NORMAL #DEBUG : ID=1687690716, HTTPS, SNI-Host=sb.scorecardresearch.com
+2021-03-27 03:04:25.060877 #NORMAL #DEBUG : ID=1687690716, readFromClient: Host Address: sb.scorecardresearch.com:443
+2021-03-27 03:04:25.063532 #NORMAL #DEBUG : ID=1687690716, PAC Parse Host: sb.scorecardresearch.com uri=https://sb.scorecardresearch.com Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:25.063659 #NORMAL #INFO : ID=1687690716, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:25.063702 #NORMAL #DEBUG : ID=1687690716, match host:sb.scorecardresearch.com:443 result:0
+2021-03-27 03:04:25.063857 #NORMAL #DEBUG : ID=1687690716, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.131817 #NORMAL #INFO : ID=1687690716, Tunnel to SME for host=sb.scorecardresearch.com:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:25.132100 #NORMAL #DEBUG : ID=1687690716, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:25.132173 #NORMAL #DEBUG : ID=1687690716, SME request: 
+CONNECT sb.scorecardresearch.com:443 HTTP/1.1
+Host: sb.scorecardresearch.com:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@6cbac674eb46d6d3a491296a8dd9d9a56e479bd1650600a967b7d0431a7c4d9f", nonce="e6085ce89f40eaa77e0ab61dcde9a1f9", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="facb8a26e09f787641e5e52c2d5b59b9", qop="auth", uri="sb.scorecardresearch.com:443", nc=0000000A, response="e4b7b79f63fd484704836255f6065557"
+2021-03-27 03:04:25.132306 #NORMAL #DEBUG : ID=1687690716, startServerConnection done!!
+2021-03-27 03:04:25.202037 #NORMAL #DEBUG : ID=1687690716, SME response: Version: HTTP/1.1 Status: 200 Reason: Connection Established
+2021-03-27 03:04:25.240385 #NORMAL #DEBUG : ID=1230895052, readFromClient: read bytes: 0
+2021-03-27 03:04:25.240876 #NORMAL #WARN : ID=1230895052, Exception in TcpConnection run() (Error=Application exception: Both client and server sockets are closed!)
+2021-03-27 03:04:25.241007 #NORMAL #DEBUG : ID=1230895052, Disconnecting!
+2021-03-27 03:04:25.241053 #NORMAL #INFO : ===> ID=1230895052, ~ZTCPServerConnection state=closed ServerConnections=1 clt_bytes=989, srv_bytes=12682!
+2021-03-27 03:04:25.305915 #NORMAL #INFO : ===> ID=1954320554, TUN-Proxy: connection to 23.49.141.96 sock-fd=17, src_port=58711, dst_port=443
+2021-03-27 03:04:25.306011 #NORMAL #DEBUG : ID=1954320554, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.306061 #NORMAL #DEBUG : ID=1954320554, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:25.306132 #NORMAL #DEBUG : ID=1954320554, readFromClient: read bytes 517
+2021-03-27 03:04:25.306170 #NORMAL #DEBUG : ID=1954320554, HTTPS, SNI-Host=c.go-mpulse.net
+2021-03-27 03:04:25.306204 #NORMAL #DEBUG : ID=1954320554, readFromClient: Host Address: c.go-mpulse.net:443
+2021-03-27 03:04:25.328792 #NORMAL #ERROR : IGNORE_PACKET
+2021-03-27 03:04:25.343809 #NORMAL #DEBUG : ID=1954320554, PAC Parse Host: c.go-mpulse.net uri=https://c.go-mpulse.net Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:25.343891 #NORMAL #INFO : ID=1954320554, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:25.343932 #NORMAL #DEBUG : ID=1954320554, match host:c.go-mpulse.net:443 result:0
+2021-03-27 03:04:25.344061 #NORMAL #DEBUG : ID=1954320554, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.347446 #NORMAL #ERROR : IGNORE_PACKET
+2021-03-27 03:04:25.410620 #NORMAL #INFO : ID=1954320554, Tunnel to SME for host=c.go-mpulse.net:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:25.410881 #NORMAL #DEBUG : ID=1954320554, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:25.410959 #NORMAL #DEBUG : ID=1954320554, SME request: 
+CONNECT c.go-mpulse.net:443 HTTP/1.1
+Host: c.go-mpulse.net:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@6cbac674eb46d6d3a491296a8dd9d9a56e479bd1650600a967b7d0431a7c4d9f", nonce="e6085ce89f40eaa77e0ab61dcde9a1f9", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="facb8a26e09f787641e5e52c2d5b59b9", qop="auth", uri="c.go-mpulse.net:443", nc=0000000B, response="edea4d3fb559da424ff1e36f95d2d0e3"
+2021-03-27 03:04:25.411086 #NORMAL #DEBUG : ID=1954320554, startServerConnection done!!
+2021-03-27 03:04:25.413768 #NORMAL #INFO : ===> ID=1982738514, TUN-Proxy: connection to 23.36.178.183 sock-fd=32, src_port=58712, dst_port=443
+2021-03-27 03:04:25.413864 #NORMAL #DEBUG : ID=1982738514, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.413914 #NORMAL #DEBUG : ID=1982738514, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:25.413996 #NORMAL #DEBUG : ID=1982738514, readFromClient: read bytes 517
+2021-03-27 03:04:25.414035 #NORMAL #DEBUG : ID=1982738514, HTTPS, SNI-Host=px.moatads.com
+2021-03-27 03:04:25.414070 #NORMAL #DEBUG : ID=1982738514, readFromClient: Host Address: px.moatads.com:443
+2021-03-27 03:04:25.422992 #NORMAL #DEBUG : ID=1954320554, readFromClient: read bytes: 0
+2021-03-27 03:04:25.423436 #NORMAL #WARN : ID=1954320554, Exception in TcpConnection run() (Error=Application exception: Both client and server sockets are closed!)
+2021-03-27 03:04:25.423541 #NORMAL #DEBUG : ID=1954320554, Disconnecting!
+2021-03-27 03:04:25.423774 #NORMAL #INFO : ===> ID=1954320554, ~ZTCPServerConnection state=closed ServerConnections=1 clt_bytes=517, srv_bytes=0!
+2021-03-27 03:04:25.424223 #NORMAL #DEBUG : ID=1982738514, PAC Parse Host: px.moatads.com uri=https://px.moatads.com Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:25.424304 #NORMAL #INFO : ID=1982738514, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:25.424344 #NORMAL #DEBUG : ID=1982738514, match host:px.moatads.com:443 result:0
+2021-03-27 03:04:25.424459 #NORMAL #DEBUG : ID=1982738514, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.512586 #NORMAL #INFO : ID=1982738514, Tunnel to SME for host=px.moatads.com:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:25.512960 #NORMAL #DEBUG : ID=1982738514, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:25.513070 #NORMAL #DEBUG : ID=1982738514, SME request: 
+CONNECT px.moatads.com:443 HTTP/1.1
+Host: px.moatads.com:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@6cbac674eb46d6d3a491296a8dd9d9a56e479bd1650600a967b7d0431a7c4d9f", nonce="e6085ce89f40eaa77e0ab61dcde9a1f9", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="facb8a26e09f787641e5e52c2d5b59b9", qop="auth", uri="px.moatads.com:443", nc=0000000C, response="1d096581fb2aaa37debf25b5d637b739"
+2021-03-27 03:04:25.513310 #NORMAL #DEBUG : ID=1982738514, startServerConnection done!!
+2021-03-27 03:04:25.513664 #NORMAL #DEBUG : ID=1982738514, readFromClient: read bytes: 0
+2021-03-27 03:04:25.514566 #NORMAL #WARN : ID=1982738514, Exception in TcpConnection run() (Error=Application exception: Both client and server sockets are closed!)
+2021-03-27 03:04:25.514815 #NORMAL #DEBUG : ID=1982738514, Disconnecting!
+2021-03-27 03:04:25.515067 #NORMAL #INFO : ===> ID=1982738514, ~ZTCPServerConnection state=closed ServerConnections=1 clt_bytes=517, srv_bytes=0!
+2021-03-27 03:04:25.539732 #NORMAL #INFO : ===> ID=114233551, TUN-Proxy: connection to 142.250.69.202 sock-fd=17, src_port=58713, dst_port=443
+2021-03-27 03:04:25.539912 #NORMAL #DEBUG : ID=114233551, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.539985 #NORMAL #DEBUG : ID=114233551, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:25.540156 #NORMAL #DEBUG : ID=114233551, readFromClient: read bytes 592
+2021-03-27 03:04:25.540413 #NORMAL #DEBUG : ID=114233551, HTTPS, SNI-Host=safebrowsing.googleapis.com
+2021-03-27 03:04:25.540476 #NORMAL #DEBUG : ID=114233551, readFromClient: Host Address: safebrowsing.googleapis.com:443
+2021-03-27 03:04:25.560712 #NORMAL #DEBUG : ID=114233551, PAC Parse Host: safebrowsing.googleapis.com uri=https://safebrowsing.googleapis.com Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:25.560897 #NORMAL #INFO : ID=114233551, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:25.560962 #NORMAL #DEBUG : ID=114233551, match host:safebrowsing.googleapis.com:443 result:0
+2021-03-27 03:04:25.561216 #NORMAL #DEBUG : ID=114233551, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.585869 #NORMAL #INFO : ===> ID=148581406, TUN-Proxy: connection to 142.250.69.194 sock-fd=32, src_port=58714, dst_port=443
+2021-03-27 03:04:25.585967 #NORMAL #DEBUG : ID=148581406, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.586016 #NORMAL #DEBUG : ID=148581406, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:25.586111 #NORMAL #DEBUG : ID=148581406, readFromClient: read bytes 517
+2021-03-27 03:04:25.586149 #NORMAL #DEBUG : ID=148581406, HTTPS, SNI-Host=pagead2.googlesyndication.com
+2021-03-27 03:04:25.586185 #NORMAL #DEBUG : ID=148581406, readFromClient: Host Address: pagead2.googlesyndication.com:443
+2021-03-27 03:04:25.592901 #NORMAL #DEBUG : ID=148581406, PAC Parse Host: pagead2.googlesyndication.com uri=https://pagead2.googlesyndication.com Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:25.593089 #NORMAL #INFO : ID=148581406, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:25.593146 #NORMAL #DEBUG : ID=148581406, match host:pagead2.googlesyndication.com:443 result:0
+2021-03-27 03:04:25.593397 #NORMAL #DEBUG : ID=148581406, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.626064 #NORMAL #INFO : ID=114233551, Tunnel to SME for host=safebrowsing.googleapis.com:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:25.626456 #NORMAL #DEBUG : ID=114233551, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:25.626552 #NORMAL #DEBUG : ID=114233551, SME request: 
+CONNECT safebrowsing.googleapis.com:443 HTTP/1.1
+Host: safebrowsing.googleapis.com:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@6cbac674eb46d6d3a491296a8dd9d9a56e479bd1650600a967b7d0431a7c4d9f", nonce="e6085ce89f40eaa77e0ab61dcde9a1f9", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="facb8a26e09f787641e5e52c2d5b59b9", qop="auth", uri="safebrowsing.googleapis.com:443", nc=0000000D, response="ecd9afc0e75ac9a403595b182e8850bf"
+2021-03-27 03:04:25.626769 #NORMAL #DEBUG : ID=114233551, startServerConnection done!!
+2021-03-27 03:04:25.661579 #NORMAL #INFO : ID=148581406, Tunnel to SME for host=pagead2.googlesyndication.com:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:25.661855 #NORMAL #DEBUG : ID=148581406, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:25.661926 #NORMAL #DEBUG : ID=148581406, SME request: 
+CONNECT pagead2.googlesyndication.com:443 HTTP/1.1
+Host: pagead2.googlesyndication.com:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@6cbac674eb46d6d3a491296a8dd9d9a56e479bd1650600a967b7d0431a7c4d9f", nonce="e6085ce89f40eaa77e0ab61dcde9a1f9", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="facb8a26e09f787641e5e52c2d5b59b9", qop="auth", uri="pagead2.googlesyndication.com:443", nc=0000000E, response="e868dc915d38ff87975f305f9cfce8ad"
+2021-03-27 03:04:25.662088 #NORMAL #DEBUG : ID=148581406, startServerConnection done!!
+2021-03-27 03:04:25.699144 #NORMAL #DEBUG : ID=114233551, SME response: Version: HTTP/1.1 Status: 200 Reason: Connection Established
+2021-03-27 03:04:25.718052 #NORMAL #INFO : ===> ID=2061228641, TUN-Proxy: connection to 172.217.3.174 sock-fd=34, src_port=58715, dst_port=443
+2021-03-27 03:04:25.718149 #NORMAL #DEBUG : ID=2061228641, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.718198 #NORMAL #DEBUG : ID=2061228641, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:25.718279 #NORMAL #DEBUG : ID=2061228641, readFromClient: read bytes 517
+2021-03-27 03:04:25.718323 #NORMAL #DEBUG : ID=2061228641, HTTPS, SNI-Host=www.google-analytics.com
+2021-03-27 03:04:25.718360 #NORMAL #DEBUG : ID=2061228641, readFromClient: Host Address: www.google-analytics.com:443
+2021-03-27 03:04:25.731000 #NORMAL #DEBUG : ID=148581406, SME response: Version: HTTP/1.1 Status: 200 Reason: Connection Established
+2021-03-27 03:04:25.748347 #NORMAL #DEBUG : ID=2061228641, PAC Parse Host: www.google-analytics.com uri=https://www.google-analytics.com Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:25.748447 #NORMAL #INFO : ID=2061228641, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:25.748494 #NORMAL #DEBUG : ID=2061228641, match host:www.google-analytics.com:443 result:0
+2021-03-27 03:04:25.748618 #NORMAL #DEBUG : ID=2061228641, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.756317 #NORMAL #DEBUG : DNS: MSG=Request from=100.64.0.1:64141 Family=IPv4 Size=72, Qcount=1
+2021-03-27 03:04:25.756412 #NORMAL #INFO : DNS: QRY=AAAA(28), Name=prod-ash-beacon-1960876484.us-east-1.elb.amazonaws.com
+2021-03-27 03:04:25.756451 #NORMAL #INFO : DNS: QRY=28, Name=prod-ash-beacon-1960876484.us-east-1.elb.amazonaws.com
+2021-03-27 03:04:25.756511 #NORMAL #INFO : DNS: Domain: prod-ash-beacon-1960876484.us-east-1.elb.amazonaws.com is not a ZPA domain.
+2021-03-27 03:04:25.756560 #NORMAL #INFO : DNS: Forwarding Dns request Size: 72 to Server=192.168.0.1:53
+2021-03-27 03:04:25.756663 #NORMAL #DEBUG : DNS: MSG=Request from=100.64.0.1:53200 Family=IPv4 Size=72, Qcount=1
+2021-03-27 03:04:25.756700 #NORMAL #INFO : DNS: QRY=A(1), Name=prod-ash-beacon-1960876484.us-east-1.elb.amazonaws.com
+2021-03-27 03:04:25.756740 #NORMAL #INFO : DNS: Domain: prod-ash-beacon-1960876484.us-east-1.elb.amazonaws.com found in bypass cache.
+2021-03-27 03:04:25.756820 #NORMAL #INFO : DNS: Forwarding Dns request Size: 72 to Server=192.168.0.1:53
+2021-03-27 03:04:25.762762 #NORMAL #DEBUG : DNS: MSG=Response from=192.168.0.1:53 Family=IPv4 Size=200, Qcount=1
+2021-03-27 03:04:25.762849 #NORMAL #DEBUG : DNS: Local response SocketAddress found from cache: 100.64.0.1:53200
+2021-03-27 03:04:25.763431 #NORMAL #INFO : ===> ID=1316462881, TUN-Proxy: connection to 142.250.69.194 sock-fd=36, src_port=58716, dst_port=443
+2021-03-27 03:04:25.763513 #NORMAL #DEBUG : ID=1316462881, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.763558 #NORMAL #DEBUG : ID=1316462881, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:25.763623 #NORMAL #DEBUG : ID=1316462881, readFromClient: read bytes 517
+2021-03-27 03:04:25.763660 #NORMAL #DEBUG : ID=1316462881, HTTPS, SNI-Host=pagead2.googlesyndication.com
+2021-03-27 03:04:25.763696 #NORMAL #DEBUG : ID=1316462881, readFromClient: Host Address: pagead2.googlesyndication.com:443
+2021-03-27 03:04:25.764740 #NORMAL #DEBUG : ID=1316462881, PAC Parse Host: pagead2.googlesyndication.com uri=https://pagead2.googlesyndication.com Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:25.764835 #NORMAL #INFO : ID=1316462881, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:25.764876 #NORMAL #DEBUG : ID=1316462881, match host:pagead2.googlesyndication.com:443 result:0
+2021-03-27 03:04:25.765070 #NORMAL #DEBUG : ID=1316462881, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.777211 #NORMAL #DEBUG : DNS: MSG=Response from=192.168.0.1:53 Family=IPv4 Size=154, Qcount=1
+2021-03-27 03:04:25.777319 #NORMAL #DEBUG : DNS: Local response SocketAddress found from cache: 100.64.0.1:64141
+2021-03-27 03:04:25.780790 #NORMAL #INFO : ===> ID=914060919, TUN-Proxy: connection to 54.83.90.92 sock-fd=38, src_port=58717, dst_port=443
+2021-03-27 03:04:25.780881 #NORMAL #DEBUG : ID=914060919, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.780929 #NORMAL #DEBUG : ID=914060919, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:25.780997 #NORMAL #DEBUG : ID=914060919, readFromClient: read bytes 517
+2021-03-27 03:04:25.781035 #NORMAL #DEBUG : ID=914060919, HTTPS, SNI-Host=jslog.krxd.net
+2021-03-27 03:04:25.781069 #NORMAL #DEBUG : ID=914060919, readFromClient: Host Address: jslog.krxd.net:443
+2021-03-27 03:04:25.792002 #NORMAL #DEBUG : ID=914060919, PAC Parse Host: jslog.krxd.net uri=https://jslog.krxd.net Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:25.792452 #NORMAL #INFO : ID=914060919, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:25.792519 #NORMAL #DEBUG : ID=914060919, match host:jslog.krxd.net:443 result:0
+2021-03-27 03:04:25.792661 #NORMAL #DEBUG : ID=914060919, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.818744 #NORMAL #INFO : ID=2061228641, Tunnel to SME for host=www.google-analytics.com:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:25.818889 #NORMAL #DEBUG : ID=2061228641, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:25.818936 #NORMAL #DEBUG : ID=2061228641, SME request: 
+CONNECT www.google-analytics.com:443 HTTP/1.1
+Host: www.google-analytics.com:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@6cbac674eb46d6d3a491296a8dd9d9a56e479bd1650600a967b7d0431a7c4d9f", nonce="e6085ce89f40eaa77e0ab61dcde9a1f9", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="facb8a26e09f787641e5e52c2d5b59b9", qop="auth", uri="www.google-analytics.com:443", nc=0000000F, response="975e5a0b07e980f415a73342864b36a0"
+2021-03-27 03:04:25.819045 #NORMAL #DEBUG : ID=2061228641, startServerConnection done!!
+2021-03-27 03:04:25.831981 #NORMAL #INFO : ID=1316462881, Tunnel to SME for host=pagead2.googlesyndication.com:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:25.832228 #NORMAL #DEBUG : ID=1316462881, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:25.832379 #NORMAL #DEBUG : ID=1316462881, SME request: 
+CONNECT pagead2.googlesyndication.com:443 HTTP/1.1
+Host: pagead2.googlesyndication.com:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@6cbac674eb46d6d3a491296a8dd9d9a56e479bd1650600a967b7d0431a7c4d9f", nonce="e6085ce89f40eaa77e0ab61dcde9a1f9", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="facb8a26e09f787641e5e52c2d5b59b9", qop="auth", uri="pagead2.googlesyndication.com:443", nc=00000010, response="5fec7591b279d17ad2571178e00c5c1a"
+2021-03-27 03:04:25.832593 #NORMAL #DEBUG : ID=1316462881, startServerConnection done!!
+2021-03-27 03:04:25.835811 #NORMAL #INFO : ===> ID=2137255966, TUN-Proxy: connection to 74.119.119.149 sock-fd=40, src_port=58718, dst_port=443
+2021-03-27 03:04:25.835906 #NORMAL #DEBUG : ID=2137255966, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.835954 #NORMAL #DEBUG : ID=2137255966, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:25.836044 #NORMAL #DEBUG : ID=2137255966, readFromClient: read bytes 517
+2021-03-27 03:04:25.836086 #NORMAL #DEBUG : ID=2137255966, HTTPS, SNI-Host=csm.va.us.criteo.net
+2021-03-27 03:04:25.836121 #NORMAL #DEBUG : ID=2137255966, readFromClient: Host Address: csm.va.us.criteo.net:443
+2021-03-27 03:04:25.846436 #NORMAL #INFO : ===> ID=1356788982, TUN-Proxy: connection to 151.101.2.109 sock-fd=42, src_port=58719, dst_port=443
+2021-03-27 03:04:25.846529 #NORMAL #DEBUG : ID=1356788982, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.846579 #NORMAL #DEBUG : ID=1356788982, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:25.846531 #NORMAL #INFO : ===> ID=54924859, TUN-Proxy: connection to 172.217.14.200 sock-fd=43, src_port=58720, dst_port=443
+2021-03-27 03:04:25.846689 #NORMAL #DEBUG : ID=54924859, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.846636 #NORMAL #DEBUG : ID=1356788982, readFromClient: read bytes 517
+2021-03-27 03:04:25.846771 #NORMAL #DEBUG : ID=1356788982, HTTPS, SNI-Host=polyfill.io
+2021-03-27 03:04:25.846804 #NORMAL #DEBUG : ID=1356788982, readFromClient: Host Address: polyfill.io:443
+2021-03-27 03:04:25.846727 #NORMAL #DEBUG : ID=54924859, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:25.846887 #NORMAL #DEBUG : ID=54924859, readFromClient: read bytes 517
+2021-03-27 03:04:25.846923 #NORMAL #DEBUG : ID=54924859, HTTPS, SNI-Host=www.googletagmanager.com
+2021-03-27 03:04:25.847028 #NORMAL #DEBUG : ID=54924859, readFromClient: Host Address: www.googletagmanager.com:443
+2021-03-27 03:04:25.858601 #NORMAL #DEBUG : ID=1356788982, PAC Parse Host: polyfill.io uri=https://polyfill.io Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:25.858778 #NORMAL #INFO : ID=1356788982, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:25.858819 #NORMAL #DEBUG : ID=1356788982, match host:polyfill.io:443 result:0
+2021-03-27 03:04:25.858985 #NORMAL #DEBUG : ID=1356788982, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.863862 #NORMAL #INFO : ID=914060919, Tunnel to SME for host=jslog.krxd.net:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:25.863993 #NORMAL #DEBUG : ID=914060919, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:25.864038 #NORMAL #DEBUG : ID=914060919, SME request: 
+CONNECT jslog.krxd.net:443 HTTP/1.1
+Host: jslog.krxd.net:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@6cbac674eb46d6d3a491296a8dd9d9a56e479bd1650600a967b7d0431a7c4d9f", nonce="e6085ce89f40eaa77e0ab61dcde9a1f9", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="facb8a26e09f787641e5e52c2d5b59b9", qop="auth", uri="jslog.krxd.net:443", nc=00000011, response="e80a32f528d94333bd9ceb1979929721"
+2021-03-27 03:04:25.864140 #NORMAL #DEBUG : ID=914060919, startServerConnection done!!
+2021-03-27 03:04:25.876981 #NORMAL #DEBUG : ID=54924859, PAC Parse Host: www.googletagmanager.com uri=https://www.googletagmanager.com Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:25.877078 #NORMAL #INFO : ID=54924859, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:25.877120 #NORMAL #DEBUG : ID=54924859, match host:www.googletagmanager.com:443 result:0
+2021-03-27 03:04:25.877264 #NORMAL #DEBUG : ID=54924859, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.890406 #NORMAL #DEBUG : ID=2061228641, SME response: Version: HTTP/1.1 Status: 200 Reason: Connection Established
+2021-03-27 03:04:25.898275 #NORMAL #INFO : ===> ID=251084278, TUN-Proxy: connection to 23.49.141.96 sock-fd=46, src_port=58721, dst_port=443
+2021-03-27 03:04:25.898384 #NORMAL #DEBUG : ID=251084278, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.898446 #NORMAL #DEBUG : ID=251084278, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-27 03:04:25.898516 #NORMAL #DEBUG : ID=251084278, readFromClient: read bytes 517
+2021-03-27 03:04:25.898560 #NORMAL #DEBUG : ID=251084278, HTTPS, SNI-Host=c.go-mpulse.net
+2021-03-27 03:04:25.898603 #NORMAL #DEBUG : ID=251084278, readFromClient: Host Address: c.go-mpulse.net:443
+2021-03-27 03:04:25.901745 #NORMAL #DEBUG : ID=251084278, PAC Parse Host: c.go-mpulse.net uri=https://c.go-mpulse.net Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-27 03:04:25.901870 #NORMAL #INFO : ID=251084278, PAC Parse Action: Proxy:165.225.208.24
+2021-03-27 03:04:25.901928 #NORMAL #DEBUG : ID=251084278, match host:c.go-mpulse.net:443 result:0
+2021-03-27 03:04:25.902176 #NORMAL #DEBUG : ID=251084278, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-27 03:04:25.905128 #NORMAL #DEBUG : ID=1316462881, SME response: Version: HTTP/1.1 Status: 200 Reason: Connection Established
+2021-03-27 03:04:25.931704 #NORMAL #INFO : ID=1356788982, Tunnel to SME for host=polyfill.io:443, SME IP=165.225.208.24:443
+2021-03-27 03:04:25.932306 #NORMAL #DEBUG : ID=1356788982, Cnonce is: facb8a26e09f787641e5e52c2d5b59b9
+2021-03-27 03:04:25.932662 #NORMAL #DEBUG : ID=1356788982, SME request: 

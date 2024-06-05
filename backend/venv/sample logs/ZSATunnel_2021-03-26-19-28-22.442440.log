@@ -1,0 +1,1018 @@
+2021-03-26 19:28:22.444842 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:28:22.448619 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:28:22.448988 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:22.449134 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:22.449274 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:28:22.449403 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:28:27.438508 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:27.438848 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:27.438978 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:28:27.439098 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:28:27.439405 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:27.439535 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:27.439655 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:28:27.439772 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:28:32.441483 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:32.441866 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:32.442004 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:28:32.442128 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:28:32.442452 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:32.442616 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:32.442737 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:28:32.442853 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:28:37.441530 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:37.441897 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:37.442035 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:28:37.442169 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:28:37.442500 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:37.442641 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:37.442780 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:28:37.442936 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:28:37.984977 #NORMAL #DEBUG : ZPHM Checking health of sme: 165.225.208.24:443
+2021-03-26 19:28:37.985432 #NORMAL #INFO : ZPHM: Trying Connecting to 165.225.208.24: 443
+2021-03-26 19:28:38.085522 #NORMAL #INFO : ZPHM: Connected to Proxy: 165.225.208.24: 443. Will check for auth now.
+2021-03-26 19:28:38.290587 #NORMAL #INFO : ZPHM: Received response size: 244
+2021-03-26 19:28:38.290928 #NORMAL #INFO : ZPHM: Got status code: 407
+2021-03-26 19:28:38.291033 #NORMAL #INFO : ZPHM: Proxy: 165.225.208.24:443 is up and healthy.
+2021-03-26 19:28:38.291324 #NORMAL #INFO : ZPHM Good health
+2021-03-26 19:28:42.440267 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:42.440651 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:42.440786 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:28:42.440915 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:28:42.441249 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:42.441398 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:42.441518 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:28:42.441646 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:28:47.441499 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:47.441934 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:47.442052 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:28:47.442173 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:28:47.442484 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:47.442600 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:47.442704 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:28:47.442804 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:28:48.450976 #NORMAL #INFO : Executing route -n -v get -inet default 
+2021-03-26 19:28:48.451333 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:28:48.451424 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:28:48.451504 #NORMAL #INFO : u: link ; 
+2021-03-26 19:28:48.451626 #NORMAL #INFO : RTM_GET: Report Metrics: len 132, pid: 0, seq 148, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> default default 
+
+2021-03-26 19:28:48.451896 #NORMAL #INFO :    route to: default
+2021-03-26 19:28:48.451982 #NORMAL #INFO : destination: default
+2021-03-26 19:28:48.452064 #NORMAL #INFO :        mask: default
+2021-03-26 19:28:48.452149 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-26 19:28:48.452234 #NORMAL #INFO :   interface: en0
+2021-03-26 19:28:48.452320 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-26 19:28:48.452412 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-26 19:28:48.452518 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-26 19:28:48.452641 #NORMAL #INFO :  locks:  inits:  sockaddrs: <DST,GATEWAY,NETMASK,IFP,IFA> default 192.168.0.1 default en0:2.0.0.0.0.0 192.168.0.27
+
+2021-03-26 19:28:48.452824 #NORMAL #INFO : Executing route -n -v get -inet6 default 
+2021-03-26 19:28:48.452938 #NORMAL #INFO : u: link ; 
+2021-03-26 19:28:48.453070 #NORMAL #INFO : RTM_GET: Report Metrics: len 144, pid: 0, seq 149, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> :: default 
+
+2021-03-26 19:28:48.453360 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-26 19:28:48.453500 #NORMAL #INFO : Interface monitor: IPv4 interface en0(0), IPv6 interface (67)
+2021-03-26 19:28:51.730090 #NORMAL #DEBUG : check proxyReactivate called.
+2021-03-26 19:28:51.730377 #NORMAL #DEBUG : checkZtunnelHealth called.
+2021-03-26 19:28:51.730466 #NORMAL #DEBUG : startServicesIfRequired called!!
+2021-03-26 19:28:51.730584 #NORMAL #DEBUG : Refreshing exclude ip list. Old list size : 4
+2021-03-26 19:28:51.730714 #NORMAL #DEBUG : Resolving exclude hostname: mobilesupport.zscaler.com
+2021-03-26 19:28:51.738298 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:28:51.738555 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:28:51.738663 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:28:51.738766 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:28:51.738869 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:28:51.738973 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:28:51.739075 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:28:51.739177 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:28:51.739328 #NORMAL #INFO : resfreshExcludeIpsList Previous and new list are same!!
+2021-03-26 19:28:51.739428 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:28:51.739527 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:28:51.739617 #NORMAL #DEBUG : checkAndRestartTunIfRequired called!!
+2021-03-26 19:28:51.739824 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:51.739952 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:51.740052 #NORMAL #DEBUG : getSmeProxyState: (4 -> TUNNEL_FORWARDING) getZpnProxyState: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:51.740169 #NORMAL #WARN : restartRawSocket returning!!
+2021-03-26 19:28:51.740279 #NORMAL #DEBUG : isTunDnsEchoServerUp called!!
+2021-03-26 19:28:51.740362 #NORMAL #DEBUG : isTunUdpEchoServerUp called!!
+2021-03-26 19:28:51.740452 #NORMAL #INFO : Time elapsed since Zpn socket last read: 60 sec
+2021-03-26 19:28:51.740572 #NORMAL #DEBUG : Zpn socket keepalive request timeout reached! Sending keepalive message!
+2021-03-26 19:28:51.740794 #NORMAL #DEBUG : Sending fohh_status_request request: Size: 99 Data: { "fohh_status_request" : { "request_epoch_in_us" : 1616786931740694, "request_id" : 32 } }
+2021-03-26 19:28:51.740983 #NORMAL #DEBUG : Keepalive json: Written 99 bytes to request buffer.
+2021-03-26 19:28:51.741340 #NORMAL #DEBUG : Zpn socket Written bytes: 99 Available bytes to write: 0
+2021-03-26 19:28:51.741441 #NORMAL #DEBUG : Skipping connectZpnSocket as zpn socket state is: 2
+2021-03-26 19:28:51.741588 #NORMAL #DEBUG : startServicesIfRequired end!!
+2021-03-26 19:28:51.772350 #NORMAL #DEBUG : zpnSocketReadCallback called
+2021-03-26 19:28:51.772539 #NORMAL #DEBUG : Zpn socket read bytes: 149 Used: 149
+2021-03-26 19:28:51.772658 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 0 SSL read: 0
+2021-03-26 19:28:51.772770 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 19:28:51.772848 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 19:28:51.772922 #NORMAL #DEBUG : Response length: 141
+2021-03-26 19:28:51.773010 #NORMAL #INFO : ZPN: Control Message Response Data: {"fohh_status_response":{"request_id":32,"request_epoch_in_us":1616786931740694,"response_epoch_in_us":1616786931761141,"received_bytes":0}}
+
+2021-03-26 19:28:51.773281 #NORMAL #DEBUG : Got fohh_status_response response.
+2021-03-26 19:28:51.773383 #NORMAL #DEBUG : fohh_status_response request_id: 32 Current Time us: 1616786931773366 RTT us: 32672
+2021-03-26 19:28:52.441517 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:52.441867 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:52.441986 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:28:52.442115 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:28:52.442420 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:52.442533 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:52.442637 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:28:52.442741 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:28:57.441515 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:57.441912 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:57.442042 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:28:57.442148 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:28:57.442469 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:57.442581 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:28:57.442685 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:28:57.442784 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:02.440416 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:02.440775 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:02.440905 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:02.441025 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:02.441345 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:02.441530 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:02.441637 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:02.441740 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:07.441449 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:07.441740 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:07.441854 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:07.441960 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:07.442255 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:07.442375 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:07.442482 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:07.442583 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:08.296543 #NORMAL #DEBUG : ZPHM Checking health of sme: 165.225.208.24:443
+2021-03-26 19:29:08.297122 #NORMAL #INFO : ZPHM: Trying Connecting to 165.225.208.24: 443
+2021-03-26 19:29:08.396268 #NORMAL #INFO : ZPHM: Connected to Proxy: 165.225.208.24: 443. Will check for auth now.
+2021-03-26 19:29:08.601547 #NORMAL #INFO : ZPHM: Received response size: 244
+2021-03-26 19:29:08.601847 #NORMAL #INFO : ZPHM: Got status code: 407
+2021-03-26 19:29:08.602101 #NORMAL #INFO : ZPHM: Proxy: 165.225.208.24:443 is up and healthy.
+2021-03-26 19:29:08.602631 #NORMAL #INFO : ZPHM Good health
+2021-03-26 19:29:12.441562 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:12.441878 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:12.442001 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:12.442132 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:12.442446 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:12.442561 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:12.442677 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:12.442798 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:17.441597 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:17.441915 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:17.442038 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:17.442169 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:17.442487 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:17.442602 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:17.442724 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:17.442842 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:18.444452 #NORMAL #INFO : Executing route -n -v get -inet default 
+2021-03-26 19:29:18.444844 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:29:18.444935 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:29:18.445016 #NORMAL #INFO : u: link ; 
+2021-03-26 19:29:18.445136 #NORMAL #INFO : RTM_GET: Report Metrics: len 132, pid: 0, seq 150, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> default default 
+
+2021-03-26 19:29:18.445419 #NORMAL #INFO :    route to: default
+2021-03-26 19:29:18.445516 #NORMAL #INFO : destination: default
+2021-03-26 19:29:18.445626 #NORMAL #INFO :        mask: default
+2021-03-26 19:29:18.445710 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-26 19:29:18.445822 #NORMAL #INFO :   interface: en0
+2021-03-26 19:29:18.445929 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-26 19:29:18.446028 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-26 19:29:18.446143 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-26 19:29:18.446420 #NORMAL #INFO :  locks:  inits:  sockaddrs: <DST,GATEWAY,NETMASK,IFP,IFA> default 192.168.0.1 default en0:2.0.0.0.0.0 192.168.0.27
+
+2021-03-26 19:29:18.446603 #NORMAL #INFO : Executing route -n -v get -inet6 default 
+2021-03-26 19:29:18.446730 #NORMAL #INFO : u: link ; 
+2021-03-26 19:29:18.446867 #NORMAL #INFO : RTM_GET: Report Metrics: len 144, pid: 0, seq 151, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> :: default 
+
+2021-03-26 19:29:18.447088 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-26 19:29:18.447267 #NORMAL #INFO : Interface monitor: IPv4 interface en0(0), IPv6 interface (68)
+2021-03-26 19:29:21.746778 #NORMAL #DEBUG : check proxyReactivate called.
+2021-03-26 19:29:21.747082 #NORMAL #DEBUG : checkZtunnelHealth called.
+2021-03-26 19:29:21.747168 #NORMAL #DEBUG : startServicesIfRequired called!!
+2021-03-26 19:29:21.747292 #NORMAL #DEBUG : Refreshing exclude ip list. Old list size : 4
+2021-03-26 19:29:21.747421 #NORMAL #DEBUG : Resolving exclude hostname: mobilesupport.zscaler.com
+2021-03-26 19:29:21.789265 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:29:21.789496 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:29:21.789604 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:29:21.789709 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:29:21.789812 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:29:21.789915 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:29:21.790018 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:29:21.790121 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:29:21.790280 #NORMAL #INFO : resfreshExcludeIpsList Previous and new list are same!!
+2021-03-26 19:29:21.790395 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:29:21.790490 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:29:21.790599 #NORMAL #DEBUG : checkAndRestartTunIfRequired called!!
+2021-03-26 19:29:21.790713 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:21.790840 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:21.790952 #NORMAL #DEBUG : getSmeProxyState: (4 -> TUNNEL_FORWARDING) getZpnProxyState: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:21.791067 #NORMAL #WARN : restartRawSocket returning!!
+2021-03-26 19:29:21.791177 #NORMAL #DEBUG : isTunDnsEchoServerUp called!!
+2021-03-26 19:29:21.791268 #NORMAL #DEBUG : isTunUdpEchoServerUp called!!
+2021-03-26 19:29:21.791361 #NORMAL #INFO : Time elapsed since Zpn socket last read: 30 sec
+2021-03-26 19:29:21.791453 #NORMAL #DEBUG : Skipping connectZpnSocket as zpn socket state is: 2
+2021-03-26 19:29:21.791563 #NORMAL #DEBUG : startServicesIfRequired end!!
+2021-03-26 19:29:22.441871 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:22.442201 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:22.442321 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:22.442429 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:22.442726 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:22.442852 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:22.442973 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:22.443112 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:27.441499 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:27.441810 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:27.442037 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:27.442145 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:27.442456 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:27.442570 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:27.442695 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:27.442817 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:32.439724 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:32.440093 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:32.440232 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:32.440354 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:32.440678 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:32.440824 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:32.440942 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:32.441058 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:37.440562 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:37.440896 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:37.441028 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:37.441150 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:37.441472 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:37.441604 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:37.441726 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:37.441843 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:38.607935 #NORMAL #DEBUG : ZPHM Checking health of sme: 165.225.208.24:443
+2021-03-26 19:29:38.608568 #NORMAL #INFO : ZPHM: Trying Connecting to 165.225.208.24: 443
+2021-03-26 19:29:38.707640 #NORMAL #INFO : ZPHM: Connected to Proxy: 165.225.208.24: 443. Will check for auth now.
+2021-03-26 19:29:38.914275 #NORMAL #INFO : ZPHM: Received response size: 244
+2021-03-26 19:29:38.914725 #NORMAL #INFO : ZPHM: Got status code: 407
+2021-03-26 19:29:38.914834 #NORMAL #INFO : ZPHM: Proxy: 165.225.208.24:443 is up and healthy.
+2021-03-26 19:29:38.915111 #NORMAL #INFO : ZPHM Good health
+2021-03-26 19:29:42.441524 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:42.441897 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:42.442029 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:42.442162 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:42.442524 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:42.442655 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:42.442776 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:42.442911 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:47.436676 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:47.437058 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:47.437191 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:47.437313 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:47.437664 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:47.437793 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:47.437914 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:47.438057 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:48.453560 #NORMAL #INFO : Executing route -n -v get -inet default 
+2021-03-26 19:29:48.454069 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:29:48.454158 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:29:48.454238 #NORMAL #INFO : u: link ; 
+2021-03-26 19:29:48.454362 #NORMAL #INFO : RTM_GET: Report Metrics: len 132, pid: 0, seq 152, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> default default 
+
+2021-03-26 19:29:48.454666 #NORMAL #INFO :    route to: default
+2021-03-26 19:29:48.454764 #NORMAL #INFO : destination: default
+2021-03-26 19:29:48.454853 #NORMAL #INFO :        mask: default
+2021-03-26 19:29:48.454947 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-26 19:29:48.455058 #NORMAL #INFO :   interface: en0
+2021-03-26 19:29:48.455152 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-26 19:29:48.455256 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-26 19:29:48.455379 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-26 19:29:48.455502 #NORMAL #INFO :  locks:  inits:  sockaddrs: <DST,GATEWAY,NETMASK,IFP,IFA> default 192.168.0.1 default en0:2.0.0.0.0.0 192.168.0.27
+
+2021-03-26 19:29:48.455694 #NORMAL #INFO : Executing route -n -v get -inet6 default 
+2021-03-26 19:29:48.455810 #NORMAL #INFO : u: link ; 
+2021-03-26 19:29:48.455961 #NORMAL #INFO : RTM_GET: Report Metrics: len 144, pid: 0, seq 153, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> :: default 
+
+2021-03-26 19:29:48.456116 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-26 19:29:48.456258 #NORMAL #INFO : Interface monitor: IPv4 interface en0(0), IPv6 interface (69)
+2021-03-26 19:29:51.796767 #NORMAL #DEBUG : check proxyReactivate called.
+2021-03-26 19:29:51.797096 #NORMAL #DEBUG : checkZtunnelHealth called.
+2021-03-26 19:29:51.797509 #NORMAL #DEBUG : startServicesIfRequired called!!
+2021-03-26 19:29:51.797629 #NORMAL #DEBUG : Refreshing exclude ip list. Old list size : 4
+2021-03-26 19:29:51.797745 #NORMAL #DEBUG : Resolving exclude hostname: mobilesupport.zscaler.com
+2021-03-26 19:29:51.845839 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:29:51.846147 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:29:51.846254 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:29:51.846359 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:29:51.846462 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:29:51.846566 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:29:51.846668 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:29:51.846771 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:29:51.846952 #NORMAL #INFO : resfreshExcludeIpsList Previous and new list are same!!
+2021-03-26 19:29:51.847053 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:29:51.847145 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:29:51.847591 #NORMAL #DEBUG : checkAndRestartTunIfRequired called!!
+2021-03-26 19:29:51.847719 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:51.847824 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:51.847920 #NORMAL #DEBUG : getSmeProxyState: (4 -> TUNNEL_FORWARDING) getZpnProxyState: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:51.848027 #NORMAL #WARN : restartRawSocket returning!!
+2021-03-26 19:29:51.848130 #NORMAL #DEBUG : isTunDnsEchoServerUp called!!
+2021-03-26 19:29:51.848215 #NORMAL #DEBUG : isTunUdpEchoServerUp called!!
+2021-03-26 19:29:51.848329 #NORMAL #INFO : Time elapsed since Zpn socket last read: 60 sec
+2021-03-26 19:29:51.848438 #NORMAL #DEBUG : Zpn socket keepalive request timeout reached! Sending keepalive message!
+2021-03-26 19:29:51.848737 #NORMAL #DEBUG : Sending fohh_status_request request: Size: 99 Data: { "fohh_status_request" : { "request_epoch_in_us" : 1616786991848632, "request_id" : 33 } }
+2021-03-26 19:29:51.848915 #NORMAL #DEBUG : Keepalive json: Written 99 bytes to request buffer.
+2021-03-26 19:29:51.849271 #NORMAL #DEBUG : Zpn socket Written bytes: 99 Available bytes to write: 0
+2021-03-26 19:29:51.849373 #NORMAL #DEBUG : Skipping connectZpnSocket as zpn socket state is: 2
+2021-03-26 19:29:51.849541 #NORMAL #DEBUG : startServicesIfRequired end!!
+2021-03-26 19:29:51.913188 #NORMAL #DEBUG : zpnSocketReadCallback called
+2021-03-26 19:29:51.913522 #NORMAL #DEBUG : Zpn socket read bytes: 149 Used: 149
+2021-03-26 19:29:51.913642 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 0 SSL read: 0
+2021-03-26 19:29:51.913744 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 19:29:51.914160 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 19:29:51.914330 #NORMAL #DEBUG : Response length: 141
+2021-03-26 19:29:51.914423 #NORMAL #INFO : ZPN: Control Message Response Data: {"fohh_status_response":{"request_id":33,"request_epoch_in_us":1616786991848632,"response_epoch_in_us":1616786991862326,"received_bytes":0}}
+
+2021-03-26 19:29:51.914680 #NORMAL #DEBUG : Got fohh_status_response response.
+2021-03-26 19:29:51.914782 #NORMAL #DEBUG : fohh_status_response request_id: 33 Current Time us: 1616786991914767 RTT us: 66135
+2021-03-26 19:29:52.439792 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:52.440133 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:52.440250 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:52.440372 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:52.440712 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:52.440849 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:52.440955 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:52.441056 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:53.012638 #NORMAL #INFO : ===> ID=1202126281, TUN-Proxy: connection to 54.172.203.45 sock-fd=15, src_port=58332, dst_port=443
+2021-03-26 19:29:53.012911 #NORMAL #DEBUG : ID=1202126281, Client socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-26 19:29:53.013023 #NORMAL #DEBUG : ID=1202126281, Use Sme: 1 Sme IP: 165.225.208.24
+2021-03-26 19:29:53.013173 #NORMAL #DEBUG : ID=1202126281, readFromClient: read bytes 517
+2021-03-26 19:29:53.013252 #NORMAL #DEBUG : ID=1202126281, HTTPS, SNI-Host=ping.chartbeat.net
+2021-03-26 19:29:53.013326 #NORMAL #DEBUG : ID=1202126281, readFromClient: Host Address: ping.chartbeat.net:443
+2021-03-26 19:29:53.035193 #NORMAL #DEBUG : ID=1202126281, PAC Parse Host: ping.chartbeat.net uri=https://ping.chartbeat.net Proxy=PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-26 19:29:53.035370 #NORMAL #INFO : ID=1202126281, PAC Parse Action: Proxy:165.225.208.24
+2021-03-26 19:29:53.035430 #NORMAL #DEBUG : ID=1202126281, match host:ping.chartbeat.net:443 result:0
+2021-03-26 19:29:53.035672 #NORMAL #DEBUG : ID=1202126281, Server socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-26 19:29:53.250399 #NORMAL #INFO : ID=1202126281, Tunnel to SME for host=ping.chartbeat.net:443, SME IP=165.225.208.24:443
+2021-03-26 19:29:53.250770 #NORMAL #DEBUG : ID=1202126281, Cnonce is: 44b88715b84e12a659ce1d42e0713984
+2021-03-26 19:29:53.250904 #NORMAL #DEBUG : ID=1202126281, SME request: 
+CONNECT ping.chartbeat.net:443 HTTP/1.1
+Host: ping.chartbeat.net:443
+User-Agent: iOS/ Version 13.5 (Build 17F75) Ztunnel/1.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+X-Forwarded-For: 192.168.0.27
+Proxy-Authorization: Digest username="@99862c308ecbedb779b765dcb9de40d1967e7813c3290b44a6ee334c3a30d18d", nonce="3cec74658ae9685340a705e469386a7f", realm="zscalertwo.net", opaque="c188281270b38aa7f7389efbf07443c8", cnonce="44b88715b84e12a659ce1d42e0713984", qop="auth", uri="ping.chartbeat.net:443", nc=00000002, response="3d3f30a2fd66a9485f8957c322d51160"
+2021-03-26 19:29:53.251389 #NORMAL #DEBUG : ID=1202126281, startServerConnection done!!
+2021-03-26 19:29:53.453588 #NORMAL #DEBUG : ID=1202126281, SME response: Version: HTTP/1.1 Status: 200 Reason: Connection Established
+2021-03-26 19:29:57.441485 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:57.441848 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:57.441966 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:57.442072 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:29:57.442395 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:57.442521 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:29:57.442626 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:29:57.442727 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:02.441935 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:02.442338 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:02.442485 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:02.442617 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:02.442975 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:02.443105 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:02.443226 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:02.443342 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:07.441850 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:07.442237 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:07.442373 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:07.442520 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:07.442844 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:07.442987 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:07.443128 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:07.443277 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:08.918487 #NORMAL #DEBUG : ZPHM Checking health of sme: 165.225.208.24:443
+2021-03-26 19:30:08.919116 #NORMAL #INFO : ZPHM: Trying Connecting to 165.225.208.24: 443
+2021-03-26 19:30:09.018517 #NORMAL #INFO : ZPHM: Connected to Proxy: 165.225.208.24: 443. Will check for auth now.
+2021-03-26 19:30:09.223403 #NORMAL #INFO : ZPHM: Received response size: 244
+2021-03-26 19:30:09.223709 #NORMAL #INFO : ZPHM: Got status code: 407
+2021-03-26 19:30:09.223823 #NORMAL #INFO : ZPHM: Proxy: 165.225.208.24:443 is up and healthy.
+2021-03-26 19:30:09.224076 #NORMAL #INFO : ZPHM Good health
+2021-03-26 19:30:12.440598 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:12.440942 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:12.441072 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:12.441192 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:12.441501 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:12.441632 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:12.441753 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:12.441871 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:17.441473 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:17.441850 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:17.442004 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:17.442202 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:17.442542 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:17.442657 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:17.442762 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:17.442865 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:18.446453 #NORMAL #INFO : Executing route -n -v get -inet default 
+2021-03-26 19:30:18.446783 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:30:18.446875 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:30:18.446955 #NORMAL #INFO : u: link ; 
+2021-03-26 19:30:18.447071 #NORMAL #INFO : RTM_GET: Report Metrics: len 132, pid: 0, seq 154, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> default default 
+
+2021-03-26 19:30:18.447339 #NORMAL #INFO :    route to: default
+2021-03-26 19:30:18.447427 #NORMAL #INFO : destination: default
+2021-03-26 19:30:18.447510 #NORMAL #INFO :        mask: default
+2021-03-26 19:30:18.447594 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-26 19:30:18.447678 #NORMAL #INFO :   interface: en0
+2021-03-26 19:30:18.447767 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-26 19:30:18.447864 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-26 19:30:18.447973 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-26 19:30:18.448097 #NORMAL #INFO :  locks:  inits:  sockaddrs: <DST,GATEWAY,NETMASK,IFP,IFA> default 192.168.0.1 default en0:2.0.0.0.0.0 192.168.0.27
+
+2021-03-26 19:30:18.448340 #NORMAL #INFO : Executing route -n -v get -inet6 default 
+2021-03-26 19:30:18.448477 #NORMAL #INFO : u: link ; 
+2021-03-26 19:30:18.448609 #NORMAL #INFO : RTM_GET: Report Metrics: len 144, pid: 0, seq 155, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> :: default 
+
+2021-03-26 19:30:18.448782 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-26 19:30:18.448908 #NORMAL #INFO : Interface monitor: IPv4 interface en0(0), IPv6 interface (70)
+2021-03-26 19:30:21.850305 #NORMAL #DEBUG : check proxyReactivate called.
+2021-03-26 19:30:21.850597 #NORMAL #DEBUG : checkZtunnelHealth called.
+2021-03-26 19:30:21.850684 #NORMAL #DEBUG : startServicesIfRequired called!!
+2021-03-26 19:30:21.850792 #NORMAL #DEBUG : Refreshing exclude ip list. Old list size : 4
+2021-03-26 19:30:21.850937 #NORMAL #DEBUG : Resolving exclude hostname: mobilesupport.zscaler.com
+2021-03-26 19:30:21.882309 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:30:21.882565 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:30:21.882676 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:30:21.882781 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:30:21.882886 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:30:21.882988 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:30:21.883093 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:30:21.883196 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:30:21.883357 #NORMAL #INFO : resfreshExcludeIpsList Previous and new list are same!!
+2021-03-26 19:30:21.883457 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:30:21.883564 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:30:21.883653 #NORMAL #DEBUG : checkAndRestartTunIfRequired called!!
+2021-03-26 19:30:21.883765 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:21.883865 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:21.884084 #NORMAL #DEBUG : getSmeProxyState: (4 -> TUNNEL_FORWARDING) getZpnProxyState: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:21.884200 #NORMAL #WARN : restartRawSocket returning!!
+2021-03-26 19:30:21.884285 #NORMAL #DEBUG : isTunDnsEchoServerUp called!!
+2021-03-26 19:30:21.884387 #NORMAL #DEBUG : isTunUdpEchoServerUp called!!
+2021-03-26 19:30:21.884507 #NORMAL #INFO : Time elapsed since Zpn socket last read: 29 sec
+2021-03-26 19:30:21.884606 #NORMAL #DEBUG : Skipping connectZpnSocket as zpn socket state is: 2
+2021-03-26 19:30:21.884710 #NORMAL #DEBUG : startServicesIfRequired end!!
+2021-03-26 19:30:22.441948 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:22.442274 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:22.442394 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:22.442507 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:22.442815 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:22.442928 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:22.443034 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:22.443136 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:27.441533 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:27.441891 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:27.442009 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:27.442121 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:27.442461 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:27.442575 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:27.442696 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:27.442800 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:32.438865 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:32.439261 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:32.439398 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:32.439543 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:32.439874 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:32.440004 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:32.440124 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:32.440239 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:37.441568 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:37.441952 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:37.442086 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:37.442224 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:37.442562 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:37.442715 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:37.442837 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:37.442975 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:39.227039 #NORMAL #DEBUG : ZPHM Checking health of sme: 165.225.208.24:443
+2021-03-26 19:30:39.227711 #NORMAL #INFO : ZPHM: Trying Connecting to 165.225.208.24: 443
+2021-03-26 19:30:39.331210 #NORMAL #INFO : ZPHM: Connected to Proxy: 165.225.208.24: 443. Will check for auth now.
+2021-03-26 19:30:39.534613 #NORMAL #INFO : ZPHM: Received response size: 244
+2021-03-26 19:30:39.534963 #NORMAL #INFO : ZPHM: Got status code: 407
+2021-03-26 19:30:39.535081 #NORMAL #INFO : ZPHM: Proxy: 165.225.208.24:443 is up and healthy.
+2021-03-26 19:30:39.535430 #NORMAL #INFO : ZPHM Good health
+2021-03-26 19:30:42.441505 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:42.441872 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:42.441990 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:42.442110 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:42.442454 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:42.442571 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:42.442677 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:42.442778 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:47.441545 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:47.441851 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:47.441965 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:47.442069 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:47.442359 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:47.442474 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:47.442579 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:47.442681 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:48.449258 #NORMAL #INFO : Executing route -n -v get -inet default 
+2021-03-26 19:30:48.449628 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:30:48.449730 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:30:48.449812 #NORMAL #INFO : u: link ; 
+2021-03-26 19:30:48.449950 #NORMAL #INFO : RTM_GET: Report Metrics: len 132, pid: 0, seq 156, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> default default 
+
+2021-03-26 19:30:48.450229 #NORMAL #INFO :    route to: default
+2021-03-26 19:30:48.450314 #NORMAL #INFO : destination: default
+2021-03-26 19:30:48.450396 #NORMAL #INFO :        mask: default
+2021-03-26 19:30:48.450489 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-26 19:30:48.450577 #NORMAL #INFO :   interface: en0
+2021-03-26 19:30:48.450683 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-26 19:30:48.450785 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-26 19:30:48.450909 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-26 19:30:48.451041 #NORMAL #INFO :  locks:  inits:  sockaddrs: <DST,GATEWAY,NETMASK,IFP,IFA> default 192.168.0.1 default en0:2.0.0.0.0.0 192.168.0.27
+
+2021-03-26 19:30:48.451231 #NORMAL #INFO : Executing route -n -v get -inet6 default 
+2021-03-26 19:30:48.451339 #NORMAL #INFO : u: link ; 
+2021-03-26 19:30:48.451468 #NORMAL #INFO : RTM_GET: Report Metrics: len 144, pid: 0, seq 157, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> :: default 
+
+2021-03-26 19:30:48.451629 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-26 19:30:48.451761 #NORMAL #INFO : Interface monitor: IPv4 interface en0(0), IPv6 interface (71)
+2021-03-26 19:30:51.889871 #NORMAL #DEBUG : check proxyReactivate called.
+2021-03-26 19:30:51.890148 #NORMAL #DEBUG : checkZtunnelHealth called.
+2021-03-26 19:30:51.890240 #NORMAL #DEBUG : startServicesIfRequired called!!
+2021-03-26 19:30:51.890350 #NORMAL #DEBUG : Refreshing exclude ip list. Old list size : 4
+2021-03-26 19:30:51.890470 #NORMAL #DEBUG : Resolving exclude hostname: mobilesupport.zscaler.com
+2021-03-26 19:30:51.899026 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:30:51.899276 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:30:51.899389 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:30:51.899497 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:30:51.899759 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:30:51.899865 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:30:51.899967 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:30:51.900071 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:30:51.900240 #NORMAL #INFO : resfreshExcludeIpsList Previous and new list are same!!
+2021-03-26 19:30:51.900352 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:30:51.900441 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:30:51.900550 #NORMAL #DEBUG : checkAndRestartTunIfRequired called!!
+2021-03-26 19:30:51.900686 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:51.900792 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:51.900896 #NORMAL #DEBUG : getSmeProxyState: (4 -> TUNNEL_FORWARDING) getZpnProxyState: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:51.901012 #NORMAL #WARN : restartRawSocket returning!!
+2021-03-26 19:30:51.901115 #NORMAL #DEBUG : isTunDnsEchoServerUp called!!
+2021-03-26 19:30:51.901198 #NORMAL #DEBUG : isTunUdpEchoServerUp called!!
+2021-03-26 19:30:51.901309 #NORMAL #INFO : Time elapsed since Zpn socket last read: 59 sec
+2021-03-26 19:30:51.901418 #NORMAL #DEBUG : Zpn socket keepalive request timeout reached! Sending keepalive message!
+2021-03-26 19:30:51.901641 #NORMAL #DEBUG : Sending fohh_status_request request: Size: 99 Data: { "fohh_status_request" : { "request_epoch_in_us" : 1616787051901541, "request_id" : 34 } }
+2021-03-26 19:30:51.901810 #NORMAL #DEBUG : Keepalive json: Written 99 bytes to request buffer.
+2021-03-26 19:30:51.902195 #NORMAL #DEBUG : Zpn socket Written bytes: 99 Available bytes to write: 0
+2021-03-26 19:30:51.902296 #NORMAL #DEBUG : Skipping connectZpnSocket as zpn socket state is: 2
+2021-03-26 19:30:51.902388 #NORMAL #DEBUG : startServicesIfRequired end!!
+2021-03-26 19:30:51.929318 #NORMAL #DEBUG : zpnSocketReadCallback called
+2021-03-26 19:30:51.929547 #NORMAL #DEBUG : Zpn socket read bytes: 149 Used: 149
+2021-03-26 19:30:51.929667 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 0 SSL read: 0
+2021-03-26 19:30:51.929771 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 19:30:51.929849 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 19:30:51.929925 #NORMAL #DEBUG : Response length: 141
+2021-03-26 19:30:51.930037 #NORMAL #INFO : ZPN: Control Message Response Data: {"fohh_status_response":{"request_id":34,"request_epoch_in_us":1616787051901541,"response_epoch_in_us":1616787051921258,"received_bytes":0}}
+
+2021-03-26 19:30:51.930321 #NORMAL #DEBUG : Got fohh_status_response response.
+2021-03-26 19:30:51.930436 #NORMAL #DEBUG : fohh_status_response request_id: 34 Current Time us: 1616787051930421 RTT us: 28880
+2021-03-26 19:30:52.441538 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:52.441804 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:52.441924 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:52.442036 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:52.442354 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:52.442467 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:52.442571 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:52.442671 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:57.438763 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:57.439088 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:57.439202 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:57.439306 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:30:57.439682 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:57.439797 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:30:57.439903 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:30:57.440004 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:02.441455 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:02.441862 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:02.442003 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:02.442139 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:02.442512 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:02.442645 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:02.442785 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:02.442921 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:07.441549 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:07.441933 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:07.442073 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:07.442244 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:07.442571 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:07.442721 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:07.442851 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:07.442972 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:09.540622 #NORMAL #DEBUG : ZPHM Checking health of sme: 165.225.208.24:443
+2021-03-26 19:31:09.541280 #NORMAL #INFO : ZPHM: Trying Connecting to 165.225.208.24: 443
+2021-03-26 19:31:09.640877 #NORMAL #INFO : ZPHM: Connected to Proxy: 165.225.208.24: 443. Will check for auth now.
+2021-03-26 19:31:09.845702 #NORMAL #INFO : ZPHM: Received response size: 244
+2021-03-26 19:31:09.846092 #NORMAL #INFO : ZPHM: Got status code: 407
+2021-03-26 19:31:09.846210 #NORMAL #INFO : ZPHM: Proxy: 165.225.208.24:443 is up and healthy.
+2021-03-26 19:31:09.846530 #NORMAL #INFO : ZPHM Good health
+2021-03-26 19:31:12.441517 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:12.441859 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:12.441995 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:12.442117 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:12.442454 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:12.442595 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:12.442720 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:12.442840 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:17.439676 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:17.440055 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:17.440191 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:17.440319 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:17.440655 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:17.440787 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:17.440927 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:17.441064 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:18.458743 #NORMAL #INFO : Executing route -n -v get -inet default 
+2021-03-26 19:31:18.459070 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:31:18.459203 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:31:18.459726 #NORMAL #INFO : u: link ; 
+2021-03-26 19:31:18.459862 #NORMAL #INFO : RTM_GET: Report Metrics: len 132, pid: 0, seq 158, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> default default 
+
+2021-03-26 19:31:18.460119 #NORMAL #INFO :    route to: default
+2021-03-26 19:31:18.460206 #NORMAL #INFO : destination: default
+2021-03-26 19:31:18.460288 #NORMAL #INFO :        mask: default
+2021-03-26 19:31:18.460373 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-26 19:31:18.460456 #NORMAL #INFO :   interface: en0
+2021-03-26 19:31:18.460541 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-26 19:31:18.460631 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-26 19:31:18.460738 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-26 19:31:18.460862 #NORMAL #INFO :  locks:  inits:  sockaddrs: <DST,GATEWAY,NETMASK,IFP,IFA> default 192.168.0.1 default en0:2.0.0.0.0.0 192.168.0.27
+
+2021-03-26 19:31:18.461054 #NORMAL #INFO : Executing route -n -v get -inet6 default 
+2021-03-26 19:31:18.461210 #NORMAL #INFO : u: link ; 
+2021-03-26 19:31:18.461346 #NORMAL #INFO : RTM_GET: Report Metrics: len 144, pid: 0, seq 159, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> :: default 
+
+2021-03-26 19:31:18.461514 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-26 19:31:18.461635 #NORMAL #INFO : Interface monitor: IPv4 interface en0(0), IPv6 interface (72)
+2021-03-26 19:31:21.907629 #NORMAL #DEBUG : check proxyReactivate called.
+2021-03-26 19:31:21.907877 #NORMAL #DEBUG : checkZtunnelHealth called.
+2021-03-26 19:31:21.907964 #NORMAL #DEBUG : startServicesIfRequired called!!
+2021-03-26 19:31:21.908094 #NORMAL #DEBUG : Refreshing exclude ip list. Old list size : 4
+2021-03-26 19:31:21.908249 #NORMAL #DEBUG : Resolving exclude hostname: mobilesupport.zscaler.com
+2021-03-26 19:31:21.948358 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:31:21.948627 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:31:21.948736 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:31:21.948840 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:31:21.948944 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:31:21.949047 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:31:21.949150 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:31:21.949271 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:31:21.949431 #NORMAL #INFO : resfreshExcludeIpsList Previous and new list are same!!
+2021-03-26 19:31:21.949544 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:31:21.949644 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:31:21.949769 #NORMAL #DEBUG : checkAndRestartTunIfRequired called!!
+2021-03-26 19:31:21.949874 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:21.949988 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:21.950107 #NORMAL #DEBUG : getSmeProxyState: (4 -> TUNNEL_FORWARDING) getZpnProxyState: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:21.950211 #NORMAL #WARN : restartRawSocket returning!!
+2021-03-26 19:31:21.950314 #NORMAL #DEBUG : isTunDnsEchoServerUp called!!
+2021-03-26 19:31:21.950430 #NORMAL #DEBUG : isTunUdpEchoServerUp called!!
+2021-03-26 19:31:21.950549 #NORMAL #INFO : Time elapsed since Zpn socket last read: 30 sec
+2021-03-26 19:31:21.950651 #NORMAL #DEBUG : Skipping connectZpnSocket as zpn socket state is: 2
+2021-03-26 19:31:21.950776 #NORMAL #DEBUG : startServicesIfRequired end!!
+2021-03-26 19:31:22.441512 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:22.441891 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:22.442012 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:22.442136 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:22.442830 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:22.442966 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:22.443074 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:22.443181 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:27.441954 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:27.442301 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:27.442438 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:27.442544 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:27.442863 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:27.443000 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:27.443113 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:27.443233 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:32.440236 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:32.440629 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:32.440776 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:32.440920 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:32.441256 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:32.441400 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:32.441521 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:32.441639 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:37.441453 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:37.441897 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:37.442033 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:37.442173 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:37.442501 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:37.442705 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:37.442825 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:37.442942 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:39.851772 #NORMAL #DEBUG : ZPHM Checking health of sme: 165.225.208.24:443
+2021-03-26 19:31:39.852437 #NORMAL #INFO : ZPHM: Trying Connecting to 165.225.208.24: 443
+2021-03-26 19:31:39.951665 #NORMAL #INFO : ZPHM: Connected to Proxy: 165.225.208.24: 443. Will check for auth now.
+2021-03-26 19:31:40.156911 #NORMAL #INFO : ZPHM: Received response size: 244
+2021-03-26 19:31:40.157189 #NORMAL #INFO : ZPHM: Got status code: 407
+2021-03-26 19:31:40.157242 #NORMAL #INFO : ZPHM: Proxy: 165.225.208.24:443 is up and healthy.
+2021-03-26 19:31:40.157404 #NORMAL #INFO : ZPHM Good health
+2021-03-26 19:31:42.441836 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:42.442245 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:42.442395 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:42.442519 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:42.442847 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:42.442996 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:42.443120 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:42.443386 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:47.438006 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:47.438344 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:47.438464 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:47.438569 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:47.438885 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:47.439000 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:47.439104 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:47.439244 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:48.458319 #NORMAL #INFO : Executing route -n -v get -inet default 
+2021-03-26 19:31:48.458649 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:31:48.458742 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:31:48.458830 #NORMAL #INFO : u: link ; 
+2021-03-26 19:31:48.458971 #NORMAL #INFO : RTM_GET: Report Metrics: len 132, pid: 0, seq 160, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> default default 
+
+2021-03-26 19:31:48.459246 #NORMAL #INFO :    route to: default
+2021-03-26 19:31:48.459341 #NORMAL #INFO : destination: default
+2021-03-26 19:31:48.459456 #NORMAL #INFO :        mask: default
+2021-03-26 19:31:48.459553 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-26 19:31:48.459670 #NORMAL #INFO :   interface: en0
+2021-03-26 19:31:48.459785 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-26 19:31:48.459890 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-26 19:31:48.460014 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-26 19:31:48.460151 #NORMAL #INFO :  locks:  inits:  sockaddrs: <DST,GATEWAY,NETMASK,IFP,IFA> default 192.168.0.1 default en0:2.0.0.0.0.0 192.168.0.27
+
+2021-03-26 19:31:48.460353 #NORMAL #INFO : Executing route -n -v get -inet6 default 
+2021-03-26 19:31:48.460475 #NORMAL #INFO : u: link ; 
+2021-03-26 19:31:48.460629 #NORMAL #INFO : RTM_GET: Report Metrics: len 144, pid: 0, seq 161, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> :: default 
+
+2021-03-26 19:31:48.460820 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-26 19:31:48.460972 #NORMAL #INFO : Interface monitor: IPv4 interface en0(0), IPv6 interface (73)
+2021-03-26 19:31:51.956017 #NORMAL #DEBUG : check proxyReactivate called.
+2021-03-26 19:31:51.956293 #NORMAL #DEBUG : checkZtunnelHealth called.
+2021-03-26 19:31:51.956385 #NORMAL #DEBUG : startServicesIfRequired called!!
+2021-03-26 19:31:51.956539 #NORMAL #DEBUG : Refreshing exclude ip list. Old list size : 4
+2021-03-26 19:31:51.956652 #NORMAL #DEBUG : Resolving exclude hostname: mobilesupport.zscaler.com
+2021-03-26 19:31:51.987766 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:31:51.988011 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:31:51.988123 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:31:51.988236 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:31:51.988349 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:31:51.988466 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:31:51.988569 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:31:51.988690 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:31:51.988859 #NORMAL #INFO : resfreshExcludeIpsList Previous and new list are same!!
+2021-03-26 19:31:51.988980 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:31:51.989184 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:31:51.989305 #NORMAL #DEBUG : checkAndRestartTunIfRequired called!!
+2021-03-26 19:31:51.989439 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:51.989572 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:51.989689 #NORMAL #DEBUG : getSmeProxyState: (4 -> TUNNEL_FORWARDING) getZpnProxyState: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:51.989861 #NORMAL #WARN : restartRawSocket returning!!
+2021-03-26 19:31:51.989945 #NORMAL #DEBUG : isTunDnsEchoServerUp called!!
+2021-03-26 19:31:51.990029 #NORMAL #DEBUG : isTunUdpEchoServerUp called!!
+2021-03-26 19:31:51.990123 #NORMAL #INFO : Time elapsed since Zpn socket last read: 60 sec
+2021-03-26 19:31:51.990230 #NORMAL #DEBUG : Zpn socket keepalive request timeout reached! Sending keepalive message!
+2021-03-26 19:31:51.990453 #NORMAL #DEBUG : Sending fohh_status_request request: Size: 99 Data: { "fohh_status_request" : { "request_epoch_in_us" : 1616787111990353, "request_id" : 35 } }
+2021-03-26 19:31:51.990650 #NORMAL #DEBUG : Keepalive json: Written 99 bytes to request buffer.
+2021-03-26 19:31:51.991044 #NORMAL #DEBUG : Zpn socket Written bytes: 99 Available bytes to write: 0
+2021-03-26 19:31:51.991283 #NORMAL #DEBUG : Skipping connectZpnSocket as zpn socket state is: 2
+2021-03-26 19:31:51.991395 #NORMAL #DEBUG : startServicesIfRequired end!!
+2021-03-26 19:31:52.013933 #NORMAL #DEBUG : zpnSocketReadCallback called
+2021-03-26 19:31:52.014144 #NORMAL #DEBUG : Zpn socket read bytes: 149 Used: 149
+2021-03-26 19:31:52.014285 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 0 SSL read: 0
+2021-03-26 19:31:52.014403 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 19:31:52.014511 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 19:31:52.014588 #NORMAL #DEBUG : Response length: 141
+2021-03-26 19:31:52.014700 #NORMAL #INFO : ZPN: Control Message Response Data: {"fohh_status_response":{"request_id":35,"request_epoch_in_us":1616787111990353,"response_epoch_in_us":1616787112004114,"received_bytes":0}}
+
+2021-03-26 19:31:52.014972 #NORMAL #DEBUG : Got fohh_status_response response.
+2021-03-26 19:31:52.015089 #NORMAL #DEBUG : fohh_status_response request_id: 35 Current Time us: 1616787112015073 RTT us: 24720
+2021-03-26 19:31:52.441514 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:52.441838 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:52.441956 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:52.442078 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:52.442378 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:52.442504 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:52.442609 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:52.442741 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:54.225827 #NORMAL #DEBUG : ID=1202126281, readFromClient: read bytes: 0
+2021-03-26 19:31:54.226575 #NORMAL #WARN : ID=1202126281, Exception in TcpConnection run() (Error=Application exception: Both client and server sockets are closed!)
+2021-03-26 19:31:54.226751 #NORMAL #DEBUG : ID=1202126281, Disconnecting!
+2021-03-26 19:31:54.226851 #NORMAL #INFO : ===> ID=1202126281, ~ZTCPServerConnection state=closed ServerConnections=1 clt_bytes=1395, srv_bytes=3538!
+2021-03-26 19:31:57.441196 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:57.441536 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:57.441650 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:57.441773 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:31:57.442094 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:57.442215 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:31:57.442321 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:31:57.442430 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:02.438977 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:02.439391 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:02.439526 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:02.439647 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:02.439966 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:02.440095 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:02.440229 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:02.440421 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:07.441047 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:07.441389 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:07.441527 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:07.441654 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:07.441964 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:07.442123 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:07.442246 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:07.442365 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:10.162672 #NORMAL #DEBUG : ZPHM Checking health of sme: 165.225.208.24:443
+2021-03-26 19:32:10.163174 #NORMAL #INFO : ZPHM: Trying Connecting to 165.225.208.24: 443
+2021-03-26 19:32:10.262455 #NORMAL #INFO : ZPHM: Connected to Proxy: 165.225.208.24: 443. Will check for auth now.
+2021-03-26 19:32:10.469223 #NORMAL #INFO : ZPHM: Received response size: 244
+2021-03-26 19:32:10.469534 #NORMAL #INFO : ZPHM: Got status code: 407
+2021-03-26 19:32:10.469643 #NORMAL #INFO : ZPHM: Proxy: 165.225.208.24:443 is up and healthy.
+2021-03-26 19:32:10.469888 #NORMAL #INFO : ZPHM Good health
+2021-03-26 19:32:12.438113 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:12.438485 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:12.438623 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:12.438796 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:12.439118 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:12.439263 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:12.439394 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:12.439530 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:17.440347 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:17.440685 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:17.440819 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:17.440940 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:17.441256 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:17.441393 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:17.441517 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:17.441645 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:18.446351 #NORMAL #INFO : Executing route -n -v get -inet default 
+2021-03-26 19:32:18.446740 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:32:18.446854 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:32:18.446956 #NORMAL #INFO : u: link ; 
+2021-03-26 19:32:18.447139 #NORMAL #INFO : RTM_GET: Report Metrics: len 132, pid: 0, seq 162, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> default default 
+
+2021-03-26 19:32:18.447438 #NORMAL #INFO :    route to: default
+2021-03-26 19:32:18.447573 #NORMAL #INFO : destination: default
+2021-03-26 19:32:18.447705 #NORMAL #INFO :        mask: default
+2021-03-26 19:32:18.447824 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-26 19:32:18.447945 #NORMAL #INFO :   interface: en0
+2021-03-26 19:32:18.448070 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-26 19:32:18.448193 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-26 19:32:18.448336 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-26 19:32:18.448495 #NORMAL #INFO :  locks:  inits:  sockaddrs: <DST,GATEWAY,NETMASK,IFP,IFA> default 192.168.0.1 default en0:2.0.0.0.0.0 192.168.0.27
+
+2021-03-26 19:32:18.448721 #NORMAL #INFO : Executing route -n -v get -inet6 default 
+2021-03-26 19:32:18.448862 #NORMAL #INFO : u: link ; 
+2021-03-26 19:32:18.449049 #NORMAL #INFO : RTM_GET: Report Metrics: len 144, pid: 0, seq 163, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> :: default 
+
+2021-03-26 19:32:18.449248 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-26 19:32:18.449395 #NORMAL #INFO : Interface monitor: IPv4 interface en0(0), IPv6 interface (74)
+2021-03-26 19:32:21.996599 #NORMAL #DEBUG : check proxyReactivate called.
+2021-03-26 19:32:21.996892 #NORMAL #DEBUG : checkZtunnelHealth called.
+2021-03-26 19:32:21.997005 #NORMAL #DEBUG : startServicesIfRequired called!!
+2021-03-26 19:32:21.997136 #NORMAL #DEBUG : Refreshing exclude ip list. Old list size : 4
+2021-03-26 19:32:21.997284 #NORMAL #DEBUG : Resolving exclude hostname: mobilesupport.zscaler.com
+2021-03-26 19:32:22.031556 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:32:22.031818 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:32:22.031949 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:32:22.032071 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:32:22.032191 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:32:22.032310 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:32:22.032435 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:32:22.032552 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:32:22.032720 #NORMAL #INFO : resfreshExcludeIpsList Previous and new list are same!!
+2021-03-26 19:32:22.032851 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:32:22.032968 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:32:22.033073 #NORMAL #DEBUG : checkAndRestartTunIfRequired called!!
+2021-03-26 19:32:22.033215 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:22.033341 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:22.033467 #NORMAL #DEBUG : getSmeProxyState: (4 -> TUNNEL_FORWARDING) getZpnProxyState: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:22.033597 #NORMAL #WARN : restartRawSocket returning!!
+2021-03-26 19:32:22.033711 #NORMAL #DEBUG : isTunDnsEchoServerUp called!!
+2021-03-26 19:32:22.033817 #NORMAL #DEBUG : isTunUdpEchoServerUp called!!
+2021-03-26 19:32:22.033938 #NORMAL #INFO : Time elapsed since Zpn socket last read: 30 sec
+2021-03-26 19:32:22.034052 #NORMAL #DEBUG : Skipping connectZpnSocket as zpn socket state is: 2
+2021-03-26 19:32:22.034179 #NORMAL #DEBUG : startServicesIfRequired end!!
+2021-03-26 19:32:22.439396 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:22.439661 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:22.439804 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:22.439972 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:22.440307 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:22.440439 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:22.440560 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:22.440677 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:27.439985 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:27.440328 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:27.440457 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:27.440578 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:27.440886 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:27.441013 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:27.441132 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:27.441248 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:32.438760 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:32.439106 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:32.439246 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:32.439367 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:32.439686 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:32.439818 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:32.439942 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:32.440058 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:37.438979 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:37.439311 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:37.439448 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:37.439570 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:37.439904 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:37.440049 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:37.440170 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:37.440287 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:40.475124 #NORMAL #DEBUG : ZPHM Checking health of sme: 165.225.208.24:443
+2021-03-26 19:32:40.475746 #NORMAL #INFO : ZPHM: Trying Connecting to 165.225.208.24: 443
+2021-03-26 19:32:40.573726 #NORMAL #INFO : ZPHM: Connected to Proxy: 165.225.208.24: 443. Will check for auth now.
+2021-03-26 19:32:40.778780 #NORMAL #INFO : ZPHM: Received response size: 244
+2021-03-26 19:32:40.779159 #NORMAL #INFO : ZPHM: Got status code: 407
+2021-03-26 19:32:40.779271 #NORMAL #INFO : ZPHM: Proxy: 165.225.208.24:443 is up and healthy.
+2021-03-26 19:32:40.779510 #NORMAL #INFO : ZPHM Good health
+2021-03-26 19:32:42.438744 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:42.439072 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:42.439216 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:42.439336 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:42.439653 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:42.439984 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:42.440131 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:42.440435 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:47.441420 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:47.441771 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:47.441899 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:47.442055 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:47.442364 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:47.442507 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:47.442626 #NORMAL #INFO : getCurrentNetworkType: (2 -> NON_TRUSTED)
+2021-03-26 19:32:47.442759 #NORMAL #INFO : getZpnAuthState: Status: (0 -> AUTHENTICATED)
+2021-03-26 19:32:48.455145 #NORMAL #INFO : Executing route -n -v get -inet default 
+2021-03-26 19:32:48.455540 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:32:48.455648 #NORMAL #INFO : u: inet 0.0.0.0; 
+2021-03-26 19:32:48.455743 #NORMAL #INFO : u: link ; 
+2021-03-26 19:32:48.455875 #NORMAL #INFO : RTM_GET: Report Metrics: len 132, pid: 0, seq 164, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> default default 
+
+2021-03-26 19:32:48.456169 #NORMAL #INFO :    route to: default
+2021-03-26 19:32:48.456270 #NORMAL #INFO : destination: default
+2021-03-26 19:32:48.456367 #NORMAL #INFO :        mask: default
+2021-03-26 19:32:48.456467 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-26 19:32:48.456749 #NORMAL #INFO :   interface: en0
+2021-03-26 19:32:48.456867 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-26 19:32:48.456978 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-26 19:32:48.457101 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-26 19:32:48.457246 #NORMAL #INFO :  locks:  inits:  sockaddrs: <DST,GATEWAY,NETMASK,IFP,IFA> default 192.168.0.1 default en0:2.0.0.0.0.0 192.168.0.27
+
+2021-03-26 19:32:48.457458 #NORMAL #INFO : Executing route -n -v get -inet6 default 
+2021-03-26 19:32:48.457614 #NORMAL #INFO : u: link ; 
+2021-03-26 19:32:48.457768 #NORMAL #INFO : RTM_GET: Report Metrics: len 144, pid: 0, seq 165, errno 0, flags:<UP,GATEWAY,STATIC> locks:  inits:  sockaddrs: <DST,NETMASK,IFP> :: default 
+
+2021-03-26 19:32:48.457960 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-26 19:32:48.458101 #NORMAL #INFO : Interface monitor: IPv4 interface en0(0), IPv6 interface (75)
+2021-03-26 19:32:52.035355 #NORMAL #DEBUG : check proxyReactivate called.
+2021-03-26 19:32:52.035683 #NORMAL #DEBUG : checkZtunnelHealth called.
+2021-03-26 19:32:52.035787 #NORMAL #DEBUG : startServicesIfRequired called!!
+2021-03-26 19:32:52.035917 #NORMAL #DEBUG : Refreshing exclude ip list. Old list size : 4
+2021-03-26 19:32:52.036056 #NORMAL #DEBUG : Resolving exclude hostname: mobilesupport.zscaler.com
+2021-03-26 19:32:52.070527 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:32:52.070820 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:32:52.070945 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:32:52.071064 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 19:32:52.071501 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:32:52.071637 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 19:32:52.071760 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 19:32:52.071882 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 19:32:52.072068 #NORMAL #INFO : resfreshExcludeIpsList Previous and new list are same!!
+2021-03-26 19:32:52.072192 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:32:52.072304 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 19:32:52.072442 #NORMAL #DEBUG : checkAndRestartTunIfRequired called!!
+2021-03-26 19:32:52.072581 #NORMAL #INFO : getSmeProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:52.072741 #NORMAL #INFO : getZpnProxyState: Status: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:52.072850 #NORMAL #DEBUG : getSmeProxyState: (4 -> TUNNEL_FORWARDING) getZpnProxyState: (4 -> TUNNEL_FORWARDING)
+2021-03-26 19:32:52.072991 #NORMAL #WARN : restartRawSocket returning!!
+2021-03-26 19:32:52.073098 #NORMAL #DEBUG : isTunDnsEchoServerUp called!!
+2021-03-26 19:32:52.073197 #NORMAL #DEBUG : isTunUdpEchoServerUp called!!
+2021-03-26 19:32:52.073333 #NORMAL #INFO : Time elapsed since Zpn socket last read: 60 sec
+2021-03-26 19:32:52.073472 #NORMAL #DEBUG : Zpn socket keepalive request timeout reached! Sending keepalive message!
+2021-03-26 19:32:52.073704 #NORMAL #DEBUG : Sending fohh_status_request request: Size: 99 Data: { "fohh_status_request" : { "request_epoch_in_us" : 1616787172073600, "request_id" : 36 } }
+2021-03-26 19:32:52.073897 #NORMAL #DEBUG : Keepalive json: Written 99 bytes to request buffer.
+2021-03-26 19:32:52.074316 #NORMAL #DEBUG : Zpn socket Written bytes: 99 Available bytes to write: 0
+2021-03-26 19:32:52.074434 #NORMAL #DEBUG : Skipping connectZpnSocket as zpn socket state is: 2
+2021-03-26 19:32:52.074544 #NORMAL #DEBUG : startServicesIfRequired end!!
+2021-03-26 19:32:52.097273 #NORMAL #DEBUG : zpnSocketReadCallback called
+2021-03-26 19:32:52.097588 #NORMAL #DEBUG : Zpn socket read bytes: 149 Used: 149
+2021-03-26 19:32:52.097715 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 0 SSL read: 0
+2021-03-26 19:32:52.097836 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 19:32:52.097929 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 19:32:52.098021 #NORMAL #DEBUG : Response length: 141
+2021-03-26 19:32:52.098153 #NORMAL #INFO : ZPN: Control Message Response Data: {"fohh_status_response":{"request_id":36,"request_epoch_in_us":1616787172073600,"response_epoch_in_us":1616787172087448,"received_bytes":0}}

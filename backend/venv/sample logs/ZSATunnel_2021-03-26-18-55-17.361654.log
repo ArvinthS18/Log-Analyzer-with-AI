@@ -1,0 +1,1003 @@
+2021-03-26 18:55:17.363061 #NORMAL #INFO : Timezone: PDT, Offset: -28800, Standard Name: PST
+2021-03-26 18:55:17.365998 #NORMAL #INFO : -[PacketTunnelProvider init]
+2021-03-26 18:55:17.366922 #NORMAL #INFO : -[PacketTunnelProvider init]: Init network
+2021-03-26 18:55:17.367607 #NORMAL #INFO : Set default pool stack size: 49152
+2021-03-26 18:55:17.377683 #NORMAL #INFO : set tun ip
+2021-03-26 18:55:17.377904 #NORMAL #DEBUG : Checking conflict for IP : 100.64.0.1	[16793700]
+2021-03-26 18:55:17.377936 #NORMAL #DEBUG : Domain IP : 100.64.0.0 [16484]
+2021-03-26 18:55:17.378095 #NORMAL #DEBUG : Interface Name: lo0, Ip : 127.0.0.1 addr: 16777343
+2021-03-26 18:55:17.378129 #NORMAL #DEBUG : Interface Name: en0, Ip : 192.168.0.27 addr: 453028032
+2021-03-26 18:55:17.378153 #NORMAL #DEBUG : Conflict Found: No 
+2021-03-26 18:55:17.378178 #NORMAL #DEBUG : Using IP : 16793700
+2021-03-26 18:55:17.378204 #NORMAL #DEBUG : $$$$ IP :16793700
+2021-03-26 18:55:17.378235 #NORMAL #INFO : set tun ip-100.64.0.1
+2021-03-26 18:55:17.378838 #NORMAL #ERROR : -> Tunnel Initialization:1.8.3 (3) 
+2021-03-26 18:55:17.384888 #NORMAL #INFO : Configuration: 
+    type = plugin
+    identifier = 81AC7E9D-0469-43F9-AA9B-A1888AAD97CA
+    serverAddress = ZscalerVPN
+    identityDataImported = NO
+    disconnectOnSleep = NO
+    disconnectOnIdle = NO
+    disconnectOnIdleTimeout = 0
+    disconnectOnWake = NO
+    disconnectOnWakeTimeout = 0
+    includeAllNetworks = NO
+    excludeLocalNetworks = NO
+    pluginType = com.zscaler.zscaler
+    authenticationMethod = 0
+    reassertTimeout = 0
+2021-03-26 18:55:17.384979 #NORMAL #INFO : options dict in start tunnel : (null)
+2021-03-26 18:55:17.385061 #NORMAL #INFO : printing dictionary:{
+}
+2021-03-26 18:55:17.397014 #NORMAL #INFO : Device UUID 52A2F4D9-72A8-4AAD-A156-7C642A44D257
+
+2021-03-26 18:55:17.404486 #NORMAL #ERROR : configuration present:37
+2021-03-26 18:55:17.404534 #NORMAL #INFO : startTunnelWithOptions:
+2021-03-26 18:55:17.405542 #NORMAL #INFO : No appRules
+2021-03-26 18:55:17.405672 #NORMAL #INFO : Logger is already initialized
+2021-03-26 18:55:17.405731 #NORMAL #ERROR : (AppStateManager.m:977) setEnforceConnectOnDemand: 1
+2021-03-26 18:55:17.406162 #NORMAL #INFO : IPv6 mode: 3
+2021-03-26 18:55:17.406209 #NORMAL #INFO : start tunnel with userid:8398457
+2021-03-26 18:55:17.406244 #NORMAL #DEBUG : captive: 0
+2021-03-26 18:55:17.406304 #NORMAL #INFO : configuration present
+2021-03-26 18:55:17.406384 #HIGH #INFO : get ipv6 bypasses for :,
+2021-03-26 18:55:17.406465 #NORMAL #INFO : getSmeProxyState: Status: (0 -> OFF)
+2021-03-26 18:55:17.406481 #NORMAL #INFO : proxy Status : 0
+2021-03-26 18:55:17.406491 #HIGH #ERROR : proxy is off
+2021-03-26 18:55:17.406502 #NORMAL #ERROR : websecurity not enabled/off/local-proxy-mode set, not installing routes
+2021-03-26 18:55:17.406569 #NORMAL #DEBUG : Search domains is empty
+2021-03-26 18:55:17.406603 #NORMAL #INFO : Setting ZPA DNS: (
+    "100.64.0.1"
+)
+ domainName: (null)
+ searchDomains: (null)
+ matchDomains: (
+    "zscaler.com"
+)
+ matchDomainsNoSearch: 0
+2021-03-26 18:55:17.406620 #NORMAL #DEBUG : setting route for ip/mask pairs include: 1, exclude 0
+2021-03-26 18:55:17.406663 #NORMAL #INFO : getSmeProxyState: Status: (0 -> OFF)
+2021-03-26 18:55:17.406674 #NORMAL #INFO : proxy Status : 0
+2021-03-26 18:55:17.406684 #HIGH #ERROR : proxy is off
+2021-03-26 18:55:17.406695 #NORMAL #INFO : Remove IPv6 routes
+2021-03-26 18:55:17.406710 #NORMAL #INFO : Executing route -n get -inet default 
+2021-03-26 18:55:17.406778 #NORMAL #INFO :    route to: default
+2021-03-26 18:55:17.406793 #NORMAL #INFO : destination: default
+2021-03-26 18:55:17.406804 #NORMAL #INFO :        mask: default
+2021-03-26 18:55:17.406815 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-26 18:55:17.406826 #NORMAL #INFO :   interface: en0
+2021-03-26 18:55:17.406840 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-26 18:55:17.406850 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-26 18:55:17.406862 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-26 18:55:17.406898 #NORMAL #INFO : Executing route -n get -inet6 default 
+2021-03-26 18:55:17.406919 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-26 18:55:17.406935 #NORMAL #INFO : Clean out IPv6 settings
+2021-03-26 18:55:17.406944 #NORMAL #ERROR : calling set tunnel network settings
+2021-03-26 18:55:17.407160 #NORMAL #INFO : Interface monitor: start
+2021-03-26 18:55:17.407240 #HIGH #INFO : start ztunnel called with dictionary:{
+    "CFFIXED_USER_HOME" = "/private/var/mobile/Containers/Data/PluginKitPlugin/D2C87189-E537-41EC-9648-B7170A093727";
+    HOME = "/private/var/mobile/Containers/Data/PluginKitPlugin/D2C87189-E537-41EC-9648-B7170A093727";
+    LOGNAME = mobile;
+    LaunchInstanceID = "E09BC4B8-6849-4D87-8C23-6A9013EE6691";
+    PATH = "/usr/bin:/bin:/usr/sbin:/sbin";
+    SHELL = "/bin/sh";
+    TMPDIR = "/private/var/mobile/Containers/Data/PluginKitPlugin/D2C87189-E537-41EC-9648-B7170A093727/tmp/";
+    USER = mobile;
+    "XPC_FLAGS" = 0x0;
+    "XPC_SERVICE_NAME" = "com.zscaler.zscaler.tunnel";
+    "__CF_USER_TEXT_ENCODING" = "0x1F5:0:0";
+}
+2021-03-26 18:55:17.407364 #HIGH #INFO : isFIPSEnabled :0
+2021-03-26 18:55:17.408088 #HIGH #INFO : ZPN is enabled
+2021-03-26 18:55:17.408136 #HIGH #INFO : zpn certs array size: 2
+2021-03-26 18:55:17.408144 #HIGH #ERROR : zpn cer: 1, -----BEGIN CERTIFICATE-----
+MIID+zCCAuOgAwIBAgIBATANBgkqhkiG9w0BAQsFADCBhjELMAkGA1UEBhMCVVMx
+CzAJBgNVBAgTAkNBMRAwDgYDVQQHEwdTYW5Kb3NlMRAwDgYDVQQKEwdac2NhbGVy
+MQswCQYDVQQLEwJJVDEXMBUGA1UEAxMOY2EuenNjYWxlci5jb20xIDAeBgkqhkiG
+9w0BCQEWEWFkbWluQHpzY2FsZXIuY29tMB4XDTE1MDkyNTAwNTUwMFoXDTI1MDky
+NTAwNTUwMFowgYYxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEQMA4GA1UEBxMH
+U2FuSm9zZTEQMA4GA1UEChMHWnNjYWxlcjELMAkGA1UECxMCSVQxFzAVBgNVBAMT
+DmNhLnpzY2FsZXIuY29tMSAwHgYJKoZIhvcNAQkBFhFhZG1pbkB6c2NhbGVyLmNv
+bTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ77Eq83uCdJheTC6HD1
+o/eDu6r7rOPIYm9qcKVY/ad18Plv5JMxJY/ygp/3uhX8k9vmgCIrRP/w4YegrJZP
+Yx1/YYIseqlPpGEptINUpfFN55BQO0jBZHHorL1TXULXZkNhL179rbc9FOriHvx4
+doCMLaAWhDN9MIkpB7ZI/jEyq+1wkROi4J9NGXf83fd7+d3Q9J61HHSLhF/peVbh
+DUWlY4JpJqHWj0FXFdgyAvqV7/wGSc+czPq7IQ8TwpWNIoM/cNOocwvVxol6PPjn
+qjGUd8V+3xOFQfcEaq/Yd9zNJ+lHJVJRlwjuAyCDXpYpZYC4QCpv9WnQCpouXjPj
+j3MCAwEAAaNyMHAwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUN4hf3pGNC6ex
+87zM3lKIqUb83lowCwYDVR0PBAQDAgEGMBEGCWCGSAGG+EIBAQQEAwIABzAeBglg
+hkgBhvhCAQ0EERYPeGNhIGNlcnRpZmljYXRlMA0GCSqGSIb3DQEBCwUAA4IBAQAC
+DKQxkIpCt6MP9RGkcKwObdKhLACJLNnu1gIWsfyOdpw5gz92pJ37KT1OzDo/U2zA
+B+bvZettAd5c39uMGP+VbPXgiWV3gDfKy6d09vC7DEajzPIEeXaG5C4rW6js4HbC
+37D8QrglL7vJTJLMpDfZHIiXNyhTIcs4FTcrd+gJHspl/RuyX4SVjHs7+iUIFTCk
+6EVK9gyj22zrzLJdxX9eOJxXzPhE5vr4cngpu4Lg/kNwBqNpYgWNw/SP03yyEW6B
+qIVn0F80HH9Un7NxgzuddirRZjX08Ilz9qPOj0KWHOIeimCHsZ2a5+dtgYSq7C2a
+OZaiYiQ1fuGmqDOWzv3J
+-----END CERTIFICATE-----
+2021-03-26 18:55:17.408540 #NORMAL #DEBUG : ZTunnelMain start called!! Enable Proxy: 1 Enable Zpn: 1 Proxy Turned off: 0 Zpn Turned Off: 0 Local Captive mode: 0
+2021-03-26 18:55:17.408553 #NORMAL #INFO : Clearing dns cache!!
+2021-03-26 18:55:17.408569 #NORMAL #INFO : Tcp Server Local port in config: 9000
+2021-03-26 18:55:17.408577 #NORMAL #DEBUG : Setting zpn auth state to: 0!
+2021-03-26 18:55:17.408585 #NORMAL #DEBUG : Setting OnNet profile data!!
+2021-03-26 18:55:17.408592 #NORMAL #DEBUG : App profile pac url: http://pac.zscalertwo.net/rNrJcvZnH3Dh/CorpDefaultV4D20210216
+2021-03-26 18:55:17.408603 #NORMAL #DEBUG : OnNet profile actions for Network type: TRUSTED
+2021-03-26 18:55:17.408612 #NORMAL #DEBUG : Proxy Action : 1
+2021-03-26 18:55:17.408622 #NORMAL #DEBUG : Zpn Action: 1
+2021-03-26 18:55:17.408630 #NORMAL #DEBUG : Perform GPUpdate: 0
+2021-03-26 18:55:17.408644 #NORMAL #DEBUG : System Proxy Type: 0
+2021-03-26 18:55:17.408655 #NORMAL #DEBUG : Enable Auto Detect: 0
+2021-03-26 18:55:17.408666 #NORMAL #DEBUG : Enable Pac: 0
+2021-03-26 18:55:17.408674 #NORMAL #DEBUG : Pac Url: 
+2021-03-26 18:55:17.408681 #NORMAL #DEBUG : Enable Proxy Server: 0
+2021-03-26 18:55:17.408688 #NORMAL #DEBUG : Proxy Server Address: 
+2021-03-26 18:55:17.408697 #NORMAL #DEBUG : Proxy Server Port: 0
+2021-03-26 18:55:17.408712 #NORMAL #DEBUG : BypassProxyForPrivateIp: 0
+2021-03-26 18:55:17.408718 #NORMAL #DEBUG : OnNet profile actions for Network type: TRUSTED_VPN
+2021-03-26 18:55:17.408723 #NORMAL #DEBUG : Proxy Action : 3
+2021-03-26 18:55:17.408729 #NORMAL #DEBUG : Zpn Action: 0
+2021-03-26 18:55:17.408734 #NORMAL #DEBUG : Perform GPUpdate: 0
+2021-03-26 18:55:17.408739 #NORMAL #DEBUG : System Proxy Type: 1
+2021-03-26 18:55:17.408744 #NORMAL #DEBUG : Enable Auto Detect: 0
+2021-03-26 18:55:17.408749 #NORMAL #DEBUG : Enable Pac: 0
+2021-03-26 18:55:17.408754 #NORMAL #DEBUG : Pac Url: 
+2021-03-26 18:55:17.408759 #NORMAL #DEBUG : Enable Proxy Server: 0
+2021-03-26 18:55:17.408764 #NORMAL #DEBUG : Proxy Server Address: 
+2021-03-26 18:55:17.408769 #NORMAL #DEBUG : Proxy Server Port: 0
+2021-03-26 18:55:17.408775 #NORMAL #DEBUG : BypassProxyForPrivateIp: 0
+2021-03-26 18:55:17.408781 #NORMAL #DEBUG : OnNet profile actions for Network type: NON_TRUSTED
+2021-03-26 18:55:17.408786 #NORMAL #DEBUG : Proxy Action : 1
+2021-03-26 18:55:17.408792 #NORMAL #DEBUG : Zpn Action: 1
+2021-03-26 18:55:17.408798 #NORMAL #DEBUG : Perform GPUpdate: 0
+2021-03-26 18:55:17.408803 #NORMAL #DEBUG : System Proxy Type: 0
+2021-03-26 18:55:17.408808 #NORMAL #DEBUG : Enable Auto Detect: 0
+2021-03-26 18:55:17.408813 #NORMAL #DEBUG : Enable Pac: 0
+2021-03-26 18:55:17.408818 #NORMAL #DEBUG : Pac Url: 
+2021-03-26 18:55:17.408823 #NORMAL #DEBUG : Enable Proxy Server: 0
+2021-03-26 18:55:17.408828 #NORMAL #DEBUG : Proxy Server Address: 
+2021-03-26 18:55:17.408834 #NORMAL #DEBUG : Proxy Server Port: 0
+2021-03-26 18:55:17.408839 #NORMAL #DEBUG : BypassProxyForPrivateIp: 0
+2021-03-26 18:55:17.408846 #NORMAL #INFO : Captive portal Web Security disable minutes: 10
+2021-03-26 18:55:17.408853 #NORMAL #DEBUG : Posture profile size: 0!!
+2021-03-26 18:55:17.408859 #NORMAL #DEBUG : tunnelFailureRetryCount: 25 tunnelFailureMaxWaitSec: 45!!
+2021-03-26 18:55:17.408864 #NORMAL #DEBUG : Initializing start thread!!
+2021-03-26 18:55:17.408871 #NORMAL #DEBUG : Setting start thread name!!
+2021-03-26 18:55:17.408877 #NORMAL #DEBUG : Starting start thread!!
+2021-03-26 18:55:17.408904 #NORMAL #DEBUG : Start thread started!!
+2021-03-26 18:55:17.408910 #NORMAL #INFO : startZtunnel returning!
+2021-03-26 18:55:17.409141 #NORMAL #DEBUG : Start thread run called!!
+2021-03-26 18:55:17.409206 #NORMAL #DEBUG : Deleting exclude routes!!
+2021-03-26 18:55:17.409229 #NORMAL #DEBUG : refreshExcludeIpRoutes called!!
+2021-03-26 18:55:17.409253 #NORMAL #DEBUG : Setting service states to Connecting!!
+2021-03-26 18:55:17.409277 #NORMAL #DEBUG : Setting proxy service state to: 2!
+2021-03-26 18:55:17.409296 #NORMAL #DEBUG : Setting zpn service state to: 2!
+2021-03-26 18:55:17.409316 #HIGH #INFO : setDefaultInterfaceInfo called!!
+2021-03-26 18:55:17.409518 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409550 #HIGH #INFO :  Family AF_INET lo0:127.0.0.1
+2021-03-26 18:55:17.409579 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409600 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409621 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409642 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409662 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409683 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409705 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409726 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409746 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409766 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409793 #HIGH #INFO :  Family AF_INET en0:192.168.0.27
+2021-03-26 18:55:17.409827 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409848 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409869 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409894 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409919 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409944 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:17.409972 #NORMAL #INFO : Executing route -n get -inet default 
+2021-03-26 18:55:17.410071 #NORMAL #INFO :    route to: default
+2021-03-26 18:55:17.410097 #NORMAL #INFO : destination: default
+2021-03-26 18:55:17.410154 #NORMAL #INFO :        mask: default
+2021-03-26 18:55:17.410178 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-26 18:55:17.410200 #NORMAL #INFO :   interface: en0
+2021-03-26 18:55:17.410223 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-26 18:55:17.410242 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-26 18:55:17.410263 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-26 18:55:17.410297 #HIGH #INFO : Default interface Name from default route: en0
+2021-03-26 18:55:17.410648 #HIGH #INFO : Default Interface found:en0
+2021-03-26 18:55:17.411004 #HIGH #INFO : IPv4 Default interface IP:192.168.0.27-en0
+2021-03-26 18:55:17.411049 #HIGH #INFO : getDnsList called
+2021-03-26 18:55:17.412123 #HIGH #INFO : IPv4 DNS IP: 192.168.0.1
+2021-03-26 18:55:17.412213 #NORMAL #INFO : Check if dns server list is Same as ZPA DNS IP
+2021-03-26 18:55:17.415481 #NORMAL #DEBUG : ZProxyTunnelController constructor called!
+2021-03-26 18:55:17.415574 #NORMAL #DEBUG : Clearing proxy bypass!!
+2021-03-26 18:55:17.415601 #NORMAL #DEBUG : clearProxyBypassList called!
+2021-03-26 18:55:17.415624 #NORMAL #DEBUG : Adding hardcoded proxy bypasses.
+2021-03-26 18:55:17.415645 #NORMAL #DEBUG : addHostToProxyBypassList called with host: mobilesupport.zscaler.com
+2021-03-26 18:55:17.415671 #NORMAL #DEBUG : addHostToProxyBypassList called with host: pac.zscaler.net
+2021-03-26 18:55:17.415692 #NORMAL #DEBUG : addHostToProxyBypassList called with host: mobile.zscaler.net
+2021-03-26 18:55:17.415718 #NORMAL #DEBUG : addHostToProxyBypassList called with host: mobile.zscalertwo.net
+2021-03-26 18:55:17.415750 #NORMAL #DEBUG : addHostToProxyBypassList called with host: pac.zscalertwo.net
+2021-03-26 18:55:17.415771 #NORMAL #DEBUG : addHostToProxyBypassList called with host: settings.crashlytics.com
+2021-03-26 18:55:17.415791 #NORMAL #DEBUG : addHostToProxyBypassList called with host: reports.crashlytics.com
+2021-03-26 18:55:17.415811 #NORMAL #DEBUG : addHostToProxyBypassList called with host: e.crashlytics.com
+2021-03-26 18:55:17.415835 #NORMAL #DEBUG : Exclude hostname csv: 
+2021-03-26 18:55:17.415862 #NORMAL #DEBUG : Initializing exclude Ip List!!
+2021-03-26 18:55:17.415939 #NORMAL #DEBUG : Resolving exclude hostname: mobilesupport.zscaler.com
+2021-03-26 18:55:17.480245 #NORMAL #ERROR : #### set tunnel network settings success
+2021-03-26 18:55:17.480526 #NORMAL #DEBUG : #### setting tunnel network settings for first time, so call completion handler
+2021-03-26 18:55:17.481542 #NORMAL #ERROR : (AppStateManager.m:983) trackerConnect 0
+2021-03-26 18:55:17.481688 #NORMAL #ERROR : (AppStateManager.m:988) setTrackerConnect: 1
+2021-03-26 18:55:17.482484 #NORMAL #DEBUG : Connect On Demand enabled
+2021-03-26 18:55:17.492691 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 18:55:17.492802 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 18:55:17.492824 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 18:55:17.492844 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 35.165.115.111
+2021-03-26 18:55:17.492865 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 18:55:17.492886 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 44.225.164.247
+2021-03-26 18:55:17.492906 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.212.4.217
+2021-03-26 18:55:17.492926 #NORMAL #DEBUG : Resolved exclude hostname: mobilesupport.zscaler.com --> 34.214.217.180
+2021-03-26 18:55:17.492967 #NORMAL #INFO : Updating excludeIps List.
+2021-03-26 18:55:17.492988 #NORMAL #DEBUG : Exclude ip: 34.212.4.217 Mask: 32
+2021-03-26 18:55:17.493007 #NORMAL #DEBUG : Exclude ip: 34.214.217.180 Mask: 32
+2021-03-26 18:55:17.493026 #NORMAL #DEBUG : Exclude ip: 35.165.115.111 Mask: 32
+2021-03-26 18:55:17.493105 #NORMAL #DEBUG : Exclude ip: 44.225.164.247 Mask: 32
+2021-03-26 18:55:17.493128 #NORMAL #DEBUG : Exclude ip list size : 4
+2021-03-26 18:55:17.493158 #NORMAL #INFO : ZDnsProxyController constructor called!!
+2021-03-26 18:55:17.493187 #NORMAL #INFO : ZDnsProxyController stopDnsProxyServer called!
+2021-03-26 18:55:17.493205 #NORMAL #DEBUG : stopDnsProxyServer Clearing Dns Map!
+2021-03-26 18:55:17.493225 #NORMAL #DEBUG : stopDnsProxyServer Clearing Dns Request Map!
+2021-03-26 18:55:17.493244 #NORMAL #DEBUG : stopDnsProxyServer Draining buffers!
+2021-03-26 18:55:17.493264 #NORMAL #DEBUG : stopDnsProxyServer Removing event handlers!
+2021-03-26 18:55:17.493282 #NORMAL #DEBUG : stopDnsProxyServer Stopping reactor!
+2021-03-26 18:55:17.493301 #NORMAL #DEBUG : stopDnsProxyServer Closing datagram socket!
+2021-03-26 18:55:17.493319 #NORMAL #DEBUG : stopDnsProxyServer Joining to dns server thread!
+2021-03-26 18:55:17.493338 #NORMAL #DEBUG : stopDnsProxyServer Cleaning resources!
+2021-03-26 18:55:17.493357 #NORMAL #INFO : Dns Proxy Server Stopped!!
+2021-03-26 18:55:17.493376 #NORMAL #INFO : ZDnsProxyController startDnsProxyServer called!!
+2021-03-26 18:55:17.493401 #NORMAL #INFO : initializeDnsServerSocket: Initializing Dns Server socket!!
+2021-03-26 18:55:17.493524 #NORMAL #DEBUG : setIfScopeProperty:0
+2021-03-26 18:55:17.493547 #NORMAL #DEBUG : Checking conflict for IP : 100.64.0.1	[16793700]
+2021-03-26 18:55:17.493566 #NORMAL #DEBUG : Domain IP : 100.64.0.0 [16484]
+2021-03-26 18:55:17.493724 #NORMAL #DEBUG : Interface Name: lo0, Ip : 127.0.0.1
+2021-03-26 18:55:17.493745 #NORMAL #DEBUG : Interface Name: en0, Ip : 192.168.0.27
+2021-03-26 18:55:17.493764 #NORMAL #DEBUG : Interface Name: utun2, Ip : 100.64.0.1
+2021-03-26 18:55:17.493783 #NORMAL #DEBUG : Returning from tunName:utun2
+2021-03-26 18:55:17.493913 #NORMAL #DEBUG : Returning from tun-id:17-9
+2021-03-26 18:55:17.493938 #NORMAL #ERROR : Successfully set ifscope option:0
+2021-03-26 18:55:17.493959 #NORMAL #INFO : initializeDnsServerSocket: Dns Proxy Listener <0.0.0.0>:<50319>
+2021-03-26 18:55:17.493978 #NORMAL #INFO : initializeDnsServerSocket: Starting SocketReactor!!
+2021-03-26 18:55:17.494105 #NORMAL #DEBUG : Dns Proxy Server Started!!
+2021-03-26 18:55:17.494138 #NORMAL #INFO : ZUdpProxyController constructor called!!
+2021-03-26 18:55:17.494159 #NORMAL #DEBUG : ZUdpProxyController stopUdpProxyServer called!
+2021-03-26 18:55:17.494230 #NORMAL #INFO : Udp Proxy Server Stopped!!
+2021-03-26 18:55:17.494249 #NORMAL #INFO : ZUdpProxyController startUdpProxyServer called!!
+2021-03-26 18:55:17.494268 #NORMAL #INFO : initializeUdpServerSocket: Initializing Udp Server socket!!
+2021-03-26 18:55:17.494337 #NORMAL #DEBUG : setIfScopeProperty:0
+2021-03-26 18:55:17.494358 #NORMAL #DEBUG : Checking conflict for IP : 100.64.0.1	[16793700]
+2021-03-26 18:55:17.494378 #NORMAL #DEBUG : Domain IP : 100.64.0.0 [16484]
+2021-03-26 18:55:17.494502 #NORMAL #DEBUG : Interface Name: lo0, Ip : 127.0.0.1
+2021-03-26 18:55:17.494522 #NORMAL #DEBUG : Interface Name: en0, Ip : 192.168.0.27
+2021-03-26 18:55:17.494541 #NORMAL #DEBUG : Interface Name: utun2, Ip : 100.64.0.1
+2021-03-26 18:55:17.494560 #NORMAL #DEBUG : Returning from tunName:utun2
+2021-03-26 18:55:17.494685 #NORMAL #DEBUG : Returning from tun-id:17-10
+2021-03-26 18:55:17.494706 #NORMAL #ERROR : Successfully set ifscope option:0
+2021-03-26 18:55:17.494727 #NORMAL #INFO : initializeUdpServerSocket: Udp Proxy Listener 0.0.0.0:61335
+2021-03-26 18:55:17.494746 #NORMAL #INFO : initializeUdpServerSocket: Starting SocketReactor!!
+2021-03-26 18:55:17.494824 #NORMAL #DEBUG : Udp Proxy Server Started!!
+2021-03-26 18:55:17.494852 #NORMAL #DEBUG : Pac Url is: http://pac.zscalertwo.net/rNrJcvZnH3Dh/CorpDefaultV4D20210216
+2021-03-26 18:55:17.494878 #NORMAL #DEBUG : Starting captive portal manager!!
+2021-03-26 18:55:17.494899 #NORMAL #DEBUG : ZCPM New Captive state: 1
+2021-03-26 18:55:17.494977 #NORMAL #INFO : ZpnUDPListener constructor called!!
+2021-03-26 18:55:17.495037 #NORMAL #DEBUG : Starting proxy Tunnel in normal mode.
+2021-03-26 18:55:17.495085 #NORMAL #DEBUG : Device Id: 25248797@zscaler.com
+2021-03-26 18:55:17.495108 #NORMAL #ERROR : cloud: zscalertwo.net len: 14
+2021-03-26 18:55:17.495128 #NORMAL #DEBUG : Salt: 18279206012055207976 cloud: zscalertwo.net
+2021-03-26 18:55:17.495155 #NORMAL #DEBUG : hexdump: printing log, len: 8 Loglen: 36 split length: 4080
+2021-03-26 18:55:17.495179 #NORMAL #DEBUG : 
+Salt Bytes: 28 40 bc 44 05 c9 ac fd
+
+2021-03-26 18:55:17.495204 #NORMAL #DEBUG : Random bytes is: 1
+2021-03-26 18:55:17.495287 #NORMAL #DEBUG : Getting value for file with key: pac
+2021-03-26 18:55:17.495808 #NORMAL #ERROR : getConfigPropertyFromFile: Exception: Exception: Unable to open file correctly!
+2021-03-26 18:55:17.495855 #NORMAL #WARN : Error while removing file: /private/var/mobile/Containers/Shared/AppGroup/F0FB46C7-75F7-4C30-95FE-5B3F639492A5/1f3f31315f0861518e5be4fe4b64b8be.ztc
+2021-03-26 18:55:17.495885 #NORMAL #WARN : Previous config file does not have entry for Profile Pac file!
+2021-03-26 18:55:17.495904 #NORMAL #WARN : Previous Pac not found!! Trying to download pac file!!
+2021-03-26 18:55:17.497569 #NORMAL #DEBUG : Starting profile pac download. Url http://pac.zscalertwo.net/rNrJcvZnH3Dh/CorpDefaultV4D20210216
+2021-03-26 18:55:17.497626 #NORMAL #DEBUG : hmac:id:/jPYsncnKfDIplmmRuUSZerglEx4SJN2YkIQFgctqPM=
+2021-03-26 18:55:17.801071 #NORMAL #ERROR : Profile Pac download Response code:200
+2021-03-26 18:55:17.801316 #NORMAL #DEBUG : Profile Pac downloaded. Code: 200
+2021-03-26 18:55:17.801383 #LOW #DEBUG : 
+function FindProxyForURL(url, host) {
+
+    var privateIP = /^(0|10|127|192\.168|172\.1[6789]|172\.2[0-9]|172\.3[01]|169\.254|192\.88\.99)\.[0-9.]+$/;
+    var resolved_ip = dnsResolve(host);
+    var country = "Canada";
+
+    /* Don't send non-FQDN or private IP auths to us */
+    if (isPlainHostName(host) || isInNet(resolved_ip, "192.0.2.0","255.255.255.0") || privateIP.test(resolved_ip))
+        return "DIRECT";
+
+    /* FTP goes directly */
+    if (url.substring(0,4) == "ftp:")
+        return "DIRECT";
+
+    /* test with ZPA*/
+    if (isInNet(resolved_ip, "100.64.0.0","255.255.0.0"))
+        return "DIRECT";
+
+    /* Updates are directly accessible */
+    if (((localHostOrDomainIs(host, "trust.zscaler.com")) ||
+        (localHostOrDomainIs(host, "trust.zscaler.net")) ||
+        (localHostOrDomainIs(host, "trust.zscalerone.net")) ||
+        (localHostOrDomainIs(host, "trust.zscalertwo.net")) ||
+        (localHostOrDomainIs(host, "trust.zscalerthree.net")) ||
+        (localHostOrDomainIs(host, "trust.zscalergov.net")) ||
+        (localHostOrDomainIs(host, "trust.zsdemo.net")) ||
+        (localHostOrDomainIs(host, "trust.zscloud.net")) ) &&
+        (url.substring(0,5) == "http:" || url.substring(0,6) == "https:"))
+            return "DIRECT";
+            
+    // if (shExpMatch(country,"India")) { 
+        /* User is in India */
+    //    return "PROXY del1.sme.zscalertwo.net:80; PROXY bom4.sme.zscalertwo.net:80";
+    // }
+
+    /* Default Traffic Forwarding. Forwarding to Zen on port 80, but you can use port 9400 also */
+    // return "PROXY 165.225.210.24:80; PROXY 165.225.50.12:80; DIRECT";
+    
+    /* Default PROXY */  
+	// Modified by JWang 2019/10/10
+	// return "PROXY 165.225.210.24:80; PROXY 165.225.208.24:80; DIRECT";
+	return "PROXY 165.225.208.24:80; PROXY 104.129.192.43:80";
+}
+
+2021-03-26 18:55:17.801830 #NORMAL #DEBUG : validatePacFileImpl: Pac parser init success!
+2021-03-26 18:55:17.816614 #NORMAL #INFO : PAC File data is=function FindProxyForURL(url, host) {
+
+    var privateIP = /^(0|10|127|192\.168|172\.1[6789]|172\.2[0-9]|172\.3[01]|169\.254|192\.88\.99)\.[0-9.]+$/;
+    var resolved_ip = dnsResolve(host);
+    var country = "Canada";
+
+    /* Don't send non-FQDN or private IP auths to us */
+    if (isPlainHostName(host) || isInNet(resolved_ip, "192.0.2.0","255.255.255.0") || privateIP.test(resolved_ip))
+        return "DIRECT";
+
+    /* FTP goes directly */
+    if (url.substring(0,4) == "ftp:")
+        return "DIRECT";
+
+    /* test with ZPA*/
+    if (isInNet(resolved_ip, "100.64.0.0","255.255.0.0"))
+        return "DIRECT";
+
+    /* Updates are directly accessible */
+    if (((localHostOrDomainIs(host, "trust.zscaler.com")) ||
+        (localHostOrDomainIs(host, "trust.zscaler.net")) ||
+        (localHostOrDomainIs(host, "trust.zscalerone.net")) ||
+        (localHostOrDomainIs(host, "trust.zscalertwo.net")) ||
+        (localHostOrDomainIs(host, "trust.zscalerthree.net")) ||
+        (localHostOrDomainIs(host, "trust.zscalergov.net")) ||
+        (localHostOrDomainIs(host, "trust.zsdemo.net")) ||
+        (localHostOrDomainIs(host, "trust.zscloud.net")) ) &&
+        (url.substring(0,5) == "http:" || url.substring(0,6) == "https:"))
+            return "DIRECT";
+            
+    // if (shExpMatch(country,"India")) { 
+        /* User is in India */
+    //    return "PROXY del1.sme.zscalertwo.net:80; PROXY bom4.sme.zscalertwo.net:80";
+    // }
+
+    /* Default Traffic Forwarding. Forwarding to Zen on port 80, but you can use port 9400 also */
+    // return "PROXY 165.225.210.24:80; PROXY 165.225.50.12:80; DIRECT";
+    
+    /* Default PROXY */  
+	// Modified by JWang 2019/10/10
+	// return "PROXY 165.225.210.24:80; PROXY 165.225.208.24:80; DIRECT";
+	return "PROXY 165.225.208.24:80; PROXY 104.129.192.43:80";
+}
+
+2021-03-26 18:55:17.816937 #NORMAL #DEBUG : validatePacFileImpl: Pac parse success!
+2021-03-26 18:55:17.817138 #NORMAL #DEBUG : getProxyForUrl: Pac parse called for url: https://gateway.zscalertwo.net
+2021-03-26 18:55:17.817215 #NORMAL #DEBUG : getProxyForUrl: Before pacparser_find_proxy
+2021-03-26 18:55:17.826709 #NORMAL #INFO : PAC File data is=function FindProxyForURL(url, host) {
+
+    var privateIP = /^(0|10|127|192\.168|172\.1[6789]|172\.2[0-9]|172\.3[01]|169\.254|192\.88\.99)\.[0-9.]+$/;
+    var resolved_ip = dnsResolve(host);
+    var country = "Canada";
+
+    /* Don't send non-FQDN or private IP auths to us */
+    if (isPlainHostName(host) || isInNet(resolved_ip, "192.0.2.0","255.255.255.0") || privateIP.test(resolved_ip))
+        return "DIRECT";
+
+    /* FTP goes directly */
+    if (url.substring(0,4) == "ftp:")
+        return "DIRECT";
+
+    /* test with ZPA*/
+    if (isInNet(resolved_ip, "100.64.0.0","255.255.0.0"))
+        return "DIRECT";
+
+    /* Updates are directly accessible */
+    if (((localHostOrDomainIs(host, "trust.zscaler.com")) ||
+        (localHostOrDomainIs(host, "trust.zscaler.net")) ||
+        (localHostOrDomainIs(host, "trust.zscalerone.net")) ||
+        (localHostOrDomainIs(host, "trust.zscalertwo.net")) ||
+        (localHostOrDomainIs(host, "trust.zscalerthree.net")) ||
+        (localHostOrDomainIs(host, "trust.zscalergov.net")) ||
+        (localHostOrDomainIs(host, "trust.zsdemo.net")) ||
+        (localHostOrDomainIs(host, "trust.zscloud.net")) ) &&
+        (url.substring(0,5) == "http:" || url.substring(0,6) == "https:"))
+            return "DIRECT";
+            
+    // if (shExpMatch(country,"India")) { 
+        /* User is in India */
+    //    return "PROXY del1.sme.zscalertwo.net:80; PROXY bom4.sme.zscalertwo.net:80";
+    // }
+
+    /* Default Traffic Forwarding. Forwarding to Zen on port 80, but you can use port 9400 also */
+    // return "PROXY 165.225.210.24:80; PROXY 165.225.50.12:80; DIRECT";
+    
+    /* Default PROXY */  
+	// Modified by JWang 2019/10/10
+	// return "PROXY 165.225.210.24:80; PROXY 165.225.208.24:80; DIRECT";
+	return "PROXY 165.225.208.24:80; PROXY 104.129.192.43:80";
+}
+
+2021-03-26 18:55:17.826928 #NORMAL #DEBUG : initPacParserSession: Pac parse success!
+2021-03-26 18:55:17.831302 #NORMAL #DEBUG : getProxyForUrl: After pacparser_find_proxy
+2021-03-26 18:55:17.831495 #HIGH #INFO : Saving default proxy string as: PROXY 165.225.208.24:80; PROXY 104.129.192.43:80
+2021-03-26 18:55:17.831564 #NORMAL #DEBUG : getProxyForUrl: Proxy: PROXY 165.225.208.24:80; PROXY 104.129.192.43:80 Url: https://gateway.zscalertwo.net
+2021-03-26 18:55:17.831639 #NORMAL #DEBUG : getProxyForUrl: First Proxy: 165.225.208.24:80
+2021-03-26 18:55:17.831705 #NORMAL #DEBUG : getProxyForUrl: Second Proxy: 104.129.192.43:80
+2021-03-26 18:55:17.831775 #NORMAL #INFO : getProxyForUrl: Pac proxy array index: 0 value: 165.225.208.24
+2021-03-26 18:55:17.831931 #NORMAL #INFO : getProxyForUrl: Pac proxy array index: 1 value: 80
+2021-03-26 18:55:17.831987 #NORMAL #INFO : getProxyForUrl: Pac proxy array index: 2 value: 104.129.192.43
+2021-03-26 18:55:17.832042 #NORMAL #INFO : getProxyForUrl: Pac proxy array index: 3 value: 80
+2021-03-26 18:55:17.832135 #NORMAL #DEBUG : checkProxyUp called for proxy 165.225.208.24:443
+2021-03-26 18:55:17.832554 #NORMAL #INFO : ZPHM: Trying Connecting to 165.225.208.24: 443
+2021-03-26 18:55:17.899903 #NORMAL #INFO : ZPHM: Connected to Proxy: 165.225.208.24: 443. Will check for auth now.
+2021-03-26 18:55:17.983327 #NORMAL #INFO : ZPHM: Received response size: 244
+2021-03-26 18:55:17.983589 #NORMAL #INFO : ZPHM: Got status code: 407
+2021-03-26 18:55:17.983663 #NORMAL #INFO : ZPHM: Proxy: 165.225.208.24:443 is up and healthy.
+2021-03-26 18:55:17.983878 #NORMAL #INFO : refreshSMEIpFromPac: Using primary pac proxy as SME ip: 165.225.208.24:443
+2021-03-26 18:55:17.983954 #NORMAL #DEBUG : Storing Profile PAC to config store
+2021-03-26 18:55:17.984017 #NORMAL #DEBUG : Storing key: pac
+2021-03-26 18:55:17.984534 #HIGH #ERROR : UpdateConfigPropertyToFile: Exception: Exception: Failed to open config file/private/var/mobile/Containers/Shared/AppGroup/F0FB46C7-75F7-4C30-95FE-5B3F639492A5/1f3f31315f0861518e5be4fe4b64b8be.ztc
+2021-03-26 18:55:17.984685 #NORMAL #WARN : Error while removing file: /private/var/mobile/Containers/Shared/AppGroup/F0FB46C7-75F7-4C30-95FE-5B3F639492A5/1f3f31315f0861518e5be4fe4b64b8be.ztc
+2021-03-26 18:55:17.985505 #NORMAL #DEBUG : JSON encrypted object has length: 2624
+2021-03-26 18:55:17.987493 #NORMAL #DEBUG : Setting proxy service state to: 1!
+2021-03-26 18:55:17.987608 #NORMAL #DEBUG : Profile Pac refreshed successfully!
+2021-03-26 18:55:17.987738 #NORMAL #ERROR : Scheduling pac refresh after 900 sec.
+2021-03-26 18:55:17.987779 #NORMAL #DEBUG : scheduleProfilePacDownloadTask called! Sec: 900
+2021-03-26 18:55:17.987986 #NORMAL #DEBUG : Setting proxy service state to: 1!
+2021-03-26 18:55:17.988026 #NORMAL #DEBUG : Digest Credentials Set.
+2021-03-26 18:55:17.988064 #NORMAL #DEBUG : Starting proxy listener.
+2021-03-26 18:55:17.988105 #NORMAL #INFO : startProxyTunnel: Trying port: 9000
+2021-03-26 18:55:17.988104 #NORMAL #DEBUG : Scheduling profile pac download after 900 sec!
+2021-03-26 18:55:17.988418 #NORMAL #INFO : startProxyTunnel: Going to start Tcp proxy on address 0.0.0.0:9000
+2021-03-26 18:55:17.988465 #NORMAL #DEBUG : setIfScopeProperty:0
+2021-03-26 18:55:17.988508 #NORMAL #DEBUG : Checking conflict for IP : 100.64.0.1	[16793700]
+2021-03-26 18:55:17.988547 #NORMAL #DEBUG : Domain IP : 100.64.0.0 [16484]
+2021-03-26 18:55:17.988882 #NORMAL #DEBUG : Interface Name: lo0, Ip : 127.0.0.1
+2021-03-26 18:55:17.988932 #NORMAL #DEBUG : Interface Name: en0, Ip : 192.168.0.27
+2021-03-26 18:55:17.988971 #NORMAL #DEBUG : Interface Name: utun2, Ip : 100.64.0.1
+2021-03-26 18:55:17.989010 #NORMAL #DEBUG : Returning from tunName:utun2
+2021-03-26 18:55:17.989256 #NORMAL #DEBUG : Returning from tun-id:1-11
+2021-03-26 18:55:17.989304 #NORMAL #ERROR : Successfully set ifscope option:0
+2021-03-26 18:55:17.989370 #NORMAL #DEBUG : Starting Proxy Tunnel.
+2021-03-26 18:55:17.989407 #NORMAL #DEBUG : Max threads: 2000
+2021-03-26 18:55:17.989444 #NORMAL #DEBUG : Max concurrent connections: 0
+2021-03-26 18:55:17.989609 #NORMAL #ERROR : Sending notification to UI: 0,  
+2021-03-26 18:55:17.989649 #NORMAL #INFO : Sending notification to tray for code: 0, 
+2021-03-26 18:55:18.004123 #NORMAL #DEBUG : detectCurrentNetworkType called!!
+2021-03-26 18:55:18.004274 #NORMAL #INFO : Vpn detected: 0
+2021-03-26 18:55:18.004319 #HIGH #INFO : setDefaultInterfaceInfo called!!
+2021-03-26 18:55:18.004675 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.004738 #HIGH #INFO :  Family AF_INET lo0:127.0.0.1
+2021-03-26 18:55:18.004794 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.004837 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.004876 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.004915 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.004955 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.005091 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.005131 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.005170 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.005209 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.005248 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.005299 #HIGH #INFO :  Family AF_INET en0:192.168.0.27
+2021-03-26 18:55:18.005363 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.005403 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.005442 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.005490 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.005537 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.005584 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.005631 #HIGH #INFO :  Family AF_INET utun2:100.64.0.1
+2021-03-26 18:55:18.005689 #NORMAL #INFO : Executing route -n get -inet default 
+2021-03-26 18:55:18.005911 #NORMAL #INFO :    route to: default
+2021-03-26 18:55:18.005957 #NORMAL #INFO : destination: default
+2021-03-26 18:55:18.005995 #NORMAL #INFO :        mask: default
+2021-03-26 18:55:18.006036 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-26 18:55:18.006076 #NORMAL #INFO :   interface: en0
+2021-03-26 18:55:18.006122 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-26 18:55:18.006163 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-26 18:55:18.006204 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-26 18:55:18.006285 #HIGH #INFO : Default interface Name from default route: en0
+2021-03-26 18:55:18.007046 #HIGH #INFO : Default Interface found:en0
+2021-03-26 18:55:18.007727 #HIGH #INFO : IPv4 Default interface IP:192.168.0.27-en0
+2021-03-26 18:55:18.007787 #HIGH #INFO : getDnsList called
+2021-03-26 18:55:18.009058 #HIGH #INFO : IPv4 DNS IP: 192.168.0.1
+2021-03-26 18:55:18.009139 #NORMAL #INFO : Check if dns server list is Same as ZPA DNS IP
+2021-03-26 18:55:18.009185 #HIGH #INFO : getDnsList called
+2021-03-26 18:55:18.009946 #HIGH #INFO : IPv4 DNS IP: 192.168.0.1
+2021-03-26 18:55:18.010006 #NORMAL #INFO : Check if dns server list is Same as ZPA DNS IP
+2021-03-26 18:55:18.010050 #NORMAL #DEBUG : detectCurrentNetworkType Multiple trusted network disabled!
+2021-03-26 18:55:18.010092 #NORMAL #DEBUG : detectCurrentNetworkType return!!
+2021-03-26 18:55:18.010143 #NORMAL #DEBUG : Getting value for file with key: local_pac
+2021-03-26 18:55:18.010688 #NORMAL #DEBUG : Old config file found!
+2021-03-26 18:55:18.011228 #NORMAL #DEBUG : Valid ZTC File Read: /private/var/mobile/Containers/Shared/AppGroup/F0FB46C7-75F7-4C30-95FE-5B3F639492A5/1f3f31315f0861518e5be4fe4b64b8be.ztc, Data Length: 1958
+2021-03-26 18:55:18.011485 #NORMAL #DEBUG : Property not found: local_pac (returning empty string)
+2021-03-26 18:55:18.011583 #NORMAL #WARN : Previous config file does not have entry for Local proxy Pac file!
+2021-03-26 18:55:18.011613 #NORMAL #DEBUG : stopLocalProxyPacDownloadTask called!
+2021-03-26 18:55:18.011647 #NORMAL #DEBUG : Empty local proxy pac. Clearing saved local proxy data!!
+2021-03-26 18:55:18.011678 #NORMAL #DEBUG : Starting Zpn Tunnel.
+2021-03-26 18:55:18.011713 #NORMAL #DEBUG : initializeZpn: Saml assertion length: 13976 Client cert length: 1382 Client key lenght: 1704 CA cert length: 2934 No. of Chained certs: 1
+2021-03-26 18:55:18.011741 #NORMAL #DEBUG : initializeZpn: Converting client cert data to X509Certificate.
+2021-03-26 18:55:18.012198 #NORMAL #DEBUG : initializeZpn: Converting client key data to RSAKey.
+2021-03-26 18:55:18.012311 #NORMAL #DEBUG : initializeZpn: Loading private key.
+2021-03-26 18:55:18.012494 #NORMAL #DEBUG : initializeZpn: Converting chained cert!
+2021-03-26 18:55:18.012850 #NORMAL #INFO : initializeZpnData called!
+2021-03-26 18:55:18.012905 #NORMAL #DEBUG : closeZpnSocket called!! changeState: 0 tryReconnecting: 0
+2021-03-26 18:55:18.013319 #NORMAL #ERROR : Exception getting local socket's zpn port
+2021-03-26 18:55:18.013350 #NORMAL #DEBUG : Closing Zpn socket fd with local port 0
+2021-03-26 18:55:18.013445 #NORMAL #DEBUG : closeZpnSocket end!!
+2021-03-26 18:55:18.013474 #NORMAL #DEBUG : startZpn called
+2021-03-26 18:55:18.013608 #NORMAL #DEBUG : Setting zpn service state to: 53!
+2021-03-26 18:55:18.013637 #NORMAL #DEBUG : Setting zpn service state to: 2!
+2021-03-26 18:55:18.013666 #NORMAL #DEBUG : Tcp server port from config: 9000 
+2021-03-26 18:55:18.013694 #NORMAL #INFO : startZpn: Trying tcp port: 9010
+2021-03-26 18:55:18.013946 #NORMAL #INFO : startZpn: Going to start Zpn tcp proxy on address 0.0.0.0:9010
+2021-03-26 18:55:18.014121 #NORMAL #DEBUG : Zpn Tcp Server Started!!
+2021-03-26 18:55:18.014153 #NORMAL #DEBUG : setIfScopeProperty:0
+2021-03-26 18:55:18.014186 #NORMAL #DEBUG : Checking conflict for IP : 100.64.0.1	[16793700]
+2021-03-26 18:55:18.014215 #NORMAL #DEBUG : Domain IP : 100.64.0.0 [16484]
+2021-03-26 18:55:18.014478 #NORMAL #DEBUG : Interface Name: lo0, Ip : 127.0.0.1
+2021-03-26 18:55:18.014509 #NORMAL #DEBUG : Interface Name: en0, Ip : 192.168.0.27
+2021-03-26 18:55:18.014538 #NORMAL #DEBUG : Interface Name: utun2, Ip : 100.64.0.1
+2021-03-26 18:55:18.014570 #NORMAL #DEBUG : Returning from tunName:utun2
+2021-03-26 18:55:18.014756 #NORMAL #DEBUG : Returning from tun-id:17-12
+2021-03-26 18:55:18.014791 #NORMAL #ERROR : Successfully set ifscope option:0
+2021-03-26 18:55:18.014829 #NORMAL #INFO : ZpnUDPListener startZpnUDPListener called!!
+2021-03-26 18:55:18.014863 #NORMAL #INFO : initializeSocket: Initializing ZPN Udp Listener socket!!
+2021-03-26 18:55:18.014994 #NORMAL #DEBUG : setIfScopeProperty:0
+2021-03-26 18:55:18.015025 #NORMAL #DEBUG : Checking conflict for IP : 100.64.0.1	[16793700]
+2021-03-26 18:55:18.015054 #NORMAL #DEBUG : Domain IP : 100.64.0.0 [16484]
+2021-03-26 18:55:18.015240 #NORMAL #DEBUG : Interface Name: lo0, Ip : 127.0.0.1
+2021-03-26 18:55:18.015271 #NORMAL #DEBUG : Interface Name: en0, Ip : 192.168.0.27
+2021-03-26 18:55:18.015299 #NORMAL #DEBUG : Interface Name: utun2, Ip : 100.64.0.1
+2021-03-26 18:55:18.015328 #NORMAL #DEBUG : Returning from tunName:utun2
+2021-03-26 18:55:18.015508 #NORMAL #DEBUG : Returning from tun-id:17-13
+2021-03-26 18:55:18.015543 #NORMAL #ERROR : Successfully set ifscope option:0
+2021-03-26 18:55:18.015573 #NORMAL #INFO : ZpnUDPListener: Zpn UDP Listener address 0.0.0.0:50266
+2021-03-26 18:55:18.015601 #NORMAL #INFO : initializeSocket: Starting ZPN Udp Listener SocketReactor!!
+2021-03-26 18:55:18.015696 #NORMAL #DEBUG : Zpn Udp Listener Started!!
+2021-03-26 18:55:18.015986 #NORMAL #ERROR : Certificate is not valid after: Mar 28 18:55:11 2022 GMT
+2021-03-26 18:55:18.016030 #NORMAL #DEBUG : day:366, sec:86393
+2021-03-26 18:55:18.016307 #NORMAL #ERROR : Certificate is not valid after: Sep 25 00:55:00 2025 GMT
+2021-03-26 18:55:18.016334 #NORMAL #DEBUG : day:1643, sec:21582
+2021-03-26 18:55:18.016420 #NORMAL #DEBUG : closeZpnSocket called!! changeState: 0 tryReconnecting: 0
+2021-03-26 18:55:18.016444 #NORMAL #DEBUG : Removing zpn reactor event notifications!
+2021-03-26 18:55:18.016550 #NORMAL #ERROR : Exception getting local socket's zpn port
+2021-03-26 18:55:18.016575 #NORMAL #DEBUG : Closing Zpn socket fd with local port 0
+2021-03-26 18:55:18.016597 #NORMAL #DEBUG : closeZpnSocket end!!
+2021-03-26 18:55:18.016619 #NORMAL #DEBUG : initializeSSL called!
+2021-03-26 18:55:18.016653 #NORMAL #DEBUG : Openssl version string: OpenSSL 1.0.2o-fips  27 Mar 2018
+2021-03-26 18:55:18.020354 #NORMAL #DEBUG : ZpnSslContext constructor called!!
+2021-03-26 18:55:18.020398 #NORMAL #DEBUG : Adding chained cert to zpn socket!
+2021-03-26 18:55:18.020704 #NORMAL #DEBUG : Number of ZPN Ca certs: 2
+2021-03-26 18:55:18.020754 #NORMAL #DEBUG : Adding CA cert to zpn socket ssl context!
+2021-03-26 18:55:18.021005 #NORMAL #INFO : Zpn CA cert loaded!! Result: 1
+2021-03-26 18:55:18.021032 #NORMAL #DEBUG : Adding CA cert to zpn socket ssl context!
+2021-03-26 18:55:18.021270 #NORMAL #INFO : Zpn CA cert loaded!! Result: 1
+2021-03-26 18:55:18.021311 #NORMAL #DEBUG : Adding chained cert to e2e socket!
+2021-03-26 18:55:18.021521 #NORMAL #INFO : Zpn CA cert loaded!! Result: 1
+2021-03-26 18:55:18.021614 #NORMAL #DEBUG : initializeSSL done!
+2021-03-26 18:55:18.021642 #NORMAL #DEBUG : Setting zpn service state to: 2!
+2021-03-26 18:55:18.021665 #NORMAL #DEBUG : Setting zpn service state to: 2!
+2021-03-26 18:55:18.021687 #NORMAL #DEBUG : Broker list size: 1 Index: 0
+2021-03-26 18:55:18.021709 #NORMAL #DEBUG : Resolving broker hostname
+2021-03-26 18:55:18.082343 #NORMAL #DEBUG : Broker resolved to IP 52.24.149.190
+2021-03-26 18:55:18.082575 #NORMAL #DEBUG : Resolved Dns 52.24.149.190 for broker hostname: any.broker.prod.zpath.net
+2021-03-26 18:55:18.082639 #NORMAL #DEBUG : Connecting to broker!!
+2021-03-26 18:55:18.082698 #NORMAL #DEBUG : Using broker port to connect: 443
+2021-03-26 18:55:18.082874 #NORMAL #DEBUG : Zpn sock fd: 14
+2021-03-26 18:55:18.083039 #NORMAL #DEBUG : Zpn socket Bind success!! Zpn socket local port: 54604
+2021-03-26 18:55:18.083116 #NORMAL #DEBUG : ZPN socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-26 18:55:18.110914 #NORMAL #DEBUG : ZPN Socket connect success to broker!!
+2021-03-26 18:55:18.111184 #NORMAL #DEBUG : ZPN Socket connect success to broker!! Starting ssl handshake!
+2021-03-26 18:55:18.111253 #NORMAL #INFO : Domain for zpn is: zscaler.com
+2021-03-26 18:55:18.111313 #NORMAL #INFO : SNI for zpn is: zscaler.com.c2.prod.zpath.net
+2021-03-26 18:55:18.111381 #NORMAL #INFO : Client Cert CN : 52A2F4D972A84AADA1567C642A44D257@zscaler.com
+2021-03-26 18:55:18.111437 #NORMAL #DEBUG : Attaching SecureStreamSocket to zpn
+2021-03-26 18:55:18.111655 #NORMAL #DEBUG : Completing handshake!!
+2021-03-26 18:55:18.112143 #NORMAL #INFO : Zpn socket ERR_SSL_WANT_READ occurred!!
+2021-03-26 18:55:18.112275 #NORMAL #ERROR : Sending notification to UI: 4,  
+2021-03-26 18:55:18.112335 #NORMAL #INFO : Sending notification to tray for code: 4, 
+2021-03-26 18:55:18.124470 #NORMAL #ERROR : evaluateEnterpriseVpnFailOpen result: 0
+2021-03-26 18:55:18.124651 #NORMAL #INFO : ZRawSocket: Constructor called!!
+2021-03-26 18:55:18.124898 #NORMAL #INFO : remove route notification received
+2021-03-26 18:55:18.125036 #NORMAL #DEBUG : captive: 0
+2021-03-26 18:55:18.125143 #NORMAL #INFO : configuration present
+2021-03-26 18:55:18.125352 #HIGH #INFO : get ipv6 bypasses for :,
+2021-03-26 18:55:18.125491 #NORMAL #ERROR : websecurity not enabled/off/local-proxy-mode set, not installing routes
+2021-03-26 18:55:18.125568 #NORMAL #INFO : Clearing out DNS domains
+2021-03-26 18:55:18.125644 #NORMAL #DEBUG : setting route for ip/mask pairs include: 1, exclude 0
+2021-03-26 18:55:18.125722 #NORMAL #INFO : Remove IPv6 routes
+2021-03-26 18:55:18.125818 #NORMAL #INFO : Executing route -n get -inet default 
+2021-03-26 18:55:18.126084 #NORMAL #INFO :    route to: default
+2021-03-26 18:55:18.126147 #NORMAL #INFO : destination: default
+2021-03-26 18:55:18.126208 #NORMAL #INFO :        mask: default
+2021-03-26 18:55:18.126272 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-26 18:55:18.126335 #NORMAL #INFO :   interface: en0
+2021-03-26 18:55:18.126402 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-26 18:55:18.126457 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-26 18:55:18.126523 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-26 18:55:18.126650 #NORMAL #INFO : Executing route -n get -inet6 default 
+2021-03-26 18:55:18.126752 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-26 18:55:18.126836 #NORMAL #INFO : Clean out IPv6 settings
+2021-03-26 18:55:18.126902 #NORMAL #ERROR : calling set tunnel network settings
+2021-03-26 18:55:18.127893 #NORMAL #DEBUG : configureIpRoutes:4
+2021-03-26 18:55:18.127964 #HIGH #INFO : setDefaultInterfaceInfo called!!
+2021-03-26 18:55:18.128423 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.128507 #HIGH #INFO :  Family AF_INET lo0:127.0.0.1
+2021-03-26 18:55:18.128592 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.128654 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.128716 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.128860 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.128922 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.128984 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.129045 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.129106 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.129166 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.129226 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.129305 #HIGH #INFO :  Family AF_INET en0:192.168.0.27
+2021-03-26 18:55:18.129400 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.129462 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.129522 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.129598 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.129671 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.129743 #HIGH #INFO :  Unknown family 
+2021-03-26 18:55:18.129814 #HIGH #INFO :  Family AF_INET utun2:100.64.0.1
+2021-03-26 18:55:18.129884 #NORMAL #INFO : Executing route -n get -inet default 
+2021-03-26 18:55:18.130097 #NORMAL #INFO :    route to: default
+2021-03-26 18:55:18.130159 #NORMAL #INFO : destination: default
+2021-03-26 18:55:18.130219 #NORMAL #INFO :        mask: default
+2021-03-26 18:55:18.130280 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-26 18:55:18.130339 #NORMAL #INFO :   interface: en0
+2021-03-26 18:55:18.130404 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-26 18:55:18.130460 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-26 18:55:18.130521 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-26 18:55:18.130624 #HIGH #INFO : Default interface Name from default route: en0
+2021-03-26 18:55:18.132031 #HIGH #INFO : Default Interface found:en0
+2021-03-26 18:55:18.132801 #HIGH #INFO : IPv4 Default interface IP:192.168.0.27-en0
+2021-03-26 18:55:18.132880 #HIGH #INFO : getDnsList called
+2021-03-26 18:55:18.133843 #HIGH #INFO : IPv4 DNS IP: 192.168.0.1
+2021-03-26 18:55:18.133992 #NORMAL #INFO : Check if dns server list is Same as ZPA DNS IP
+2021-03-26 18:55:18.134044 #NORMAL #DEBUG : addProxyIpRoutes
+2021-03-26 18:55:18.134239 #NORMAL #INFO : addProxyIpRoutes:{
+    ip = "34.212.4.217";
+    mask = "255.255.255.255";
+}
+2021-03-26 18:55:18.134327 #NORMAL #INFO : addProxyIpRoutes:{
+    ip = "34.214.217.180";
+    mask = "255.255.255.255";
+}
+2021-03-26 18:55:18.134449 #NORMAL #INFO : addProxyIpRoutes:{
+    ip = "35.165.115.111";
+    mask = "255.255.255.255";
+}
+2021-03-26 18:55:18.134544 #NORMAL #INFO : addProxyIpRoutes:{
+    ip = "44.225.164.247";
+    mask = "255.255.255.255";
+}
+2021-03-26 18:55:18.134967 #NORMAL #DEBUG : install route notification received:{
+    proxyExcludeRoutes = "{(\n        {\n        ip = \"34.214.217.180\";\n        mask = \"255.255.255.255\";\n    },\n        {\n        ip = \"35.165.115.111\";\n        mask = \"255.255.255.255\";\n    },\n        {\n        ip = \"34.212.4.217\";\n        mask = \"255.255.255.255\";\n    },\n        {\n        ip = \"44.225.164.247\";\n        mask = \"255.255.255.255\";\n    }\n)}";
+    shouldModifyInterfaceProperties = 1;
+}
+2021-03-26 18:55:18.135072 #NORMAL #DEBUG : proxy enabled:1 zpa-enabled:1
+2021-03-26 18:55:18.135112 #NORMAL #DEBUG : zpn routes/domains not  changed
+2021-03-26 18:55:18.135158 #NORMAL #DEBUG : proxy routes  changed
+2021-03-26 18:55:18.135201 #NORMAL #INFO : proxy and zpa settings have been received 4:0:0
+2021-03-26 18:55:18.135242 #NORMAL #INFO : reinstall Interface Address as existing zpnroutes/proxy exclude routes or searchdomains do not match
+2021-03-26 18:55:18.135299 #NORMAL #DEBUG : captive: 0
+2021-03-26 18:55:18.135362 #NORMAL #INFO : configuration present
+2021-03-26 18:55:18.135459 #HIGH #INFO : get ipv6 bypasses for :,
+2021-03-26 18:55:18.135552 #NORMAL #INFO : getSmeProxyState: Status: (2 -> CONNECTING)
+2021-03-26 18:55:18.135600 #NORMAL #INFO : proxy Status : 2
+2021-03-26 18:55:18.135733 #NORMAL #INFO : Exclude 34.214.217.180/255.255.255.255
+2021-03-26 18:55:18.135790 #NORMAL #INFO : Exclude 35.165.115.111/255.255.255.255
+2021-03-26 18:55:18.135932 #NORMAL #INFO : Exclude 34.212.4.217/255.255.255.255
+2021-03-26 18:55:18.135982 #NORMAL #INFO : Exclude 44.225.164.247/255.255.255.255
+2021-03-26 18:55:18.136121 #NORMAL #DEBUG : Search domains is empty
+2021-03-26 18:55:18.136293 #NORMAL #INFO : Setting ZPA DNS: (
+    "100.64.0.1"
+)
+ domainName: (null)
+ searchDomains: (null)
+ matchDomains: (
+    "zscaler.com"
+)
+ matchDomainsNoSearch: 0
+2021-03-26 18:55:18.136353 #NORMAL #DEBUG : setting route for ip/mask pairs include: 10, exclude 4
+2021-03-26 18:55:18.136415 #NORMAL #INFO : getSmeProxyState: Status: (2 -> CONNECTING)
+2021-03-26 18:55:18.136457 #NORMAL #INFO : proxy Status : 2
+2021-03-26 18:55:18.136542 #NORMAL #INFO : Executing route -n get -inet default 
+2021-03-26 18:55:18.136729 #NORMAL #INFO :    route to: default
+2021-03-26 18:55:18.136775 #NORMAL #INFO : destination: default
+2021-03-26 18:55:18.136816 #NORMAL #INFO :        mask: default
+2021-03-26 18:55:18.136925 #NORMAL #INFO :     gateway: 192.168.0.1
+2021-03-26 18:55:18.136968 #NORMAL #INFO :   interface: en0
+2021-03-26 18:55:18.137325 #NORMAL #INFO :       flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+2021-03-26 18:55:18.137383 #NORMAL #INFO : recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+2021-03-26 18:55:18.137425 #NORMAL #INFO :        0         0         0         0         0         0      1500         0 
+2021-03-26 18:55:18.137515 #NORMAL #INFO : Executing route -n get -inet6 default 
+2021-03-26 18:55:18.137647 #NORMAL #ERROR : writing to routing socket: not in table
+2021-03-26 18:55:18.189111 #NORMAL #INFO : resolveWKN: family 2, 192.0.0.171
+2021-03-26 18:55:18.189254 #NORMAL #INFO : resolveWKN: family 2, 192.0.0.170
+2021-03-26 18:55:18.189297 #NORMAL #INFO : Block IPv6
+2021-03-26 18:55:18.189351 #NORMAL #ERROR : calling set tunnel network settings
+2021-03-26 18:55:18.190473 #NORMAL #DEBUG : Restarting raw socket.
+2021-03-26 18:55:18.190601 #NORMAL #WARN : restartRawSocket returning!!
+2021-03-26 18:55:18.190640 #NORMAL #DEBUG : Clearing dns cache!!
+2021-03-26 18:55:18.190674 #NORMAL #ERROR : Skipping local proxy pac download as pac url is empty!!
+2021-03-26 18:55:18.190704 #NORMAL #INFO : updateProxySettings called.
+2021-03-26 18:55:18.190741 #NORMAL #DEBUG : Current Proxy Action Type: 1
+2021-03-26 18:55:18.190773 #NORMAL #DEBUG : System Proxy Type: 0
+2021-03-26 18:55:18.190834 #NORMAL #DEBUG : Perform GPUpdate: 0
+2021-03-26 18:55:18.190878 #NORMAL #DEBUG : Enable Auto Detect: 0
+2021-03-26 18:55:18.190907 #NORMAL #DEBUG : Enable Pac: 0
+2021-03-26 18:55:18.190936 #NORMAL #DEBUG : Pac Url: 
+2021-03-26 18:55:18.190963 #NORMAL #DEBUG : Enable Proxy Server: 0
+2021-03-26 18:55:18.190992 #NORMAL #DEBUG : Proxy Server Address: 
+2021-03-26 18:55:18.191019 #NORMAL #DEBUG : Proxy Server Port: 0
+2021-03-26 18:55:18.191047 #NORMAL #DEBUG : BypassProxyForPrivateIp: 0
+2021-03-26 18:55:18.191085 #HIGH #DEBUG : updateProxySettings end.
+2021-03-26 18:55:18.191120 #HIGH #INFO : Skipping checking zpn socket as start thread is running!!
+2021-03-26 18:55:18.191154 #NORMAL #DEBUG : scheduleZtunnelMonitoringTask called!
+2021-03-26 18:55:18.191272 #NORMAL #INFO : Ztunnel Started!!
+2021-03-26 18:55:18.269319 #NORMAL #DEBUG : zpnSocketReadCallback called
+2021-03-26 18:55:18.293480 #NORMAL #INFO : Zpn socket ERR_SSL_WANT_READ occurred!!
+2021-03-26 18:55:18.319816 #NORMAL #ERROR : #### set tunnel network settings success
+2021-03-26 18:55:18.320018 #NORMAL #DEBUG : #### setting tunnel network settings done
+2021-03-26 18:55:18.324097 #NORMAL #DEBUG : zpnSocketReadCallback called
+2021-03-26 18:55:18.324386 #NORMAL #INFO : Zpn socket handshake complete!!
+2021-03-26 18:55:18.324442 #NORMAL #INFO : Zpn: Writing initial auth data!.
+2021-03-26 18:55:18.324464 #NORMAL #DEBUG : ZApp version string: 1.3.0.ios
+2021-03-26 18:55:18.324574 #NORMAL #DEBUG : Sending version request: Size: 125 Data: { "zpn_version" : { "redirect_timestamp_s" : 0, "ver_str" : "1.3.0.ios", "version_major" : 1, "version_minor" : 3 } }
+2021-03-26 18:55:18.324692 #NORMAL #DEBUG : Version json: Written 125 bytes to request buffer.
+2021-03-26 18:55:18.324807 #NORMAL #DEBUG : zpn_client_authenticate Client ip: 192.168.0.27
+2021-03-26 18:55:18.325326 #NORMAL #DEBUG : Auth json: Written 14240 bytes to request buffer.
+2021-03-26 18:55:18.325399 #NORMAL #DEBUG : Sending trusted network Json: Size: 66 Data: { "zpn_trusted_networks" : { "trusted_networks" : [  ] } }
+2021-03-26 18:55:18.325422 #NORMAL #DEBUG : Trusted network json: Written 66 bytes to request buffer.
+2021-03-26 18:55:18.325442 #NORMAL #DEBUG : registerEventsForZpnSocket addEventHandler zpnSocketWriteCallback!! ID: 0
+2021-03-26 18:55:18.325494 #NORMAL #DEBUG : zpnSocketReadCallback called
+2021-03-26 18:55:18.325544 #NORMAL #DEBUG : Zpn socket read bytes: 84 Used: 84
+2021-03-26 18:55:18.325569 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 0 SSL read: 0
+2021-03-26 18:55:18.325588 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 18:55:18.325606 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 18:55:18.325624 #NORMAL #DEBUG : Response length: 76
+2021-03-26 18:55:18.325645 #NORMAL #INFO : ZPN: Control Message Response Data: {"zpn_fohh_tlv_window_update":{"tag_id":0,"tx_limit":33554432,"rx_data":0}}
+
+2021-03-26 18:55:18.325704 #NORMAL #DEBUG : Got nothing.
+2021-03-26 18:55:18.326160 #NORMAL #DEBUG : Zpn socket Written bytes: 14431 Available bytes to write: 0
+2021-03-26 18:55:18.326247 #NORMAL #DEBUG : Skipping iterating client sockets as zpn socket is not connected yet! ID: 0
+2021-03-26 18:55:18.326270 #NORMAL #DEBUG : registerEventsForZpnSocket removeEventHandler zpnSocketWriteCallback!! ID: 0
+2021-03-26 18:55:18.390907 #NORMAL #DEBUG : zpnSocketReadCallback called
+2021-03-26 18:55:18.391075 #NORMAL #DEBUG : Zpn socket read bytes: 976 Used: 976
+2021-03-26 18:55:18.391107 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 3477 SSL read: 0
+2021-03-26 18:55:18.391250 #NORMAL #DEBUG : Zpn socket read bytes: 2000 Used: 2976
+2021-03-26 18:55:18.391281 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 1448 SSL read: 0
+2021-03-26 18:55:18.391321 #NORMAL #DEBUG : zpnSocketReadCallback ERR_SSL_WANT_READ occurred!!
+2021-03-26 18:55:18.391344 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 18:55:18.391367 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 18:55:18.391389 #NORMAL #DEBUG : Response length: 76
+2021-03-26 18:55:18.391417 #NORMAL #INFO : ZPN: Control Message Response Data: {"zpn_fohh_tlv_window_update":{"tag_id":0,"tx_limit":33554432,"rx_data":0}}
+
+2021-03-26 18:55:18.391545 #NORMAL #DEBUG : Got nothing.
+2021-03-26 18:55:18.391581 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 18:55:18.391604 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 18:55:18.391626 #NORMAL #DEBUG : Response length: 23
+2021-03-26 18:55:18.391650 #NORMAL #INFO : ZPN: Control Message Response Data: {"zpn_version_ack":{}}
+
+2021-03-26 18:55:18.391687 #NORMAL #DEBUG : Got zpn_version_ack response.
+2021-03-26 18:55:18.391712 #NORMAL #DEBUG : No error in zpn_version_ack response.
+2021-03-26 18:55:18.391740 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 18:55:18.391763 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 18:55:18.391786 #NORMAL #DEBUG : Response length: 203
+2021-03-26 18:55:18.391809 #NORMAL #INFO : ZPN: Control Message Response Data: {"zpn_broker_redirect":{"redirect_only":1,"force_redirect":0,"brokers":["broker2.yvr1.prod.zpath.net", "broker1.yvr1.prod.zpath.net"],"shutdown_time":0,"timestamp_s":1616784918,"pub_ip":"70.71.111.69"}}
+
+2021-03-26 18:55:18.391891 #NORMAL #DEBUG : Got zpn_broker_redirect response.
+2021-03-26 18:55:18.391928 #NORMAL #DEBUG : Zpn: Updating redirect broker and timestamp! Zpn: Broker redirect attempts: 1 Redirect only: 1
+2021-03-26 18:55:18.391953 #NORMAL #DEBUG : closeZpnSocket called!! changeState: 1 tryReconnecting: 1
+2021-03-26 18:55:18.391976 #NORMAL #DEBUG : clearClientConnections called! Size: 0 CloseAll: 0
+2021-03-26 18:55:18.392001 #NORMAL #DEBUG : clearClientConnections end!
+2021-03-26 18:55:18.392025 #NORMAL #DEBUG : Removing zpn reactor event notifications!
+2021-03-26 18:55:18.392064 #NORMAL #DEBUG : Closing Zpn socket fd with local port 54604
+2021-03-26 18:55:18.392179 #NORMAL #DEBUG : Trying zpn socket reconnect. Attempt: 1
+2021-03-26 18:55:18.392439 #NORMAL #ERROR : Certificate is not valid after: Mar 28 18:55:11 2022 GMT
+2021-03-26 18:55:18.392482 #NORMAL #DEBUG : day:366, sec:86393
+2021-03-26 18:55:18.392768 #NORMAL #ERROR : Certificate is not valid after: Sep 25 00:55:00 2025 GMT
+2021-03-26 18:55:18.392801 #NORMAL #DEBUG : day:1643, sec:21582
+2021-03-26 18:55:18.392878 #NORMAL #DEBUG : closeZpnSocket called!! changeState: 0 tryReconnecting: 0
+2021-03-26 18:55:18.392903 #NORMAL #DEBUG : Removing zpn reactor event notifications!
+2021-03-26 18:55:18.393032 #NORMAL #ERROR : Exception getting local socket's zpn port
+2021-03-26 18:55:18.393066 #NORMAL #DEBUG : Closing Zpn socket fd with local port 0
+2021-03-26 18:55:18.393090 #NORMAL #DEBUG : closeZpnSocket end!!
+2021-03-26 18:55:18.393117 #NORMAL #DEBUG : Setting zpn service state to: 2!
+2021-03-26 18:55:18.393140 #NORMAL #DEBUG : Setting zpn service state to: 2!
+2021-03-26 18:55:18.393163 #NORMAL #DEBUG : Broker list size: 3 Index: 0
+2021-03-26 18:55:18.393186 #NORMAL #DEBUG : Resolving broker hostname
+2021-03-26 18:55:18.440533 #NORMAL #DEBUG : Broker resolved to IP 165.225.211.252
+2021-03-26 18:55:18.440633 #NORMAL #DEBUG : Resolved Dns 165.225.211.252 for broker hostname: broker2.yvr1.prod.zpath.net
+2021-03-26 18:55:18.440657 #NORMAL #DEBUG : Connecting to broker!!
+2021-03-26 18:55:18.440682 #NORMAL #DEBUG : Using broker port to connect: 443
+2021-03-26 18:55:18.440761 #NORMAL #DEBUG : Zpn sock fd: 14
+2021-03-26 18:55:18.440829 #NORMAL #DEBUG : Zpn socket Bind success!! Zpn socket local port: 54605
+2021-03-26 18:55:18.440864 #NORMAL #DEBUG : ZPN socket SO_SNDBUF: 131072 SO_RCVBUF: 131072
+2021-03-26 18:55:18.464290 #NORMAL #DEBUG : ZPN Socket connect success to broker!!
+2021-03-26 18:55:18.464440 #NORMAL #DEBUG : ZPN Socket connect success to broker!! Starting ssl handshake!
+2021-03-26 18:55:18.464474 #NORMAL #INFO : Domain for zpn is: zscaler.com
+2021-03-26 18:55:18.464506 #NORMAL #INFO : SNI for zpn is: zscaler.com.c2.prod.zpath.net
+2021-03-26 18:55:18.464540 #NORMAL #INFO : Client Cert CN : 52A2F4D972A84AADA1567C642A44D257@zscaler.com
+2021-03-26 18:55:18.464569 #NORMAL #DEBUG : Attaching SecureStreamSocket to zpn
+2021-03-26 18:55:18.464652 #NORMAL #DEBUG : Completing handshake!!
+2021-03-26 18:55:18.464897 #NORMAL #INFO : Zpn socket ERR_SSL_WANT_READ occurred!!
+2021-03-26 18:55:18.464985 #NORMAL #DEBUG : connectZpnSocket return code: 0
+2021-03-26 18:55:18.465014 #NORMAL #DEBUG : closeZpnSocket end!!
+2021-03-26 18:55:18.497678 #NORMAL #DEBUG : zpnSocketReadCallback called
+2021-03-26 18:55:18.507902 #NORMAL #ERROR : #### set tunnel network settings success
+2021-03-26 18:55:18.508039 #NORMAL #DEBUG : #### setting tunnel network settings done
+2021-03-26 18:55:18.510747 #NORMAL #INFO : Zpn socket ERR_SSL_WANT_READ occurred!!
+2021-03-26 18:55:18.536625 #NORMAL #DEBUG : zpnSocketReadCallback called
+2021-03-26 18:55:18.537689 #NORMAL #INFO : Zpn socket handshake complete!!
+2021-03-26 18:55:18.537827 #NORMAL #INFO : Zpn: Writing initial auth data!.
+2021-03-26 18:55:18.537896 #NORMAL #DEBUG : ZApp version string: 1.3.0.ios
+2021-03-26 18:55:18.538106 #NORMAL #DEBUG : Sending version request: Size: 134 Data: { "zpn_version" : { "redirect_timestamp_s" : 1616784918, "ver_str" : "1.3.0.ios", "version_major" : 1, "version_minor" : 3 } }
+2021-03-26 18:55:18.538228 #NORMAL #DEBUG : Version json: Written 134 bytes to request buffer.
+2021-03-26 18:55:18.538402 #NORMAL #DEBUG : zpn_client_authenticate Client ip: 192.168.0.27
+2021-03-26 18:55:18.539772 #NORMAL #DEBUG : Auth json: Written 14240 bytes to request buffer.
+2021-03-26 18:55:18.539932 #NORMAL #DEBUG : Sending trusted network Json: Size: 66 Data: { "zpn_trusted_networks" : { "trusted_networks" : [  ] } }
+2021-03-26 18:55:18.539997 #NORMAL #DEBUG : Trusted network json: Written 66 bytes to request buffer.
+2021-03-26 18:55:18.540056 #NORMAL #DEBUG : registerEventsForZpnSocket addEventHandler zpnSocketWriteCallback!! ID: 0
+2021-03-26 18:55:18.541431 #NORMAL #DEBUG : Zpn socket Written bytes: 14440 Available bytes to write: 0
+2021-03-26 18:55:18.541524 #NORMAL #DEBUG : Skipping iterating client sockets as zpn socket is not connected yet! ID: 0
+2021-03-26 18:55:18.541582 #NORMAL #DEBUG : registerEventsForZpnSocket removeEventHandler zpnSocketWriteCallback!! ID: 0
+2021-03-26 18:55:18.549498 #NORMAL #DEBUG : zpnSocketReadCallback called
+2021-03-26 18:55:18.549789 #NORMAL #DEBUG : Zpn socket read bytes: 84 Used: 84
+2021-03-26 18:55:18.549869 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 0 SSL read: 0
+2021-03-26 18:55:18.549924 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 18:55:18.549987 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 18:55:18.550040 #NORMAL #DEBUG : Response length: 76
+2021-03-26 18:55:18.550102 #NORMAL #INFO : ZPN: Control Message Response Data: {"zpn_fohh_tlv_window_update":{"tag_id":0,"tx_limit":33554432,"rx_data":0}}
+
+2021-03-26 18:55:18.550329 #NORMAL #DEBUG : Got nothing.
+2021-03-26 18:55:18.593816 #NORMAL #DEBUG : zpnSocketReadCallback called
+2021-03-26 18:55:18.594174 #NORMAL #DEBUG : Zpn socket read bytes: 976 Used: 976
+2021-03-26 18:55:18.594260 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 1448 SSL read: 0
+2021-03-26 18:55:18.594354 #NORMAL #DEBUG : zpnSocketReadCallback ERR_SSL_WANT_READ occurred!!
+2021-03-26 18:55:18.594410 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 18:55:18.594465 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 18:55:18.594534 #NORMAL #DEBUG : Response length: 76
+2021-03-26 18:55:18.594603 #NORMAL #INFO : ZPN: Control Message Response Data: {"zpn_fohh_tlv_window_update":{"tag_id":0,"tx_limit":33554432,"rx_data":0}}
+
+2021-03-26 18:55:18.594775 #NORMAL #DEBUG : Got nothing.
+2021-03-26 18:55:18.594857 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 18:55:18.594913 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 18:55:18.594966 #NORMAL #DEBUG : Response length: 23
+2021-03-26 18:55:18.595075 #NORMAL #INFO : ZPN: Control Message Response Data: {"zpn_version_ack":{}}
+
+2021-03-26 18:55:18.595171 #NORMAL #DEBUG : Got zpn_version_ack response.
+2021-03-26 18:55:18.595230 #NORMAL #DEBUG : No error in zpn_version_ack response.
+2021-03-26 18:55:18.595299 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 18:55:18.595354 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 18:55:18.595406 #NORMAL #DEBUG : Response length: 147
+2021-03-26 18:55:18.595462 #NORMAL #INFO : ZPN: Control Message Response Data: {"zpn_client_authenticate_ack":{"id":0,"current_broker":"broker2.yvr1.prod.zpath.net","tunnel_id":"n/oIX5HM0v7XLWxzZy2f","pub_ip":"70.71.111.69"}}
+
+2021-03-26 18:55:18.595586 #NORMAL #INFO : Got zpn_client_authenticate_ack response.
+2021-03-26 18:55:18.595663 #NORMAL #INFO : zpn_client_authenticate id: 0
+2021-03-26 18:55:18.595717 #NORMAL #INFO : No error in zpn_client_authenticate response.
+2021-03-26 18:55:18.595773 #NORMAL #DEBUG : Setting zpn auth state to: 0!
+2021-03-26 18:55:18.595850 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 18:55:18.595904 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 18:55:18.595965 #NORMAL #DEBUG : Response length: 147
+2021-03-26 18:55:18.596021 #NORMAL #INFO : ZPN: Control Message Response Data: {"zpn_client_authenticate_ack":{"id":0,"current_broker":"broker2.yvr1.prod.zpath.net","tunnel_id":"n/oIX5HM0v7XLWxzZy2f","pub_ip":"70.71.111.69"}}
+
+2021-03-26 18:55:18.596140 #NORMAL #INFO : Got zpn_client_authenticate_ack response.
+2021-03-26 18:55:18.596198 #NORMAL #INFO : zpn_client_authenticate id: 0
+2021-03-26 18:55:18.596261 #NORMAL #INFO : No error in zpn_client_authenticate response.
+2021-03-26 18:55:18.596315 #NORMAL #DEBUG : Setting zpn auth state to: 0!
+2021-03-26 18:55:18.596392 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 18:55:18.596446 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 18:55:18.596498 #NORMAL #DEBUG : Response length: 38
+2021-03-26 18:55:18.596553 #NORMAL #INFO : ZPN: Control Message Response Data: {"zpn_trusted_networks_ack":{"id":0}}
+
+2021-03-26 18:55:18.596653 #NORMAL #DEBUG : Got nothing.
+2021-03-26 18:55:18.596724 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 18:55:18.596954 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 18:55:18.597007 #NORMAL #DEBUG : Response length: 200
+2021-03-26 18:55:18.597064 #NORMAL #INFO : ZPN: Control Message Response Data: {"zpn_client_app":{"app_domain":"jira.corp.zscaler.com","ingress_port_ranges":[80, 80, 443, 443],"tcp_port_ranges":[80, 80, 443, 443],"deleted":0,"bypass":0,"bypass_type":"NEVER","double_encrypt":0}}
+
+2021-03-26 18:55:18.597263 #NORMAL #DEBUG : Got zpn_client_app response.
+2021-03-26 18:55:18.597339 #NORMAL #DEBUG : zpn_client_app app_domain: jira.corp.zscaler.com
+2021-03-26 18:55:18.597397 #NORMAL #DEBUG : zpn_client_app deleted: 0
+2021-03-26 18:55:18.597455 #NORMAL #DEBUG : zpn_client_app app_domain: jira.corp.zscaler.com Bypass type: never
+2021-03-26 18:55:18.597533 #NORMAL #DEBUG : zpn_client_app app_domain: jira.corp.zscaler.com double_encrypt is set. Value: 0
+2021-03-26 18:55:18.597623 #NORMAL #DEBUG : Tcp Range Port: 80
+2021-03-26 18:55:18.597679 #NORMAL #DEBUG : Tcp Range Port: 80
+2021-03-26 18:55:18.597733 #NORMAL #DEBUG : Tcp Range Port: 443
+2021-03-26 18:55:18.597787 #NORMAL #DEBUG : Tcp Range Port: 443
+2021-03-26 18:55:18.597926 #NORMAL #INFO : setTunDNSDomains: Skipping Setting Tun Dns as ZPN is not connected yet!
+2021-03-26 18:55:18.598043 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 18:55:18.598098 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 18:55:18.598150 #NORMAL #DEBUG : Response length: 196
+2021-03-26 18:55:18.598216 #NORMAL #INFO : ZPN: Control Message Response Data: {"zpn_client_app":{"app_domain":"10.32.112.102","ingress_port_ranges":[22, 22, 9100, 9100],"tcp_port_ranges":[22, 22, 9100, 9100],"deleted":0,"bypass":0,"bypass_type":"NEVER","double_encrypt":0}}
+
+2021-03-26 18:55:18.598396 #NORMAL #DEBUG : Got zpn_client_app response.
+2021-03-26 18:55:18.598463 #NORMAL #DEBUG : zpn_client_app app_domain: 10.32.112.102
+2021-03-26 18:55:18.598519 #NORMAL #DEBUG : zpn_client_app deleted: 0
+2021-03-26 18:55:18.598575 #NORMAL #DEBUG : zpn_client_app app_domain: 10.32.112.102 Bypass type: never
+2021-03-26 18:55:18.598632 #NORMAL #DEBUG : zpn_client_app app_domain: 10.32.112.102 double_encrypt is set. Value: 0
+2021-03-26 18:55:18.598689 #NORMAL #DEBUG : Tcp Range Port: 22
+2021-03-26 18:55:18.598744 #NORMAL #DEBUG : Tcp Range Port: 22
+2021-03-26 18:55:18.598798 #NORMAL #DEBUG : Tcp Range Port: 9100
+2021-03-26 18:55:18.598852 #NORMAL #DEBUG : Tcp Range Port: 9100
+2021-03-26 18:55:18.598925 #NORMAL #DEBUG : Adding cidr address to cidr address map: 10.32.112.102/32
+2021-03-26 18:55:18.599026 #NORMAL #INFO : setTunDNSDomains: Skipping Setting Tun Dns as ZPN is not connected yet!
+2021-03-26 18:55:18.599126 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 18:55:18.599180 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 18:55:18.599232 #NORMAL #DEBUG : Response length: 261
+2021-03-26 18:55:18.599285 #NORMAL #DEBUG : Zpn Not enough bytes to process control message yet!
+2021-03-26 18:55:18.599413 #NORMAL #DEBUG : zpnSocketReadCallback called
+2021-03-26 18:55:18.599631 #NORMAL #DEBUG : Zpn socket read bytes: 2000 Used: 2085
+2021-03-26 18:55:18.599706 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 9553 SSL read: 0
+2021-03-26 18:55:18.600059 #NORMAL #DEBUG : Zpn socket read bytes: 4048 Used: 6133
+2021-03-26 18:55:18.600124 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 5476 SSL read: 0
+2021-03-26 18:55:18.600480 #NORMAL #DEBUG : Zpn socket read bytes: 4048 Used: 10181
+2021-03-26 18:55:18.600541 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 1399 SSL read: 0
+2021-03-26 18:55:18.600652 #NORMAL #DEBUG : Zpn socket read bytes: 365 Used: 10546
+2021-03-26 18:55:18.600713 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 1005 SSL read: 0
+2021-03-26 18:55:18.600845 #NORMAL #DEBUG : Zpn socket read bytes: 976 Used: 11522
+2021-03-26 18:55:18.600919 #NORMAL #DEBUG : zpnSocketReadCallback: More Bytes available from socket read: 0 SSL read: 0
+2021-03-26 18:55:18.600980 #NORMAL #INFO : ZPN: Control Message Response Data: {"zpn_client_app":{"app_domain":"10.38.112.0/23","ingress_port_ranges":[22, 22, 80, 80, 443, 443, 3389, 3389, 37777, 37777],"tcp_port_ranges":[22, 22, 80, 80, 443, 443, 3389, 3389, 37777, 37777],"deleted":0,"bypass":0,"bypass_type":"NEVER","double_encrypt":0}}
+
+2021-03-26 18:55:18.601290 #NORMAL #DEBUG : Got zpn_client_app response.
+2021-03-26 18:55:18.601379 #NORMAL #DEBUG : zpn_client_app app_domain: 10.38.112.0/23
+2021-03-26 18:55:18.601435 #NORMAL #DEBUG : zpn_client_app deleted: 0
+2021-03-26 18:55:18.601491 #NORMAL #DEBUG : zpn_client_app app_domain: 10.38.112.0/23 Bypass type: never
+2021-03-26 18:55:18.601558 #NORMAL #DEBUG : zpn_client_app app_domain: 10.38.112.0/23 double_encrypt is set. Value: 0
+2021-03-26 18:55:18.601634 #NORMAL #DEBUG : Tcp Range Port: 22
+2021-03-26 18:55:18.601689 #NORMAL #DEBUG : Tcp Range Port: 22
+2021-03-26 18:55:18.601743 #NORMAL #DEBUG : Tcp Range Port: 80
+2021-03-26 18:55:18.601797 #NORMAL #DEBUG : Tcp Range Port: 80
+2021-03-26 18:55:18.601850 #NORMAL #DEBUG : Tcp Range Port: 443
+2021-03-26 18:55:18.601904 #NORMAL #DEBUG : Tcp Range Port: 443
+2021-03-26 18:55:18.601957 #NORMAL #DEBUG : Tcp Range Port: 3389
+2021-03-26 18:55:18.602010 #NORMAL #DEBUG : Tcp Range Port: 3389
+2021-03-26 18:55:18.602064 #NORMAL #DEBUG : Tcp Range Port: 37777
+2021-03-26 18:55:18.602117 #NORMAL #DEBUG : Tcp Range Port: 37777
+2021-03-26 18:55:18.602199 #NORMAL #DEBUG : Adding cidr address to cidr address map: 10.38.112.0/23
+2021-03-26 18:55:18.602305 #NORMAL #INFO : setTunDNSDomains: Skipping Setting Tun Dns as ZPN is not connected yet!
+2021-03-26 18:55:18.602419 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 18:55:18.602476 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 18:55:18.602529 #NORMAL #DEBUG : Response length: 191
+2021-03-26 18:55:18.602610 #NORMAL #INFO : ZPN: Control Message Response Data: {"zpn_client_app":{"app_domain":"sonarqube-stg.et.zscaler.com","ingress_port_ranges":[443, 443],"tcp_port_ranges":[443, 443],"deleted":0,"bypass":0,"bypass_type":"NEVER","double_encrypt":0}}
+
+2021-03-26 18:55:18.602774 #NORMAL #DEBUG : Got zpn_client_app response.
+2021-03-26 18:55:18.602844 #NORMAL #DEBUG : zpn_client_app app_domain: sonarqube-stg.et.zscaler.com
+2021-03-26 18:55:18.602901 #NORMAL #DEBUG : zpn_client_app deleted: 0
+2021-03-26 18:55:18.602959 #NORMAL #DEBUG : zpn_client_app app_domain: sonarqube-stg.et.zscaler.com Bypass type: never
+2021-03-26 18:55:18.603016 #NORMAL #DEBUG : zpn_client_app app_domain: sonarqube-stg.et.zscaler.com double_encrypt is set. Value: 0
+2021-03-26 18:55:18.603114 #NORMAL #DEBUG : Tcp Range Port: 443
+2021-03-26 18:55:18.603168 #NORMAL #DEBUG : Tcp Range Port: 443
+2021-03-26 18:55:18.603247 #NORMAL #INFO : setTunDNSDomains: Skipping Setting Tun Dns as ZPN is not connected yet!
+2021-03-26 18:55:18.603343 #NORMAL #DEBUG : START_TLV_PARSING
+2021-03-26 18:55:18.603401 #NORMAL #DEBUG : Response tag: 0
+2021-03-26 18:55:18.603454 #NORMAL #DEBUG : Response length: 185
+2021-03-26 18:55:18.603543 #NORMAL #INFO : ZPN: Control Message Response Data: {"zpn_client_app":{"app_domain":"jenkins.et.zscaler.com","ingress_port_ranges":[443, 443],"tcp_port_ranges":[443, 443],"deleted":0,"bypass":0,"bypass_type":"NEVER","double_encrypt":0}}

@@ -1,0 +1,54 @@
+message,error_type
+"Tunnel Initialization:1.8.3 (3)",Tunnel Initialization Error
+"configuration present:37",Configuration Error
+"(AppStateManager.m:977) setEnforceConnectOnDemand: 1",Configuration Error
+"proxy is off",Proxy Error
+"websecurity not enabled/off/local-proxy-mode set, not installing routes",Proxy Error
+"proxy is off",Proxy Error
+"writing to routing socket: not in table",Proxy Error
+"calling set tunnel network settings",Network Settings Error
+"#### set tunnel network settings success",Network Settings Error
+"zpn cer: 1, -----BEGIN CERTIFICATE-----...",Certificate Error
+"Certificate is not valid after: Mar 28 18:55:11 2022 GMT",Certificate Error
+"Certificate is not valid after: Sep 25 00:55:00 2025 GMT",Certificate Error
+"Certificate is not valid after: Mar 28 18:55:11 2022 GMT",Certificate Error
+"Certificate is not valid after: Sep 25 00:55:00 2025 GMT",Certificate Error
+"getConfigPropertyFromFile: Exception: Exception: Unable to open file correctly!",Config Property Error
+"UpdateConfigPropertyToFile: Exception: Exception: Failed to open config file/private/var/mobile/Containers/Shared/AppGroup/F0FB46C7-75F7-4C30-95FE-5B3F639492A5/1f3f31315f0861518e5be4fe4b64b8be.ztc",Config Property Error
+"Previous config file does not have entry for Profile Pac file!",PAC File Error
+"Previous Pac not found!! Trying to download pac file!!",PAC File Error
+"Profile Pac download Response code:200",PAC File Error
+"Scheduling pac refresh after 900 sec.",PAC File Error
+"Skipping local proxy pac download as pac url is empty!!",PAC File Error
+"Exception getting local socket's zpn port",Socket Error
+"ID=1202126281, Exception in TcpConnection run() (Error=Application exception: Both client and server sockets are closed!)",Socket Error
+"evaluateEnterpriseVpnFailOpen result: 0",VPN Error
+"(AppStateManager.m:983) trackerConnect 0",Miscellaneous Error
+"(AppStateManager.m:988) setTrackerConnect: 1",Miscellaneous Error
+"Successfully set ifscope option:0",Miscellaneous Error
+"Successfully set ifscope option:0",Miscellaneous Error
+"cloud: zscalertwo.net len: 14",Miscellaneous Error
+"setting resolver domain for the interface succeeded",Miscellaneous Error
+"Successfully set ifscope option:0",Miscellaneous Error
+"Profile Pac download Response code:200",Miscellaneous Error
+"getting device id",Miscellaneous Error
+"Tunnel Initialization:1.8.3 (3)",Tunnel Initialization
+"configuration present:37",Configuration present
+"(AppStateManager.m:977) setEnforceConnectOnDemand: 1",setEnforceConnectOnDemand
+"proxy is off",Proxy is off
+"websecurity not enabled/off/local-proxy-mode set, not installing routes",Websecurity not enabled
+"writing to routing socket: not in table",Writing to routing socket
+"calling set tunnel network settings",Calling set tunnel network settings
+"zpn cer: 1",ZPN cer
+"Profile Pac download Response code:200",Profile Pac download Response code
+"UpdateConfigPropertyToFile: Exception: Exception: Failed to open config file",UpdateConfigPropertyToFile
+"Scheduling pac refresh after 900 sec.",Scheduling pac refresh
+"Sending notification to UI: 0",Sending notification to UI
+"Previous config file does not have entry for Profile Pac file!",Previous config file does not have entry for Profile Pac file
+"Previous Pac not found!! Trying to download pac file!!",Previous Pac not found!! Trying to download pac file
+"Exception getting local socket's zpn port",Exception getting local socket's zpn port
+"Certificate is not valid after: Mar 28 18:55:11 2022 GMT",Certificate is not valid after: Mar 28 18:55:11 2022 GMT
+"evaluateEnterpriseVpnFailOpen result: 0",evaluateEnterpriseVpnFailOpen result
+"restartRawSocket returning!!",restartRawSocket returning!!
+"Skipping local proxy pac download as pac url is empty!!",Skipping local proxy pac download as pac url is empty
+"Successfully set ifscope option:0",Successfully set ifscope option

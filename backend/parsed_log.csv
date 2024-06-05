@@ -1,7 +1,0 @@
-,timestamp,message
-0,2024-04-04 10:20:45,WARNING: Disk space low
-1,2024-04-04 10:25:12,INFO: User login successful
-2,2024-04-04 10:30:05,ERROR: Database connection failed
-3,2024-04-04 10:35:20,ERROR: Server overload detected
-4,2024-04-04 10:40:55,WARNING: CPU temperature high
-5,2024-04-04 10:45:10,INFO: File uploaded successfully
