@@ -4619,7 +4619,8 @@ def process_data(df):
         message = row['message']
         analyze_and_add_to_list(timestamp, message)
         
-        os.environ["GOOGLE_API_KEY"] = "AIzaSyDfn-oQG2LysAOQHL49yqXpq8p3zCiiuHE"
+        # os.environ["GOOGLE_API_KEY"] = "AIzaSyDfn-oQG2LysAOQHL49yqXpq8p3zCiiuHE" expire
+        os.environ["GOOGLE_API_KEY"] = "AIzaSyDnWLKJfJvEP0CQqFspQEij0iK-iVnxqww"
         genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
         generation_config = {
             "temperature": 1,

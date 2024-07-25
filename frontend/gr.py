@@ -1582,9 +1582,6 @@
 # #     update_data()
 # #     time.sleep(refresh_interval)
 
-
-
-
 # import streamlit as st
 # import requests
 # import time
@@ -1648,24 +1645,30 @@
 #         timestamps_placeholder.json(timestamps)
 #         analyzed_messages_placeholder.json(analyzed_messages)
 
+#         # Display messages with expander for details
+#         st.header("Errors with Details")
+#         for i, message in enumerate(messages):
+#             with st.expander(f"Message {message}", expanded=False):
+#                 st.write(f"**Error Type:** {p_values[i]}")
+#                 st.write(f"**Timestamp:** {timestamps[i]}")
+#                 st.write(f"**Result:** {analyzed_messages[i]}")
+
 # # Auto-refresh every 10 seconds
 # refresh_interval = 10
 
-# # Ensure Streamlit's "stop" button works correctly
-# stop_button = st.button("Stop Refresh")
-
+# # Start auto-refresh
 # while True:
-#     if stop_button:
-#         st.stop()
 #     update_data()
 #     time.sleep(refresh_interval)
+#     st.experimental_rerun()
 
 
 import streamlit as st
 import requests
 import time
-import plotly.express as px
-import pandas as pd  # Import pandas
+import plotly.graph_objects as go
+import plotly.express as px  # Import plotly.express
+import pandas as pd
 
 # URL of your Flask server
 base_url = "http://127.0.0.1:5000"
@@ -1685,7 +1688,7 @@ def fetch_data(endpoint):
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["Live Error Counts", "P Values", "Messages", "Timestamps", "Analyzed Messages"])
 
 with tab1:
-    st.header("Live Error Counts")
+    st.header("AI Powered Log Analytics")
     live_error_counts_placeholder = st.empty()
 
 with tab2:
@@ -1716,7 +1719,19 @@ def update_data():
         # Update live error counts chart
         if live_error_counts:
             df = pd.DataFrame(live_error_counts.items(), columns=["Error Type", "Count"])
-            fig = px.bar(df, x="Count", y="Error Type", orientation='h', title="Live Error Counts")
+            
+            # Generate a list of colors, one for each bar
+            colors = px.colors.qualitative.Plotly * (len(df) // len(px.colors.qualitative.Plotly) + 1)
+            colors = colors[:len(df)]
+
+            fig = go.Figure(data=[go.Bar(
+                x=df["Count"],
+                y=df["Error Type"],
+                orientation='h',
+                marker=dict(color=colors)
+            )])
+            
+            fig.update_layout(title="Live Error Counts")
             live_error_counts_placeholder.plotly_chart(fig)
 
         p_values_placeholder.json(p_values)
